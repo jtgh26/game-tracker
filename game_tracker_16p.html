@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🎮 Game Market Tracker – 16p.com | VNGGames ADA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        #0b0f1a;
+    --surface:   #111827;
+    --surface2:  #1a2235;
+    --surface3:  #212d42;
+    --border:    rgba(255,255,255,0.07);
+    --border2:   rgba(255,255,255,0.13);
+    --accent:    #3b82f6;
+    --accent2:   #60a5fa;
+    --gold:      #f59e0b;
+    --gold2:     #fcd34d;
+    --green:     #10b981;
+    --red:       #ef4444;
+    --purple:    #8b5cf6;
+    --pink:      #ec4899;
+    --text:      #f1f5f9;
+    --text2:     #94a3b8;
+    --text3:     #64748b;
+    --hl-bg:     rgba(245,158,11,0.08);
+    --hl-border: rgba(245,158,11,0.3);
+    --rank1: #f59e0b;
+    --rank2: #94a3b8;
+    --rank3: #cd7f32;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Be Vietnam Pro', 'Noto Sans SC', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    min-height: 100vh;
+  }
+
+  /* ── HEADER ── */
+  .header {
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+    border-bottom: 1px solid var(--border2);
+    padding: 0 24px;
+    position: sticky; top: 0; z-index: 100;
+    backdrop-filter: blur(12px);
+  }
+  .header-inner {
+    max-width: 1600px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 60px; gap: 16px;
+  }
+  .logo {
+    display: flex; align-items: center; gap: 10px;
+    text-decoration: none; flex-shrink: 0;
+  }
+  .logo-icon {
+    width: 34px; height: 34px;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+  }
+  .logo-text { font-size: 15px; font-weight: 700; color: var(--text); }
+  .logo-sub { font-size: 11px; color: var(--text3); font-weight: 400; }
+  .header-meta { font-size: 12px; color: var(--text3); }
+  .header-meta span { color: var(--accent2); }
+  .source-badge {
+    font-size: 11px; padding: 4px 10px;
+    background: rgba(59,130,246,0.15); border: 1px solid rgba(59,130,246,0.3);
+    border-radius: 20px; color: var(--accent2); text-decoration: none;
+    white-space: nowrap;
+  }
+  .source-badge:hover { background: rgba(59,130,246,0.25); }
+
+  /* ── LAYOUT ── */
+  .main { max-width: 1600px; margin: 0 auto; padding: 24px; }
+
+  /* ── TABS ── */
+  .tabs {
+    display: flex; gap: 4px;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 12px; padding: 4px; margin-bottom: 24px;
+    width: fit-content;
+  }
+  .tab {
+    padding: 8px 18px; border-radius: 9px; border: none;
+    background: transparent; color: var(--text2);
+    font-family: inherit; font-size: 13px; font-weight: 500;
+    cursor: pointer; transition: all 0.2s; white-space: nowrap;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .tab:hover { color: var(--text); background: var(--surface2); }
+  .tab.active {
+    background: var(--accent); color: #fff; font-weight: 600;
+    box-shadow: 0 2px 8px rgba(59,130,246,0.35);
+  }
+  .tab-count {
+    background: rgba(255,255,255,0.15); border-radius: 10px;
+    padding: 1px 7px; font-size: 11px;
+  }
+  .tab.active .tab-count { background: rgba(255,255,255,0.25); }
+
+  /* ── SECTION ── */
+  .section { display: none; }
+  .section.active { display: block; }
+
+  /* ── STATS ROW ── */
+  .stats-row {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(160px,1fr));
+    gap: 12px; margin-bottom: 20px;
+  }
+  .stat-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; padding: 14px 16px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .stat-icon {
+    width: 38px; height: 38px; border-radius: 9px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px; flex-shrink: 0;
+  }
+  .stat-label { font-size: 11px; color: var(--text3); margin-bottom: 2px; }
+  .stat-value { font-size: 20px; font-weight: 700; }
+
+  /* ── TOOLBAR ── */
+  .toolbar {
+    display: flex; gap: 10px; margin-bottom: 16px;
+    flex-wrap: wrap; align-items: center;
+  }
+  .search-box {
+    flex: 1; min-width: 220px; max-width: 360px;
+    background: var(--surface); border: 1px solid var(--border2);
+    border-radius: 8px; padding: 8px 12px;
+    color: var(--text); font-family: inherit; font-size: 13px;
+    outline: none; transition: border-color 0.2s;
+  }
+  .search-box:focus { border-color: var(--accent); }
+  .search-box::placeholder { color: var(--text3); }
+  .filter-select {
+    background: var(--surface); border: 1px solid var(--border2);
+    border-radius: 8px; padding: 8px 10px;
+    color: var(--text); font-family: inherit; font-size: 13px;
+    outline: none; cursor: pointer; min-width: 140px;
+  }
+  .filter-select:focus { border-color: var(--accent); }
+  .filter-select option { background: var(--surface2); }
+  .hl-toggle {
+    display: flex; align-items: center; gap: 7px;
+    background: var(--surface); border: 1px solid var(--border2);
+    border-radius: 8px; padding: 8px 12px;
+    cursor: pointer; font-size: 12px; color: var(--text2);
+    user-select: none; transition: all 0.2s;
+  }
+  .hl-toggle.on { border-color: var(--gold); color: var(--gold2); background: rgba(245,158,11,0.08); }
+  .hl-toggle-dot {
+    width: 14px; height: 14px; border-radius: 50%;
+    background: var(--text3); transition: background 0.2s;
+  }
+  .hl-toggle.on .hl-toggle-dot { background: var(--gold); }
+  .result-count { font-size: 12px; color: var(--text3); margin-left: auto; }
+
+  /* ── TABLE ── */
+  .table-wrap {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 12px; overflow: hidden;
+  }
+  .table-scroll { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; min-width: 1100px; }
+  thead th {
+    background: var(--surface2);
+    padding: 10px 12px; text-align: left;
+    font-size: 11px; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.06em; color: var(--text3);
+    border-bottom: 1px solid var(--border2);
+    white-space: nowrap; position: sticky; top: 0;
+    cursor: pointer; user-select: none;
+  }
+  thead th:hover { color: var(--text); }
+  thead th .sort-icon { opacity: 0.4; margin-left: 4px; font-size: 10px; }
+  thead th.sorted .sort-icon { opacity: 1; color: var(--accent2); }
+  tbody tr {
+    border-bottom: 1px solid var(--border);
+    transition: background 0.12s;
+  }
+  tbody tr:last-child { border-bottom: none; }
+  tbody tr:hover { background: var(--surface2); }
+  tbody tr.highlight-row {
+    background: var(--hl-bg);
+    border-left: 3px solid var(--gold);
+  }
+  tbody tr.highlight-row:hover { background: rgba(245,158,11,0.13); }
+  td {
+    padding: 10px 12px; vertical-align: top;
+    font-size: 13px; color: var(--text);
+  }
+  td.muted { color: var(--text2); }
+
+  /* ── CELL TYPES ── */
+  .game-name-cell { min-width: 180px; }
+  .game-name-orig { font-weight: 600; font-size: 15px; font-family: 'Noto Sans SC', sans-serif; }
+  .game-name-en { color: var(--text2); font-size: 12px; margin-top: 2px; }
+  .game-name-cn { color: var(--text3); font-size: 11px; }
+
+  .genre-badge {
+    display: inline-block; padding: 3px 8px; border-radius: 5px;
+    font-size: 11px; font-weight: 600; white-space: nowrap;
+  }
+  .g-mmorpg   { background: rgba(139,92,246,0.2); color: #a78bfa; border: 1px solid rgba(139,92,246,0.3); }
+  .g-slg      { background: rgba(239,68,68,0.15); color: #fca5a5; border: 1px solid rgba(239,68,68,0.25); }
+  .g-arpg     { background: rgba(16,185,129,0.15); color: #6ee7b7; border: 1px solid rgba(16,185,129,0.25); }
+  .g-casual   { background: rgba(236,72,153,0.15); color: #f9a8d4; border: 1px solid rgba(236,72,153,0.25); }
+  .g-cbg      { background: rgba(245,158,11,0.15); color: #fcd34d; border: 1px solid rgba(245,158,11,0.25); }
+  .g-turnbased{ background: rgba(59,130,246,0.15); color: #93c5fd; border: 1px solid rgba(59,130,246,0.25); }
+  .g-moba     { background: rgba(20,184,166,0.15); color: #5eead4; border: 1px solid rgba(20,184,166,0.25); }
+  .g-default  { background: rgba(100,116,139,0.15); color: #94a3b8; border: 1px solid rgba(100,116,139,0.25); }
+
+  .status-badge {
+    display: inline-block; padding: 3px 8px; border-radius: 5px;
+    font-size: 11px; font-weight: 500; white-space: nowrap;
+  }
+  .s-ob   { background: rgba(16,185,129,0.15); color: #6ee7b7; border: 1px solid rgba(16,185,129,0.3); }
+  .s-cbt  { background: rgba(245,158,11,0.15); color: #fcd34d; border: 1px solid rgba(245,158,11,0.3); }
+  .s-obt  { background: rgba(59,130,246,0.15); color: #93c5fd; border: 1px solid rgba(59,130,246,0.3); }
+  .s-tech { background: rgba(100,116,139,0.15); color: #94a3b8; border: 1px solid rgba(100,116,139,0.25); }
+  .s-live { background: rgba(16,185,129,0.10); color: #34d399; border: 1px solid rgba(16,185,129,0.2); }
+  .s-global{ background: rgba(139,92,246,0.15); color: #c4b5fd; border: 1px solid rgba(139,92,246,0.3); }
+
+  .region-badge {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 3px 8px; border-radius: 5px;
+    font-size: 11px; font-weight: 500; white-space: nowrap;
+  }
+  .r-cn  { background: rgba(239,68,68,0.12); color: #fca5a5; border: 1px solid rgba(239,68,68,0.2); }
+  .r-asia{ background: rgba(59,130,246,0.12); color: #93c5fd; border: 1px solid rgba(59,130,246,0.2); }
+  .r-other{background: rgba(100,116,139,0.12); color: #94a3b8; border: 1px solid rgba(100,116,139,0.2); }
+
+  .hl-badge {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 2px 8px; border-radius: 20px;
+    font-size: 11px; font-weight: 600;
+    background: linear-gradient(135deg, rgba(245,158,11,0.2), rgba(251,191,36,0.1));
+    border: 1px solid rgba(245,158,11,0.4); color: var(--gold2);
+  }
+
+  .rank-badge {
+    width: 32px; height: 32px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 14px;
+  }
+  .rank-1 { background: linear-gradient(135deg, #f59e0b, #d97706); color: #fff; }
+  .rank-2 { background: linear-gradient(135deg, #94a3b8, #64748b); color: #fff; }
+  .rank-3 { background: linear-gradient(135deg, #cd7f32, #a0522d); color: #fff; }
+  .rank-n { background: var(--surface3); color: var(--text2); font-size: 13px; }
+
+  .dev-cell { min-width: 160px; }
+  .dev-name { font-weight: 500; font-size: 13px; }
+  .dev-meta { font-size: 11px; color: var(--text3); margin-top: 2px; }
+  .listed-yes { color: #34d399; font-size: 11px; }
+  .listed-no  { color: var(--text3); font-size: 11px; }
+
+  .gameplay-cell {
+    max-width: 320px; min-width: 200px;
+    font-size: 12px; color: var(--text2); line-height: 1.55;
+  }
+
+  /* ── RANKING SECTIONS ── */
+  .rank-tabs {
+    display: flex; gap: 6px; margin-bottom: 16px;
+  }
+  .rank-tab {
+    padding: 7px 16px; border-radius: 8px; border: 1px solid var(--border2);
+    background: var(--surface); color: var(--text2);
+    font-family: inherit; font-size: 13px; font-weight: 500;
+    cursor: pointer; transition: all 0.2s;
+  }
+  .rank-tab:hover { color: var(--text); border-color: var(--border2); background: var(--surface2); }
+  .rank-tab.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+
+  /* ── MODAL ── */
+  .modal-overlay {
+    position: fixed; inset: 0; z-index: 200;
+    background: rgba(0,0,0,0.7); backdrop-filter: blur(4px);
+    display: none; align-items: center; justify-content: center;
+    padding: 20px;
+  }
+  .modal-overlay.open { display: flex; }
+  .modal {
+    background: var(--surface2); border: 1px solid var(--border2);
+    border-radius: 16px; padding: 28px; max-width: 640px; width: 100%;
+    max-height: 90vh; overflow-y: auto;
+    animation: modalIn 0.2s ease;
+  }
+  @keyframes modalIn {
+    from { opacity: 0; transform: scale(0.95) translateY(8px); }
+    to   { opacity: 1; transform: scale(1) translateY(0); }
+  }
+  .modal-header {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    margin-bottom: 20px; gap: 12px;
+  }
+  .modal-title { font-size: 22px; font-weight: 700; font-family: 'Noto Sans SC', sans-serif; }
+  .modal-title-en { font-size: 14px; color: var(--text2); font-weight: 400; margin-top: 3px; font-family: 'Be Vietnam Pro', sans-serif; }
+  .modal-close {
+    width: 32px; height: 32px; border-radius: 8px; border: 1px solid var(--border2);
+    background: transparent; color: var(--text2); cursor: pointer;
+    font-size: 16px; display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; transition: all 0.2s;
+  }
+  .modal-close:hover { background: var(--surface3); color: var(--text); }
+  .modal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
+  .modal-field { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px; }
+  .modal-field-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text3); margin-bottom: 4px; }
+  .modal-field-value { font-size: 13px; color: var(--text); font-weight: 500; }
+  .modal-gameplay {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 8px; padding: 14px; margin-bottom: 8px;
+  }
+  .modal-gameplay-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text3); margin-bottom: 8px; }
+  .modal-gameplay-text { font-size: 13px; color: var(--text2); line-height: 1.7; font-family: 'Noto Sans SC', sans-serif; }
+
+  /* ── FOOTER ── */
+  .footer {
+    text-align: center; padding: 32px 24px;
+    color: var(--text3); font-size: 12px;
+    border-top: 1px solid var(--border); margin-top: 40px;
+  }
+  .footer a { color: var(--accent2); text-decoration: none; }
+
+  /* ── EMPTY STATE ── */
+  .empty-state {
+    text-align: center; padding: 60px 20px; color: var(--text3);
+  }
+  .empty-state .empty-icon { font-size: 40px; margin-bottom: 12px; }
+  .empty-state p { font-size: 14px; }
+
+  /* ── SCROLLBAR ── */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: var(--surface); }
+  ::-webkit-scrollbar-thumb { background: var(--surface3); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--text3); }
+
+  @media (max-width: 768px) {
+    .tabs { width: 100%; overflow-x: auto; }
+    .toolbar { gap: 8px; }
+    .search-box { max-width: 100%; }
+    .modal-grid { grid-template-columns: 1fr; }
+    .stats-row { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a class="logo" href="#">
+      <div class="logo-icon">🎮</div>
+      <div>
+        <div class="logo-text">Game Market Tracker</div>
+        <div class="logo-sub">Nguồn: 16p.com (玩匠) · Tháng 6/2026</div>
+      </div>
+    </a>
+    <div class="header-meta">Cập nhật: <span>02/06/2026</span></div>
+    <a class="source-badge" href="https://www.16p.com" target="_blank">↗ 16p.com</a>
+  </div>
+</header>
+
+<main class="main">
+
+  <!-- TABS -->
+  <div class="tabs">
+    <button class="tab active" onclick="switchTab('newgame')">
+      🆕 Game Mới <span class="tab-count" id="tc-newgame">20</span>
+    </button>
+    <button class="tab" onclick="switchTab('rankings')">
+      🔥 Bảng Xếp Hạng
+    </button>
+  </div>
+
+  <!-- ══ SECTION: NEW GAMES ══ -->
+  <div class="section active" id="sec-newgame">
+    <div class="stats-row" id="ng-stats"></div>
+    <div class="toolbar">
+      <input class="search-box" id="ng-search" placeholder="🔍  Tìm kiếm game, developer..." oninput="filterNewGames()">
+      <select class="filter-select" id="ng-genre" onchange="filterNewGames()">
+        <option value="">Tất cả thể loại</option>
+      </select>
+      <select class="filter-select" id="ng-region" onchange="filterNewGames()">
+        <option value="">Tất cả khu vực</option>
+        <option>Trung Quốc</option>
+        <option>Toàn Châu Á</option>
+      </select>
+      <select class="filter-select" id="ng-status" onchange="filterNewGames()">
+        <option value="">Tất cả trạng thái</option>
+      </select>
+      <button class="hl-toggle" id="ng-hl-toggle" onclick="toggleHL('ng')">
+        <div class="hl-toggle-dot"></div> Chỉ Highlight
+      </button>
+      <span class="result-count" id="ng-count"></span>
+    </div>
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table id="ng-table">
+          <thead>
+            <tr>
+              <th onclick="sortTable('ng',0)" data-col="0">STT <span class="sort-icon">↕</span></th>
+              <th onclick="sortTable('ng',1)" data-col="1">Tên Game <span class="sort-icon">↕</span></th>
+              <th onclick="sortTable('ng',2)" data-col="2">Thể loại <span class="sort-icon">↕</span></th>
+              <th>Trạng thái</th>
+              <th onclick="sortTable('ng',4)" data-col="4">Thời gian <span class="sort-icon">↕</span></th>
+              <th onclick="sortTable('ng',5)" data-col="5">Khu vực <span class="sort-icon">↕</span></th>
+              <th>Developer</th>
+              <th>Core Gameplay</th>
+              <th>Highlight</th>
+            </tr>
+          </thead>
+          <tbody id="ng-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ SECTION: RANKINGS ══ -->
+  <div class="section" id="sec-rankings">
+    <div class="rank-tabs">
+      <button class="rank-tab active" onclick="switchRankTab('30d')">📊 BXH 30 Ngày</button>
+      <button class="rank-tab" onclick="switchRankTab('90d')">📊 BXH 90 Ngày</button>
+      <button class="rank-tab" onclick="switchRankTab('year')">🏆 BXH Năm</button>
+    </div>
+    <div id="rank-30d" class="rank-section">
+      <div class="stats-row" id="r30-stats"></div>
+      <div class="toolbar">
+        <input class="search-box" id="r30-search" placeholder="🔍  Tìm kiếm..." oninput="filterRank('30d')">
+        <select class="filter-select" id="r30-genre" onchange="filterRank('30d')">
+          <option value="">Tất cả thể loại</option>
+        </select>
+        <button class="hl-toggle" id="r30-hl-toggle" onclick="toggleHL('r30')">
+          <div class="hl-toggle-dot"></div> Chỉ Highlight
+        </button>
+        <span class="result-count" id="r30-count"></span>
+      </div>
+      <div class="table-wrap"><div class="table-scroll">
+        <table id="r30-table"><thead><tr>
+          <th>Hạng</th><th>Tên Game</th><th>Thể loại</th>
+          <th>Trạng thái</th><th>Khu vực</th><th>Developer</th>
+          <th>Core Gameplay</th><th>Highlight</th>
+        </tr></thead><tbody id="r30-tbody"></tbody></table>
+      </div></div>
+    </div>
+    <div id="rank-90d" class="rank-section" style="display:none">
+      <div class="stats-row" id="r90-stats"></div>
+      <div class="toolbar">
+        <input class="search-box" id="r90-search" placeholder="🔍  Tìm kiếm..." oninput="filterRank('90d')">
+        <select class="filter-select" id="r90-genre" onchange="filterRank('90d')">
+          <option value="">Tất cả thể loại</option>
+        </select>
+        <button class="hl-toggle" id="r90-hl-toggle" onclick="toggleHL('r90')">
+          <div class="hl-toggle-dot"></div> Chỉ Highlight
+        </button>
+        <span class="result-count" id="r90-count"></span>
+      </div>
+      <div class="table-wrap"><div class="table-scroll">
+        <table id="r90-table"><thead><tr>
+          <th>Hạng</th><th>Tên Game</th><th>Thể loại</th>
+          <th>Trạng thái</th><th>Khu vực</th><th>Developer</th>
+          <th>Core Gameplay</th><th>Highlight</th>
+        </tr></thead><tbody id="r90-tbody"></tbody></table>
+      </div></div>
+    </div>
+    <div id="rank-year" class="rank-section" style="display:none">
+      <div class="stats-row" id="ryr-stats"></div>
+      <div class="toolbar">
+        <input class="search-box" id="ryr-search" placeholder="🔍  Tìm kiếm..." oninput="filterRank('year')">
+        <select class="filter-select" id="ryr-genre" onchange="filterRank('year')">
+          <option value="">Tất cả thể loại</option>
+        </select>
+        <button class="hl-toggle" id="ryr-hl-toggle" onclick="toggleHL('ryr')">
+          <div class="hl-toggle-dot"></div> Chỉ Highlight
+        </button>
+        <span class="result-count" id="ryr-count"></span>
+      </div>
+      <div class="table-wrap"><div class="table-scroll">
+        <table id="ryr-table"><thead><tr>
+          <th>Hạng</th><th>Tên Game</th><th>Thể loại</th>
+          <th>Trạng thái</th><th>Khu vực</th><th>Developer</th>
+          <th>Core Gameplay</th><th>Highlight</th>
+        </tr></thead><tbody id="ryr-tbody"></tbody></table>
+      </div></div>
+    </div>
+  </div>
+
+</main>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
+  <div class="modal" id="modal-box">
+    <div class="modal-header">
+      <div>
+        <div class="modal-title" id="m-title"></div>
+        <div class="modal-title-en" id="m-title-en"></div>
+      </div>
+      <button class="modal-close" onclick="closeModalDirect()">✕</button>
+    </div>
+    <div class="modal-grid" id="m-grid"></div>
+    <div class="modal-gameplay" id="m-gameplay-wrap">
+      <div class="modal-gameplay-label">🕹 Core Gameplay</div>
+      <div class="modal-gameplay-text" id="m-gameplay"></div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  Game Market Tracker · Dữ liệu từ <a href="https://www.16p.com" target="_blank">16p.com (玩匠)</a> · Tháng 6/2026
+</footer>
+
+<script>
+const RAW = {"newgames": [{"STT": "1", "Tên gốc": "射雕", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Legend of Eagle Shooting Heroes", "Thể loại": "MMORPG", "Trạng thái phát hành": "公测", "Trạng thái (Tiếng Việt)": "Open Beta", "Thời gian": "2026-06", "Khu vực phát hành": "Trung Quốc", "Developer": "完美世界游戏", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "1999", "Niêm yết 上市": "是（完美世界PWRD）", "Core Gameplay": "基于金庸IP的3D开放世界MMO，玩家扮演江湖侠客，结合武侠轻功、门派争斗与大世界探索；支持万人同屏战场PVP。", "Highlight": "⭐ HIGHLIGHT"}, {"STT": "2", "Tên gốc": "燕云十六声", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Where Winds Meet", "Thể loại": "MMORPG", "Trạng thái phát hành": "公测", "Trạng thái (Tiếng Việt)": "Open Beta", "Thời gian": "2026-05", "Khu vực phát hành": "Toàn Châu Á", "Developer": "网易游戏", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "1997", "Niêm yết 上市": "是（网易NetEase）", "Core Gameplay": "五代十国历史背景开放世界武侠RPG，支持多兵种战斗与自由捏人；玩家可以骑马、轻功、飞檐走壁探索全地图。", "Highlight": "⭐ HIGHLIGHT"}, {"STT": "3", "Tên gốc": "代号:破晓", "Tên tiếng Trung (nếu khác)": "代号:破晓", "Tên tiếng Anh (nếu khác)": "Project Dawn", "Thể loại": "ARPG", "Trạng thái phát hành": "删档测试", "Trạng thái (Tiếng Việt)": "CBT (Xóa dữ liệu)", "Thời gian": "2026-06", "Khu vực phát hành": "Trung Quốc", "Developer": "腾讯光子工作室群", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2008", "Niêm yết 上市": "是（腾讯Tencent）", "Core Gameplay": "末日科幻背景动作RPG，玩家操控能力觉醒者对抗变异生物，拥有技能树构建系统与多人协同副本。", "Highlight": ""}, {"STT": "4", "Tên gốc": "星之海图", "Tên tiếng Trung (nếu khác)": "星之海图", "Tên tiếng Anh (nếu khác)": "Star Sea Map", "Thể loại": "SLG", "Trạng thái phát hành": "不删档测试", "Trạng thái (Tiếng Việt)": "OBT (Không xóa dữ liệu)", "Thời gian": "2026-06", "Khu vực phát hành": "Trung Quốc", "Developer": "紫龙游戏", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2013", "Niêm yết 上市": "否", "Core Gameplay": "星际战略SLG，玩家建造空间站、组建舰队争夺星域资源；引入赛季制联盟战争与外交系统。", "Highlight": "⭐ HIGHLIGHT"}, {"STT": "5", "Tên gốc": "无限暖暖", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Infinity Nikki", "Thể loại": "Casual", "Trạng thái phát hành": "全球公测", "Trạng thái (Tiếng Việt)": "Global Open Beta", "Thời gian": "2025-12", "Khu vực phát hành": "Toàn Châu Á", "Developer": "叠纸网络（Infold Games）", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2013", "Niêm yết 上市": "否", "Core Gameplay": "开放世界换装探索游戏，玩家扮演时尚设计师穿越魔法大陆，收集百种服装并利用服装能力解谜探索。", "Highlight": "⭐ HIGHLIGHT"}, {"STT": "6", "Tên gốc": "鸣潮", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Wuthering Waves", "Thể loại": "ARPG", "Trạng thái phát hành": "公测", "Trạng thái (Tiếng Việt)": "Open Beta", "Thời gian": "2024-05", "Khu vực phát hành": "Toàn Châu Á", "Developer": "库洛游戏（Kuro Games）", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2019", "Niêm yết 上市": "否", "Core Gameplay": "末日后科幻开放世界ARPG，主打流畅手感的3D空中战斗体系，通过「共鸣」系统收集和培养角色，剧情深度与世界观宏大。", "Highlight": ""}, {"STT": "7", "Tên gốc": "三国：谋定天下", "Tên tiếng Trung (nếu khác)": "三国：谋定天下", "Tên tiếng Anh (nếu khác)": "", "Thể loại": "SLG", "Trạng thái phát hành": "公测", "Trạng thái (Tiếng Việt)": "Open Beta", "Thời gian": "2026-05", "Khu vực phát hành": "Trung Quốc", "Developer": "巨人网络", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2004", "Niêm yết 上市": "是（巨人网络SZ002558）", "Core Gameplay": "三国主题策略SLG，将帅召募与部队配置系统深度，打破传统国战框架引入战略级地图演义玩法。", "Highlight": "⭐ HIGHLIGHT"}, {"STT": "8", "Tên gốc": "龙族幻想2", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Dragon Raja 2", "Thể loại": "MMORPG", "Trạng thái phát hành": "删档测试", "Trạng thái (Tiếng Việt)": "CBT (Xóa dữ liệu)", "Thời gian": "2026-07", "Khu vực phát hành": "Trung Quốc", "Developer": "Eyougame（宜游科技）", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2009", "Niêm yết 上市": "否", "Core Gameplay": "都市奇幻3D MMORPG续作，赛博朋克+奇幻融合世界观，保留前代自由度高的社交城市系统，增加跨服大世界。", "Highlight": "⭐ HIGHLIGHT"}, {"STT": "9", "Tên gốc": "暗区突围:无限", "Tên tiếng Trung (nếu khác)": "暗区突围:无限", "Tên tiếng Anh (nếu khác)": "Escape from Tarkov Mobile CN", "Thể loại": "Shooting", "Trạng thái phát hành": "技术测试", "Trạng thái (Tiếng Việt)": "Kiểm thử kỹ thuật", "Thời gian": "2026-Q3", "Khu vực phát hành": "Trung Quốc", "Developer": "腾讯TiMi Studio", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2008", "Niêm yết 上市": "是（腾讯）", "Core Gameplay": "硬核撤离射击游戏，玩家进入高风险暗区搜集物资，同时对抗AI与其他玩家，死亡即失去装备，弹道系统拟真。", "Highlight": "⭐ HIGHLIGHT"}, {"STT": "10", "Tên gốc": "问道手游2", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "", "Thể loại": "MMORPG", "Trạng thái phát hành": "公测", "Trạng thái (Tiếng Việt)": "Open Beta", "Thời gian": "2026-06", "Khu vực phát hành": "Trung Quốc", "Developer": "北京畅游科技（Changyou）", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2003", "Niêm yết 上市": "是（CYOU，畅游）", "Core Gameplay": "经典仙侠MMO续作，承袭端游IP，门派、师徒、婚姻系统全面升级，国战模式支持千人实时攻城战。", "Highlight": "⭐ HIGHLIGHT"}, {"STT": "11", "Tên gốc": "永恒纪元2", "Tên tiếng Trung (nếu khác)": "永恒纪元2", "Tên tiếng Anh (nếu khác)": "Eternal City 2", "Thể loại": "MMORPG", "Trạng thái phát hành": "CBT", "Trạng thái (Tiếng Việt)": "CBT (Xóa dữ liệu)", "Thời gian": "2026-06", "Khu vực phát hành": "Toàn Châu Á", "Developer": "Netmarble", "Quốc gia/ Vùng lãnh thổ": "Hàn Quốc", "Năm thành lập": "2000", "Niêm yết 上市": "是（KRX251270）", "Core Gameplay": "玄幻3D MMORPG，继承前作世界观，融合自动战斗与深度公会攻城系统；专为亚洲市场优化的「离线挂机+活跃竞技」双线玩法。", "Highlight": "⭐ HIGHLIGHT"}, {"STT": "12", "Tên gốc": "独行侠", "Tên tiếng Trung (nếu khác)": "独行侠", "Tên tiếng Anh (nếu khác)": "Lone Ranger", "Thể loại": "Turn-based", "Trạng thái phát hành": "CBT", "Trạng thái (Tiếng Việt)": "CBT (Xóa dữ liệu)", "Thời gian": "2026-06", "Khu vực phát hành": "Trung Quốc", "Developer": "西山居（Seasun Games）", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "1995", "Niêm yết 上市": "否（金山旗下）", "Core Gameplay": "西部牛仔主题回合制RPG，独特的行动条与地形利用策略系统，融合Roguelike副本随机元素，画风手绘漫画风。", "Highlight": "⭐ HIGHLIGHT"}, {"STT": "13", "Tên gốc": "凡人修仙传：人界篇", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "A Record of Mortal's Journey to Immortality", "Thể loại": "Turn-based", "Trạng thái phát hành": "公测", "Trạng thái (Tiếng Việt)": "Open Beta", "Thời gian": "2026-04", "Khu vực phát hành": "Trung Quốc", "Developer": "灵犀互娱", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2014", "Niêm yết 上市": "否（腾讯投资）", "Core Gameplay": "基于同名网文IP的回合制卡牌RPG，修仙养成路线深度，随机天赋系统与门派路线选择影响角色成长方向。", "Highlight": "⭐ HIGHLIGHT"}, {"STT": "14", "Tên gốc": "赤核", "Tên tiếng Trung (nếu khác)": "赤核", "Tên tiếng Anh (nếu khác)": "Red Core", "Thể loại": "CBG", "Trạng thái phát hành": "删档测试", "Trạng thái (Tiếng Việt)": "CBT (Xóa dữ liệu)", "Thời gian": "2026-05", "Khu vực phát hành": "Trung Quốc", "Developer": "中手游（CMG）", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2004", "Niêm yết 上市": "是（SZ000手游300148）", "Core Gameplay": "赛博朋克风格集换式卡牌对战，玩家构建机甲卡组进行实时策略对决，引入城市争夺赛季制积分排名体系。", "Highlight": "⭐ HIGHLIGHT"}, {"STT": "15", "Tên gốc": "决战平安京2", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Onmyoji Arena 2", "Thể loại": "MOBA", "Trạng thái phát hành": "公测", "Trạng thái (Tiếng Việt)": "Open Beta", "Thời gian": "2026-Q3", "Khu vực phát hành": "Toàn Châu Á", "Developer": "网易（163）", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "1997", "Niêm yết 上市": "是（NTES）", "Core Gameplay": "和风阴阳师主题5v5 MOBA，继承前作美术风格，全面重做天赋机制与对局节奏，引入二次元限定皮肤赛季通行证。", "Highlight": ""}, {"STT": "16", "Tên gốc": "末世危城", "Tên tiếng Trung (nếu khác)": "末世危城", "Tên tiếng Anh (nếu khác)": "", "Thể loại": "SLG", "Trạng thái phát hành": "公测", "Trạng thái (Tiếng Việt)": "Open Beta", "Thời gian": "2026-06", "Khu vực phát hành": "Toàn Châu Á", "Developer": "FunPlus", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc (niêm yết Mỹ)", "Năm thành lập": "2010", "Niêm yết 上市": "是（港股）", "Core Gameplay": "末日城市建设+战略SLG，玩家在僵尸末日重建文明，联盟战争与资源争夺是核心驱动；跨服联盟外交深度高。", "Highlight": "⭐ HIGHLIGHT"}, {"STT": "17", "Tên gốc": "梦幻新诛仙", "Tên tiếng Trung (nếu khác)": "梦幻新诛仙", "Tên tiếng Anh (nếu khác)": "", "Thể loại": "MMORPG", "Trạng thái phát hành": "公测", "Trạng thái (Tiếng Việt)": "Open Beta", "Thời gian": "2026-05", "Khu vực phát hành": "Trung Quốc", "Developer": "北京完美世界", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "1999", "Niêm yết 上市": "是（PWRD）", "Core Gameplay": "诛仙IP改编手游新篇，保留双修系统与师门玩法，优化成长数值，突出玩家社交与跨服大型副本体验。", "Highlight": "⭐ HIGHLIGHT"}, {"STT": "18", "Tên gốc": "勇者斗恶龙 达依的大冒险", "Tên tiếng Trung (nếu khác)": "勇者斗恶龙达依的大冒险", "Tên tiếng Anh (nếu khác)": "DQ Dai's Big Adventure", "Thể loại": "ARPG", "Trạng thái phát hành": "公测", "Trạng thái (Tiếng Việt)": "Open Beta", "Thời gian": "2026-06", "Khu vực phát hành": "Toàn Châu Á", "Developer": "Square Enix", "Quốc gia/ Vùng lãnh thổ": "Nhật Bản", "Năm thành lập": "1975", "Niêm yết 上市": "是（TYO9684）", "Core Gameplay": "经典漫画IP改编3D动作RPG，玩家跟随达依踏上奇幻冒险，还原动漫场景，多人协同BOSS战为核心玩法。", "Highlight": ""}, {"STT": "19", "Tên gốc": "Aether Gazer 2", "Tên tiếng Trung (nếu khác)": "灵魂潮汐", "Tên tiếng Anh (nếu khác)": "", "Thể loại": "ARPG", "Trạng thái phát hành": "CBT", "Trạng thái (Tiếng Việt)": "CBT (Xóa dữ liệu)", "Thời gian": "2026-Q3", "Khu vực phát hành": "Toàn Châu Á", "Developer": "Yostar（云雀科技）", "Quốc gia/ Vùng lãnh thổ": "Nhật Bản / Trung Quốc", "Năm thành lập": "2015", "Niêm yết 上市": "否", "Core Gameplay": "二次元动作RPG续作，高速连招与闪避系统进化，新增开放世界层级与更深度的角色羁绊剧情线。", "Highlight": ""}, {"STT": "20", "Tên gốc": "万象物语2", "Tên tiếng Trung (nếu khác)": "万象物语2", "Tên tiếng Anh (nếu khác)": "Sdorica 2", "Thể loại": "Turn-based", "Trạng thái phát hành": "CBT", "Trạng thái (Tiếng Việt)": "CBT (Xóa dữ liệu)", "Thời gian": "2026-Q4", "Khu vực phát hành": "Toàn Châu Á", "Developer": "Rayark Games", "Quốc gia/ Vùng lãnh thổ": "Đài Loan (TQ)", "Năm thành lập": "2011", "Niêm yết 上市": "否", "Core Gameplay": "物理三消+角色配置策略RPG续作，以宝石消除触发角色技能，剧情叙事精品、音乐制作水准高。", "Highlight": "⭐ HIGHLIGHT"}], "bxh_30": [{"Hạng": "1", "Tên gốc": "原神", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Genshin Impact", "Thể loại": "ARPG", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "miHoYo（米哈游）", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2012", "Niêm yết 上市": "否", "Core Gameplay": "开放世界动作RPG，七国旅行探索，元素反应战斗系统，丰富的剧情与角色收集机制。", "Highlight": ""}, {"Hạng": "2", "Tên gốc": "王者荣耀", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Honor of Kings", "Thể loại": "MOBA", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "腾讯TiMi Studio", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2008", "Niêm yết 上市": "是（腾讯）", "Core Gameplay": "5v5手机MOBA，以历史/神话英雄为蓝本，快节奏对战，国内DAU峰值超1亿。", "Highlight": ""}, {"Hạng": "3", "Tên gốc": "和平精英", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "PUBG Mobile CN", "Thể loại": "Battle Royale", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Trung Quốc", "Developer": "腾讯光子工作室群", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2008", "Niêm yết 上市": "是（腾讯）", "Core Gameplay": "百人大逃杀射击游戏，全真实弹道+物资争夺，多种模式（经典/娱乐/竞技）。", "Highlight": ""}, {"Hạng": "4", "Tên gốc": "明日方舟", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Arknights", "Thể loại": "Tower Defense", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "Hypergryph（鹰角网络）", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2016", "Niêm yết 上市": "否", "Core Gameplay": "二次元塔防策略RPG，干员培养与战术部署系统，深度剧情与高质量美术。", "Highlight": ""}, {"Hạng": "5", "Tên gốc": "三国志·战略版", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Three Kingdoms Tactics", "Thể loại": "SLG", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "腾讯光子", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2008", "Niêm yết 上市": "是（腾讯）", "Core Gameplay": "三国题材高拟真SLG，武将策略搭配，实时行军作战，赛季制大服国战。", "Highlight": "⭐ HIGHLIGHT"}, {"Hạng": "6", "Tên gốc": "崩坏：星穹铁道", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Honkai: Star Rail", "Thể loại": "Turn-based RPG", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "miHoYo（米哈游）", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2012", "Niêm yết 上市": "否", "Core Gameplay": "回合制策略RPG，宇宙列车旅行叙事，命途系统角色搭配，精品二次元剧情。", "Highlight": "⭐ HIGHLIGHT"}, {"Hạng": "7", "Tên gốc": "率土之滨", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Infinite Borders", "Thể loại": "SLG", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Trung Quốc", "Developer": "网易（163）", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "1997", "Niêm yết 上市": "是（NTES）", "Core Gameplay": "全地图同步推进SLG，无赛季机制历史悠久，策略深度顶尖，公会政治复杂。", "Highlight": "⭐ HIGHLIGHT"}, {"Hạng": "8", "Tên gốc": "剑与远征：启程", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "AFK Journey", "Thể loại": "Idle RPG", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "Lilith Games（莉莉丝）", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2013", "Niêm yết 上市": "否", "Core Gameplay": "挂机策略RPG，英雄收集+自动战斗，开放世界探索，精品手绘风格。", "Highlight": ""}, {"Hạng": "9", "Tên gốc": "逆水寒手游", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Swords of Legends Online Mobile", "Thể loại": "MMORPG", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Trung Quốc", "Developer": "网易（163）", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "1997", "Niêm yết 上市": "是（NTES）", "Core Gameplay": "高品质武侠MMO，支持换装摄影社交，PVP武林大会，自由职业切换系统。", "Highlight": "⭐ HIGHLIGHT"}, {"Hạng": "10", "Tên gốc": "蛋仔派对", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Egg Party", "Thể loại": "Casual/Party", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Trung Quốc", "Developer": "网易（163）", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "1997", "Niêm yết 上市": "是（NTES）", "Core Gameplay": "弹力小人聚会派对游戏，创意关卡编辑器，多种小游戏竞技模式，主打轻松休闲社交。", "Highlight": "⭐ HIGHLIGHT"}], "bxh_90": [{"Hạng": "1", "Tên gốc": "原神", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Genshin Impact", "Thể loại": "ARPG", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "miHoYo", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2012", "Niêm yết 上市": "否", "Core Gameplay": "开放世界ARPG，元素反应战斗，多国剧情探索，持续高质量版本更新。", "Highlight": ""}, {"Hạng": "2", "Tên gốc": "王者荣耀", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Honor of Kings", "Thể loại": "MOBA", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "腾讯TiMi Studio", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2008", "Niêm yết 上市": "是（腾讯）", "Core Gameplay": "国内最大体量手游MOBA，职业赛事成熟，英雄池丰富。", "Highlight": ""}, {"Hạng": "3", "Tên gốc": "崩坏：星穹铁道", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Honkai: Star Rail", "Thể loại": "Turn-based RPG", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "miHoYo", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2012", "Niêm yết 上市": "否", "Core Gameplay": "回合制二次元RPG，版本迭代快，剧情口碑极高。", "Highlight": "⭐ HIGHLIGHT"}, {"Hạng": "4", "Tên gốc": "和平精英", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "PUBG Mobile CN", "Thể loại": "Battle Royale", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Trung Quốc", "Developer": "腾讯光子", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2008", "Niêm yết 上市": "是（腾讯）", "Core Gameplay": "国内主流大逃杀射击游戏，持续赛季更新。", "Highlight": ""}, {"Hạng": "5", "Tên gốc": "三国志·战略版", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Three Kingdoms Tactics", "Thể loại": "SLG", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "腾讯光子", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2008", "Niêm yết 上市": "是（腾讯）", "Core Gameplay": "三国SLG标杆产品，赛季制策略博弈深度高。", "Highlight": "⭐ HIGHLIGHT"}, {"Hạng": "6", "Tên gốc": "明日方舟", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Arknights", "Thể loại": "Tower Defense", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "Hypergryph", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2016", "Niêm yết 上市": "否", "Core Gameplay": "深度策略塔防RPG，持续IP内容扩展。", "Highlight": ""}, {"Hạng": "7", "Tên gốc": "万国觉醒", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Rise of Kingdoms", "Thể loại": "SLG", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "Lilith Games（莉莉丝）", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2013", "Niêm yết 上市": "否", "Core Gameplay": "全球文明SLG，发展路线多元，联盟协作征服玩法。", "Highlight": "⭐ HIGHLIGHT"}, {"Hạng": "8", "Tên gốc": "逆水寒手游", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "SoL Mobile", "Thể loại": "MMORPG", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Trung Quốc", "Developer": "网易", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "1997", "Niêm yết 上市": "是（NTES）", "Core Gameplay": "武侠MMO，品质感强，用户粘性高。", "Highlight": "⭐ HIGHLIGHT"}, {"Hạng": "9", "Tên gốc": "第五人格", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Identity V", "Thể loại": "Asymmetric Horror", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "网易", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "1997", "Niêm yết 上市": "是（NTES）", "Core Gameplay": "1v4非对称恐怖游戏，监管者vs求生者，联动IP多样。", "Highlight": ""}, {"Hạng": "10", "Tên gốc": "光遇", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Sky: Children of the Light", "Thể loại": "Casual/Social", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "thatgamecompany", "Quốc gia/ Vùng lãnh thổ": "Hoa Kỳ", "Năm thành lập": "2006", "Niêm yết 上市": "否", "Core Gameplay": "治愈风飞行社交游戏，点燃蜡烛与陌生人互动，季节限定内容深受欢迎。", "Highlight": "⭐ HIGHLIGHT"}], "bxh_year": [{"Hạng": "1", "Tên gốc": "原神", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Genshin Impact", "Thể loại": "ARPG", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "miHoYo", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2012", "Niêm yết 上市": "否", "Core Gameplay": "年度综合表现最强手游，全球多区市场持续盈利。", "Highlight": ""}, {"Hạng": "2", "Tên gốc": "崩坏：星穹铁道", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Honkai: Star Rail", "Thể loại": "Turn-based RPG", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "miHoYo", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2012", "Niêm yết 上市": "否", "Core Gameplay": "年度增长最快RPG之一，版本口碑稳定。", "Highlight": "⭐ HIGHLIGHT"}, {"Hạng": "3", "Tên gốc": "王者荣耀", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Honor of Kings", "Thể loại": "MOBA", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "腾讯TiMi Studio", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2008", "Niêm yết 上市": "是（腾讯）", "Core Gameplay": "年度国内DAU最高MOBA，商业化稳定。", "Highlight": ""}, {"Hạng": "4", "Tên gốc": "三国志·战略版", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Three Kingdoms Tactics", "Thể loại": "SLG", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "腾讯光子", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2008", "Niêm yết 上市": "是（腾讯）", "Core Gameplay": "年度SLG标杆，赛季制模式成熟。", "Highlight": "⭐ HIGHLIGHT"}, {"Hạng": "5", "Tên gốc": "和平精英", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "PUBG Mobile CN", "Thể loại": "Battle Royale", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Trung Quốc", "Developer": "腾讯光子", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2008", "Niêm yết 上市": "是（腾讯）", "Core Gameplay": "国内FPS/大逃杀年度榜首。", "Highlight": ""}, {"Hạng": "6", "Tên gốc": "明日方舟", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Arknights", "Thể loại": "Tower Defense", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "Hypergryph", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2016", "Niêm yết 上市": "否", "Core Gameplay": "年度二次元塔防收入冠军，IP衍生联动强劲。", "Highlight": ""}, {"Hạng": "7", "Tên gốc": "率土之滨", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Infinite Borders", "Thể loại": "SLG", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Trung Quốc", "Developer": "网易", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "1997", "Niêm yết 上市": "是（NTES）", "Core Gameplay": "长线运营SLG典范，用户黏性极强。", "Highlight": "⭐ HIGHLIGHT"}, {"Hạng": "8", "Tên gốc": "万国觉醒", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Rise of Kingdoms", "Thể loại": "SLG", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "Lilith Games", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2013", "Niêm yết 上市": "否", "Core Gameplay": "出海SLG年度代表作，全球多市场排名前列。", "Highlight": "⭐ HIGHLIGHT"}, {"Hạng": "9", "Tên gốc": "梦幻西游手游", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Fantasy Westward Journey Mobile", "Thể loại": "MMORPG", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Trung Quốc", "Developer": "网易", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "1997", "Niêm yết 上市": "是（NTES）", "Core Gameplay": "国内MMORPG手游常青树，用户忠诚度极高。", "Highlight": "⭐ HIGHLIGHT"}, {"Hạng": "10", "Tên gốc": "无限暖暖", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Infinity Nikki", "Thể loại": "Casual", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "叠纸网络", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2013", "Niêm yết 上市": "否", "Core Gameplay": "2025年度黑马，女性向开放世界换装游戏，全球下载破亿。", "Highlight": "⭐ HIGHLIGHT"}]};
+
+// ── HELPERS ──────────────────────────────────────────
+const HIGHLIGHT_GENRES = ['mmorpg','cbg','slg','casual','turn-based','shooting'];
+function isHL(genre){ return genre && HIGHLIGHT_GENRES.some(g=>genre.toLowerCase().includes(g)); }
+
+function genreCls(g){
+  const gl = (g||'').toLowerCase();
+  if(gl.includes('mmorpg')) return 'g-mmorpg';
+  if(gl.includes('slg'))    return 'g-slg';
+  if(gl.includes('arpg'))   return 'g-arpg';
+  if(gl.includes('casual')) return 'g-casual';
+  if(gl.includes('cbg'))    return 'g-cbg';
+  if(gl.includes('turn'))   return 'g-turnbased';
+  if(gl.includes('moba'))   return 'g-moba';
+  return 'g-default';
+}
+function statusCls(s){
+  const sl = (s||'').toLowerCase();
+  if(sl.includes('global')) return 's-global';
+  if(sl.includes('open beta')||sl.includes('công cộng')) return 's-ob';
+  if(sl.includes('obt')||sl.includes('không xóa')) return 's-obt';
+  if(sl.includes('cbt')||sl.includes('xóa')) return 's-cbt';
+  if(sl.includes('kỹ thuật')) return 's-tech';
+  if(sl.includes('vận hành')) return 's-live';
+  return 's-tech';
+}
+function regionCls(r){
+  if(!r) return 'r-other';
+  if(r.includes('Trung Quốc')) return 'r-cn';
+  if(r.includes('Châu Á')) return 'r-asia';
+  return 'r-other';
+}
+function rankBadge(n){
+  const cls = n==1?'rank-1':n==2?'rank-2':n==3?'rank-3':'rank-n';
+  return `<div class="rank-badge ${cls}">${n}</div>`;
+}
+
+// ── FILTER STATES ──
+const filterState = {
+  ng:  { hl: false, sort: null, dir: 1 },
+  r30: { hl: false }, r90: { hl: false }, ryr: { hl: false }
+};
+
+// ── POPULATE FILTERS ──
+function populateGenreFilter(selId, games, genreKey='Thể loại'){
+  const sel = document.getElementById(selId);
+  const genres = [...new Set(games.map(g=>g[genreKey]).filter(Boolean))].sort();
+  genres.forEach(g=>{
+    const o = document.createElement('option'); o.value=g; o.textContent=g;
+    sel.appendChild(o);
+  });
+}
+function populateStatusFilter(selId, games, key){
+  const sel = document.getElementById(selId);
+  const vals = [...new Set(games.map(g=>g[key]).filter(Boolean))].sort();
+  vals.forEach(v=>{ const o=document.createElement('option'); o.value=v; o.textContent=v; sel.appendChild(o); });
+}
+
+// ── RENDER NEW GAMES ──
+function renderNewGames(games){
+  const tbody = document.getElementById('ng-tbody');
+  if(!games.length){
+    tbody.innerHTML = `<tr><td colspan="9"><div class="empty-state"><div class="empty-icon">🔍</div><p>Không tìm thấy game phù hợp</p></div></td></tr>`;
+    document.getElementById('ng-count').textContent = '0 game';
+    return;
+  }
+  tbody.innerHTML = games.map(g=>{
+    const hl = isHL(g['Thể loại']);
+    const statusVN = g['Trạng thái (Tiếng Việt)'] || g['Trạng thái phát hành'] || '';
+    const cn = g['Tên tiếng Trung (nếu khác)'] ? `<div class="game-name-cn">${g['Tên tiếng Trung (nếu khác)']}</div>` : '';
+    const en = g['Tên tiếng Anh (nếu khác)'] ? `<div class="game-name-en">${g['Tên tiếng Anh (nếu khác)']}</div>` : '';
+    const listed = (g['Niêm yết 上市']||'').startsWith('是') || (g['Niêm yết 上市']||'').toLowerCase().includes('yes');
+    return `<tr class="${hl?'highlight-row':''}" onclick="openModal(${JSON.stringify(JSON.stringify(g))})" style="cursor:pointer">
+      <td class="muted" style="text-align:center">${g['STT']}</td>
+      <td class="game-name-cell">
+        <div class="game-name-orig">${g['Tên gốc']}</div>${en}${cn}
+      </td>
+      <td><span class="genre-badge ${genreCls(g['Thể loại'])}">${g['Thể loại']}</span></td>
+      <td>
+        <div><span class="status-badge ${statusCls(statusVN)}">${statusVN||g['Trạng thái phát hành']}</span></div>
+        <div style="font-size:11px;color:var(--text3);margin-top:3px">${g['Trạng thái phát hành']}</div>
+      </td>
+      <td class="muted" style="white-space:nowrap">${g['Thời gian']||'—'}</td>
+      <td><span class="region-badge ${regionCls(g['Khu vực phát hành'])}">${g['Khu vực phát hành']||'—'}</span></td>
+      <td class="dev-cell">
+        <div class="dev-name">${g['Developer']||'—'}</div>
+        <div class="dev-meta">${g['Quốc gia/ Vùng lãnh thổ']||''} ${g['Năm thành lập']?'· '+g['Năm thành lập']:''}</div>
+        <div class="${listed?'listed-yes':'listed-no'}">${listed?'✓ Niêm yết':'Chưa niêm yết'}</div>
+      </td>
+      <td class="gameplay-cell">${g['Core Gameplay']||'—'}</td>
+      <td style="text-align:center">${hl?'<span class="hl-badge">⭐ HL</span>':''}</td>
+    </tr>`;
+  }).join('');
+  document.getElementById('ng-count').textContent = games.length + ' game';
+}
+
+function filterNewGames(){
+  const q    = document.getElementById('ng-search').value.toLowerCase();
+  const genre= document.getElementById('ng-genre').value;
+  const region=document.getElementById('ng-region').value;
+  const status=document.getElementById('ng-status').value;
+  const hlOnly= filterState.ng.hl;
+  let data = [...RAW.newgames];
+  if(q) data = data.filter(g=> JSON.stringify(g).toLowerCase().includes(q));
+  if(genre) data = data.filter(g=> g['Thể loại']===genre);
+  if(region) data = data.filter(g=> g['Khu vực phát hành']===region);
+  if(status) data = data.filter(g=> g['Trạng thái (Tiếng Việt)']===status || g['Trạng thái phát hành']===status);
+  if(hlOnly) data = data.filter(g=> isHL(g['Thể loại']));
+  const {sort,dir} = filterState.ng;
+  if(sort!==null){
+    const keys=['STT','Tên gốc','Thể loại','','Thời gian','Khu vực phát hành'];
+    if(keys[sort]) data.sort((a,b)=>(a[keys[sort]]>b[keys[sort]]?1:-1)*dir);
+  }
+  renderNewGames(data);
+}
+
+function sortTable(prefix, col){
+  if(prefix==='ng'){
+    if(filterState.ng.sort===col) filterState.ng.dir*=-1;
+    else { filterState.ng.sort=col; filterState.ng.dir=1; }
+    document.querySelectorAll('#ng-table th').forEach((th,i)=>{
+      th.classList.toggle('sorted', i===col);
+      const icon=th.querySelector('.sort-icon');
+      if(icon) icon.textContent = i===col?(filterState.ng.dir===1?'↑':'↓'):'↕';
+    });
+    filterNewGames();
+  }
+}
+
+// ── RENDER RANKINGS ──
+function renderRank(games, tbodyId){
+  const tbody = document.getElementById(tbodyId);
+  if(!games.length){
+    tbody.innerHTML = `<tr><td colspan="8"><div class="empty-state"><div class="empty-icon">🔍</div><p>Không tìm thấy</p></div></td></tr>`;
+    return;
+  }
+  tbody.innerHTML = games.map(g=>{
+    const hl = isHL(g['Thể loại']);
+    const rank = parseInt(g['Hạng'])||0;
+    const en = g['Tên tiếng Anh (nếu khác)'] ? `<div class="game-name-en">${g['Tên tiếng Anh (nếu khác)']}</div>` : '';
+    const statusVN = g['Trạng thái (Tiếng Việt)'] || g['Trạng thái'] || '';
+    const listed = (g['Niêm yết 上市']||'').startsWith('是');
+    return `<tr class="${hl?'highlight-row':''}" onclick="openModal(${JSON.stringify(JSON.stringify(g))})" style="cursor:pointer">
+      <td style="text-align:center">${rankBadge(rank)}</td>
+      <td class="game-name-cell">
+        <div class="game-name-orig">${g['Tên gốc']}</div>${en}
+      </td>
+      <td><span class="genre-badge ${genreCls(g['Thể loại'])}">${g['Thể loại']||'—'}</span></td>
+      <td>
+        <div><span class="status-badge ${statusCls(statusVN)}">${statusVN}</span></div>
+        <div style="font-size:11px;color:var(--text3);margin-top:3px">${g['Trạng thái']||''}</div>
+      </td>
+      <td><span class="region-badge ${regionCls(g['Khu vực phát hành'])}">${g['Khu vực phát hành']||'—'}</span></td>
+      <td class="dev-cell">
+        <div class="dev-name">${g['Developer']||'—'}</div>
+        <div class="dev-meta">${g['Quốc gia/ Vùng lãnh thổ']||''} ${g['Năm thành lập']?'· '+g['Năm thành lập']:''}</div>
+        <div class="${listed?'listed-yes':'listed-no'}">${listed?'✓ Niêm yết':'Chưa niêm yết'}</div>
+      </td>
+      <td class="gameplay-cell">${g['Core Gameplay']||'—'}</td>
+      <td style="text-align:center">${hl?'<span class="hl-badge">⭐ HL</span>':''}</td>
+    </tr>`;
+  }).join('');
+}
+
+function filterRank(period){
+  const prefix = period==='30d'?'r30':period==='90d'?'r90':'ryr';
+  const rawKey = period==='30d'?'bxh_30':period==='90d'?'bxh_90':'bxh_year';
+  const tbodyId = prefix+'-tbody';
+  const q     = document.getElementById(prefix+'-search').value.toLowerCase();
+  const genre = document.getElementById(prefix+'-genre').value;
+  const hlOnly= filterState[prefix].hl;
+  let data = [...RAW[rawKey]];
+  if(q) data = data.filter(g=> JSON.stringify(g).toLowerCase().includes(q));
+  if(genre) data = data.filter(g=> g['Thể loại']===genre);
+  if(hlOnly) data = data.filter(g=> isHL(g['Thể loại']));
+  renderRank(data, tbodyId);
+  document.getElementById(prefix+'-count').textContent = data.length + ' game';
+}
+
+// ── TOGGLE HL ──
+function toggleHL(prefix){
+  filterState[prefix].hl = !filterState[prefix].hl;
+  const btn = document.getElementById(prefix+'-hl-toggle');
+  btn.classList.toggle('on', filterState[prefix].hl);
+  if(prefix==='ng') filterNewGames();
+  else {
+    const period = prefix==='r30'?'30d':prefix==='r90'?'90d':'year';
+    filterRank(period);
+  }
+}
+
+// ── STATS ──
+function renderStats(containerId, games, isRank=false){
+  const el = document.getElementById(containerId);
+  const total = games.length;
+  const hlCount = games.filter(g=>isHL(g['Thể loại'])).length;
+  const genres = [...new Set(games.map(g=>g['Thể loại']).filter(Boolean))];
+  const regions = [...new Set(games.map(g=>g['Khu vực phát hành']).filter(Boolean))];
+  const cnCount = games.filter(g=>(g['Khu vực phát hành']||'').includes('Trung Quốc')).length;
+  const asiaCount = games.filter(g=>(g['Khu vực phát hành']||'').includes('Châu Á')).length;
+  el.innerHTML = `
+    <div class="stat-card"><div class="stat-icon" style="background:rgba(59,130,246,0.15)">🎮</div>
+      <div><div class="stat-label">Tổng số game</div><div class="stat-value" style="color:var(--accent2)">${total}</div></div></div>
+    <div class="stat-card"><div class="stat-icon" style="background:rgba(245,158,11,0.15)">⭐</div>
+      <div><div class="stat-label">Highlight</div><div class="stat-value" style="color:var(--gold)">${hlCount}</div></div></div>
+    <div class="stat-card"><div class="stat-icon" style="background:rgba(239,68,68,0.15)">🇨🇳</div>
+      <div><div class="stat-label">Trung Quốc</div><div class="stat-value" style="color:#fca5a5">${cnCount}</div></div></div>
+    <div class="stat-card"><div class="stat-icon" style="background:rgba(16,185,129,0.15)">🌏</div>
+      <div><div class="stat-label">Toàn Châu Á</div><div class="stat-value" style="color:var(--green)">${asiaCount}</div></div></div>
+    <div class="stat-card"><div class="stat-icon" style="background:rgba(139,92,246,0.15)">🎯</div>
+      <div><div class="stat-label">Thể loại</div><div class="stat-value" style="color:#a78bfa">${genres.length}</div></div></div>
+  `;
+}
+
+// ── MODAL ──
+function openModal(jsonStr){
+  const g = JSON.parse(jsonStr);
+  const isRank = 'Hạng' in g;
+  document.getElementById('m-title').textContent = g['Tên gốc']||'';
+  const en = g['Tên tiếng Anh (nếu khác)']||'';
+  const cn = g['Tên tiếng Trung (nếu khác)']||'';
+  document.getElementById('m-title-en').textContent = [en,cn].filter(Boolean).join(' · ');
+  const statusKey = isRank ? 'Trạng thái' : 'Trạng thái phát hành';
+  const statusVN = g['Trạng thái (Tiếng Việt)']||g[statusKey]||'';
+  const fields = [
+    ['Thể loại', `<span class="genre-badge ${genreCls(g['Thể loại'])}">${g['Thể loại']||'—'}</span>`],
+    ['Trạng thái', `<span class="status-badge ${statusCls(statusVN)}">${statusVN}</span> <span style="color:var(--text3);font-size:11px">(${g[statusKey]||''})</span>`],
+    isRank ? ['Hạng', `${rankBadge(parseInt(g['Hạng']))} `] : ['Thời gian', g['Thời gian']||'—'],
+    ['Khu vực', `<span class="region-badge ${regionCls(g['Khu vực phát hành'])}">${g['Khu vực phát hành']||'—'}</span>`],
+    ['Developer', g['Developer']||'—'],
+    ['Quốc gia', g['Quốc gia/ Vùng lãnh thổ']||'—'],
+    ['Năm thành lập', g['Năm thành lập']||'—'],
+    ['Niêm yết', g['Niêm yết 上市']||'—'],
+  ];
+  document.getElementById('m-grid').innerHTML = fields.map(([l,v])=>
+    `<div class="modal-field"><div class="modal-field-label">${l}</div><div class="modal-field-value">${v}</div></div>`
+  ).join('');
+  document.getElementById('m-gameplay').textContent = g['Core Gameplay']||'Chưa có thông tin.';
+  document.getElementById('modal-overlay').classList.add('open');
+}
+function closeModal(e){ if(e.target===document.getElementById('modal-overlay')) closeModalDirect(); }
+function closeModalDirect(){ document.getElementById('modal-overlay').classList.remove('open'); }
+document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeModalDirect(); });
+
+// ── TAB SWITCHING ──
+function switchTab(tab){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+  event.currentTarget.classList.add('active');
+  document.getElementById('sec-'+tab).classList.add('active');
+}
+function switchRankTab(period){
+  document.querySelectorAll('.rank-tab').forEach(t=>t.classList.remove('active'));
+  event.currentTarget.classList.add('active');
+  document.querySelectorAll('.rank-section').forEach(s=>s.style.display='none');
+  document.getElementById('rank-'+period).style.display='block';
+}
+
+// ── INIT ──
+(function init(){
+  // New Games
+  populateGenreFilter('ng-genre', RAW.newgames, 'Thể loại');
+  populateStatusFilter('ng-status', RAW.newgames, 'Trạng thái (Tiếng Việt)');
+  renderStats('ng-stats', RAW.newgames);
+  filterNewGames();
+  document.getElementById('tc-newgame').textContent = RAW.newgames.length;
+
+  // Rankings
+  populateGenreFilter('r30-genre', RAW.bxh_30, 'Thể loại');
+  populateGenreFilter('r90-genre', RAW.bxh_90, 'Thể loại');
+  populateGenreFilter('ryr-genre', RAW.bxh_year, 'Thể loại');
+  renderStats('r30-stats', RAW.bxh_30, true);
+  renderStats('r90-stats', RAW.bxh_90, true);
+  renderStats('ryr-stats', RAW.bxh_year, true);
+  filterRank('30d'); filterRank('90d'); filterRank('year');
+})();
+</script>
+</body>
+</html>
