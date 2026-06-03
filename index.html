@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>🎮 Game Market Tracker – 16p.com</title>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b0f1a;--surface:#111827;--s2:#1a2235;--s3:#212d42;
+  --border:rgba(255,255,255,0.07);--border2:rgba(255,255,255,0.13);
+  --accent:#3b82f6;--accent2:#60a5fa;
+  --gold:#f59e0b;--gold2:#fcd34d;
+  --green:#10b981;--red:#ef4444;--purple:#8b5cf6;--pink:#ec4899;
+  --text:#f1f5f9;--text2:#94a3b8;--text3:#64748b;
+  --hl-bg:rgba(245,158,11,0.08);--hl-border:rgba(245,158,11,0.3);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Be Vietnam Pro','Noto Sans SC',sans-serif;font-size:14px;line-height:1.5}
+
+/* HEADER */
+.hdr{background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 50%,#0f172a 100%);border-bottom:1px solid var(--border2);padding:0 24px;position:sticky;top:0;z-index:100;backdrop-filter:blur(12px)}
+.hdr-in{max-width:1600px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}
+.logo-icon{width:34px;height:34px;background:linear-gradient(135deg,#3b82f6,#8b5cf6);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px}
+.logo-text{font-size:15px;font-weight:700;color:var(--text)}
+.logo-sub{font-size:11px;color:var(--text3);font-weight:400}
+.src-badge{font-size:11px;padding:4px 10px;background:rgba(59,130,246,0.15);border:1px solid rgba(59,130,246,0.3);border-radius:20px;color:var(--accent2);text-decoration:none;white-space:nowrap}
+.src-badge:hover{background:rgba(59,130,246,0.25)}
+
+/* LAYOUT */
+.main{max-width:1600px;margin:0 auto;padding:24px}
+
+/* TABS */
+.tabs{display:flex;gap:4px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:4px;margin-bottom:24px;width:fit-content}
+.tab{padding:8px 18px;border-radius:9px;border:none;background:transparent;color:var(--text2);font-family:inherit;font-size:13px;font-weight:500;cursor:pointer;transition:all .2s;white-space:nowrap;display:flex;align-items:center;gap:6px}
+.tab:hover{color:var(--text);background:var(--s2)}
+.tab.active{background:var(--accent);color:#fff;font-weight:600;box-shadow:0 2px 8px rgba(59,130,246,.35)}
+.tab-cnt{background:rgba(255,255,255,.15);border-radius:10px;padding:1px 7px;font-size:11px}
+.tab.active .tab-cnt{background:rgba(255,255,255,.25)}
+
+/* SECTION */
+.section{display:none}.section.active{display:block}
+
+/* STATS */
+.stats-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:20px}
+.stat-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:14px 16px;display:flex;align-items:center;gap:12px}
+.stat-icon{width:38px;height:38px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.stat-lbl{font-size:11px;color:var(--text3);margin-bottom:2px}
+.stat-val{font-size:20px;font-weight:700}
+
+/* TOOLBAR */
+.toolbar{display:flex;gap:10px;margin-bottom:16px;flex-wrap:wrap;align-items:center}
+.search-box{flex:1;min-width:200px;max-width:320px;background:var(--surface);border:1px solid var(--border2);border-radius:8px;padding:8px 12px;color:var(--text);font-family:inherit;font-size:13px;outline:none;transition:border-color .2s}
+.search-box:focus{border-color:var(--accent)}
+.search-box::placeholder{color:var(--text3)}
+.fsel{background:var(--surface);border:1px solid var(--border2);border-radius:8px;padding:8px 10px;color:var(--text);font-family:inherit;font-size:13px;outline:none;cursor:pointer;min-width:130px}
+.fsel:focus{border-color:var(--accent)}
+.fsel option{background:var(--s2)}
+.hl-tog{display:flex;align-items:center;gap:7px;background:var(--surface);border:1px solid var(--border2);border-radius:8px;padding:8px 12px;cursor:pointer;font-size:12px;color:var(--text2);user-select:none;transition:all .2s}
+.hl-tog.on{border-color:var(--gold);color:var(--gold2);background:rgba(245,158,11,.08)}
+.hl-dot{width:14px;height:14px;border-radius:50%;background:var(--text3);transition:background .2s}
+.hl-tog.on .hl-dot{background:var(--gold)}
+.res-cnt{font-size:12px;color:var(--text3);margin-left:auto}
+
+/* EXPORT BTN */
+.exp-btn{display:flex;align-items:center;gap:6px;padding:8px 14px;background:linear-gradient(135deg,rgba(16,185,129,.2),rgba(5,150,105,.15));border:1px solid rgba(16,185,129,.35);border-radius:8px;color:#34d399;font-family:inherit;font-size:12px;font-weight:600;cursor:pointer;transition:all .2s;white-space:nowrap}
+.exp-btn:hover{background:linear-gradient(135deg,rgba(16,185,129,.3),rgba(5,150,105,.25));border-color:rgba(16,185,129,.5)}
+
+/* TABLE */
+.tbl-wrap{background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:visible}
+.tbl-scroll{overflow-x:auto;overflow-y:visible;border-radius:12px}
+table{width:100%;border-collapse:collapse;min-width:1200px}
+thead th{background:var(--s2);padding:10px 12px;text-align:left;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--text3);border-bottom:1px solid var(--border2);white-space:nowrap;cursor:pointer;user-select:none;position:relative;overflow:visible}
+thead th:hover{color:var(--text)}
+thead th .si{opacity:.4;margin-left:4px;font-size:10px}
+thead th.sorted .si{opacity:1;color:var(--accent2)}
+thead th.no-sort{cursor:default}
+tbody tr{border-bottom:1px solid var(--border);transition:background .12s}
+tbody tr:last-child{border-bottom:none}
+tbody tr:hover{background:var(--s2)}
+tbody tr.hl-row{background:var(--hl-bg);border-left:3px solid var(--gold)}
+tbody tr.hl-row:hover{background:rgba(245,158,11,.13)}
+td{padding:10px 12px;vertical-align:top;font-size:13px;color:var(--text)}
+td.muted{color:var(--text2)}
+
+/* CELLS */
+.gname{min-width:160px}
+.gname-orig{font-weight:600;font-size:15px;font-family:'Noto Sans SC',sans-serif}
+.gname-en{color:var(--text2);font-size:12px;margin-top:2px}
+.gname-cn{color:var(--text3);font-size:11px}
+
+.gbadge{display:inline-block;padding:3px 8px;border-radius:5px;font-size:11px;font-weight:600;white-space:nowrap}
+.g-mmorpg{background:rgba(139,92,246,.2);color:#a78bfa;border:1px solid rgba(139,92,246,.3)}
+.g-slg{background:rgba(239,68,68,.15);color:#fca5a5;border:1px solid rgba(239,68,68,.25)}
+.g-arpg{background:rgba(16,185,129,.15);color:#6ee7b7;border:1px solid rgba(16,185,129,.25)}
+.g-casual{background:rgba(236,72,153,.15);color:#f9a8d4;border:1px solid rgba(236,72,153,.25)}
+.g-cbg{background:rgba(245,158,11,.15);color:#fcd34d;border:1px solid rgba(245,158,11,.25)}
+.g-turn{background:rgba(59,130,246,.15);color:#93c5fd;border:1px solid rgba(59,130,246,.25)}
+.g-moba{background:rgba(20,184,166,.15);color:#5eead4;border:1px solid rgba(20,184,166,.25)}
+.g-def{background:rgba(100,116,139,.15);color:#94a3b8;border:1px solid rgba(100,116,139,.2)}
+
+.sbadge{display:inline-block;padding:3px 8px;border-radius:5px;font-size:11px;font-weight:500;white-space:nowrap}
+.s-ob{background:rgba(16,185,129,.15);color:#6ee7b7;border:1px solid rgba(16,185,129,.3)}
+.s-cbt{background:rgba(245,158,11,.15);color:#fcd34d;border:1px solid rgba(245,158,11,.3)}
+.s-obt{background:rgba(59,130,246,.15);color:#93c5fd;border:1px solid rgba(59,130,246,.3)}
+.s-tech{background:rgba(100,116,139,.15);color:#94a3b8;border:1px solid rgba(100,116,139,.25)}
+.s-live{background:rgba(16,185,129,.1);color:#34d399;border:1px solid rgba(16,185,129,.2)}
+.s-glob{background:rgba(139,92,246,.15);color:#c4b5fd;border:1px solid rgba(139,92,246,.3)}
+
+.rbadge{display:inline-flex;align-items:center;gap:4px;padding:3px 8px;border-radius:5px;font-size:11px;font-weight:500;white-space:nowrap}
+.r-cn{background:rgba(239,68,68,.12);color:#fca5a5;border:1px solid rgba(239,68,68,.2)}
+.r-asia{background:rgba(59,130,246,.12);color:#93c5fd;border:1px solid rgba(59,130,246,.2)}
+.r-oth{background:rgba(100,116,139,.12);color:#94a3b8;border:1px solid rgba(100,116,139,.2)}
+
+.hl-star{font-size:16px;filter:drop-shadow(0 0 4px rgba(245,158,11,.6))}
+
+.rank-b{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px}
+.rk1{background:linear-gradient(135deg,#f59e0b,#d97706);color:#fff}
+.rk2{background:linear-gradient(135deg,#94a3b8,#64748b);color:#fff}
+.rk3{background:linear-gradient(135deg,#cd7f32,#a0522d);color:#fff}
+.rkn{background:var(--s3);color:var(--text2);font-size:13px}
+
+.dev-cell{min-width:180px}
+.dev-name{font-weight:500;font-size:13px}
+.dev-en{font-size:11px;color:var(--text3);margin-top:1px}
+.dev-meta{font-size:11px;color:var(--text3);margin-top:2px}
+.lst-y{color:#34d399;font-size:11px}
+.lst-n{color:var(--text3);font-size:11px}
+
+.gp-cell{max-width:280px;min-width:180px;font-size:12px;color:var(--text2);line-height:1.7}
+.gp-cell ul{padding-left:14px}
+.gp-cell li{margin-bottom:2px}
+
+.link-cell{min-width:160px}
+.store-links{display:flex;flex-direction:column;gap:4px}
+.store-link{display:inline-flex;align-items:center;gap:5px;padding:3px 8px;border-radius:5px;font-size:11px;font-weight:500;text-decoration:none;white-space:nowrap;transition:all .15s}
+.store-link:hover{opacity:.8}
+.sl-web{background:rgba(59,130,246,.15);color:#93c5fd;border:1px solid rgba(59,130,246,.25)}
+.sl-ios{background:rgba(16,185,129,.15);color:#6ee7b7;border:1px solid rgba(16,185,129,.25)}
+.sl-gp{background:rgba(139,92,246,.15);color:#a78bfa;border:1px solid rgba(139,92,246,.25)}
+.sl-cn{background:rgba(245,158,11,.12);color:#fcd34d;border:1px solid rgba(245,158,11,.2)}
+.sl-none{color:var(--text3);font-size:11px}
+
+/* RANK TABS */
+.rank-tabs{display:flex;gap:6px;margin-bottom:16px}
+.rtab{padding:7px 16px;border-radius:8px;border:1px solid var(--border2);background:var(--surface);color:var(--text2);font-family:inherit;font-size:13px;font-weight:500;cursor:pointer;transition:all .2s}
+.rtab:hover{color:var(--text);background:var(--s2)}
+.rtab.active{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+
+/* MODAL */
+.modal-ov{position:fixed;inset:0;z-index:200;background:rgba(0,0,0,.75);backdrop-filter:blur(4px);display:none;align-items:center;justify-content:center;padding:20px}
+.modal-ov.open{display:flex}
+.modal{background:var(--s2);border:1px solid var(--border2);border-radius:16px;padding:28px;max-width:680px;width:100%;max-height:90vh;overflow-y:auto;animation:mIn .2s ease}
+@keyframes mIn{from{opacity:0;transform:scale(.95) translateY(8px)}to{opacity:1;transform:scale(1) translateY(0)}}
+.m-hdr{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:20px;gap:12px}
+.m-title{font-size:22px;font-weight:700;font-family:'Noto Sans SC',sans-serif}
+.m-title-en{font-size:14px;color:var(--text2);font-weight:400;margin-top:3px}
+.m-close{width:32px;height:32px;border-radius:8px;border:1px solid var(--border2);background:transparent;color:var(--text2);cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .2s}
+.m-close:hover{background:var(--s3);color:var(--text)}
+.m-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
+.m-field{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:12px}
+.m-flbl{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--text3);margin-bottom:4px}
+.m-fval{font-size:13px;color:var(--text);font-weight:500}
+.m-gp{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px;margin-bottom:12px}
+.m-gp-lbl{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--text3);margin-bottom:8px}
+.m-gp-txt{font-size:13px;color:var(--text2);line-height:1.7}
+.m-gp-txt ul{padding-left:16px}
+.m-gp-txt li{margin-bottom:3px}
+.m-stores{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px;margin-bottom:12px}
+.m-stores-lbl{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--text3);margin-bottom:10px}
+.m-store-links{display:flex;flex-wrap:wrap;gap:8px}
+
+/* PERFORMANCE MODAL */
+.perf-wrap{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px;margin-bottom:12px}
+.perf-lbl{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--text3);margin-bottom:12px;display:flex;align-items:center;justify-content:space-between}
+.perf-add-btn{font-size:11px;padding:3px 10px;background:rgba(59,130,246,.15);border:1px solid rgba(59,130,246,.3);border-radius:5px;color:var(--accent2);cursor:pointer;font-family:inherit;transition:all .15s}
+.perf-add-btn:hover{background:rgba(59,130,246,.25)}
+.perf-entries{display:flex;flex-direction:column;gap:8px;margin-bottom:10px}
+.perf-entry{background:var(--s2);border:1px solid var(--border);border-radius:8px;padding:10px 12px}
+.perf-entry-hdr{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.perf-entry-date{font-size:11px;color:var(--text3);font-weight:500}
+.perf-del-btn{font-size:10px;color:var(--text3);cursor:pointer;background:none;border:none;font-family:inherit;transition:color .15s}
+.perf-del-btn:hover{color:var(--red)}
+.perf-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:6px}
+.perf-kpi{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:8px 10px}
+.perf-kpi-k{font-size:10px;color:var(--text3);margin-bottom:2px}
+.perf-kpi-v{font-size:13px;font-weight:600;color:var(--text)}
+.perf-empty{text-align:center;padding:20px;color:var(--text3);font-size:12px}
+
+/* PERF INPUT FORM */
+.perf-form{background:var(--s3);border:1px solid var(--border2);border-radius:8px;padding:14px;margin-top:8px}
+.perf-form-title{font-size:12px;font-weight:600;color:var(--text2);margin-bottom:10px}
+.perf-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}
+.perf-inp{background:var(--surface);border:1px solid var(--border2);border-radius:6px;padding:7px 10px;color:var(--text);font-family:inherit;font-size:12px;outline:none;width:100%;transition:border-color .15s}
+.perf-inp:focus{border-color:var(--accent)}
+.perf-inp::placeholder{color:var(--text3)}
+.perf-inp-lbl{font-size:10px;color:var(--text3);margin-bottom:3px}
+.perf-form-btns{display:flex;gap:8px;justify-content:flex-end}
+.perf-save-btn{padding:6px 14px;background:var(--accent);border:none;border-radius:6px;color:#fff;font-family:inherit;font-size:12px;font-weight:600;cursor:pointer}
+.perf-cancel-btn{padding:6px 14px;background:var(--s2);border:1px solid var(--border2);border-radius:6px;color:var(--text2);font-family:inherit;font-size:12px;cursor:pointer}
+
+/* FOOTER */
+.footer{text-align:center;padding:32px 24px;color:var(--text3);font-size:12px;border-top:1px solid var(--border);margin-top:40px}
+.footer a{color:var(--accent2);text-decoration:none}
+
+/* TOOLTIP */
+.hl-th-icon{cursor:default;font-size:15px;display:inline-block}
+#js-tip{position:fixed;z-index:99999;background:#1e293b;color:#f1f5f9;font-size:12px;padding:7px 12px;border-radius:8px;border:1px solid rgba(255,255,255,0.15);box-shadow:0 8px 24px rgba(0,0,0,.5);pointer-events:none;white-space:nowrap;opacity:0;transition:opacity .15s;max-width:360px;white-space:normal;line-height:1.5}
+#js-tip.visible{opacity:1}
+
+
+/* APP ICON */
+.game-icon-wrap{width:44px;height:44px;flex-shrink:0;border-radius:10px;overflow:hidden;background:var(--s3);border:1px solid var(--border);position:relative}
+.game-icon-img{width:44px;height:44px;object-fit:cover;border-radius:10px;display:block}
+.game-icon-fallback{width:44px;height:44px;display:flex;align-items:center;justify-content:center;font-size:18px;font-family:'Noto Sans SC',sans-serif;font-weight:700;color:#fff;border-radius:10px;line-height:1}
+.game-name-cell-inner{display:flex;align-items:flex-start;gap:10px}
+.game-name-texts{display:flex;flex-direction:column;justify-content:center;min-width:0}
+/* Modal icon */
+.m-icon-wrap{width:60px;height:60px;border-radius:14px;overflow:hidden;border:1px solid var(--border2);flex-shrink:0}
+.m-icon-img{width:60px;height:60px;object-fit:cover;display:block}
+.m-icon-fallback{width:60px;height:60px;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:700;color:#fff;font-family:'Noto Sans SC',sans-serif}
+
+/* TAPTAP PANEL */
+.tt-panel{background:var(--s3);border:1px solid var(--border2);border-radius:8px;padding:12px;margin-bottom:12px}
+.tt-panel-lbl{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--text3);margin-bottom:10px;display:flex;align-items:center;justify-content:space-between}
+.tt-fetched{font-size:10px;color:var(--text3);font-style:italic}
+.tt-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:8px}
+.tt-kpi{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:8px 10px}
+.tt-kpi-k{font-size:10px;color:var(--text3);margin-bottom:3px}
+.tt-kpi-v{font-size:14px;font-weight:700;color:var(--text)}
+.tt-kpi-v.good{color:#10b981}.tt-kpi-v.warn{color:#f59e0b}.tt-kpi-v.bad{color:#ef4444}
+.tt-bar-wrap{display:flex;align-items:center;gap:6px}
+.tt-bar{width:60px;height:5px;background:rgba(255,255,255,.1);border-radius:3px;overflow:hidden;flex-shrink:0}
+.tt-bar-fill{height:100%;border-radius:3px}
+.tt-err{font-size:11px;color:var(--text3);font-style:italic;padding:8px 0}
+.tt-taptap-link{font-size:11px;color:var(--accent2);text-decoration:none}
+.tt-taptap-link:hover{text-decoration:underline}
+
+/* EMPTY */
+.empty{text-align:center;padding:60px 20px;color:var(--text3)}
+.empty-icon{font-size:40px;margin-bottom:12px}
+
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:var(--surface)}
+::-webkit-scrollbar-thumb{background:var(--s3);border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:var(--text3)}
+
+@media(max-width:768px){
+  .tabs{width:100%;overflow-x:auto}
+  .m-grid{grid-template-columns:1fr}
+  .stats-row{grid-template-columns:1fr 1fr}
+  .perf-form-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <div class="hdr-in">
+    <a class="logo" href="#">
+      <div class="logo-icon">🎮</div>
+      <div><div class="logo-text">Game Market Tracker</div><div class="logo-sub">Nguồn: 16p.com (玩匠) · Tháng 6/2026</div></div>
+    </a>
+    <div style="font-size:12px;color:var(--text3)">Auto update: <span style="color:var(--accent2)" id="last-updated">Chưa có data live (chạy GitHub Actions)</span></div>
+    <a class="src-badge" href="https://www.16p.com" target="_blank">↗ 16p.com</a>
+  </div>
+</header>
+
+<main class="main">
+  <div class="tabs">
+    <button class="tab active" onclick="switchTab('newgame',this)">🆕 Game Mới <span class="tab-cnt" id="tc-ng">20</span></button>
+    <button class="tab" onclick="switchTab('rankings',this)">🔥 Bảng Xếp Hạng</button>
+  </div>
+
+  <!-- ══ NEW GAMES ══ -->
+  <div class="section active" id="sec-newgame">
+    <div class="stats-row" id="ng-stats"></div>
+    <div class="toolbar">
+      <input class="search-box" id="ng-q" placeholder="🔍  Tìm game, developer..." oninput="filterNG()">
+      <select class="fsel" id="ng-genre" onchange="filterNG()"><option value="">Tất cả thể loại</option></select>
+      <select class="fsel" id="ng-region" onchange="filterNG()">
+        <option value="">Tất cả khu vực</option><option>Trung Quốc</option><option>Toàn Châu Á</option>
+      </select>
+      <select class="fsel" id="ng-status" onchange="filterNG()"><option value="">Tất cả trạng thái</option></select>
+      <button class="hl-tog" id="ng-hl" onclick="togHL('ng')"><div class="hl-dot"></div>Chỉ Highlight</button>
+      <button class="exp-btn" onclick="exportCSV('ng')">⬇ Export CSV</button>
+      <span class="res-cnt" id="ng-cnt"></span>
+    </div>
+    <div class="tbl-wrap"><div class="tbl-scroll">
+      <table id="ng-tbl">
+        <thead><tr>
+          <th onclick="sortNG(0)" data-c="0">STT<span class="si">↕</span></th>
+          <th class="no-sort">Tên Game</th>
+          <th onclick="sortNG(2)" data-c="2">Thể loại<span class="si">↕</span></th>
+          <th class="no-sort">Trạng thái</th>
+          <th onclick="sortNG(4)" data-c="4">Thời gian<span class="si">↕</span></th>
+          <th class="no-sort">Khu vực</th>
+          <th class="no-sort">Developer</th>
+          <th class="no-sort">Core Gameplay (VI)</th>
+          <th class="no-sort">Stores / Website</th>
+          <th class="no-sort" style="text-align:center">
+            <span class="hl-th-icon" data-tip="⭐ Game có thể quan tâm: MMORPG, SLG, CBG, Casual, Turn-based, Shooting" onmouseenter="showTip(event,this)" onmouseleave="hideTip()">⭐</span>
+          </th>
+        </tr></thead>
+        <tbody id="ng-body"></tbody>
+      </table>
+    </div></div>
+  </div>
+
+  <!-- ══ RANKINGS ══ -->
+  <div class="section" id="sec-rankings">
+    <div class="rank-tabs">
+      <button class="rtab active" onclick="switchRank('30d',this)">📊 BXH 30 Ngày</button>
+      <button class="rtab" onclick="switchRank('90d',this)">📊 BXH 90 Ngày</button>
+      <button class="rtab" onclick="switchRank('year',this)">🏆 BXH Năm</button>
+    </div>
+    <!-- 30d -->
+    <div id="r-30d">
+      <div class="stats-row" id="r30-stats"></div>
+      <div class="toolbar">
+        <input class="search-box" id="r30-q" placeholder="🔍  Tìm kiếm..." oninput="filterRank('30d')">
+        <select class="fsel" id="r30-genre" onchange="filterRank('30d')"><option value="">Tất cả thể loại</option></select>
+        <button class="hl-tog" id="r30-hl" onclick="togHL('r30')"><div class="hl-dot"></div>Chỉ Highlight</button>
+        <button class="exp-btn" onclick="exportCSV('r30')">⬇ Export CSV</button>
+        <span class="res-cnt" id="r30-cnt"></span>
+      </div>
+      <div class="tbl-wrap"><div class="tbl-scroll">
+        <table><thead><tr>
+          <th>Hạng</th><th class="no-sort">Tên Game</th><th class="no-sort">Thể loại</th>
+          <th class="no-sort">Trạng thái</th><th class="no-sort">Khu vực</th>
+          <th class="no-sort">Developer</th><th class="no-sort">Core Gameplay (VI)</th>
+          <th class="no-sort">Stores / Website</th>
+          <th style="text-align:center" class="no-sort"><span class="hl-th-icon" data-tip="⭐ Game có thể quan tâm: MMORPG, SLG, CBG, Casual, Turn-based, Shooting" onmouseenter="showTip(event,this)" onmouseleave="hideTip()">⭐</span></th>
+        </tr></thead><tbody id="r30-body"></tbody></table>
+      </div></div>
+    </div>
+    <!-- 90d -->
+    <div id="r-90d" style="display:none">
+      <div class="stats-row" id="r90-stats"></div>
+      <div class="toolbar">
+        <input class="search-box" id="r90-q" placeholder="🔍  Tìm kiếm..." oninput="filterRank('90d')">
+        <select class="fsel" id="r90-genre" onchange="filterRank('90d')"><option value="">Tất cả thể loại</option></select>
+        <button class="hl-tog" id="r90-hl" onclick="togHL('r90')"><div class="hl-dot"></div>Chỉ Highlight</button>
+        <button class="exp-btn" onclick="exportCSV('r90')">⬇ Export CSV</button>
+        <span class="res-cnt" id="r90-cnt"></span>
+      </div>
+      <div class="tbl-wrap"><div class="tbl-scroll">
+        <table><thead><tr>
+          <th>Hạng</th><th class="no-sort">Tên Game</th><th class="no-sort">Thể loại</th>
+          <th class="no-sort">Trạng thái</th><th class="no-sort">Khu vực</th>
+          <th class="no-sort">Developer</th><th class="no-sort">Core Gameplay (VI)</th>
+          <th class="no-sort">Stores / Website</th>
+          <th style="text-align:center" class="no-sort"><span class="hl-th-icon" data-tip="⭐ Game có thể quan tâm: MMORPG, SLG, CBG, Casual, Turn-based, Shooting" onmouseenter="showTip(event,this)" onmouseleave="hideTip()">⭐</span></th>
+        </tr></thead><tbody id="r90-body"></tbody></table>
+      </div></div>
+    </div>
+    <!-- year -->
+    <div id="r-year" style="display:none">
+      <div class="stats-row" id="ryr-stats"></div>
+      <div class="toolbar">
+        <input class="search-box" id="ryr-q" placeholder="🔍  Tìm kiếm..." oninput="filterRank('year')">
+        <select class="fsel" id="ryr-genre" onchange="filterRank('year')"><option value="">Tất cả thể loại</option></select>
+        <button class="hl-tog" id="ryr-hl" onclick="togHL('ryr')"><div class="hl-dot"></div>Chỉ Highlight</button>
+        <button class="exp-btn" onclick="exportCSV('ryr')">⬇ Export CSV</button>
+        <span class="res-cnt" id="ryr-cnt"></span>
+      </div>
+      <div class="tbl-wrap"><div class="tbl-scroll">
+        <table><thead><tr>
+          <th>Hạng</th><th class="no-sort">Tên Game</th><th class="no-sort">Thể loại</th>
+          <th class="no-sort">Trạng thái</th><th class="no-sort">Khu vực</th>
+          <th class="no-sort">Developer</th><th class="no-sort">Core Gameplay (VI)</th>
+          <th class="no-sort">Stores / Website</th>
+          <th style="text-align:center" class="no-sort"><span class="hl-th-icon" data-tip="⭐ Game có thể quan tâm: MMORPG, SLG, CBG, Casual, Turn-based, Shooting" onmouseenter="showTip(event,this)" onmouseleave="hideTip()">⭐</span></th>
+        </tr></thead><tbody id="ryr-body"></tbody></table>
+      </div></div>
+    </div>
+  </div>
+</main>
+
+<!-- MODAL -->
+<div class="modal-ov" id="modal-ov" onclick="closeMOv(event)">
+<div class="modal" id="modal-box">
+  <div class="m-hdr">
+    <div style="display:flex;align-items:center;gap:14px">
+      <div id="m-icon-slot"></div>
+      <div>
+        <div class="m-title" id="m-title"></div>
+        <div class="m-title-en" id="m-title-en"></div>
+      </div>
+    </div>
+    <button class="m-close" onclick="closeMDirect()">✕</button>
+  </div>
+  <div class="m-grid" id="m-grid"></div>
+  <div class="m-gp" id="m-gp-wrap">
+    <div class="m-gp-lbl">🕹 Core Gameplay (Tiếng Việt)</div>
+    <div class="m-gp-txt" id="m-gp"></div>
+  </div>
+  <div class="m-stores" id="m-stores-wrap">
+    <div class="m-stores-lbl">🔗 Stores & Website</div>
+    <div class="m-store-links" id="m-store-links"></div>
+  </div>
+  <!-- PERFORMANCE TRACKER -->
+  <div class="perf-wrap" id="m-perf-wrap">
+    <div class="perf-lbl">
+      <span>📊 Data Performance</span>
+      <button class="perf-add-btn" onclick="showPerfForm()">+ Nhập KPI thủ công</button>
+    </div>
+    <!-- TapTap Live Section -->
+    <div class="tt-panel" id="m-tt-panel">
+      <div class="tt-panel-lbl">
+        <span>🎮 TapTap Live Data</span>
+        <a class="tt-taptap-link" id="m-tt-link" href="#" target="_blank">Xem trên TapTap ↗</a>
+      </div>
+      <div id="m-tt-content"></div>
+    </div>
+    <!-- Manual KPI entries -->
+    <div style="font-size:11px;color:var(--text3);margin-bottom:8px;font-weight:500">📋 KPI Premium (Data.ai / Sensor Tower / nhập tay)</div>
+    <div class="perf-entries" id="perf-entries"></div>
+    <div id="perf-form-wrap"></div>
+  </div>
+</div>
+</div>
+
+<footer class="footer">
+  Game Market Tracker · Dữ liệu từ <a href="https://www.16p.com" target="_blank">16p.com (玩匠)</a> · Tháng 6/2026
+</footer>
+
+<script>
+const RAW={"newgames": [{"STT": "1", "Tên gốc": "射雕", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Legend of Eagle Shooting Heroes", "Thể loại": "MMORPG", "Trạng thái phát hành": "公测", "Trạng thái (Tiếng Việt)": "Open Beta", "Thời gian": "2026-06-15", "Khu vực phát hành": "Trung Quốc", "Developer": "完美世界游戏", "Developer EN": "Perfect World Games", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "1999", "Niêm yết 上市": "是（完美世界PWRD）", "Core Gameplay": "基于金庸IP的3D开放世界MMO，玩家扮演江湖侠客，结合武侠轻功、门派争斗与大世界探索；支持万人同屏战场PVP。", "Core Gameplay VN": "• MMORPG thế giới mở 3D dựa trên IP Kim Dung
+• Hệ thống Giang Hồ: khinh công, tranh đấu môn phái
+• PVP đại chiến vạn người cùng lúc
+• Khám phá bản đồ thế giới rộng lớn", "Highlight": "⭐ HIGHLIGHT", "Mainsite": "https://sdiao.wanmei.com", "AppStore": "https://apps.apple.com/cn/app/id6736413744", "GooglePlay": "", "Store CN": "TapTap: https://www.taptap.cn/app/355258", "ios_id": "6736413744", "taptap_id": "355258", "icon_url": ""}, {"STT": "2", "Tên gốc": "燕云十六声", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Where Winds Meet", "Thể loại": "MMORPG", "Trạng thái phát hành": "公测", "Trạng thái (Tiếng Việt)": "Open Beta", "Thời gian": "2026-05-09", "Khu vực phát hành": "Toàn Châu Á", "Developer": "网易游戏", "Developer EN": "NetEase Games", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "1997", "Niêm yết 上市": "是（网易NetEase NTES）", "Core Gameplay": "五代十国历史背景开放世界武侠RPG，支持多兵种战斗与自由捏人；玩家可以骑马、轻功、飞檐走壁探索全地图。", "Core Gameplay VN": "• MMORPG thế giới mở bối cảnh Ngũ Đại Thập Quốc
+• Hệ thống chiến đấu đa binh chủng, võ công tự do
+• Cưỡi ngựa, khinh công, leo tường khám phá toàn bản đồ
+• Tùy chỉnh nhân vật tự do (捏人系统)", "Highlight": "⭐ HIGHLIGHT", "Mainsite": "https://yanyun.163.com", "AppStore": "https://apps.apple.com/cn/app/id6503336700", "GooglePlay": "https://play.google.com/store/apps/details?id=com.netease.yysm", "Store CN": "TapTap: https://www.taptap.cn/app/234218", "ios_id": "6503336700", "taptap_id": "234218", "icon_url": ""}, {"STT": "3", "Tên gốc": "代号:破晓", "Tên tiếng Trung (nếu khác)": "代号:破晓", "Tên tiếng Anh (nếu khác)": "Project Dawn", "Thể loại": "ARPG", "Trạng thái phát hành": "删档测试", "Trạng thái (Tiếng Việt)": "CBT (Xóa dữ liệu)", "Thời gian": "2026-06-20", "Khu vực phát hành": "Trung Quốc", "Developer": "腾讯光子工作室群", "Developer EN": "Tencent TiMi Studio Group", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2008", "Niêm yết 上市": "是（腾讯Tencent 0700.HK）", "Core Gameplay": "末日科幻背景动作RPG，玩家操控能力觉醒者对抗变异生物，拥有技能树构建系统与多人协同副本。", "Core Gameplay VN": "• ARPG khoa học viễn tưởng tận thế
+• Điều khiển người giác ngộ năng lực chiến đấu sinh vật biến dị
+• Hệ thống skill tree tùy chỉnh sâu
+• Dungeon hợp tác nhiều người chơi", "Highlight": "", "Mainsite": "https://poxiao.qq.com", "AppStore": "", "GooglePlay": "", "Store CN": "TapTap: https://www.taptap.cn/app/370480", "ios_id": "", "taptap_id": "370480", "icon_url": ""}, {"STT": "4", "Tên gốc": "星之海图", "Tên tiếng Trung (nếu khác)": "星之海图", "Tên tiếng Anh (nếu khác)": "Star Sea Map", "Thể loại": "SLG", "Trạng thái phát hành": "不删档测试", "Trạng thái (Tiếng Việt)": "OBT (Không xóa dữ liệu)", "Thời gian": "2026-06-01", "Khu vực phát hành": "Trung Quốc", "Developer": "紫龙游戏", "Developer EN": "ZlongGames", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2013", "Niêm yết 上市": "否", "Core Gameplay": "星际战略SLG，玩家建造空间站、组建舰队争夺星域资源；引入赛季制联盟战争与外交系统。", "Core Gameplay VN": "• SLG chiến lược vũ trụ
+• Xây dựng trạm không gian, tổ chức hạm đội
+• Tranh giành tài nguyên liên minh theo mùa
+• Hệ thống ngoại giao liên minh sâu", "Highlight": "⭐ HIGHLIGHT", "Mainsite": "https://xzht.zlongame.com", "AppStore": "", "GooglePlay": "", "Store CN": "TapTap: https://www.taptap.cn/app/345621", "ios_id": "", "taptap_id": "345621", "icon_url": ""}, {"STT": "5", "Tên gốc": "无限暖暖", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Infinity Nikki", "Thể loại": "Casual", "Trạng thái phát hành": "全球公测", "Trạng thái (Tiếng Việt)": "Global Open Beta", "Thời gian": "2025-12-05", "Khu vực phát hành": "Toàn Châu Á", "Developer": "叠纸网络", "Developer EN": "Infold Games (PaperGames)", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2013", "Niêm yết 上市": "否", "Core Gameplay": "开放世界换装探索游戏，玩家扮演时尚设计师穿越魔法大陆，收集百种服装并利用服装能力解谜探索。", "Core Gameplay VN": "• Game thế giới mở thay trang phục phong cách nữ tính
+• Thu thập 100+ trang phục, mỗi bộ có khả năng đặc biệt
+• Khám phá đại lục ma pháp, giải đố bằng trang phục
+• Đã tải về hơn 100 triệu lần toàn cầu", "Highlight": "⭐ HIGHLIGHT", "Mainsite": "https://infinitynikki.infoldgames.com", "AppStore": "https://apps.apple.com/app/id6547858329", "GooglePlay": "https://play.google.com/store/apps/details?id=com.infoldgames.infinitynikki", "Store CN": "TapTap: https://www.taptap.cn/app/290730", "ios_id": "6547858329", "taptap_id": "290730", "icon_url": ""}, {"STT": "6", "Tên gốc": "鸣潮", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Wuthering Waves", "Thể loại": "ARPG", "Trạng thái phát hành": "公测", "Trạng thái (Tiếng Việt)": "Open Beta", "Thời gian": "2024-05-22", "Khu vực phát hành": "Toàn Châu Á", "Developer": "库洛游戏", "Developer EN": "Kuro Games", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2019", "Niêm yết 上市": "否", "Core Gameplay": "末日后科幻开放世界ARPG，主打流畅手感的3D空中战斗体系，通过「共鸣」系统收集和培养角色，剧情深度与世界观宏大。", "Core Gameplay VN": "• ARPG thế giới mở hậu tận thế sci-fi
+• Chiến đấu 3D trên không trung cực mượt
+• Hệ thống Cộng Hưởng (共鸣) thu thập & phát triển nhân vật
+• Cốt truyện sâu, thế giới quan đồ sộ", "Highlight": "", "Mainsite": "https://wutheringwaves.kurogames.com", "AppStore": "https://apps.apple.com/app/id6448443855", "GooglePlay": "https://play.google.com/store/apps/details?id=com.kurogame.wutheringwaves", "Store CN": "TapTap: https://www.taptap.cn/app/231682", "ios_id": "6448443855", "taptap_id": "231682", "icon_url": ""}, {"STT": "7", "Tên gốc": "三国：谋定天下", "Tên tiếng Trung (nếu khác)": "三国：谋定天下", "Tên tiếng Anh (nếu khác)": "Three Kingdoms: Strategize the World", "Thể loại": "SLG", "Trạng thái phát hành": "公测", "Trạng thái (Tiếng Việt)": "Open Beta", "Thời gian": "2026-05-20", "Khu vực phát hành": "Trung Quốc", "Developer": "巨人网络", "Developer EN": "Giant Network Group", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2004", "Niêm yết 上市": "是（巨人网络 SZ002558）", "Core Gameplay": "三国主题策略SLG，将帅召募与部队配置系统深度，打破传统国战框架引入战略级地图演义玩法。", "Core Gameplay VN": "• SLG chiến lược chủ đề Tam Quốc
+• Hệ thống chiêu mộ tướng và cấu hình binh đội sâu
+• Phá vỡ khuôn SLG truyền thống với bản đồ chiến lược cấp độ cao
+• Chế độ quốc chiến quy mô lớn", "Highlight": "⭐ HIGHLIGHT", "Mainsite": "https://sgmdtx.360.cn", "AppStore": "", "GooglePlay": "", "Store CN": "TapTap: https://www.taptap.cn/app/367210", "ios_id": "", "taptap_id": "367210", "icon_url": ""}, {"STT": "8", "Tên gốc": "龙族幻想2", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Dragon Raja 2", "Thể loại": "MMORPG", "Trạng thái phát hành": "删档测试", "Trạng thái (Tiếng Việt)": "CBT (Xóa dữ liệu)", "Thời gian": "2026-07-10", "Khu vực phát hành": "Trung Quốc", "Developer": "Eyougame（宜游科技）", "Developer EN": "Eyougame Technology", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2009", "Niêm yết 上市": "否", "Core Gameplay": "都市奇幻3D MMORPG续作，赛博朋克+奇幻融合世界观，保留前代自由度高的社交城市系统，增加跨服大世界。", "Core Gameplay VN": "• MMORPG 3D đô thị huyễn tưởng phần 2
+• Thế giới quan Cyberpunk + Fantasy kết hợp
+• Hệ thống thành phố xã hội tự do cao
+• Thêm thế giới lớn liên server", "Highlight": "⭐ HIGHLIGHT", "Mainsite": "https://lzhy2.eyougame.com", "AppStore": "", "GooglePlay": "", "Store CN": "TapTap: https://www.taptap.cn/app/372156", "ios_id": "", "taptap_id": "372156", "icon_url": ""}, {"STT": "9", "Tên gốc": "暗区突围:无限", "Tên tiếng Trung (nếu khác)": "暗区突围:无限", "Tên tiếng Anh (nếu khác)": "Escape from Tarkov Mobile CN", "Thể loại": "Shooting", "Trạng thái phát hành": "技术测试", "Trạng thái (Tiếng Việt)": "Kiểm thử kỹ thuật", "Thời gian": "2026-Q3", "Khu vực phát hành": "Trung Quốc", "Developer": "腾讯TiMi Studio", "Developer EN": "Tencent TiMi Studio", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2008", "Niêm yết 上市": "是（腾讯 0700.HK）", "Core Gameplay": "硬核撤离射击游戏，玩家进入高风险暗区搜集物资，同时对抗AI与其他玩家，死亡即失去装备，弹道系统拟真。", "Core Gameplay VN": "• Game bắn súng hardcore Extraction Shooter
+• Vào vùng tối nguy hiểm thu thập vật tư
+• Đối đầu AI và người chơi khác, chết mất toàn bộ đồ
+• Hệ thống đạn đạo mô phỏng thực tế cao", "Highlight": "⭐ HIGHLIGHT", "Mainsite": "https://anqutw.qq.com", "AppStore": "", "GooglePlay": "", "Store CN": "TapTap: https://www.taptap.cn/app/358890", "ios_id": "", "taptap_id": "358890", "icon_url": ""}, {"STT": "10", "Tên gốc": "问道手游2", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Wendao Mobile 2", "Thể loại": "MMORPG", "Trạng thái phát hành": "公测", "Trạng thái (Tiếng Việt)": "Open Beta", "Thời gian": "2026-06-18", "Khu vực phát hành": "Trung Quốc", "Developer": "北京畅游科技", "Developer EN": "Changyou (Beijing) Technology", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2003", "Niêm yết 上市": "是（CYOU，畅游）", "Core Gameplay": "经典仙侠MMO续作，承袭端游IP，门派、师徒、婚姻系统全面升级，国战模式支持千人实时攻城战。", "Core Gameplay VN": "• MMORPG tiên hiệp cổ điển phần 2
+• Kế thừa IP game PC đình đám
+• Hệ thống môn phái, sư đồ, hôn nhân nâng cấp toàn diện
+• Chế độ quốc chiến 1000 người công thành thời gian thực", "Highlight": "⭐ HIGHLIGHT", "Mainsite": "https://wdsy2.changyou.com", "AppStore": "", "GooglePlay": "", "Store CN": "TapTap: https://www.taptap.cn/app/351200", "ios_id": "", "taptap_id": "351200", "icon_url": ""}, {"STT": "11", "Tên gốc": "永恒纪元2", "Tên tiếng Trung (nếu khác)": "永恒纪元2", "Tên tiếng Anh (nếu khác)": "Eternal City 2", "Thể loại": "MMORPG", "Trạng thái phát hành": "CBT", "Trạng thái (Tiếng Việt)": "CBT (Xóa dữ liệu)", "Thời gian": "2026-06-25", "Khu vực phát hành": "Toàn Châu Á", "Developer": "Netmarble", "Developer EN": "Netmarble Corp.", "Quốc gia/ Vùng lãnh thổ": "Hàn Quốc", "Năm thành lập": "2000", "Niêm yết 上市": "是（KRX 251270）", "Core Gameplay": "玄幻3D MMORPG，继承前作世界观，融合自动战斗与深度公会攻城系统；专为亚洲市场优化的「离线挂机+活跃竞技」双线玩法。", "Core Gameplay VN": "• MMORPG 3D huyền huyễn kế thừa thế giới quan phần 1
+• Kết hợp chiến đấu tự động và hệ thống công thành phường hội
+• Hai luồng gameplay: offline idle + thi đấu cạnh tranh
+• Tối ưu hóa đặc biệt cho thị trường Châu Á", "Highlight": "⭐ HIGHLIGHT", "Mainsite": "https://eternalcity2.netmarble.com", "AppStore": "https://apps.apple.com/app/id6502856738", "GooglePlay": "https://play.google.com/store/apps/details?id=com.netmarble.eternalcitym", "Store CN": "TapTap: https://www.taptap.cn/app/369012", "ios_id": "6502856738", "taptap_id": "369012", "icon_url": ""}, {"STT": "12", "Tên gốc": "独行侠", "Tên tiếng Trung (nếu khác)": "独行侠", "Tên tiếng Anh (nếu khác)": "Lone Ranger", "Thể loại": "Turn-based", "Trạng thái phát hành": "CBT", "Trạng thái (Tiếng Việt)": "CBT (Xóa dữ liệu)", "Thời gian": "2026-06-10", "Khu vực phát hành": "Trung Quốc", "Developer": "西山居", "Developer EN": "Seasun Games (Kingsoft)", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "1995", "Niêm yết 上市": "否（Kingsoft旗下）", "Core Gameplay": "西部牛仔主题回合制RPG，独特的行动条与地形利用策略系统，融合Roguelike副本随机元素，画风手绘漫画风。", "Core Gameplay VN": "• RPG lượt turn-based chủ đề cao bồi miền Tây
+• Hệ thống thanh hành động và chiến thuật địa hình độc đáo
+• Dungeon Roguelike ngẫu nhiên
+• Đồ họa tranh tay phong cách truyện tranh", "Highlight": "⭐ HIGHLIGHT", "Mainsite": "https://duxia.xishanju.com", "AppStore": "", "GooglePlay": "", "Store CN": "TapTap: https://www.taptap.cn/app/362540", "ios_id": "", "taptap_id": "362540", "icon_url": ""}, {"STT": "13", "Tên gốc": "凡人修仙传：人界篇", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "A Record of Mortal's Journey to Immortality", "Thể loại": "Turn-based", "Trạng thái phát hành": "公测", "Trạng thái (Tiếng Việt)": "Open Beta", "Thời gian": "2026-04-10", "Khu vực phát hành": "Trung Quốc", "Developer": "灵犀互娱", "Developer EN": "Linxi Entertainment (Tencent)", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2014", "Niêm yết 上市": "否（腾讯投资）", "Core Gameplay": "基于同名网文IP的回合制卡牌RPG，修仙养成路线深度，随机天赋系统与门派路线选择影响角色成长方向。", "Core Gameplay VN": "• RPG thẻ bài lượt turn-based dựa trên web novel cùng tên
+• Hệ thống tu tiên luyện đan sâu
+• Thiên phú ngẫu nhiên và chọn đường phái ảnh hưởng hướng phát triển nhân vật
+• Cốt truyện trung thành IP gốc", "Highlight": "⭐ HIGHLIGHT", "Mainsite": "https://fanren.qq.com", "AppStore": "https://apps.apple.com/cn/app/id6470714651", "GooglePlay": "", "Store CN": "TapTap: https://www.taptap.cn/app/301584", "ios_id": "6470714651", "taptap_id": "301584", "icon_url": ""}, {"STT": "14", "Tên gốc": "赤核", "Tên tiếng Trung (nếu khác)": "赤核", "Tên tiếng Anh (nếu khác)": "Red Core", "Thể loại": "CBG", "Trạng thái phát hành": "删档测试", "Trạng thái (Tiếng Việt)": "CBT (Xóa dữ liệu)", "Thời gian": "2026-05-15", "Khu vực phát hành": "Trung Quốc", "Developer": "中手游（CMG）", "Developer EN": "Charme Games (CMG)", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2004", "Niêm yết 上市": "是（SZ 300148）", "Core Gameplay": "赛博朋克风格集换式卡牌对战，玩家构建机甲卡组进行实时策略对决，引入城市争夺赛季制积分排名体系。", "Core Gameplay VN": "• Game thẻ bài chiến lược phong cách Cyberpunk (CBG)
+• Xây dựng bộ bài mech chiến đấu chiến thuật thời gian thực
+• Hệ thống tranh giành thành phố theo mùa
+• Bảng xếp hạng điểm tích lũy theo mùa", "Highlight": "⭐ HIGHLIGHT", "Mainsite": "https://chinu.cmge.com", "AppStore": "", "GooglePlay": "", "Store CN": "TapTap: https://www.taptap.cn/app/368421", "ios_id": "", "taptap_id": "368421", "icon_url": ""}, {"STT": "15", "Tên gốc": "决战平安京2", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Onmyoji Arena 2", "Thể loại": "MOBA", "Trạng thái phát hành": "公测", "Trạng thái (Tiếng Việt)": "Open Beta", "Thời gian": "2026-Q3", "Khu vực phát hành": "Toàn Châu Á", "Developer": "网易游戏", "Developer EN": "NetEase Games", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "1997", "Niêm yết 上市": "是（NTES）", "Core Gameplay": "和风阴阳师主题5v5 MOBA，继承前作美术风格，全面重做天赋机制与对局节奏，引入二次元限定皮肤赛季通行证。", "Core Gameplay VN": "• MOBA 5v5 chủ đề Onmyoji phong cách Nhật Bản
+• Kế thừa mỹ thuật phần trước, làm lại cơ chế talent và nhịp trận đấu
+• Skin giới hạn anime theo mùa
+• Season Pass theo mùa", "Highlight": "", "Mainsite": "https://jz2.163.com", "AppStore": "", "GooglePlay": "", "Store CN": "TapTap: https://www.taptap.cn/app/374012", "ios_id": "", "taptap_id": "374012", "icon_url": ""}, {"STT": "16", "Tên gốc": "末世危城", "Tên tiếng Trung (nếu khác)": "末世危城", "Tên tiếng Anh (nếu khác)": "Last Shelter: Survival City", "Thể loại": "SLG", "Trạng thái phát hành": "公测", "Trạng thái (Tiếng Việt)": "Open Beta", "Thời gian": "2026-06-01", "Khu vực phát hành": "Toàn Châu Á", "Developer": "FunPlus", "Developer EN": "FunPlus International AG", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc (niêm yết Mỹ)", "Năm thành lập": "2010", "Niêm yết 上市": "是（港股）", "Core Gameplay": "末日城市建设+战略SLG，玩家在僵尸末日重建文明，联盟战争与资源争夺是核心驱动；跨服联盟外交深度高。", "Core Gameplay VN": "• SLG xây dựng thành phố + chiến lược thời tận thế zombie
+• Tái thiết văn minh trong thế giới hậu tận thế
+• Chiến tranh liên minh và tranh tài nguyên là động lực cốt lõi
+• Hệ thống ngoại giao liên server độ sâu cao", "Highlight": "⭐ HIGHLIGHT", "Mainsite": "https://www.funplus.com/games", "AppStore": "https://apps.apple.com/app/id6470327048", "GooglePlay": "https://play.google.com/store/apps/details?id=com.funplus.mswc", "Store CN": "TapTap: https://www.taptap.cn/app/361580", "ios_id": "6470327048", "taptap_id": "361580", "icon_url": ""}, {"STT": "17", "Tên gốc": "梦幻新诛仙", "Tên tiếng Trung (nếu khác)": "梦幻新诛仙", "Tên tiếng Anh (nếu khác)": "New Fantasy Jade Dynasty", "Thể loại": "MMORPG", "Trạng thái phát hành": "公测", "Trạng thái (Tiếng Việt)": "Open Beta", "Thời gian": "2026-05-28", "Khu vực phát hành": "Trung Quốc", "Developer": "北京完美世界", "Developer EN": "Perfect World (Beijing)", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "1999", "Niêm yết 上市": "是（PWRD）", "Core Gameplay": "诛仙IP改编手游新篇，保留双修系统与师门玩法，优化成长数值，突出玩家社交与跨服大型副本体验。", "Core Gameplay VN": "• MMORPG tiên hiệp mới dựa trên IP Tru Tiên
+• Giữ nguyên hệ thống song tu và thầy trò
+• Tối ưu hóa chỉ số tăng trưởng
+• Nhấn mạnh social và dungeon liên server quy mô lớn", "Highlight": "⭐ HIGHLIGHT", "Mainsite": "https://mhxzx.wanmei.com", "AppStore": "", "GooglePlay": "", "Store CN": "TapTap: https://www.taptap.cn/app/357890", "ios_id": "", "taptap_id": "357890", "icon_url": ""}, {"STT": "18", "Tên gốc": "勇者斗恶龙 达依的大冒险", "Tên tiếng Trung (nếu khác)": "勇者斗恶龙达依的大冒险", "Tên tiếng Anh (nếu khác)": "DQ Dai's Big Adventure", "Thể loại": "ARPG", "Trạng thái phát hành": "公测", "Trạng thái (Tiếng Việt)": "Open Beta", "Thời gian": "2026-06-12", "Khu vực phát hành": "Toàn Châu Á", "Developer": "Square Enix", "Developer EN": "Square Enix Co., Ltd.", "Quốc gia/ Vùng lãnh thổ": "Nhật Bản", "Năm thành lập": "1975", "Niêm yết 上市": "是（TYO 9684）", "Core Gameplay": "经典漫画IP改编3D动作RPG，玩家跟随达依踏上奇幻冒险，还原动漫场景，多人协同BOSS战为核心玩法。", "Core Gameplay VN": "• ARPG 3D chuyển thể từ manga kinh điển Dragon Quest Dai
+• Theo dấu hành trình phiêu lưu của Dai
+• Tái hiện trung thực các cảnh anime
+• Boss chiến hợp tác nhiều người là gameplay cốt lõi", "Highlight": "", "Mainsite": "https://dq-dai.square-enix-games.com", "AppStore": "https://apps.apple.com/app/id6736407038", "GooglePlay": "https://play.google.com/store/apps/details?id=com.square_enix.dqdai", "Store CN": "TapTap: https://www.taptap.cn/app/376043", "ios_id": "6736407038", "taptap_id": "376043", "icon_url": ""}, {"STT": "19", "Tên gốc": "Aether Gazer 2", "Tên tiếng Trung (nếu khác)": "灵魂潮汐", "Tên tiếng Anh (nếu khác)": "", "Thể loại": "ARPG", "Trạng thái phát hành": "CBT", "Trạng thái (Tiếng Việt)": "CBT (Xóa dữ liệu)", "Thời gian": "2026-Q3", "Khu vực phát hành": "Toàn Châu Á", "Developer": "Yostar（云雀科技）", "Developer EN": "Yostar Limited", "Quốc gia/ Vùng lãnh thổ": "Nhật Bản / Trung Quốc", "Năm thành lập": "2015", "Niêm yết 上市": "否", "Core Gameplay": "二次元动作RPG续作，高速连招与闪避系统进化，新增开放世界层级与更深度的角色羁绊剧情线。", "Core Gameplay VN": "• ARPG anime phần 2, hệ thống combo tốc độ cao và né đòn tiến hóa
+• Thêm tầng thế giới mở
+• Tuyến truyện tình cảm nhân vật sâu hơn
+• Đồ họa anime chất lượng cao", "Highlight": "", "Mainsite": "https://ag2.yostar.com", "AppStore": "", "GooglePlay": "", "Store CN": "TapTap: https://www.taptap.cn/app/371290", "ios_id": "", "taptap_id": "371290", "icon_url": ""}, {"STT": "20", "Tên gốc": "万象物语2", "Tên tiếng Trung (nếu khác)": "万象物语2", "Tên tiếng Anh (nếu khác)": "Sdorica 2", "Thể loại": "Turn-based", "Trạng thái phát hành": "CBT", "Trạng thái (Tiếng Việt)": "CBT (Xóa dữ liệu)", "Thời gian": "2026-Q4", "Khu vực phát hành": "Toàn Châu Á", "Developer": "Rayark Games", "Developer EN": "Rayark Inc.", "Quốc gia/ Vùng lãnh thổ": "Đài Loan (TQ)", "Năm thành lập": "2011", "Niêm yết 上市": "否", "Core Gameplay": "物理三消+角色配置策略RPG续作，以宝石消除触发角色技能，剧情叙事精品、音乐制作水准高。", "Core Gameplay VN": "• RPG chiến thuật kết hợp match-3 vật lý phần 2
+• Xóa đá quý để kích hoạt kỹ năng nhân vật
+• Cốt truyện đặc sắc, âm nhạc sản xuất chất lượng cao
+• Thiết kế nhân vật nghệ thuật độc đáo", "Highlight": "⭐ HIGHLIGHT", "Mainsite": "https://sdorica.rayark.com", "AppStore": "https://apps.apple.com/app/id6504321890", "GooglePlay": "https://play.google.com/store/apps/details?id=com.rayark.sdorica2", "Store CN": "TapTap: https://www.taptap.cn/app/353401", "ios_id": "6504321890", "taptap_id": "353401", "icon_url": ""}], "bxh_30": [{"Hạng": "1", "Tên gốc": "原神", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Genshin Impact", "Thể loại": "ARPG", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "miHoYo（米哈游）", "Developer EN": "miHoYo Co., Ltd.", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2012", "Niêm yết 上市": "否", "Core Gameplay": "开放世界动作RPG，七国旅行探索，元素反应战斗系统，丰富的剧情与角色收集机制。", "Core Gameplay VN": "• ARPG thế giới mở, khám phá 7 quốc gia
+• Hệ thống phản ứng nguyên tố độc đáo
+• Cốt truyện và cơ chế thu thập nhân vật phong phú", "Highlight": "", "Mainsite": "https://genshin.hoyoverse.com", "AppStore": "https://apps.apple.com/app/id1517783697", "GooglePlay": "https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact", "Store CN": "官网: https://ys.mihoyo.com | TapTap: https://www.taptap.cn/app/168332", "ios_id": "1517783697", "taptap_id": "168332", "icon_url": ""}, {"Hạng": "2", "Tên gốc": "王者荣耀", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Honor of Kings", "Thể loại": "MOBA", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "腾讯TiMi Studio", "Developer EN": "Tencent TiMi Studio", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2008", "Niêm yết 上市": "是（腾讯 0700.HK）", "Core Gameplay": "5v5手机MOBA，以历史/神话英雄为蓝本，快节奏对战，国内DAU峰值超1亿。", "Core Gameplay VN": "• MOBA 5v5 trên mobile hàng đầu Trung Quốc
+• Anh hùng lấy cảm hứng từ lịch sử/thần thoại
+• Tốc độ trận đấu nhanh, DAU đỉnh điểm trên 100 triệu", "Highlight": "", "Mainsite": "https://pvp.qq.com", "AppStore": "https://apps.apple.com/cn/app/id917464478", "GooglePlay": "https://play.google.com/store/apps/details?id=com.levelinfinite.hok", "Store CN": "官网: https://pvp.qq.com | 应用宝: https://sj.qq.com/appdetail/com.tencent.tmgp.sgame", "ios_id": "917464478", "taptap_id": "", "icon_url": ""}, {"Hạng": "3", "Tên gốc": "和平精英", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "PUBG Mobile CN", "Thể loại": "Battle Royale", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Trung Quốc", "Developer": "腾讯光子工作室群", "Developer EN": "Tencent Photon Studio Group", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2008", "Niêm yết 上市": "是（腾讯）", "Core Gameplay": "百人大逃杀射击游戏，全真实弹道+物资争夺，多种模式（经典/娱乐/竞技）。", "Core Gameplay VN": "• Battle Royale 100 người trên mobile
+• Hệ thống đạn đạo thực tế, tranh giành vật tư
+• Đa chế độ: cổ điển / giải trí / thi đấu", "Highlight": "", "Mainsite": "https://pjhd.qq.com", "AppStore": "https://apps.apple.com/cn/app/id1200002998", "GooglePlay": "", "Store CN": "官网: https://pjhd.qq.com | 应用宝: https://sj.qq.com/appdetail/com.tencent.tmgp.pubgmhd", "ios_id": "1200002998", "taptap_id": "", "icon_url": ""}, {"Hạng": "4", "Tên gốc": "明日方舟", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Arknights", "Thể loại": "Tower Defense", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "Hypergryph（鹰角网络）", "Developer EN": "Hypergryph Co., Ltd.", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2016", "Niêm yết 上市": "否", "Core Gameplay": "二次元塔防策略RPG，干员培养与战术部署系统，深度剧情与高质量美术。", "Core Gameplay VN": "• RPG chiến thuật Tower Defense anime
+• Hệ thống nuôi dưỡng và triển khai operator chiến thuật
+• Cốt truyện sâu, mỹ thuật chất lượng cao", "Highlight": "", "Mainsite": "https://ak.hypergryph.com", "AppStore": "https://apps.apple.com/app/id1454208647", "GooglePlay": "https://play.google.com/store/apps/details?id=com.YoStarEN.Arknights", "Store CN": "官网: https://ak.hypergryph.com | TapTap: https://www.taptap.cn/app/158138", "ios_id": "1454208647", "taptap_id": "158138", "icon_url": ""}, {"Hạng": "5", "Tên gốc": "三国志·战略版", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Three Kingdoms Tactics", "Thể loại": "SLG", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "腾讯光子", "Developer EN": "Tencent Photon Studio", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2008", "Niêm yết 上市": "是（腾讯）", "Core Gameplay": "三国题材高拟真SLG，武将策略搭配，实时行军作战，赛季制大服国战。", "Core Gameplay VN": "• SLG Tam Quốc độ mô phỏng cao
+• Phối hợp chiến lược tướng lĩnh, hành quân thời gian thực
+• Quốc chiến server lớn theo mùa", "Highlight": "⭐ HIGHLIGHT", "Mainsite": "https://sgzly.qq.com", "AppStore": "https://apps.apple.com/cn/app/id1451036521", "GooglePlay": "https://play.google.com/store/apps/details?id=com.tencent.zhzz", "Store CN": "官网: https://sgzly.qq.com | 应用宝: https://sj.qq.com/appdetail/com.tencent.tmgp.sgzhanluev", "ios_id": "1451036521", "taptap_id": "", "icon_url": ""}, {"Hạng": "6", "Tên gốc": "崩坏：星穹铁道", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Honkai: Star Rail", "Thể loại": "Turn-based RPG", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "miHoYo（米哈游）", "Developer EN": "miHoYo Co., Ltd.", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2012", "Niêm yết 上市": "否", "Core Gameplay": "回合制策略RPG，宇宙列车旅行叙事，命途系统角色搭配，精品二次元剧情。", "Core Gameplay VN": "• RPG chiến lược lượt turn-based, du hành vũ trụ bằng tàu hỏa
+• Hệ thống Vận Mệnh phối hợp đội hình nhân vật
+• Cốt truyện anime chất lượng cao", "Highlight": "⭐ HIGHLIGHT", "Mainsite": "https://hsr.hoyoverse.com", "AppStore": "https://apps.apple.com/app/id6448525073", "GooglePlay": "https://play.google.com/store/apps/details?id=com.HoYoverse.hkrpgoversea", "Store CN": "官网: https://sr.mihoyo.com | TapTap: https://www.taptap.cn/app/225069", "ios_id": "6448525073", "taptap_id": "225069", "icon_url": ""}, {"Hạng": "7", "Tên gốc": "率土之滨", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Infinite Borders", "Thể loại": "SLG", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Trung Quốc", "Developer": "网易（163）", "Developer EN": "NetEase Games", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "1997", "Niêm yết 上市": "是（NTES）", "Core Gameplay": "全地图同步推进SLG，无赛季机制历史悠久，策略深度顶尖，公会政治复杂。", "Core Gameplay VN": "• SLG toàn bản đồ đồng bộ tiến quân
+• Không có cơ chế mùa, game chiều sâu cao nhất thể loại
+• Chính trị phường hội cực kỳ phức tạp", "Highlight": "⭐ HIGHLIGHT", "Mainsite": "https://ltsb.163.com", "AppStore": "https://apps.apple.com/cn/app/id1190336148", "GooglePlay": "", "Store CN": "官网: https://ltsb.163.com | TapTap: https://www.taptap.cn/app/22243", "ios_id": "1190336148", "taptap_id": "22243", "icon_url": ""}, {"Hạng": "8", "Tên gốc": "剑与远征：启程", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "AFK Journey", "Thể loại": "Idle RPG", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "Lilith Games（莉莉丝）", "Developer EN": "Lilith Games Co., Ltd.", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2013", "Niêm yết 上市": "否", "Core Gameplay": "挂机策略RPG，英雄收集+自动战斗，开放世界探索，精品手绘风格。", "Core Gameplay VN": "• RPG idle chiến lược, thu thập anh hùng + chiến đấu tự động
+• Khám phá thế giới mở
+• Đồ họa tranh tay đặc sắc", "Highlight": "", "Mainsite": "https://afkjourney.farlightgames.com", "AppStore": "https://apps.apple.com/app/id6474849223", "GooglePlay": "https://play.google.com/store/apps/details?id=com.farlightgames.igame.gp", "Store CN": "官网: https://jyyzqc.lilithgames.com | TapTap: https://www.taptap.cn/app/270267", "ios_id": "6474849223", "taptap_id": "270267", "icon_url": ""}, {"Hạng": "9", "Tên gốc": "逆水寒手游", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Swords of Legends Online Mobile", "Thể loại": "MMORPG", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Trung Quốc", "Developer": "网易（163）", "Developer EN": "NetEase Games", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "1997", "Niêm yết 上市": "是（NTES）", "Core Gameplay": "高品质武侠MMO，支持换装摄影社交，PVP武林大会，自由职业切换系统。", "Core Gameplay VN": "• MMORPG võ hiệp chất lượng cao
+• Hỗ trợ thay trang phục, chụp ảnh, xã hội
+• PVP Võ Lâm Đại Hội
+• Hệ thống chuyển đổi nghề nghiệp tự do", "Highlight": "⭐ HIGHLIGHT", "Mainsite": "https://nsh.163.com", "AppStore": "https://apps.apple.com/cn/app/id1569224264", "GooglePlay": "", "Store CN": "官网: https://nsh.163.com | TapTap: https://www.taptap.cn/app/188318", "ios_id": "1569224264", "taptap_id": "188318", "icon_url": ""}, {"Hạng": "10", "Tên gốc": "蛋仔派对", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Egg Party", "Thể loại": "Casual/Party", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Trung Quốc", "Developer": "网易（163）", "Developer EN": "NetEase Games", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "1997", "Niêm yết 上市": "是（NTES）", "Core Gameplay": "弹力小人聚会派对游戏，创意关卡编辑器，多种小游戏竞技模式，主打轻松休闲社交。", "Core Gameplay VN": "• Party game nhân vật trứng đàn hồi vui nhộn
+• Editor tạo màn chơi sáng tạo
+• Nhiều chế độ mini game
+• Hướng đến casual và xã hội", "Highlight": "⭐ HIGHLIGHT", "Mainsite": "https://danzai.163.com", "AppStore": "https://apps.apple.com/cn/app/id1609659690", "GooglePlay": "", "Store CN": "官网: https://danzai.163.com | TapTap: https://www.taptap.cn/app/220613", "ios_id": "1609659690", "taptap_id": "220613", "icon_url": ""}], "bxh_90": [{"Hạng": "1", "Tên gốc": "原神", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Genshin Impact", "Thể loại": "ARPG", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "miHoYo", "Developer EN": "miHoYo Co., Ltd.", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2012", "Niêm yết 上市": "否", "Core Gameplay": "开放世界ARPG，元素反应战斗，多国剧情探索，持续高质量版本更新。", "Core Gameplay VN": "• ARPG thế giới mở, chiến đấu phản ứng nguyên tố
+• Khám phá cốt truyện đa quốc gia
+• Cập nhật phiên bản chất lượng cao liên tục", "Highlight": "", "Mainsite": "https://genshin.hoyoverse.com", "AppStore": "https://apps.apple.com/app/id1517783697", "GooglePlay": "https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact", "Store CN": "官网: https://ys.mihoyo.com | TapTap: https://www.taptap.cn/app/168332", "ios_id": "1517783697", "taptap_id": "168332", "icon_url": ""}, {"Hạng": "2", "Tên gốc": "王者荣耀", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Honor of Kings", "Thể loại": "MOBA", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "腾讯TiMi Studio", "Developer EN": "Tencent TiMi Studio", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2008", "Niêm yết 上市": "是（腾讯）", "Core Gameplay": "国内最大体量手游MOBA，职业赛事成熟，英雄池丰富。", "Core Gameplay VN": "• MOBA mobile lớn nhất Trung Quốc
+• Hệ thống giải đấu chuyên nghiệp trưởng thành
+• Pool anh hùng phong phú", "Highlight": "", "Mainsite": "https://pvp.qq.com", "AppStore": "https://apps.apple.com/cn/app/id917464478", "GooglePlay": "https://play.google.com/store/apps/details?id=com.levelinfinite.hok", "Store CN": "官网: https://pvp.qq.com | 应用宝: https://sj.qq.com/appdetail/com.tencent.tmgp.sgame", "ios_id": "917464478", "taptap_id": "", "icon_url": ""}, {"Hạng": "3", "Tên gốc": "崩坏：星穹铁道", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Honkai: Star Rail", "Thể loại": "Turn-based RPG", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "miHoYo", "Developer EN": "miHoYo Co., Ltd.", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2012", "Niêm yết 上市": "否", "Core Gameplay": "回合制二次元RPG，版本迭代快，剧情口碑极高。", "Core Gameplay VN": "• RPG lượt turn-based anime
+• Cập nhật phiên bản nhanh
+• Cốt truyện được đánh giá cực cao", "Highlight": "⭐ HIGHLIGHT", "Mainsite": "https://hsr.hoyoverse.com", "AppStore": "https://apps.apple.com/app/id6448525073", "GooglePlay": "https://play.google.com/store/apps/details?id=com.HoYoverse.hkrpgoversea", "Store CN": "官网: https://sr.mihoyo.com | TapTap: https://www.taptap.cn/app/225069", "ios_id": "6448525073", "taptap_id": "225069", "icon_url": ""}, {"Hạng": "4", "Tên gốc": "和平精英", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "PUBG Mobile CN", "Thể loại": "Battle Royale", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Trung Quốc", "Developer": "腾讯光子", "Developer EN": "Tencent Photon Studio", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2008", "Niêm yết 上市": "是（腾讯）", "Core Gameplay": "国内主流大逃杀射击游戏，持续赛季更新。", "Core Gameplay VN": "• Game bắn súng battle royale chủ đạo tại Trung Quốc
+• Cập nhật mùa liên tục", "Highlight": "", "Mainsite": "https://pjhd.qq.com", "AppStore": "https://apps.apple.com/cn/app/id1200002998", "GooglePlay": "", "Store CN": "官网: https://pjhd.qq.com | 应用宝: https://sj.qq.com/appdetail/com.tencent.tmgp.pubgmhd", "ios_id": "1200002998", "taptap_id": "", "icon_url": ""}, {"Hạng": "5", "Tên gốc": "三国志·战略版", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Three Kingdoms Tactics", "Thể loại": "SLG", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "腾讯光子", "Developer EN": "Tencent Photon Studio", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2008", "Niêm yết 上市": "是（腾讯）", "Core Gameplay": "三国SLG标杆产品，赛季制策略博弈深度高。", "Core Gameplay VN": "• SLG Tam Quốc chuẩn mực
+• Chiến lược theo mùa độ sâu cao", "Highlight": "⭐ HIGHLIGHT", "Mainsite": "https://sgzly.qq.com", "AppStore": "https://apps.apple.com/cn/app/id1451036521", "GooglePlay": "https://play.google.com/store/apps/details?id=com.tencent.zhzz", "Store CN": "官网: https://sgzly.qq.com | 应用宝: https://sj.qq.com/appdetail/com.tencent.tmgp.sgzhanluev", "ios_id": "1451036521", "taptap_id": "", "icon_url": ""}, {"Hạng": "6", "Tên gốc": "明日方舟", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Arknights", "Thể loại": "Tower Defense", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "Hypergryph", "Developer EN": "Hypergryph Co., Ltd.", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2016", "Niêm yết 上市": "否", "Core Gameplay": "深度策略塔防RPG，持续IP内容扩展。", "Core Gameplay VN": "• RPG Tower Defense chiều sâu chiến thuật
+• Mở rộng nội dung IP liên tục", "Highlight": "", "Mainsite": "https://ak.hypergryph.com", "AppStore": "https://apps.apple.com/app/id1454208647", "GooglePlay": "https://play.google.com/store/apps/details?id=com.YoStarEN.Arknights", "Store CN": "官网: https://ak.hypergryph.com | TapTap: https://www.taptap.cn/app/158138", "ios_id": "1454208647", "taptap_id": "158138", "icon_url": ""}, {"Hạng": "7", "Tên gốc": "万国觉醒", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Rise of Kingdoms", "Thể loại": "SLG", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "Lilith Games（莉莉丝）", "Developer EN": "Lilith Games Co., Ltd.", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2013", "Niêm yết 上市": "否", "Core Gameplay": "全球文明SLG，发展路线多元，联盟协作征服玩法。", "Core Gameplay VN": "• SLG văn minh toàn cầu
+• Đa dạng hướng phát triển
+• Gameplay chinh phục hợp tác liên minh", "Highlight": "⭐ HIGHLIGHT", "Mainsite": "https://rok.lilithgames.com", "AppStore": "https://apps.apple.com/app/id1354260888", "GooglePlay": "https://play.google.com/store/apps/details?id=com.lilithgame.roc.gp", "Store CN": "官网: https://wgjx.lilithgames.com | TapTap: https://www.taptap.cn/app/67569", "ios_id": "1354260888", "taptap_id": "67569", "icon_url": ""}, {"Hạng": "8", "Tên gốc": "逆水寒手游", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "SoL Mobile", "Thể loại": "MMORPG", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Trung Quốc", "Developer": "网易", "Developer EN": "NetEase Games", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "1997", "Niêm yết 上市": "是（NTES）", "Core Gameplay": "武侠MMO，品质感强，用户粘性高。", "Core Gameplay VN": "• MMO võ hiệp chất lượng cao
+• Độ gắn kết người dùng rất cao", "Highlight": "⭐ HIGHLIGHT", "Mainsite": "https://nsh.163.com", "AppStore": "https://apps.apple.com/cn/app/id1569224264", "GooglePlay": "", "Store CN": "官网: https://nsh.163.com | TapTap: https://www.taptap.cn/app/188318", "ios_id": "1569224264", "taptap_id": "188318", "icon_url": ""}, {"Hạng": "9", "Tên gốc": "第五人格", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Identity V", "Thể loại": "Asymmetric Horror", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "网易", "Developer EN": "NetEase Games", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "1997", "Niêm yết 上市": "是（NTES）", "Core Gameplay": "1v4非对称恐怖游戏，监管者vs求生者，联动IP多样。", "Core Gameplay VN": "• Game kinh dị bất đối xứng 1v4
+• Người giám sát vs người sống sót
+• Đa dạng IP liên kết collab", "Highlight": "", "Mainsite": "https://dwrg.163.com", "AppStore": "https://apps.apple.com/app/id1229972113", "GooglePlay": "https://play.google.com/store/apps/details?id=com.netease.idv.googleplay", "Store CN": "官网: https://dwrg.163.com | TapTap: https://www.taptap.cn/app/20491", "ios_id": "1229972113", "taptap_id": "20491", "icon_url": ""}, {"Hạng": "10", "Tên gốc": "光遇", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Sky: Children of the Light", "Thể loại": "Casual/Social", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "thatgamecompany", "Developer EN": "thatgamecompany Inc.", "Quốc gia/ Vùng lãnh thổ": "Hoa Kỳ", "Năm thành lập": "2006", "Niêm yết 上市": "否", "Core Gameplay": "治愈风飞行社交游戏，点燃蜡烛与陌生人互动，季节限定内容深受欢迎。", "Core Gameplay VN": "• Game xã hội bay chủ đề chữa lành
+• Thắp nến kết nối với người lạ
+• Nội dung giới hạn theo mùa được yêu thích", "Highlight": "⭐ HIGHLIGHT", "Mainsite": "https://thatskygame.com", "AppStore": "https://apps.apple.com/app/id1462117269", "GooglePlay": "https://play.google.com/store/apps/details?id=com.tgc.sky.android", "Store CN": "TapTap: https://www.taptap.cn/app/135596", "ios_id": "1462117269", "taptap_id": "135596", "icon_url": ""}], "bxh_year": [{"Hạng": "1", "Tên gốc": "原神", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Genshin Impact", "Thể loại": "ARPG", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "miHoYo", "Developer EN": "miHoYo Co., Ltd.", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2012", "Niêm yết 上市": "否", "Core Gameplay": "年度综合表现最强手游，全球多区市场持续盈利。", "Core Gameplay VN": "• Game mobile tổng thể mạnh nhất năm
+• Doanh thu ổn định trên nhiều thị trường toàn cầu", "Highlight": "", "Mainsite": "https://genshin.hoyoverse.com", "AppStore": "https://apps.apple.com/app/id1517783697", "GooglePlay": "https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact", "Store CN": "官网: https://ys.mihoyo.com | TapTap: https://www.taptap.cn/app/168332", "ios_id": "1517783697", "taptap_id": "168332", "icon_url": ""}, {"Hạng": "2", "Tên gốc": "崩坏：星穹铁道", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Honkai: Star Rail", "Thể loại": "Turn-based RPG", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "miHoYo", "Developer EN": "miHoYo Co., Ltd.", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2012", "Niêm yết 上市": "否", "Core Gameplay": "年度增长最快RPG之一，版本口碑稳定。", "Core Gameplay VN": "• Một trong những RPG tăng trưởng nhanh nhất năm
+• Danh tiếng phiên bản ổn định", "Highlight": "⭐ HIGHLIGHT", "Mainsite": "https://hsr.hoyoverse.com", "AppStore": "https://apps.apple.com/app/id6448525073", "GooglePlay": "https://play.google.com/store/apps/details?id=com.HoYoverse.hkrpgoversea", "Store CN": "官网: https://sr.mihoyo.com | TapTap: https://www.taptap.cn/app/225069", "ios_id": "6448525073", "taptap_id": "225069", "icon_url": ""}, {"Hạng": "3", "Tên gốc": "王者荣耀", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Honor of Kings", "Thể loại": "MOBA", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "腾讯TiMi Studio", "Developer EN": "Tencent TiMi Studio", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2008", "Niêm yết 上市": "是（腾讯）", "Core Gameplay": "年度国内DAU最高MOBA，商业化稳定。", "Core Gameplay VN": "• MOBA có DAU cao nhất Trung Quốc trong năm
+• Thương mại hóa ổn định", "Highlight": "", "Mainsite": "https://pvp.qq.com", "AppStore": "https://apps.apple.com/cn/app/id917464478", "GooglePlay": "https://play.google.com/store/apps/details?id=com.levelinfinite.hok", "Store CN": "官网: https://pvp.qq.com | 应用宝: https://sj.qq.com/appdetail/com.tencent.tmgp.sgame", "ios_id": "917464478", "taptap_id": "", "icon_url": ""}, {"Hạng": "4", "Tên gốc": "三国志·战略版", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Three Kingdoms Tactics", "Thể loại": "SLG", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "腾讯光子", "Developer EN": "Tencent Photon Studio", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2008", "Niêm yết 上市": "是（腾讯）", "Core Gameplay": "年度SLG标杆，赛季制模式成熟。", "Core Gameplay VN": "• SLG chuẩn mực năm, mô hình mùa trưởng thành", "Highlight": "⭐ HIGHLIGHT", "Mainsite": "https://sgzly.qq.com", "AppStore": "https://apps.apple.com/cn/app/id1451036521", "GooglePlay": "https://play.google.com/store/apps/details?id=com.tencent.zhzz", "Store CN": "官网: https://sgzly.qq.com | 应用宝: https://sj.qq.com/appdetail/com.tencent.tmgp.sgzhanluev", "ios_id": "1451036521", "taptap_id": "", "icon_url": ""}, {"Hạng": "5", "Tên gốc": "和平精英", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "PUBG Mobile CN", "Thể loại": "Battle Royale", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Trung Quốc", "Developer": "腾讯光子", "Developer EN": "Tencent Photon Studio", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2008", "Niêm yết 上市": "是（腾讯）", "Core Gameplay": "国内FPS/大逃杀年度榜首。", "Core Gameplay VN": "• Dẫn đầu BXH FPS/Battle Royale Trung Quốc trong năm", "Highlight": "", "Mainsite": "https://pjhd.qq.com", "AppStore": "https://apps.apple.com/cn/app/id1200002998", "GooglePlay": "", "Store CN": "官网: https://pjhd.qq.com | 应用宝: https://sj.qq.com/appdetail/com.tencent.tmgp.pubgmhd", "ios_id": "1200002998", "taptap_id": "", "icon_url": ""}, {"Hạng": "6", "Tên gốc": "明日方舟", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Arknights", "Thể loại": "Tower Defense", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "Hypergryph", "Developer EN": "Hypergryph Co., Ltd.", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2016", "Niêm yết 上市": "否", "Core Gameplay": "年度二次元塔防收入冠军，IP衍生联动强劲。", "Core Gameplay VN": "• Dẫn đầu doanh thu Tower Defense anime trong năm
+• Collab IP phái sinh mạnh mẽ", "Highlight": "", "Mainsite": "https://ak.hypergryph.com", "AppStore": "https://apps.apple.com/app/id1454208647", "GooglePlay": "https://play.google.com/store/apps/details?id=com.YoStarEN.Arknights", "Store CN": "官网: https://ak.hypergryph.com | TapTap: https://www.taptap.cn/app/158138", "ios_id": "1454208647", "taptap_id": "158138", "icon_url": ""}, {"Hạng": "7", "Tên gốc": "率土之滨", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Infinite Borders", "Thể loại": "SLG", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Trung Quốc", "Developer": "网易", "Developer EN": "NetEase Games", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "1997", "Niêm yết 上市": "是（NTES）", "Core Gameplay": "长线运营SLG典范，用户黏性极强。", "Core Gameplay VN": "• Điển hình SLG vận hành dài hạn
+• Độ gắn kết người dùng cực cao", "Highlight": "⭐ HIGHLIGHT", "Mainsite": "https://ltsb.163.com", "AppStore": "https://apps.apple.com/cn/app/id1190336148", "GooglePlay": "", "Store CN": "官网: https://ltsb.163.com | TapTap: https://www.taptap.cn/app/22243", "ios_id": "1190336148", "taptap_id": "22243", "icon_url": ""}, {"Hạng": "8", "Tên gốc": "万国觉醒", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Rise of Kingdoms", "Thể loại": "SLG", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "Lilith Games", "Developer EN": "Lilith Games Co., Ltd.", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2013", "Niêm yết 上市": "否", "Core Gameplay": "出海SLG年度代表作，全球多市场排名前列。", "Core Gameplay VN": "• SLG xuất khẩu tiêu biểu của năm
+• Top đầu trên nhiều thị trường toàn cầu", "Highlight": "⭐ HIGHLIGHT", "Mainsite": "https://rok.lilithgames.com", "AppStore": "https://apps.apple.com/app/id1354260888", "GooglePlay": "https://play.google.com/store/apps/details?id=com.lilithgame.roc.gp", "Store CN": "官网: https://wgjx.lilithgames.com | TapTap: https://www.taptap.cn/app/67569", "ios_id": "1354260888", "taptap_id": "67569", "icon_url": ""}, {"Hạng": "9", "Tên gốc": "梦幻西游手游", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Fantasy Westward Journey Mobile", "Thể loại": "MMORPG", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Trung Quốc", "Developer": "网易", "Developer EN": "NetEase Games", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "1997", "Niêm yết 上市": "是（NTES）", "Core Gameplay": "国内MMORPG手游常青树，用户忠诚度极高。", "Core Gameplay VN": "• MMORPG mobile xanh tươi mãi tại Trung Quốc
+• Độ trung thành người dùng cực cao", "Highlight": "⭐ HIGHLIGHT", "Mainsite": "https://mhxy.163.com", "AppStore": "https://apps.apple.com/cn/app/id914875288", "GooglePlay": "", "Store CN": "官网: https://mhxy.163.com | TapTap: https://www.taptap.cn/app/6614", "ios_id": "914875288", "taptap_id": "6614", "icon_url": ""}, {"Hạng": "10", "Tên gốc": "无限暖暖", "Tên tiếng Trung (nếu khác)": "", "Tên tiếng Anh (nếu khác)": "Infinity Nikki", "Thể loại": "Casual", "Trạng thái": "公测运营", "Trạng thái (Tiếng Việt)": "Open Beta / Đang vận hành", "Khu vực phát hành": "Toàn Châu Á", "Developer": "叠纸网络", "Developer EN": "Infold Games (PaperGames)", "Quốc gia/ Vùng lãnh thổ": "Trung Quốc", "Năm thành lập": "2013", "Niêm yết 上市": "否", "Core Gameplay": "2025年度黑马，女性向开放世界换装游戏，全球下载破亿。", "Core Gameplay VN": "• Bất ngờ của năm 2025, game thế giới mở thay đồ hướng nữ
+• Tải về vượt 100 triệu lần toàn cầu", "Highlight": "⭐ HIGHLIGHT", "Mainsite": "https://infinitynikki.infoldgames.com", "AppStore": "https://apps.apple.com/app/id6547858329", "GooglePlay": "https://play.google.com/store/apps/details?id=com.infoldgames.infinitynikki", "Store CN": "TapTap: https://www.taptap.cn/app/290730", "ios_id": "6547858329", "taptap_id": "290730", "icon_url": ""}]};
+
+// ── PERF STORAGE (in-memory, keyed by game name) ──
+const perfDB = {};
+const _clickCache = {};
+const TAPTAP = {};
+const UPDATED_AT = "Chưa có data live (chạy GitHub Actions)";
+let currentGameKey = '';
+
+const HL_GENRES=['mmorpg','cbg','slg','casual','turn-based','turn','shooting'];
+function isHL(g){return g&&HL_GENRES.some(k=>g.toLowerCase().includes(k))}
+
+function gCls(g){
+  const l=(g||'').toLowerCase();
+  if(l.includes('mmorpg'))return'g-mmorpg';
+  if(l.includes('slg'))return'g-slg';
+  if(l.includes('arpg'))return'g-arpg';
+  if(l.includes('casual'))return'g-casual';
+  if(l.includes('cbg'))return'g-cbg';
+  if(l.includes('turn'))return'g-turn';
+  if(l.includes('moba'))return'g-moba';
+  return'g-def';
+}
+function sCls(s){
+  const l=(s||'').toLowerCase();
+  if(l.includes('global'))return's-glob';
+  if(l.includes('open beta')||l.includes('vận hành'))return l.includes('vận hành')?'s-live':'s-ob';
+  if(l.includes('obt')||l.includes('không xóa'))return's-obt';
+  if(l.includes('cbt')||l.includes('xóa'))return's-cbt';
+  if(l.includes('kỹ thuật'))return's-tech';
+  return's-tech';
+}
+function rCls(r){
+  if(!r)return'r-oth';
+  if(r.includes('Trung Quốc'))return'r-cn';
+  if(r.includes('Châu Á'))return'r-asia';
+  return'r-oth';
+}
+function rankB(n){
+  const c=n==1?'rk1':n==2?'rk2':n==3?'rk3':'rkn';
+  return`<div class="rank-b ${c}">${n}</div>`;
+}
+function fmtDate(d){
+  if(!d)return'—';
+  // Already formatted like 2026-06-15 → keep, or 2026-06 → keep
+  return d;
+}
+function gpBullets(txt){
+  if(!txt)return'<span style="color:var(--text3)">—</span>';
+  const lines=txt.split(/\\n|\n/).map(l=>l.trim()).filter(Boolean);
+  return'<ul>'+lines.map(l=>`<li>${l.replace(/^[•·\-]\s*/,'')}</li>`).join('')+'</ul>';
+}
+function storeLinks(g, compact=false){
+  const links=[];
+  if(g.Mainsite) links.push(`<a class="store-link sl-web" href="${g.Mainsite}" target="_blank">🌐 Official</a>`);
+  if(g.AppStore) links.push(`<a class="store-link sl-ios" href="${g.AppStore}" target="_blank">🍎 App Store</a>`);
+  if(g.GooglePlay) links.push(`<a class="store-link sl-gp" href="${g.GooglePlay}" target="_blank">▶ Google Play</a>`);
+  if(g['Store CN']){
+    const cn=g['Store CN'];
+    const url=cn.match(/https?:\/\/[^\s|]+/);
+    if(url) links.push(`<a class="store-link sl-cn" href="${url[0].trim()}" target="_blank">🇨🇳 ${cn.split(':')[0]}</a>`);
+  }
+  if(!links.length)return'<span class="sl-none">—</span>';
+  if(compact) return`<div class="store-links">${links.join('')}</div>`;
+  return links.join('');
+}
+
+
+// ── APP ICON HELPERS ────────────────────────────────────────────────
+const ICON_COLORS=['#7c3aed','#2563eb','#0891b2','#059669','#d97706','#dc2626','#db2777','#4f46e5','#0d9488','#c2410c'];
+function iconColor(name){let h=0;for(let c of (name||''))h=(h*31+c.charCodeAt(0))&0xffff;return ICON_COLORS[h%ICON_COLORS.length];}
+function gameInitial(name){const cjk=(name||'').match(/[\u4e00-\u9fff\u3040-\u30ff]/);if(cjk)return cjk[0];return((name||'').replace(/[^a-zA-Z0-9]/g,'')[0]||'?').toUpperCase();}
+
+function iconHTMLFetch(g, size=44, radius=10){
+  const name    = g['Tên gốc']||'';
+  const iosId   = g.ios_id||'';
+  const iconUrl = g.icon_url||'';  // pre-fetched by GitHub Actions
+  const mainsite= g.Mainsite||'';
+  const color   = iconColor(name);
+  const initial = gameInitial(name);
+  const sz = size+'px';
+  const br = radius+'px';
+  const fs = Math.round(size*0.44)+'px';
+
+  // Fallback avatar HTML (used on img error)
+  const avatarStyle = `width:${sz};height:${sz};border-radius:${br};background:${color};display:flex;align-items:center;justify-content:center;font-size:${fs};font-weight:800;color:#fff;font-family:'Noto Sans SC',sans-serif;flex-shrink:0;letter-spacing:-1px`;
+  const avatarEl    = `<div style="${avatarStyle}">${initial}</div>`;
+  const wrapStyle   = `width:${sz};height:${sz};border-radius:${br};overflow:hidden;flex-shrink:0;background:${color};border:1.5px solid rgba(255,255,255,0.12)`;
+
+  // Priority 1: pre-fetched icon_url from iTunes (via GitHub Actions)
+  if(iconUrl){
+    return `<div style="${wrapStyle}"><img src="${iconUrl}" width="${size}" height="${size}" style="object-fit:cover;display:block;border-radius:${br}" onerror="this.parentElement.outerHTML='${avatarEl.replace(/'/g,"\\'").replace(/"/g,'&quot;')}'" loading="lazy"></div>`;
+  }
+
+  // Priority 2: iTunes artwork via CORS-free URL pattern
+  // Apple artwork URLs are publicly accessible if you know them
+  // Pattern: https://is1-ssl.mzstatic.com/image/thumb/{collection}/{assetid}/60x60bb.jpg
+  // We can't predict the path without API, so use avatar for now
+
+  // Priority 3: Colored avatar (always works, looks great)
+  return `<div style="${wrapStyle};display:flex;align-items:center;justify-content:center"><span style="font-size:${fs};font-weight:800;color:#fff;font-family:'Noto Sans SC',sans-serif">${initial}</span></div>`;
+}
+
+// ── FILTER STATES ──
+const FS={ng:{hl:false,sortCol:null,sortDir:1},r30:{hl:false},r90:{hl:false},ryr:{hl:false}};
+
+// ── POPULATE SELECTS ──
+function popGenre(id,arr,key='Thể loại'){
+  const sel=document.getElementById(id);
+  [...new Set(arr.map(g=>g[key]).filter(Boolean))].sort().forEach(v=>{
+    const o=document.createElement('option');o.value=v;o.textContent=v;sel.appendChild(o);
+  });
+}
+function popStatus(id,arr){
+  const sel=document.getElementById(id);
+  [...new Set(arr.map(g=>g['Trạng thái (Tiếng Việt)']).filter(Boolean))].sort().forEach(v=>{
+    const o=document.createElement('option');o.value=v;o.textContent=v;sel.appendChild(o);
+  });
+}
+
+// ── RENDER STATS ──
+function renderStats(cid,games){
+  const el=document.getElementById(cid);
+  if(!el)return;
+  const hl=games.filter(g=>isHL(g['Thể loại'])).length;
+  const cn=games.filter(g=>(g['Khu vực phát hành']||'').includes('Trung Quốc')).length;
+  const asia=games.filter(g=>(g['Khu vực phát hành']||'').includes('Châu Á')).length;
+  const genres=[...new Set(games.map(g=>g['Thể loại']).filter(Boolean))].length;
+  el.innerHTML=`
+    <div class="stat-card"><div class="stat-icon" style="background:rgba(59,130,246,.15)">🎮</div><div><div class="stat-lbl">Tổng</div><div class="stat-val" style="color:var(--accent2)">${games.length}</div></div></div>
+    <div class="stat-card"><div class="stat-icon" style="background:rgba(245,158,11,.15)">⭐</div><div><div class="stat-lbl">Highlight</div><div class="stat-val" style="color:var(--gold)">${hl}</div></div></div>
+    <div class="stat-card"><div class="stat-icon" style="background:rgba(239,68,68,.15)">🇨🇳</div><div><div class="stat-lbl">Trung Quốc</div><div class="stat-val" style="color:#fca5a5">${cn}</div></div></div>
+    <div class="stat-card"><div class="stat-icon" style="background:rgba(16,185,129,.15)">🌏</div><div><div class="stat-lbl">Toàn Châu Á</div><div class="stat-val" style="color:var(--green)">${asia}</div></div></div>
+    <div class="stat-card"><div class="stat-icon" style="background:rgba(139,92,246,.15)">🎯</div><div><div class="stat-lbl">Thể loại</div><div class="stat-val" style="color:#a78bfa">${genres}</div></div></div>
+  `;
+}
+
+// ── RENDER NEW GAMES ──
+function renderNG(arr){
+  const tb=document.getElementById('ng-body');
+  if(!arr.length){tb.innerHTML='<tr><td colspan="10"><div class="empty"><div class="empty-icon">🔍</div><p>Không có kết quả</p></div></td></tr>';document.getElementById('ng-cnt').textContent='0 game';return;}
+  tb.innerHTML=arr.map((g,i)=>{
+    const hl=isHL(g['Thể loại']);
+    const svn=g['Trạng thái (Tiếng Việt)']||g['Trạng thái phát hành']||'';
+    const devenText=g['Developer EN']?`<div class="dev-en">${g['Developer EN']}</div>`:'';
+    const listed=(g['Niêm yết 上市']||'').startsWith('是');
+    _clickCache['ng__'+i]=g;
+
+    return`<tr class="${hl?'hl-row':''}" data-ck="ng__${i}" style="cursor:pointer">
+      <td class="muted" style="text-align:center">${g.STT}</td>
+      <td class="gname">
+        <div style="display:flex;align-items:flex-start;gap:10px">
+          ${iconHTMLFetch(g,44,10)}
+          <div style="display:flex;flex-direction:column;justify-content:center;min-width:0">
+            <div class="gname-orig">${g['Tên gốc']}</div>
+            ${g['Tên tiếng Anh (nếu khác)']?`<div class="gname-en">${g['Tên tiếng Anh (nếu khác)']}</div>`:''}
+            ${g['Tên tiếng Trung (nếu khác)']?`<div class="gname-cn">${g['Tên tiếng Trung (nếu khác)']}</div>`:''}
+          </div>
+        </div>
+      </td>
+      <td><span class="gbadge ${gCls(g['Thể loại'])}">${g['Thể loại']}</span></td>
+      <td>
+        <span class="sbadge ${sCls(svn)}">${svn}</span>
+        <div style="font-size:10px;color:var(--text3);margin-top:3px">${g['Trạng thái phát hành']}</div>
+      </td>
+      <td class="muted" style="white-space:nowrap">${fmtDate(g['Thời gian'])}</td>
+      <td><span class="rbadge ${rCls(g['Khu vực phát hành'])}">${g['Khu vực phát hành']||'—'}</span></td>
+      <td class="dev-cell">
+        <div class="dev-name">${g.Developer||'—'}</div>${devenText}
+        <div class="dev-meta">${g['Quốc gia/ Vùng lãnh thổ']||''}${g['Năm thành lập']?' · '+g['Năm thành lập']:''}</div>
+        <div class="${listed?'lst-y':'lst-n'}">${listed?'✓ Niêm yết':'Chưa niêm yết'}</div>
+      </td>
+      <td class="gp-cell">${gpBullets(g['Core Gameplay VN'])}</td>
+      <td class="link-cell" onclick="event.stopPropagation()">${storeLinks(g,true)}</td>
+      <td style="text-align:center">${hl?'<span class="hl-star">⭐</span>':''}</td>
+    </tr>`;
+  }).join('');
+  document.getElementById('ng-cnt').textContent=arr.length+' game';
+}
+
+function filterNG(){
+  const q=document.getElementById('ng-q').value.toLowerCase();
+  const genre=document.getElementById('ng-genre').value;
+  const region=document.getElementById('ng-region').value;
+  const status=document.getElementById('ng-status').value;
+  let d=[...RAW.newgames];
+  if(q)d=d.filter(g=>JSON.stringify(g).toLowerCase().includes(q));
+  if(genre)d=d.filter(g=>g['Thể loại']===genre);
+  if(region)d=d.filter(g=>g['Khu vực phát hành']===region);
+  if(status)d=d.filter(g=>g['Trạng thái (Tiếng Việt)']===status);
+  if(FS.ng.hl)d=d.filter(g=>isHL(g['Thể loại']));
+  const {sortCol,sortDir}=FS.ng;
+  if(sortCol!==null){
+    const keys=['STT','','Thể loại','','Thời gian'];
+    const k=keys[sortCol];
+    if(k)d.sort((a,b)=>{const va=a[k]||'',vb=b[k]||'';return va>vb?sortDir:va<vb?-sortDir:0;});
+  }
+  renderNG(d);
+}
+
+let _ngSortCol=null,_ngSortDir=1;
+function sortNG(col){
+  if(_ngSortCol===col)_ngSortDir*=-1; else{_ngSortCol=col;_ngSortDir=1;}
+  FS.ng.sortCol=_ngSortCol;FS.ng.sortDir=_ngSortDir;
+  document.querySelectorAll('#ng-tbl thead th').forEach((th,i)=>{
+    th.classList.toggle('sorted',i===col);
+    const si=th.querySelector('.si');
+    if(si)si.textContent=i===col?(_ngSortDir===1?'↑':'↓'):'↕';
+  });
+  filterNG();
+}
+
+// ── RENDER RANKINGS ──
+function renderRank(arr,tbid){
+  const tb=document.getElementById(tbid);
+  if(!arr.length){tb.innerHTML='<tr><td colspan="9"><div class="empty"><div class="empty-icon">🔍</div><p>Không có kết quả</p></div></td></tr>';return;}
+  tb.innerHTML=arr.map((g,i)=>{
+    const hl=isHL(g['Thể loại']);
+    const svn=g['Trạng thái (Tiếng Việt)']||g['Trạng thái']||'';
+    const listed=(g['Niêm yết 上市']||'').startsWith('是');
+    const devenText=g['Developer EN']?`<div class="dev-en">${g['Developer EN']}</div>`:'';
+    _clickCache[tbid+'__'+i]=g;
+    return`<tr class="${hl?'hl-row':''}" data-ck="${tbid}__${i}" style="cursor:pointer">
+      <td style="text-align:center">${rankB(parseInt(g['Hạng'])||0)}</td>
+      <td class="gname">
+        <div style="display:flex;align-items:flex-start;gap:10px">
+          ${iconHTMLFetch(g,44,10)}
+          <div style="display:flex;flex-direction:column;justify-content:center;min-width:0">
+            <div class="gname-orig">${g['Tên gốc']}</div>
+            ${g['Tên tiếng Anh (nếu khác)']?`<div class="gname-en">${g['Tên tiếng Anh (nếu khác)']}</div>`:''}
+          </div>
+        </div>
+      </td>
+      <td><span class="gbadge ${gCls(g['Thể loại'])}">${g['Thể loại']||'—'}</span></td>
+      <td>
+        <span class="sbadge ${sCls(svn)}">${svn}</span>
+        <div style="font-size:10px;color:var(--text3);margin-top:3px">${g['Trạng thái']||''}</div>
+      </td>
+      <td><span class="rbadge ${rCls(g['Khu vực phát hành'])}">${g['Khu vực phát hành']||'—'}</span></td>
+      <td class="dev-cell">
+        <div class="dev-name">${g.Developer||'—'}</div>${devenText}
+        <div class="dev-meta">${g['Quốc gia/ Vùng lãnh thổ']||''}${g['Năm thành lập']?' · '+g['Năm thành lập']:''}</div>
+        <div class="${listed?'lst-y':'lst-n'}">${listed?'✓ Niêm yết':'Chưa niêm yết'}</div>
+      </td>
+      <td class="gp-cell">${gpBullets(g['Core Gameplay VN'])}</td>
+      <td class="link-cell" onclick="event.stopPropagation()">${storeLinks(g,true)}</td>
+      <td style="text-align:center">${hl?'<span class="hl-star">⭐</span>':''}</td>
+    </tr>`;
+  }).join('');
+}
+
+function filterRank(period){
+  const px=period==='30d'?'r30':period==='90d'?'r90':'ryr';
+  const rk=period==='30d'?'bxh_30':period==='90d'?'bxh_90':'bxh_year';
+  const tbid=px+'-body';
+  const q=document.getElementById(px+'-q').value.toLowerCase();
+  const genre=document.getElementById(px+'-genre').value;
+  let d=[...RAW[rk]];
+  if(q)d=d.filter(g=>JSON.stringify(g).toLowerCase().includes(q));
+  if(genre)d=d.filter(g=>g['Thể loại']===genre);
+  if(FS[px].hl)d=d.filter(g=>isHL(g['Thể loại']));
+  renderRank(d,tbid);
+  document.getElementById(px+'-cnt').textContent=d.length+' game';
+}
+
+// ── TOGGLE HL ──
+function togHL(px){
+  FS[px].hl=!FS[px].hl;
+  const btn=document.getElementById(px+'-hl');
+  btn.classList.toggle('on',FS[px].hl);
+  if(px==='ng')filterNG();
+  else filterRank(px==='r30'?'30d':px==='r90'?'90d':'year');
+}
+
+// ── EXPORT CSV ──
+function exportCSV(src){
+  let data,name;
+  if(src==='ng'){data=RAW.newgames;name='GameMoi_16p';}
+  else if(src==='r30'){data=RAW.bxh_30;name='BXH30ngay_16p';}
+  else if(src==='r90'){data=RAW.bxh_90;name='BXH90ngay_16p';}
+  else{data=RAW.bxh_year;name='BXHNam_16p';}
+  if(!data||!data.length)return;
+  const keys=Object.keys(data[0]).filter(k=>!['Core Gameplay'].includes(k));
+  const rows=[keys.join(','),...data.map(g=>keys.map(k=>{
+    const v=(g[k]||'').toString().replace(/\n/g,' ').replace(/,/g,';');
+    return`"${v}"`;
+  }).join(','))];
+  const blob=new Blob(['\uFEFF'+rows.join('\r\n')],{type:'text/csv;charset=utf-8'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);
+  a.download=`${name}_${new Date().toISOString().slice(0,10)}.csv`;a.click();
+}
+
+// ── MODAL ──
+let currentGame=null;
+function openModal(g){
+  currentGame = g;
+  const isRank='Hạng' in g;
+  document.getElementById('m-title').textContent=g['Tên gốc']||'';
+  const parts=[g['Tên tiếng Anh (nếu khác)'],g['Tên tiếng Trung (nếu khác)']].filter(Boolean);
+  document.getElementById('m-title-en').textContent=parts.join(' · ');
+  // Render icon in modal
+  const iconSlot = document.getElementById('m-icon-slot');
+  if(iconSlot) iconSlot.innerHTML = iconHTMLFetch(g, 60, 14);
+  const svn=g['Trạng thái (Tiếng Việt)']||g['Trạng thái']||g['Trạng thái phát hành']||'';
+  const sKey=isRank?'Trạng thái':'Trạng thái phát hành';
+  const listed=(g['Niêm yết 上市']||'').startsWith('是');
+  const fields=[
+    ['Thể loại',`<span class="gbadge ${gCls(g['Thể loại'])}">${g['Thể loại']||'—'}</span>`],
+    ['Trạng thái',`<span class="sbadge ${sCls(svn)}">${svn}</span> <span style="color:var(--text3);font-size:11px">(${g[sKey]||''})</span>`],
+    isRank?['Hạng',rankB(parseInt(g['Hạng'])||0)]:['Thời gian',fmtDate(g['Thời gian'])],
+    ['Khu vực',`<span class="rbadge ${rCls(g['Khu vực phát hành'])}">${g['Khu vực phát hành']||'—'}</span>`],
+    ['Developer',`<strong>${g.Developer||'—'}</strong>${g['Developer EN']?`<br><span style="font-size:11px;color:var(--text3)">${g['Developer EN']}</span>`:''}`],
+    ['Quốc gia',g['Quốc gia/ Vùng lãnh thổ']||'—'],
+    ['Năm thành lập',g['Năm thành lập']||'—'],
+    ['Niêm yết',`<span class="${listed?'lst-y':'lst-n'}">${listed?'✓ Đã niêm yết':'Chưa niêm yết'}</span><br><span style="font-size:11px;color:var(--text3)">${g['Niêm yết 上市']||''}</span>`],
+  ];
+  document.getElementById('m-grid').innerHTML=fields.map(([l,v])=>`<div class="m-field"><div class="m-flbl">${l}</div><div class="m-fval">${v}</div></div>`).join('');
+  // Gameplay bullets
+  document.getElementById('m-gp').innerHTML=gpBullets(g['Core Gameplay VN'])||`<span style="color:var(--text3)">${g['Core Gameplay']||'—'}</span>`;
+  // Stores
+  const slinks=[];
+  if(g.Mainsite)slinks.push(`<a class="store-link sl-web" href="${g.Mainsite}" target="_blank">🌐 Official Website</a>`);
+  if(g.AppStore)slinks.push(`<a class="store-link sl-ios" href="${g.AppStore}" target="_blank">🍎 App Store</a>`);
+  if(g.GooglePlay)slinks.push(`<a class="store-link sl-gp" href="${g.GooglePlay}" target="_blank">▶ Google Play</a>`);
+  if(g['Store CN']){
+    const cn=g['Store CN'];
+    const parts2=cn.split('|').map(s=>s.trim());
+    parts2.forEach(p=>{
+      const m=p.match(/(.+?):\s*(https?:\/\/\S+)/);
+      if(m)slinks.push(`<a class="store-link sl-cn" href="${m[2]}" target="_blank">🇨🇳 ${m[1]}</a>`);
+    });
+  }
+  document.getElementById('m-store-links').innerHTML=slinks.length?slinks.join(''):'<span class="sl-none">Chưa có thông tin</span>';
+  // Performance
+  currentGameKey=g['Tên gốc'];
+  renderPerfEntries();
+  document.getElementById('perf-form-wrap').innerHTML='';
+  // ── TapTap live panel ──
+  const ttKey = g['Tên gốc'];
+  const tt = (typeof TAPTAP !== 'undefined') ? (TAPTAP[ttKey] || null) : null;
+  const ttLinkEl = document.getElementById('m-tt-link');
+  // Find taptap_id from Store CN
+  const storeCN = g['Store CN'] || '';
+  const ttIdMatch = storeCN.match(/taptap\.cn\/app\/(\d+)/);
+  const ttId = ttIdMatch ? ttIdMatch[1] : null;
+  if(ttId && ttLinkEl) ttLinkEl.href = 'https://www.taptap.cn/app/' + ttId;
+
+  const ttContent = document.getElementById('m-tt-content');
+  if(tt && !tt.error){
+    const score = tt.rating || 0;
+    const scoreColor = score >= 8 ? 'good' : score >= 6 ? 'warn' : 'bad';
+    const heatColor  = (tt.heat||0) >= 7 ? 'good' : (tt.heat||0) >= 4 ? 'warn' : 'bad';
+    ttContent.innerHTML = `
+      <div class="tt-grid">
+        <div class="tt-kpi">
+          <div class="tt-kpi-k">⭐ Rating</div>
+          <div class="tt-bar-wrap">
+            <div class="tt-bar"><div class="tt-bar-fill" style="width:${Math.min(100,score*10)}%;background:${score>=8?'#10b981':score>=6?'#f59e0b':'#ef4444'}"></div></div>
+            <span class="tt-kpi-v ${scoreColor}">${score || 'N/A'}</span>
+          </div>
+        </div>
+        <div class="tt-kpi"><div class="tt-kpi-k">💬 Lượt đánh giá</div><div class="tt-kpi-v">${tt.rating_count||'N/A'}</div></div>
+        <div class="tt-kpi"><div class="tt-kpi-k">❤️ Người theo dõi</div><div class="tt-kpi-v">${tt.fans||'N/A'}</div></div>
+        <div class="tt-kpi"><div class="tt-kpi-k">👁 Lượt xem</div><div class="tt-kpi-v">${tt.hits||'N/A'}</div></div>
+        <div class="tt-kpi">
+          <div class="tt-kpi-k">🔥 Heat Score</div>
+          <div class="tt-bar-wrap">
+            <div class="tt-bar"><div class="tt-bar-fill" style="width:${Math.min(100,(tt.heat||0)*10)}%;background:${(tt.heat||0)>=7?'#10b981':(tt.heat||0)>=4?'#f59e0b':'#ef4444'}"></div></div>
+            <span class="tt-kpi-v ${heatColor}">${tt.heat||'N/A'}</span>
+          </div>
+        </div>
+      </div>
+      <div class="tt-fetched" style="margin-top:8px">Cập nhật: ${tt.fetched_at||'—'}</div>
+    `;
+  } else if(tt && tt.error){
+    ttContent.innerHTML = `<div class="tt-err">⚠ Không lấy được data TapTap: ${tt.error}</div>`;
+  } else {
+    ttContent.innerHTML = `<div class="tt-err">Chưa có data TapTap. Chạy GitHub Actions để fetch.</div>`;
+  }
+
+  document.getElementById('modal-ov').classList.add('open');
+}
+function closeMOv(e){if(e.target===document.getElementById('modal-ov'))closeMDirect();}
+function closeMDirect(){document.getElementById('modal-ov').classList.remove('open');}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMDirect();});
+
+// ── PERFORMANCE TRACKER ──
+function renderPerfEntries(){
+  const entries=(perfDB[currentGameKey]||[]);
+  const el=document.getElementById('perf-entries');
+  if(!entries.length){
+    el.innerHTML='<div class="perf-empty">Chưa có dữ liệu performance. Nhấn "+ Thêm dữ liệu" để cập nhật.</div>';
+    return;
+  }
+  const KPI_LABELS={dau:'DAU',nru:'NRU (Daily)',install:'Installs',ltv:'LTV',arpu:'ARPU',revenue:'Revenue',retention_d1:'Retention D1',retention_d7:'Retention D7',retention_d30:'Retention D30',note:'Ghi chú'};
+  el.innerHTML=entries.map((e,i)=>`
+    <div class="perf-entry">
+      <div class="perf-entry-hdr">
+        <div class="perf-entry-date">📅 ${e.date}</div>
+        <button class="perf-del-btn" onclick="delPerf(${i})">✕ Xóa</button>
+      </div>
+      <div class="perf-kpis">
+        ${Object.entries(KPI_LABELS).filter(([k])=>e[k]).map(([k,l])=>`
+          <div class="perf-kpi"><div class="perf-kpi-k">${l}</div><div class="perf-kpi-v">${e[k]}</div></div>
+        `).join('')}
+      </div>
+    </div>
+  `).join('');
+}
+
+function showPerfForm(){
+  const today=new Date().toISOString().slice(0,10);
+  document.getElementById('perf-form-wrap').innerHTML=`
+    <div class="perf-form">
+      <div class="perf-form-title">📝 Nhập dữ liệu performance mới</div>
+      <div class="perf-form-grid">
+        <div><div class="perf-inp-lbl">Ngày ghi nhận *</div><input class="perf-inp" id="pf-date" type="date" value="${today}"></div>
+        <div><div class="perf-inp-lbl">DAU (Daily Active Users)</div><input class="perf-inp" id="pf-dau" placeholder="vd: 500,000"></div>
+        <div><div class="perf-inp-lbl">NRU (New Registered Users / ngày)</div><input class="perf-inp" id="pf-nru" placeholder="vd: 12,000"></div>
+        <div><div class="perf-inp-lbl">Installs (tổng / ngày)</div><input class="perf-inp" id="pf-install" placeholder="vd: 80,000"></div>
+        <div><div class="perf-inp-lbl">LTV (Life Time Value)</div><input class="perf-inp" id="pf-ltv" placeholder="vd: $15.5"></div>
+        <div><div class="perf-inp-lbl">ARPU (Avg Revenue Per User)</div><input class="perf-inp" id="pf-arpu" placeholder="vd: $2.3"></div>
+        <div><div class="perf-inp-lbl">Revenue (doanh thu)</div><input class="perf-inp" id="pf-revenue" placeholder="vd: $1.2M"></div>
+        <div><div class="perf-inp-lbl">Retention D1 (%)</div><input class="perf-inp" id="pf-r1" placeholder="vd: 45%"></div>
+        <div><div class="perf-inp-lbl">Retention D7 (%)</div><input class="perf-inp" id="pf-r7" placeholder="vd: 22%"></div>
+        <div><div class="perf-inp-lbl">Retention D30 (%)</div><input class="perf-inp" id="pf-r30" placeholder="vd: 10%"></div>
+      </div>
+      <div><div class="perf-inp-lbl">Ghi chú</div><input class="perf-inp" id="pf-note" placeholder="Ghi chú thêm..."></div>
+      <div class="perf-form-btns" style="margin-top:10px">
+        <button class="perf-cancel-btn" onclick="document.getElementById('perf-form-wrap').innerHTML=''">Hủy</button>
+        <button class="perf-save-btn" onclick="savePerf()">💾 Lưu</button>
+      </div>
+    </div>
+  `;
+  document.getElementById('perf-form-wrap').scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+
+function savePerf(){
+  const date=document.getElementById('pf-date').value;
+  if(!date){alert('Vui lòng chọn ngày');return;}
+  const entry={
+    date,
+    dau:document.getElementById('pf-dau').value,
+    nru:document.getElementById('pf-nru').value,
+    install:document.getElementById('pf-install').value,
+    ltv:document.getElementById('pf-ltv').value,
+    arpu:document.getElementById('pf-arpu').value,
+    revenue:document.getElementById('pf-revenue').value,
+    retention_d1:document.getElementById('pf-r1').value,
+    retention_d7:document.getElementById('pf-r7').value,
+    retention_d30:document.getElementById('pf-r30').value,
+    note:document.getElementById('pf-note').value,
+  };
+  if(!perfDB[currentGameKey])perfDB[currentGameKey]=[];
+  perfDB[currentGameKey].unshift(entry);
+  renderPerfEntries();
+  document.getElementById('perf-form-wrap').innerHTML='';
+}
+
+function delPerf(idx){
+  if(!perfDB[currentGameKey])return;
+  perfDB[currentGameKey].splice(idx,1);
+  renderPerfEntries();
+}
+
+// ── TAB SWITCHING ──
+function switchTab(id,btn){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('sec-'+id).classList.add('active');
+}
+let curRank='30d';
+function switchRank(period,btn){
+  curRank=period;
+  document.querySelectorAll('.rtab').forEach(t=>t.classList.remove('active'));
+  btn.classList.add('active');
+  ['30d','90d','year'].forEach(p=>document.getElementById('r-'+p).style.display=p===period?'block':'none');
+}
+
+// ── INIT ──
+// Event delegation for table row clicks
+document.addEventListener('click', function(e){
+  const tr = e.target.closest('tr[data-ck]');
+  if(!tr) return;
+  const key = tr.getAttribute('data-ck');
+  const g = _clickCache[key];
+  if(g) openModal(g);
+});
+
+(function init(){
+  popGenre('ng-genre',RAW.newgames);
+  popStatus('ng-status',RAW.newgames);
+  popGenre('r30-genre',RAW.bxh_30);
+  popGenre('r90-genre',RAW.bxh_90);
+  popGenre('ryr-genre',RAW.bxh_year);
+  renderStats('ng-stats',RAW.newgames);
+  renderStats('r30-stats',RAW.bxh_30);
+  renderStats('r90-stats',RAW.bxh_90);
+  renderStats('ryr-stats',RAW.bxh_year);
+  filterNG();
+  filterRank('30d');filterRank('90d');filterRank('year');
+  document.getElementById('tc-ng').textContent=RAW.newgames.length;
+})();
+</script>
+
+<div id="js-tip"></div>
+<script>
+const _tip = document.getElementById('js-tip');
+let _tipTimer;
+function showTip(e, el){
+  clearTimeout(_tipTimer);
+  _tip.textContent = el.dataset.tip;
+  _tip.classList.add('visible');
+  moveTip(e);
+  el.addEventListener('mousemove', moveTip);
+}
+function moveTip(e){
+  const pad = 12;
+  let x = e.clientX + pad;
+  let y = e.clientY - _tip.offsetHeight - pad;
+  // Keep inside viewport
+  if(x + _tip.offsetWidth > window.innerWidth - pad) x = e.clientX - _tip.offsetWidth - pad;
+  if(y < pad) y = e.clientY + pad;
+  _tip.style.left = x + 'px';
+  _tip.style.top  = y + 'px';
+}
+function hideTip(){
+  _tip.classList.remove('visible');
+}
+</script>
+</body>
+</html>
