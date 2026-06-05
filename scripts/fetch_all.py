@@ -122,26 +122,42 @@ def enrich_game(g, itunes_cache):
     
     icon = (it['icon'] if it and it.get('icon') else '') or g.get('iconurl', '')
     ios_url = f"https://apps.apple.com/cn/app/id{it['appId']}" if it and it.get('appId') else ''
-    taptap_url = f"https://www.taptap.cn/search-result?q={urllib.parse.quote(name)}&type=app"
+    taptap_url = f"https://www.taptap.cn/search?q={urllib.parse.quote(name)}"
     
     tags_vn = translate_tags(tags)
     
+    # Map 16p testtype to Vietnamese status
+    testtype_cn = g.get('testtype', '')
+    TESTTYPE_MAP = {
+        '公测': ('公测', 'Open Beta'),
+        '上线': ('上线', 'Đã ra mắt'),
+        '不删档测试': ('不删档测试', 'OBT (Giữ data)'),
+        '删档测试': ('删档测试', 'CBT (Xóa data)'),
+        '付费测试': ('付费测试', 'Paid Beta'),
+        '技术测试': ('技术测试', 'Tech Test'),
+        '限量测试': ('限量测试', 'Limited Test'),
+        '预约': ('预约', 'Đặt trước'),
+    }
+    status_pair = TESTTYPE_MAP.get(testtype_cn, (testtype_cn, testtype_cn))
+
     return {
-        'name':       name,
-        'icon_url':   icon,
-        'tags_cn':    ' / '.join(tags),
-        'tags_vn':    tags_vn,
-        'publisher':  pub,
-        'developer':  dev or pub,
-        'score_16p':  str(g.get('review_rate', '')),
-        'reviews_16p':str(g.get('review_num', '')),
-        'pub_time':   g.get('format_time', '') or g.get('publishtime', ''),
-        'ios_id':     it['appId'] if it else '',
-        'ios_url':    ios_url,
-        'ios_rating': str(it['rating']) if it else '',
-        'ios_reviews':str(it['reviews']) if it else '',
-        'taptap_url': taptap_url,
-        'fetched_at': datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC'),
+        'name':         name,
+        'icon_url':     icon,
+        'tags_cn':      ' / '.join(tags),
+        'tags_vn':      tags_vn,
+        'publisher':    pub,
+        'developer':    dev or pub,
+        'testtype_cn':  status_pair[0],
+        'testtype_vn':  status_pair[1],
+        'score_16p':    str(g.get('review_rate', '')),
+        'reviews_16p':  str(g.get('review_num', '')),
+        'pub_time':     g.get('format_time', '') or g.get('publishtime', ''),
+        'ios_id':       it['appId'] if it else '',
+        'ios_url':      ios_url,
+        'ios_rating':   str(it['rating']) if it else '',
+        'ios_reviews':  str(it['reviews']) if it else '',
+        'taptap_url':   taptap_url,
+        'fetched_at':   datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC'),
     }
 
 def main():
