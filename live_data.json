@@ -10,6 +10,8 @@
       ],
       "publisher": "Shenzhen Tencent Tianyou Technology Ltd",
       "developer": "Shenzhen Tencent Tianyou Technology Ltd",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.3",
       "reviews_16p": "8.5万",
       "pub_time": "04-02",
@@ -17,8 +19,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id1612566389",
       "ios_rating": "4.3",
       "ios_reviews": "84876",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E4%B8%96%E7%95%8C&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E4%B8%96%E7%95%8C",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "异环-自由开放都市",
@@ -33,6 +35,8 @@
       ],
       "publisher": "苏州幻塔网络科技有限公司",
       "developer": "苏州幻塔",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.5",
       "reviews_16p": "8.3万",
       "pub_time": "2025-12",
@@ -40,8 +44,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6514281568",
       "ios_rating": "3.5",
       "ios_reviews": "20145",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%BC%82%E7%8E%AF-%E8%87%AA%E7%94%B1%E5%BC%80%E6%94%BE%E9%83%BD%E5%B8%82&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%BC%82%E7%8E%AF-%E8%87%AA%E7%94%B1%E5%BC%80%E6%94%BE%E9%83%BD%E5%B8%82",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "三国：天下归心",
@@ -56,6 +60,8 @@
       ],
       "publisher": "",
       "developer": "上饶越昶网络科技有限公司",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.6",
       "reviews_16p": "9913",
       "pub_time": "2025-10",
@@ -63,8 +69,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6753060186",
       "ios_rating": "4.6",
       "ios_reviews": "9804",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E4%B8%89%E5%9B%BD%EF%BC%9A%E5%A4%A9%E4%B8%8B%E5%BD%92%E5%BF%83&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E4%B8%89%E5%9B%BD%EF%BC%9A%E5%A4%A9%E4%B8%8B%E5%BD%92%E5%BF%83",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "神泣：纷争",
@@ -76,6 +82,8 @@
       ],
       "publisher": "Zhejiang UmarkNetwork Technology Co.,Ltd",
       "developer": "Zhejiang UmarkNetwork Technology Co.,Ltd",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.7",
       "reviews_16p": "4532",
       "pub_time": "04-10",
@@ -83,8 +91,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6752375425",
       "ios_rating": "4.7",
       "ios_reviews": "4539",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E7%A5%9E%E6%B3%A3%EF%BC%9A%E7%BA%B7%E4%BA%89&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E7%A5%9E%E6%B3%A3%EF%BC%9A%E7%BA%B7%E4%BA%89",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "肥鹅美食街",
@@ -96,6 +104,8 @@
       ],
       "publisher": "HK HORTOR TECHNOLOGY LIMITED",
       "developer": "HK HORTOR TECHNOLOGY LIMITED",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.6",
       "reviews_16p": "4095",
       "pub_time": "04-19",
@@ -103,8 +113,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6758614459",
       "ios_rating": "4.6",
       "ios_reviews": "4155",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E8%82%A5%E9%B9%85%E7%BE%8E%E9%A3%9F%E8%A1%97&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E8%82%A5%E9%B9%85%E7%BE%8E%E9%A3%9F%E8%A1%97",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "饥困荒野-饥荒：新家园",
@@ -119,6 +129,8 @@
       ],
       "publisher": "腾讯",
       "developer": "猪人工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.7",
       "reviews_16p": "4789",
       "pub_time": "2023-07",
@@ -126,8 +138,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id1557845520",
       "ios_rating": "4.9",
       "ios_reviews": "3635",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%A5%A5%E5%9B%B0%E8%8D%92%E9%87%8E-%E9%A5%A5%E8%8D%92%EF%BC%9A%E6%96%B0%E5%AE%B6%E5%9B%AD&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%A5%A5%E5%9B%B0%E8%8D%92%E9%87%8E-%E9%A5%A5%E8%8D%92%EF%BC%9A%E6%96%B0%E5%AE%B6%E5%9B%AD",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "驯龙之旅",
@@ -142,6 +154,8 @@
       ],
       "publisher": "咪咕互动娱乐有限公司",
       "developer": "咪咕互动娱乐有限公司",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.4",
       "reviews_16p": "2894",
       "pub_time": "03-26",
@@ -149,8 +163,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6758429228",
       "ios_rating": "4.7",
       "ios_reviews": "2043",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%A9%AF%E9%BE%99%E4%B9%8B%E6%97%85&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%A9%AF%E9%BE%99%E4%B9%8B%E6%97%85",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "王者荣耀世界",
@@ -165,6 +179,8 @@
       ],
       "publisher": "腾讯天美工作室",
       "developer": "腾讯天美工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.2",
       "reviews_16p": "3449",
       "pub_time": "2025-04",
@@ -172,8 +188,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id1612566389",
       "ios_rating": "4.3",
       "ios_reviews": "84876",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E4%B8%96%E7%95%8C&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E4%B8%96%E7%95%8C",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "亿万光年",
@@ -188,6 +204,8 @@
       ],
       "publisher": "雷霆游戏",
       "developer": "未知矩阵",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.5",
       "reviews_16p": "1447",
       "pub_time": "2024-01",
@@ -195,8 +213,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6757353974",
       "ios_rating": "4.5",
       "ios_reviews": "1349",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E4%BA%BF%E4%B8%87%E5%85%89%E5%B9%B4&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E4%BA%BF%E4%B8%87%E5%85%89%E5%B9%B4",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "崩坏：因缘精灵-崩坏IP新作",
@@ -211,6 +229,8 @@
       ],
       "publisher": "米哈游®",
       "developer": "米哈游®",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.5",
       "reviews_16p": "1285",
       "pub_time": "2025-09",
@@ -218,8 +238,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6478654994",
       "ios_rating": "4.1",
       "ios_reviews": "347820",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%B4%A9%E5%9D%8F%EF%BC%9A%E5%9B%A0%E7%BC%98%E7%B2%BE%E7%81%B5-%E5%B4%A9%E5%9D%8FIP%E6%96%B0%E4%BD%9C&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%B4%A9%E5%9D%8F%EF%BC%9A%E5%9B%A0%E7%BC%98%E7%B2%BE%E7%81%B5-%E5%B4%A9%E5%9D%8FIP%E6%96%B0%E4%BD%9C",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "遮天：帝路争锋",
@@ -231,6 +251,8 @@
       ],
       "publisher": "Guangzhou Hengshui Yule Network Technology Co.,Ltd",
       "developer": "Guangzhou Hengshui Yule Network Technology Co.,Ltd",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.5",
       "reviews_16p": "1244",
       "pub_time": "04-02",
@@ -238,8 +260,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6757068180",
       "ios_rating": "4.5",
       "ios_reviews": "1259",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%81%AE%E5%A4%A9%EF%BC%9A%E5%B8%9D%E8%B7%AF%E4%BA%89%E9%94%8B&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%81%AE%E5%A4%A9%EF%BC%9A%E5%B8%9D%E8%B7%AF%E4%BA%89%E9%94%8B",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "伍六七：暗影交锋",
@@ -254,6 +276,8 @@
       ],
       "publisher": "啊吉游",
       "developer": "啊吉游",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.1",
       "reviews_16p": "870",
       "pub_time": "04-09",
@@ -261,8 +285,8 @@
       "ios_url": "",
       "ios_rating": "",
       "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E4%BC%8D%E5%85%AD%E4%B8%83%EF%BC%9A%E6%9A%97%E5%BD%B1%E4%BA%A4%E9%94%8B&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E4%BC%8D%E5%85%AD%E4%B8%83%EF%BC%9A%E6%9A%97%E5%BD%B1%E4%BA%A4%E9%94%8B",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "风之国世界",
@@ -277,6 +301,8 @@
       ],
       "publisher": "苏州茉莉",
       "developer": "苏州茉莉",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.7",
       "reviews_16p": "526",
       "pub_time": "2025-12",
@@ -284,8 +310,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6755951632",
       "ios_rating": "4.7",
       "ios_reviews": "615",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%A3%8E%E4%B9%8B%E5%9B%BD%E4%B8%96%E7%95%8C&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%A3%8E%E4%B9%8B%E5%9B%BD%E4%B8%96%E7%95%8C",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "高能探宝团",
@@ -297,6 +323,8 @@
       ],
       "publisher": "Hainan Kakacattle Network Technology Co., Ltd.",
       "developer": "Hainan Kakacattle Network Technology Co., Ltd.",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.7",
       "reviews_16p": "518",
       "pub_time": "04-09",
@@ -304,8 +332,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6758931051",
       "ios_rating": "4.7",
       "ios_reviews": "518",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%AB%98%E8%83%BD%E6%8E%A2%E5%AE%9D%E5%9B%A2&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%AB%98%E8%83%BD%E6%8E%A2%E5%AE%9D%E5%9B%A2",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "怪物猎人：旅人",
@@ -320,6 +348,8 @@
       ],
       "publisher": "腾讯",
       "developer": "腾讯",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.5",
       "reviews_16p": "723",
       "pub_time": "2025-11",
@@ -327,8 +357,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6446450832",
       "ios_rating": "4.8",
       "ios_reviews": "928",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%80%AA%E7%89%A9%E7%8C%8E%E4%BA%BA%EF%BC%9A%E6%97%85%E4%BA%BA&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%80%AA%E7%89%A9%E7%8C%8E%E4%BA%BA%EF%BC%9A%E6%97%85%E4%BA%BA",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "七界梦谭",
@@ -343,6 +373,8 @@
       ],
       "publisher": "飞光阁工作室",
       "developer": "飞光阁工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.6",
       "reviews_16p": "477",
       "pub_time": "2024-04",
@@ -350,8 +382,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id1639302958",
       "ios_rating": "4.5",
       "ios_reviews": "1150",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E4%B8%83%E7%95%8C%E6%A2%A6%E8%B0%AD&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E4%B8%83%E7%95%8C%E6%A2%A6%E8%B0%AD",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "新星足球世界",
@@ -364,6 +396,8 @@
       ],
       "publisher": "Shenzhen Qianhai Hongcheng Games Co.,Ltd",
       "developer": "Shenzhen Qianhai Hongcheng Games Co.,Ltd",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.8",
       "reviews_16p": "426",
       "pub_time": "04-15",
@@ -371,8 +405,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6755859299",
       "ios_rating": "4.8",
       "ios_reviews": "432",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%96%B0%E6%98%9F%E8%B6%B3%E7%90%83%E4%B8%96%E7%95%8C&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%96%B0%E6%98%9F%E8%B6%B3%E7%90%83%E4%B8%96%E7%95%8C",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "卡厄思梦境",
@@ -387,6 +421,8 @@
       ],
       "publisher": "腾讯",
       "developer": "腾讯",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3",
       "reviews_16p": "694",
       "pub_time": "2025-09",
@@ -394,8 +430,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6751272153",
       "ios_rating": "3.4",
       "ios_reviews": "2190",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%8D%A1%E5%8E%84%E6%80%9D%E6%A2%A6%E5%A2%83&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%8D%A1%E5%8E%84%E6%80%9D%E6%A2%A6%E5%A2%83",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "时空猎人·觉醒",
@@ -410,15 +446,17 @@
       ],
       "publisher": "猎人觉醒工作室",
       "developer": "猎人觉醒工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4",
       "reviews_16p": "466",
       "pub_time": "2025-07",
       "ios_id": "6754126909",
       "ios_url": "https://apps.apple.com/cn/app/id6754126909",
-      "ios_rating": "0",
+      "ios_rating": "0.0",
       "ios_reviews": "0",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%97%B6%E7%A9%BA%E7%8C%8E%E4%BA%BA%C2%B7%E8%A7%89%E9%86%92&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%97%B6%E7%A9%BA%E7%8C%8E%E4%BA%BA%C2%B7%E8%A7%89%E9%86%92",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "遗忘之海-记忆环游海洋开放世界",
@@ -433,15 +471,17 @@
       ],
       "publisher": "网易游戏",
       "developer": "网易游戏",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.5",
       "reviews_16p": "496",
       "pub_time": "2025-05",
       "ios_id": "6755943637",
       "ios_url": "https://apps.apple.com/cn/app/id6755943637",
-      "ios_rating": "0",
+      "ios_rating": "0.0",
       "ios_reviews": "0",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%81%97%E5%BF%98%E4%B9%8B%E6%B5%B7-%E8%AE%B0%E5%BF%86%E7%8E%AF%E6%B8%B8%E6%B5%B7%E6%B4%8B%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%81%97%E5%BF%98%E4%B9%8B%E6%B5%B7-%E8%AE%B0%E5%BF%86%E7%8E%AF%E6%B8%B8%E6%B5%B7%E6%B4%8B%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "星布谷地-米哈游生活模拟新作",
@@ -456,6 +496,8 @@
       ],
       "publisher": "米哈游®",
       "developer": "米哈游®",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.4",
       "reviews_16p": "329",
       "pub_time": "2025-10",
@@ -463,8 +505,8 @@
       "ios_url": "",
       "ios_rating": "",
       "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%98%9F%E5%B8%83%E8%B0%B7%E5%9C%B0-%E7%B1%B3%E5%93%88%E6%B8%B8%E7%94%9F%E6%B4%BB%E6%A8%A1%E6%8B%9F%E6%96%B0%E4%BD%9C&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%98%9F%E5%B8%83%E8%B0%B7%E5%9C%B0-%E7%B1%B3%E5%93%88%E6%B8%B8%E7%94%9F%E6%B4%BB%E6%A8%A1%E6%8B%9F%E6%96%B0%E4%BD%9C",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "斗罗大陆：诛邪传说",
@@ -479,6 +521,8 @@
       ],
       "publisher": "贪玩游戏",
       "developer": "贪玩游戏",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4",
       "reviews_16p": "343",
       "pub_time": "2024-09",
@@ -486,8 +530,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6471468360",
       "ios_rating": "4.8",
       "ios_reviews": "102048",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%96%97%E7%BD%97%E5%A4%A7%E9%99%86%EF%BC%9A%E8%AF%9B%E9%82%AA%E4%BC%A0%E8%AF%B4&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%96%97%E7%BD%97%E5%A4%A7%E9%99%86%EF%BC%9A%E8%AF%9B%E9%82%AA%E4%BC%A0%E8%AF%B4",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "龙符：天祭",
@@ -499,6 +543,8 @@
       ],
       "publisher": "Guangzhou Xingyao Future Information Technology Co., Ltd",
       "developer": "Guangzhou Xingyao Future Information Technology Co., Ltd",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.5",
       "reviews_16p": "294",
       "pub_time": "04-02",
@@ -506,8 +552,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6757591556",
       "ios_rating": "4.5",
       "ios_reviews": "294",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%BE%99%E7%AC%A6%EF%BC%9A%E5%A4%A9%E7%A5%AD&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%BE%99%E7%AC%A6%EF%BC%9A%E5%A4%A9%E7%A5%AD",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "头号禁区",
@@ -522,6 +568,8 @@
       ],
       "publisher": "沐瞳",
       "developer": "沐瞳",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.8",
       "reviews_16p": "346",
       "pub_time": "2024-08",
@@ -529,8 +577,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id1444595166",
       "ios_rating": "4.7",
       "ios_reviews": "552297",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%A4%B4%E5%8F%B7%E7%A6%81%E5%8C%BA&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%A4%B4%E5%8F%B7%E7%A6%81%E5%8C%BA",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "夜幕之下-全员恶人群像",
@@ -545,6 +593,8 @@
       ],
       "publisher": "不眠夜工作室",
       "developer": "不眠夜工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.8",
       "reviews_16p": "339",
       "pub_time": "2025-04",
@@ -552,8 +602,8 @@
       "ios_url": "",
       "ios_rating": "",
       "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%A4%9C%E5%B9%95%E4%B9%8B%E4%B8%8B-%E5%85%A8%E5%91%98%E6%81%B6%E4%BA%BA%E7%BE%A4%E5%83%8F&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%A4%9C%E5%B9%95%E4%B9%8B%E4%B8%8B-%E5%85%A8%E5%91%98%E6%81%B6%E4%BA%BA%E7%BE%A4%E5%83%8F",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "生计与沉冤",
@@ -566,6 +616,8 @@
       ],
       "publisher": "敏 徐",
       "developer": "敏 徐",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.7",
       "reviews_16p": "236",
       "pub_time": "04-09",
@@ -573,8 +625,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6755130477",
       "ios_rating": "4.6",
       "ios_reviews": "236",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E7%94%9F%E8%AE%A1%E4%B8%8E%E6%B2%89%E5%86%A4&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E7%94%9F%E8%AE%A1%E4%B8%8E%E6%B2%89%E5%86%A4",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "三国：百将牌",
@@ -589,6 +641,8 @@
       ],
       "publisher": "bilibili游戏",
       "developer": "bilibili游戏",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.9",
       "reviews_16p": "258",
       "pub_time": "2025-09",
@@ -596,8 +650,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6741894810",
       "ios_rating": "4.3",
       "ios_reviews": "470",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E4%B8%89%E5%9B%BD%EF%BC%9A%E7%99%BE%E5%B0%86%E7%89%8C&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E4%B8%89%E5%9B%BD%EF%BC%9A%E7%99%BE%E5%B0%86%E7%89%8C",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "冲吧！帕克",
@@ -612,6 +666,8 @@
       ],
       "publisher": "",
       "developer": "烛月游戏",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.6",
       "reviews_16p": "202",
       "pub_time": "01-31",
@@ -619,8 +675,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6749657124",
       "ios_rating": "4.8",
       "ios_reviews": "173",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%86%B2%E5%90%A7%EF%BC%81%E5%B8%95%E5%85%8B&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%86%B2%E5%90%A7%EF%BC%81%E5%B8%95%E5%85%8B",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "归环-时间循环开放世界",
@@ -635,6 +691,8 @@
       ],
       "publisher": "萨罗斯网络科技（深圳）有限公司",
       "developer": "萨罗斯网络科技（深圳）有限公司",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.5",
       "reviews_16p": "194",
       "pub_time": "02-26",
@@ -642,8 +700,8 @@
       "ios_url": "",
       "ios_rating": "",
       "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%BD%92%E7%8E%AF-%E6%97%B6%E9%97%B4%E5%BE%AA%E7%8E%AF%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%BD%92%E7%8E%AF-%E6%97%B6%E9%97%B4%E5%BE%AA%E7%8E%AF%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "乱涂彩世界-美少女弹幕射击",
@@ -658,6 +716,8 @@
       ],
       "publisher": "脑浆炸裂工作室",
       "developer": "脑浆炸裂工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.1",
       "reviews_16p": "207",
       "pub_time": "2025-06",
@@ -665,8 +725,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6752448507",
       "ios_rating": "4.9",
       "ios_reviews": "23895",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E4%B9%B1%E6%B6%82%E5%BD%A9%E4%B8%96%E7%95%8C-%E7%BE%8E%E5%B0%91%E5%A5%B3%E5%BC%B9%E5%B9%95%E5%B0%84%E5%87%BB&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E4%B9%B1%E6%B6%82%E5%BD%A9%E4%B8%96%E7%95%8C-%E7%BE%8E%E5%B0%91%E5%A5%B3%E5%BC%B9%E5%B9%95%E5%B0%84%E5%87%BB",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "镭明闪击",
@@ -681,6 +741,8 @@
       ],
       "publisher": "北京朝夕光年信息技术有限公司",
       "developer": "反射狐工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.4",
       "reviews_16p": "171",
       "pub_time": "2024-01",
@@ -688,8 +750,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6738116963",
       "ios_rating": "4.8",
       "ios_reviews": "2562",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%95%AD%E6%98%8E%E9%97%AA%E5%87%BB&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%95%AD%E6%98%8E%E9%97%AA%E5%87%BB",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "世界之光",
@@ -704,6 +766,8 @@
       ],
       "publisher": "",
       "developer": "世界之光工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.8",
       "reviews_16p": "145",
       "pub_time": "01-07",
@@ -711,27 +775,29 @@
       "ios_url": "https://apps.apple.com/cn/app/id6670742301",
       "ios_rating": "4.5",
       "ios_reviews": "7818",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E4%B8%96%E7%95%8C%E4%B9%8B%E5%85%89&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E4%B8%96%E7%95%8C%E4%B9%8B%E5%85%89",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "大航海时代：起源",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/52/b3/14/52b314ad-e8ee-77f7-8c56-bc5c84f949ea/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/52/b3/14/52b314ad-e8ee-77f7-8c56-bc5c84f949ea/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
       "tags_cn": "角色扮演",
       "tags_vn": [
         "Nhập vai RPG"
       ],
       "publisher": "Shulong Information Technology (Zhejiang) Co., Ltd.",
       "developer": "Shulong Information Technology (Zhejiang) Co., Ltd.",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4",
       "reviews_16p": "132",
       "pub_time": "04-02",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%A4%A7%E8%88%AA%E6%B5%B7%E6%97%B6%E4%BB%A3%EF%BC%9A%E8%B5%B7%E6%BA%90&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "ios_id": "6737874627",
+      "ios_url": "https://apps.apple.com/cn/app/id6737874627",
+      "ios_rating": "4.0",
+      "ios_reviews": "132",
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%A4%A7%E8%88%AA%E6%B5%B7%E6%97%B6%E4%BB%A3%EF%BC%9A%E8%B5%B7%E6%BA%90",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "我的奶茶屋",
@@ -746,6 +812,8 @@
       ],
       "publisher": "上海汐屿光年科技有限公司",
       "developer": "上海汐屿光年科技有限公司",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.4",
       "reviews_16p": "103",
       "pub_time": "04-13",
@@ -753,8 +821,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id1510733959",
       "ios_rating": "4.8",
       "ios_reviews": "8214",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%88%91%E7%9A%84%E5%A5%B6%E8%8C%B6%E5%B1%8B&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%88%91%E7%9A%84%E5%A5%B6%E8%8C%B6%E5%B1%8B",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "高能探宝团",
@@ -769,6 +837,8 @@
       ],
       "publisher": "",
       "developer": "高能探宝团工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.7",
       "reviews_16p": "80",
       "pub_time": "03-15",
@@ -776,8 +846,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6758931051",
       "ios_rating": "4.7",
       "ios_reviews": "518",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%AB%98%E8%83%BD%E6%8E%A2%E5%AE%9D%E5%9B%A2&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%AB%98%E8%83%BD%E6%8E%A2%E5%AE%9D%E5%9B%A2",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "契约归档书：临界先锋",
@@ -786,6 +856,8 @@
       "tags_vn": [],
       "publisher": "Jilin Chengwang Network Technology Co., Ltd.",
       "developer": "Jilin Chengwang Network Technology Co., Ltd.",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.8",
       "reviews_16p": "81",
       "pub_time": "04-08",
@@ -793,8 +865,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6760692134",
       "ios_rating": "3.8",
       "ios_reviews": "81",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%A5%91%E7%BA%A6%E5%BD%92%E6%A1%A3%E4%B9%A6%EF%BC%9A%E4%B8%B4%E7%95%8C%E5%85%88%E9%94%8B&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%A5%91%E7%BA%A6%E5%BD%92%E6%A1%A3%E4%B9%A6%EF%BC%9A%E4%B8%B4%E7%95%8C%E5%85%88%E9%94%8B",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "轨道连结-先试玩后解锁",
@@ -809,6 +881,8 @@
       ],
       "publisher": "",
       "developer": "良心工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.4",
       "reviews_16p": "67",
       "pub_time": "05-22",
@@ -816,8 +890,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id1247141931",
       "ios_rating": "4.6",
       "ios_reviews": "200",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E8%BD%A8%E9%81%93%E8%BF%9E%E7%BB%93-%E5%85%88%E8%AF%95%E7%8E%A9%E5%90%8E%E8%A7%A3%E9%94%81&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E8%BD%A8%E9%81%93%E8%BF%9E%E7%BB%93-%E5%85%88%E8%AF%95%E7%8E%A9%E5%90%8E%E8%A7%A3%E9%94%81",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "东离剑游纪",
@@ -832,6 +906,8 @@
       ],
       "publisher": "",
       "developer": "北京瓜栗科技",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.1",
       "reviews_16p": "63",
       "pub_time": "02-28",
@@ -839,8 +915,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6443397311",
       "ios_rating": "3.8",
       "ios_reviews": "17",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E4%B8%9C%E7%A6%BB%E5%89%91%E6%B8%B8%E7%BA%AA&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E4%B8%9C%E7%A6%BB%E5%89%91%E6%B8%B8%E7%BA%AA",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "闪耀吧！噜咪",
@@ -855,19 +931,21 @@
       ],
       "publisher": "",
       "developer": "bilibili游戏",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.7",
       "reviews_16p": "47",
       "pub_time": "2025-12",
       "ios_id": "6754912970",
       "ios_url": "https://apps.apple.com/cn/app/id6754912970",
-      "ios_rating": "0",
+      "ios_rating": "0.0",
       "ios_reviews": "0",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%97%AA%E8%80%80%E5%90%A7%EF%BC%81%E5%99%9C%E5%92%AA&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%97%AA%E8%80%80%E5%90%A7%EF%BC%81%E5%99%9C%E5%92%AA",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "永恒树之歌：创世-正版移植手游",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260522/10030681497",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c4/b8/ca/c4b8cabd-aa0b-6373-a649-68cb110009d1/AppIcon-1x_U007epad-0-11-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "编辑推荐 / 买断制 / 多平台 / Steam移植 / 沙盒 / 建造 / 模拟经营 / 冒险 / 探索 / 休闲 / 种田 / 农场模拟 / 独立佳作",
       "tags_vn": [
         "Mua một lần",
@@ -878,19 +956,21 @@
       ],
       "publisher": "",
       "developer": "十英工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.2",
       "reviews_16p": "53",
       "pub_time": "05-08",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%B0%B8%E6%81%92%E6%A0%91%E4%B9%8B%E6%AD%8C%EF%BC%9A%E5%88%9B%E4%B8%96-%E6%AD%A3%E7%89%88%E7%A7%BB%E6%A4%8D%E6%89%8B%E6%B8%B8&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "ios_id": "6756012530",
+      "ios_url": "https://apps.apple.com/cn/app/id6756012530",
+      "ios_rating": "4.7",
+      "ios_reviews": "1470",
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%B0%B8%E6%81%92%E6%A0%91%E4%B9%8B%E6%AD%8C%EF%BC%9A%E5%88%9B%E4%B8%96-%E6%AD%A3%E7%89%88%E7%A7%BB%E6%A4%8D%E6%89%8B%E6%B8%B8",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "Car Driving and Drifting Games",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6b/93/61/6b9361fb-3864-f054-0f41-e5676b67cfb5/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6b/93/61/6b9361fb-3864-f054-0f41-e5676b67cfb5/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
       "tags_cn": "角色扮演 / 娱乐 / 冒险",
       "tags_vn": [
         "Nhập vai RPG",
@@ -899,19 +979,21 @@
       ],
       "publisher": "Shehryar Sajid",
       "developer": "Shehryar Sajid",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.4",
       "reviews_16p": "50",
       "pub_time": "04-10",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=Car%20Driving%20and%20Drifting%20Games&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "ios_id": "6761417990",
+      "ios_url": "https://apps.apple.com/cn/app/id6761417990",
+      "ios_rating": "4.4",
+      "ios_reviews": "50",
+      "taptap_url": "https://www.taptap.cn/search?q=Car%20Driving%20and%20Drifting%20Games",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "斗兽战场",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260601/13422727239",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fe/b2/79/feb279ea-2069-0c72-1eaf-49a83594f846/AppIcon-1x_U007emarketing-0-11-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "SLG / 策略 / 废土 / 机甲 / 恐龙 / 末日",
       "tags_vn": [
         "SLG",
@@ -922,15 +1004,17 @@
       ],
       "publisher": "",
       "developer": "广州拓佳网络科技有限公司",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4",
       "reviews_16p": "55",
       "pub_time": "03-30",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%96%97%E5%85%BD%E6%88%98%E5%9C%BA&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "ios_id": "1067180549",
+      "ios_url": "https://apps.apple.com/cn/app/id1067180549",
+      "ios_rating": "3.4",
+      "ios_reviews": "1044",
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%96%97%E5%85%BD%E6%88%98%E5%9C%BA",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "心跳陷落",
@@ -944,6 +1028,8 @@
       ],
       "publisher": "",
       "developer": "liuyunzi",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.1",
       "reviews_16p": "70",
       "pub_time": "2025-11",
@@ -951,8 +1037,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6760686111",
       "ios_rating": "4.2",
       "ios_reviews": "546",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%BF%83%E8%B7%B3%E9%99%B7%E8%90%BD&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%BF%83%E8%B7%B3%E9%99%B7%E8%90%BD",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "菜鸡梦想家",
@@ -967,6 +1053,8 @@
       ],
       "publisher": "波波森林BooboForest",
       "developer": "波波森林BooboForest",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.6",
       "reviews_16p": "42",
       "pub_time": "2025-12",
@@ -974,8 +1062,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id1444595166",
       "ios_rating": "4.7",
       "ios_reviews": "552297",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E8%8F%9C%E9%B8%A1%E6%A2%A6%E6%83%B3%E5%AE%B6&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E8%8F%9C%E9%B8%A1%E6%A2%A6%E6%83%B3%E5%AE%B6",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "从零开始的钓鱼人生Lift",
@@ -990,6 +1078,8 @@
       ],
       "publisher": "风和日丽游戏工作室",
       "developer": "风和日丽游戏工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.4",
       "reviews_16p": "59",
       "pub_time": "05-07",
@@ -997,8 +1087,8 @@
       "ios_url": "",
       "ios_rating": "",
       "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E9%92%93%E9%B1%BC%E4%BA%BA%E7%94%9FLift&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E9%92%93%E9%B1%BC%E4%BA%BA%E7%94%9FLift",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "嘎嘎射击",
@@ -1012,6 +1102,8 @@
       ],
       "publisher": "",
       "developer": "嘎嘎工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.5",
       "reviews_16p": "57",
       "pub_time": "03-03",
@@ -1019,8 +1111,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id1326730621",
       "ios_rating": "4.0",
       "ios_reviews": "800586",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%98%8E%E5%98%8E%E5%B0%84%E5%87%BB&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%98%8E%E5%98%8E%E5%B0%84%E5%87%BB",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "东煌纪",
@@ -1035,6 +1127,8 @@
       ],
       "publisher": "浩凡游戏",
       "developer": "浩凡游戏",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "2.5",
       "reviews_16p": "87",
       "pub_time": "04-24",
@@ -1042,12 +1136,12 @@
       "ios_url": "https://apps.apple.com/cn/app/id6762333081",
       "ios_rating": "4.8",
       "ios_reviews": "1229",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E4%B8%9C%E7%85%8C%E7%BA%AA&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E4%B8%9C%E7%85%8C%E7%BA%AA",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "造梦西游之黎尤浩劫篇",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20251127/19515931709",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bd/c3/4e/bdc34e05-3b36-a275-bd78-5d17e4ef5918/AppIcon-1x_U007emarketing-0-11-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "动作 / 角色扮演 / 西游 / 闯关 / 格斗 / 策略 / 冒险 / 养成 / 横版",
       "tags_vn": [
         "Action",
@@ -1058,15 +1152,17 @@
       ],
       "publisher": "",
       "developer": "四三九九网络股份有限公司",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.4",
       "reviews_16p": "58",
       "pub_time": "01-31",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%80%A0%E6%A2%A6%E8%A5%BF%E6%B8%B8%E4%B9%8B%E9%BB%8E%E5%B0%A4%E6%B5%A9%E5%8A%AB%E7%AF%87&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "ios_id": "6752839988",
+      "ios_url": "https://apps.apple.com/cn/app/id6752839988",
+      "ios_rating": "0",
+      "ios_reviews": "0",
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%80%A0%E6%A2%A6%E8%A5%BF%E6%B8%B8%E4%B9%8B%E9%BB%8E%E5%B0%A4%E6%B5%A9%E5%8A%AB%E7%AF%87",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "苍蓝前线",
@@ -1081,19 +1177,21 @@
       ],
       "publisher": "",
       "developer": "上海翎娱科技有限公司",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.1",
       "reviews_16p": "43",
       "pub_time": "2025-06",
       "ios_id": "6702016416",
       "ios_url": "https://apps.apple.com/cn/app/id6702016416",
-      "ios_rating": "0",
+      "ios_rating": "0.0",
       "ios_reviews": "0",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E8%8B%8D%E8%93%9D%E5%89%8D%E7%BA%BF&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E8%8B%8D%E8%93%9D%E5%89%8D%E7%BA%BF",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "神将世界",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20240913/11210584566",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ac/84/4f/ac844f69-4910-b042-9a23-8d4b0010e9fa/AppIcon-0-0-1x_U007emarketing-0-8-0-0-85-220.png/200x200bb.jpg",
       "tags_cn": "格斗 / 中国风 / 怀旧向 / 三国 / 端游改编",
       "tags_vn": [
         "Đối kháng",
@@ -1104,15 +1202,17 @@
       ],
       "publisher": "",
       "developer": "四三九九网络股份有限公司",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.8",
       "reviews_16p": "35",
       "pub_time": "04-10",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E7%A5%9E%E5%B0%86%E4%B8%96%E7%95%8C&type=app",
-      "fetched_at": "2026-06-05 07:29 UTC"
+      "ios_id": "1438381485",
+      "ios_url": "https://apps.apple.com/cn/app/id1438381485",
+      "ios_rating": "3.1",
+      "ios_reviews": "40440",
+      "taptap_url": "https://www.taptap.cn/search?q=%E7%A5%9E%E5%B0%86%E4%B8%96%E7%95%8C",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "月相计划",
@@ -1126,6 +1226,8 @@
       ],
       "publisher": "月影工作室",
       "developer": "月影工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.4",
       "reviews_16p": "38",
       "pub_time": "2025-09",
@@ -1133,8 +1235,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6752448507",
       "ios_rating": "4.9",
       "ios_reviews": "23895",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%9C%88%E7%9B%B8%E8%AE%A1%E5%88%92&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%9C%88%E7%9B%B8%E8%AE%A1%E5%88%92",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "灵魂潮汐2",
@@ -1149,6 +1251,8 @@
       ],
       "publisher": "成都星启兴网络有限责任公司",
       "developer": "成都星启兴网络有限责任公司",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.5",
       "reviews_16p": "37",
       "pub_time": "05-22",
@@ -1156,8 +1260,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id1611146480",
       "ios_rating": "4.7",
       "ios_reviews": "1342",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E7%81%B5%E9%AD%82%E6%BD%AE%E6%B1%902&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E7%81%B5%E9%AD%82%E6%BD%AE%E6%B1%902",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "哀鸿：城破十日记",
@@ -1172,6 +1276,8 @@
       ],
       "publisher": "零创游戏",
       "developer": "零创游戏",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.9",
       "reviews_16p": "42",
       "pub_time": "03-24",
@@ -1179,8 +1285,29 @@
       "ios_url": "",
       "ios_rating": "",
       "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%93%80%E9%B8%BF%EF%BC%9A%E5%9F%8E%E7%A0%B4%E5%8D%81%E6%97%A5%E8%AE%B0&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%93%80%E9%B8%BF%EF%BC%9A%E5%9F%8E%E7%A0%B4%E5%8D%81%E6%97%A5%E8%AE%B0",
+      "fetched_at": "2026-06-05 07:42 UTC"
+    },
+    {
+      "name": "怪物惊魂夜",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1f/48/48/1f4848e4-9ce5-6748-babd-f16b756a6f84/AppIcon-1x_U007emarketing-0-7-0-85-220-0.png/200x200bb.jpg",
+      "tags_cn": "休闲",
+      "tags_vn": [
+        "Casual"
+      ],
+      "publisher": "鱼小齐工作室",
+      "developer": "鱼小齐工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
+      "score_16p": "3.2",
+      "reviews_16p": "53",
+      "pub_time": "2024-04",
+      "ios_id": "1665851711",
+      "ios_url": "https://apps.apple.com/cn/app/id1665851711",
+      "ios_rating": "4.5",
+      "ios_reviews": "273",
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%80%AA%E7%89%A9%E6%83%8A%E9%AD%82%E5%A4%9C",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "妖错图",
@@ -1195,6 +1322,8 @@
       ],
       "publisher": "天衍研发组",
       "developer": "天衍研发组",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4",
       "reviews_16p": "40",
       "pub_time": "2023-02",
@@ -1202,8 +1331,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6751520384",
       "ios_rating": "4.5",
       "ios_reviews": "47",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%A6%96%E9%94%99%E5%9B%BE&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%A6%96%E9%94%99%E5%9B%BE",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "斗破苍穹：斗帝之路",
@@ -1218,6 +1347,8 @@
       ],
       "publisher": "",
       "developer": "37手游",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.8",
       "reviews_16p": "42",
       "pub_time": "01-13",
@@ -1225,8 +1356,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6757068180",
       "ios_rating": "4.5",
       "ios_reviews": "1259",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%96%97%E7%A0%B4%E8%8B%8D%E7%A9%B9%EF%BC%9A%E6%96%97%E5%B8%9D%E4%B9%8B%E8%B7%AF&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%96%97%E7%A0%B4%E8%8B%8D%E7%A9%B9%EF%BC%9A%E6%96%97%E5%B8%9D%E4%B9%8B%E8%B7%AF",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "遮天世界",
@@ -1241,6 +1372,8 @@
       ],
       "publisher": "",
       "developer": "腾讯",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "2.4",
       "reviews_16p": "74",
       "pub_time": "2024-12",
@@ -1248,8 +1381,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6757068180",
       "ios_rating": "4.5",
       "ios_reviews": "1259",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%81%AE%E5%A4%A9%E4%B8%96%E7%95%8C&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%81%AE%E5%A4%A9%E4%B8%96%E7%95%8C",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "孤勇无双",
@@ -1264,6 +1397,8 @@
       ],
       "publisher": "发条游戏",
       "developer": "发条游戏",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.4",
       "reviews_16p": "44",
       "pub_time": "2025-10",
@@ -1271,8 +1406,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6753976182",
       "ios_rating": "4.5",
       "ios_reviews": "303",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%AD%A4%E5%8B%87%E6%97%A0%E5%8F%8C&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%AD%A4%E5%8B%87%E6%97%A0%E5%8F%8C",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "百战天虫-正版移植手游",
@@ -1287,6 +1422,8 @@
       ],
       "publisher": "",
       "developer": "西安西品网络科技有限公司",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.7",
       "reviews_16p": "39",
       "pub_time": "02-24",
@@ -1294,8 +1431,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id1593549292",
       "ios_rating": "4.8",
       "ios_reviews": "115630",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E7%99%BE%E6%88%98%E5%A4%A9%E8%99%AB-%E6%AD%A3%E7%89%88%E7%A7%BB%E6%A4%8D%E6%89%8B%E6%B8%B8&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E7%99%BE%E6%88%98%E5%A4%A9%E8%99%AB-%E6%AD%A3%E7%89%88%E7%A7%BB%E6%A4%8D%E6%89%8B%E6%B8%B8",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "旅人日记",
@@ -1310,34 +1447,39 @@
       ],
       "publisher": "",
       "developer": "厦门炉火网络科技有限公司",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.7",
       "reviews_16p": "30",
       "pub_time": "03-31",
       "ios_id": "6751485025",
       "ios_url": "https://apps.apple.com/cn/app/id6751485025",
-      "ios_rating": "0",
+      "ios_rating": "0.0",
       "ios_reviews": "0",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%97%85%E4%BA%BA%E6%97%A5%E8%AE%B0&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%97%85%E4%BA%BA%E6%97%A5%E8%AE%B0",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
-      "name": "怪物惊魂夜",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1f/48/48/1f4848e4-9ce5-6748-babd-f16b756a6f84/AppIcon-1x_U007emarketing-0-7-0-85-220-0.png/200x200bb.jpg",
-      "tags_cn": "休闲",
+      "name": "Monster Storm",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/14/27/96/1427965d-e730-35ab-657d-7036cffacebc/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/200x200bb.jpg",
+      "tags_cn": "休闲 / 角色扮演",
       "tags_vn": [
-        "Casual"
+        "Casual",
+        "Nhập vai RPG"
       ],
-      "publisher": "鱼小齐工作室",
-      "developer": "鱼小齐工作室",
-      "score_16p": "3.2",
-      "reviews_16p": "45",
-      "pub_time": "2024-04",
-      "ios_id": "1665851711",
-      "ios_url": "https://apps.apple.com/cn/app/id1665851711",
-      "ios_rating": "4.5",
-      "ios_reviews": "273",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%80%AA%E7%89%A9%E6%83%8A%E9%AD%82%E5%A4%9C&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "publisher": "Little Play",
+      "developer": "Little Play",
+      "testtype_cn": "",
+      "testtype_vn": "",
+      "score_16p": "4.7",
+      "reviews_16p": "28",
+      "pub_time": "04-02",
+      "ios_id": "6758945464",
+      "ios_url": "https://apps.apple.com/cn/app/id6758945464",
+      "ios_rating": "4.6",
+      "ios_reviews": "28",
+      "taptap_url": "https://www.taptap.cn/search?q=Monster%20Storm",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "星绘友晴天-宇宙生活模拟新游",
@@ -1352,6 +1494,8 @@
       ],
       "publisher": "网易游戏",
       "developer": "网易游戏",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.9",
       "reviews_16p": "34",
       "pub_time": "2025-11",
@@ -1359,8 +1503,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id1631823906",
       "ios_rating": "4.6",
       "ios_reviews": "671",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%98%9F%E7%BB%98%E5%8F%8B%E6%99%B4%E5%A4%A9-%E5%AE%87%E5%AE%99%E7%94%9F%E6%B4%BB%E6%A8%A1%E6%8B%9F%E6%96%B0%E6%B8%B8&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%98%9F%E7%BB%98%E5%8F%8B%E6%99%B4%E5%A4%A9-%E5%AE%87%E5%AE%99%E7%94%9F%E6%B4%BB%E6%A8%A1%E6%8B%9F%E6%96%B0%E6%B8%B8",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "代号：深渊之歌",
@@ -1375,6 +1519,8 @@
       ],
       "publisher": "",
       "developer": "淘气泡游戏",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4",
       "reviews_16p": "33",
       "pub_time": "2025-08",
@@ -1382,8 +1528,8 @@
       "ios_url": "",
       "ios_rating": "",
       "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E4%BB%A3%E5%8F%B7%EF%BC%9A%E6%B7%B1%E6%B8%8A%E4%B9%8B%E6%AD%8C&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E4%BB%A3%E5%8F%B7%EF%BC%9A%E6%B7%B1%E6%B8%8A%E4%B9%8B%E6%AD%8C",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "我的末日小队",
@@ -1398,6 +1544,8 @@
       ],
       "publisher": "西铭游戏",
       "developer": "西铭游戏",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.3",
       "reviews_16p": "41",
       "pub_time": "05-14",
@@ -1405,8 +1553,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6474464810",
       "ios_rating": "4.6",
       "ios_reviews": "2505",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%88%91%E7%9A%84%E6%9C%AB%E6%97%A5%E5%B0%8F%E9%98%9F&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%88%91%E7%9A%84%E6%9C%AB%E6%97%A5%E5%B0%8F%E9%98%9F",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "借眼",
@@ -1421,6 +1569,8 @@
       ],
       "publisher": "勾陈一工作室",
       "developer": "勾陈一工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.6",
       "reviews_16p": "36",
       "pub_time": "04-12",
@@ -1428,32 +1578,12 @@
       "ios_url": "https://apps.apple.com/cn/app/id6757696771",
       "ios_rating": "4.6",
       "ios_reviews": "953",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%80%9F%E7%9C%BC&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
-    },
-    {
-      "name": "Monster Storm",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/14/27/96/1427965d-e730-35ab-657d-7036cffacebc/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/512x512bb.jpg",
-      "tags_cn": "休闲 / 角色扮演",
-      "tags_vn": [
-        "Casual",
-        "Nhập vai RPG"
-      ],
-      "publisher": "Little Play",
-      "developer": "Little Play",
-      "score_16p": "4.6",
-      "reviews_16p": "26",
-      "pub_time": "04-02",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=Monster%20Storm&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%80%9F%E7%9C%BC",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "守护者大陆-甜萌世界零氪爽玩",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a3/5d/d4/a35dd4c4-b772-442c-8e10-c24ca24c6821/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a3/5d/d4/a35dd4c4-b772-442c-8e10-c24ca24c6821/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
       "tags_cn": "卡牌 / 冒险",
       "tags_vn": [
         "Thẻ bài",
@@ -1461,19 +1591,21 @@
       ],
       "publisher": "Yichun Jiashi Network Technology Co., Ltd.",
       "developer": "Yichun Jiashi Network Technology Co., Ltd.",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.8",
       "reviews_16p": "23",
       "pub_time": "04-08",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%AE%88%E6%8A%A4%E8%80%85%E5%A4%A7%E9%99%86-%E7%94%9C%E8%90%8C%E4%B8%96%E7%95%8C%E9%9B%B6%E6%B0%AA%E7%88%BD%E7%8E%A9&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "6761234423",
+      "ios_url": "https://apps.apple.com/cn/app/id6761234423",
+      "ios_rating": "4.8",
+      "ios_reviews": "23",
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%AE%88%E6%8A%A4%E8%80%85%E5%A4%A7%E9%99%86-%E7%94%9C%E8%90%8C%E4%B8%96%E7%95%8C%E9%9B%B6%E6%B0%AA%E7%88%BD%E7%8E%A9",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "小鸡守卫",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260430/16392510329",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/28/52/a8/2852a848-5083-8e19-d36d-326067e4ea00/AppIcon-0-0-1x_U007epad-0-85-220.png/200x200bb.jpg",
       "tags_cn": "塔防 / 策略 / Roguelike / 合成 / 卡通",
       "tags_vn": [
         "Tower Defense",
@@ -1484,19 +1616,21 @@
       ],
       "publisher": "深圳市一七玩信息技术有限公司",
       "developer": "深圳市一七玩信息技术有限公司",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.3",
       "reviews_16p": "35",
       "pub_time": "2025-07",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%B0%8F%E9%B8%A1%E5%AE%88%E5%8D%AB&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "6608973479",
+      "ios_url": "https://apps.apple.com/cn/app/id6608973479",
+      "ios_rating": "4.4",
+      "ios_reviews": "219",
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%B0%8F%E9%B8%A1%E5%AE%88%E5%8D%AB",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "无尽花界",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20251201/17264690208",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/52/17/a7/5217a742-6f5b-539e-acc2-92e4400483b8/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
       "tags_cn": "美少女 / 卡牌 / 策略 / 唯美 / 魔幻",
       "tags_vn": [
         "美少女",
@@ -1507,15 +1641,17 @@
       ],
       "publisher": "",
       "developer": "小浣熊游戏",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.7",
       "reviews_16p": "30",
       "pub_time": "03-18",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%97%A0%E5%B0%BD%E8%8A%B1%E7%95%8C&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "6757685049",
+      "ios_url": "https://apps.apple.com/cn/app/id6757685049",
+      "ios_rating": "4.4",
+      "ios_reviews": "244",
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%97%A0%E5%B0%BD%E8%8A%B1%E7%95%8C",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "代号：拳皇VS",
@@ -1529,6 +1665,8 @@
       ],
       "publisher": "上海趣赫网络科技有限公司",
       "developer": "上海趣赫网络科技有限公司",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.3",
       "reviews_16p": "24",
       "pub_time": "04-12",
@@ -1536,12 +1674,12 @@
       "ios_url": "",
       "ios_rating": "",
       "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E4%BB%A3%E5%8F%B7%EF%BC%9A%E6%8B%B3%E7%9A%87VS&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E4%BB%A3%E5%8F%B7%EF%BC%9A%E6%8B%B3%E7%9A%87VS",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "宗师之上",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260518/1356215520",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/aa/95/26/aa952623-e7eb-1aa1-3243-8344aa5287fa/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "角色扮演 / 放置 / 修仙 / 养成 / 冒险 / 休闲 / 合成",
       "tags_vn": [
         "Nhập vai RPG",
@@ -1552,15 +1690,17 @@
       ],
       "publisher": "",
       "developer": "广州灵犀互动娱乐有限公司",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.1",
       "reviews_16p": "35",
       "pub_time": "2025-11",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%AE%97%E5%B8%88%E4%B9%8B%E4%B8%8A&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "6755095931",
+      "ios_url": "https://apps.apple.com/cn/app/id6755095931",
+      "ios_rating": "4.8",
+      "ios_reviews": "18479",
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%AE%97%E5%B8%88%E4%B9%8B%E4%B8%8A",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "萌神契约",
@@ -1575,6 +1715,8 @@
       ],
       "publisher": "",
       "developer": "游艺春秋",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.6",
       "reviews_16p": "26",
       "pub_time": "2025-09",
@@ -1582,8 +1724,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id1668979935",
       "ios_rating": "4.6",
       "ios_reviews": "1092",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E8%90%8C%E7%A5%9E%E5%A5%91%E7%BA%A6&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E8%90%8C%E7%A5%9E%E5%A5%91%E7%BA%A6",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "英雄之时",
@@ -1598,6 +1740,8 @@
       ],
       "publisher": "",
       "developer": "厦门游乐互动科技有限公司",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.2",
       "reviews_16p": "22",
       "pub_time": "2025-08",
@@ -1605,12 +1749,12 @@
       "ios_url": "https://apps.apple.com/cn/app/id6502422743",
       "ios_rating": "4.5",
       "ios_reviews": "29",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E8%8B%B1%E9%9B%84%E4%B9%8B%E6%97%B6&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E8%8B%B1%E9%9B%84%E4%B9%8B%E6%97%B6",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "古今2-风起蓬莱",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260410/17003892386",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/49/6a/66/496a6683-fb32-bca8-6045-03709cbab547/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "DBG / 武侠 / Roguelike / 江湖 / 中国风 / 卡牌",
       "tags_vn": [
         "DBG",
@@ -1621,19 +1765,21 @@
       ],
       "publisher": "",
       "developer": "游否游戏",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.6",
       "reviews_16p": "26",
       "pub_time": "2025-12",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%8F%A4%E4%BB%8A2-%E9%A3%8E%E8%B5%B7%E8%93%AC%E8%8E%B1&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "6742311245",
+      "ios_url": "https://apps.apple.com/cn/app/id6742311245",
+      "ios_rating": "3.7",
+      "ios_reviews": "18",
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%8F%A4%E4%BB%8A2-%E9%A3%8E%E8%B5%B7%E8%93%AC%E8%8E%B1",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "对不起，我是警察",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260427/10095162709",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cd/28/d8/cd28d85b-9ad7-507f-81d6-5470041144b3/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "多平台 / 互动影像 / 角色扮演 / 第一人称 / 剧情 / 冒险 / Steam移植",
       "tags_vn": [
         "互动影像",
@@ -1644,15 +1790,17 @@
       ],
       "publisher": "小有内容",
       "developer": "小有内容",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.1",
       "reviews_16p": "22",
       "pub_time": "04-17",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%AF%B9%E4%B8%8D%E8%B5%B7%EF%BC%8C%E6%88%91%E6%98%AF%E8%AD%A6%E5%AF%9F&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "6760693468",
+      "ios_url": "https://apps.apple.com/cn/app/id6760693468",
+      "ios_rating": "3.5",
+      "ios_reviews": "35",
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%AF%B9%E4%B8%8D%E8%B5%B7%EF%BC%8C%E6%88%91%E6%98%AF%E8%AD%A6%E5%AF%9F",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "我不是魔王",
@@ -1666,6 +1814,8 @@
       ],
       "publisher": "",
       "developer": "EdiggerStudio",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.7",
       "reviews_16p": "19",
       "pub_time": "2025-07",
@@ -1673,12 +1823,12 @@
       "ios_url": "https://apps.apple.com/cn/app/id6742525776",
       "ios_rating": "4.8",
       "ios_reviews": "10477",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%88%91%E4%B8%8D%E6%98%AF%E9%AD%94%E7%8E%8B&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%88%91%E4%B8%8D%E6%98%AF%E9%AD%94%E7%8E%8B",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "迷失之径",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20241029/1705572236",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/50/e5/94/50e5946f-e42f-fa90-f577-8d957687098e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
       "tags_cn": "买断制 / 安心购 / 策略拉满 / 多平台 / Roguelike / 策略 / Steam移植 / 卡牌 / 独立游戏 / 休闲",
       "tags_vn": [
         "Mua một lần",
@@ -1689,15 +1839,17 @@
       ],
       "publisher": "",
       "developer": "Gamersky Games",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.1",
       "reviews_16p": "21",
       "pub_time": "03-03",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E8%BF%B7%E5%A4%B1%E4%B9%8B%E5%BE%84&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "6469690727",
+      "ios_url": "https://apps.apple.com/cn/app/id6469690727",
+      "ios_rating": "4.2",
+      "ios_reviews": "8",
+      "taptap_url": "https://www.taptap.cn/search?q=%E8%BF%B7%E5%A4%B1%E4%B9%8B%E5%BE%84",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "真・三国无双 天下",
@@ -1711,19 +1863,21 @@
       ],
       "publisher": "盛天游戏",
       "developer": "盛天游戏",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4",
       "reviews_16p": "20",
       "pub_time": "04-17",
       "ios_id": "6762107838",
       "ios_url": "https://apps.apple.com/cn/app/id6762107838",
-      "ios_rating": "0",
+      "ios_rating": "0.0",
       "ios_reviews": "0",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E7%9C%9F%E3%83%BB%E4%B8%89%E5%9B%BD%E6%97%A0%E5%8F%8C%20%E5%A4%A9%E4%B8%8B&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E7%9C%9F%E3%83%BB%E4%B8%89%E5%9B%BD%E6%97%A0%E5%8F%8C%20%E5%A4%A9%E4%B8%8B",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "曙光纪元",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260508/15321438292",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2a/bf/9d/2abf9d0c-14e4-08a1-d8e6-1096a2ba1dd7/AppIcon-0-0-1x_U007epad-0-1-85-220.png/200x200bb.jpg",
       "tags_cn": "搜打撤 / 末日 / 割草 / 废土",
       "tags_vn": [
         "Extraction Shooter",
@@ -1733,15 +1887,17 @@
       ],
       "publisher": "游一点意思工作室",
       "developer": "游一点意思工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.7",
       "reviews_16p": "21",
       "pub_time": "05-24",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%9B%99%E5%85%89%E7%BA%AA%E5%85%83&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "6744009984",
+      "ios_url": "https://apps.apple.com/cn/app/id6744009984",
+      "ios_rating": "4.7",
+      "ios_reviews": "3085",
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%9B%99%E5%85%89%E7%BA%AA%E5%85%83",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "蛮荒领主",
@@ -1756,6 +1912,8 @@
       ],
       "publisher": "6kwgame",
       "developer": "6kwgame",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.5",
       "reviews_16p": "22",
       "pub_time": "03-24",
@@ -1763,12 +1921,12 @@
       "ios_url": "",
       "ios_rating": "",
       "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E8%9B%AE%E8%8D%92%E9%A2%86%E4%B8%BB&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E8%9B%AE%E8%8D%92%E9%A2%86%E4%B8%BB",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "我嘎嘎乱杀",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260427/09134581879",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e0/ae/6b/e0ae6b9f-593b-707c-88b3-2d69a4c3738e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
       "tags_cn": "放置 / 刷宝 / 割草 / 独立游戏 / 休闲",
       "tags_vn": [
         "Idle",
@@ -1779,19 +1937,21 @@
       ],
       "publisher": "六阿哥游戏工作室",
       "developer": "六阿哥游戏工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "2.9",
       "reviews_16p": "26",
       "pub_time": "05-07",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%88%91%E5%98%8E%E5%98%8E%E4%B9%B1%E6%9D%80&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "6754325412",
+      "ios_url": "https://apps.apple.com/cn/app/id6754325412",
+      "ios_rating": "4.9",
+      "ios_reviews": "282",
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%88%91%E5%98%8E%E5%98%8E%E4%B9%B1%E6%9D%80",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "功夫奇遇记",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260326/17400719412",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2b/d5/15/2bd51516-7991-ff5e-facc-ce463d3fdb45/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/200x200bb.jpg",
       "tags_cn": "单机 / 动作 / 格斗 / 闯关 / 休闲",
       "tags_vn": [
         "单机",
@@ -1802,19 +1962,21 @@
       ],
       "publisher": "",
       "developer": "伊丝露德",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.9",
       "reviews_16p": "14",
       "pub_time": "05-14",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%8A%9F%E5%A4%AB%E5%A5%87%E9%81%87%E8%AE%B0&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "1072658887",
+      "ios_url": "https://apps.apple.com/cn/app/id1072658887",
+      "ios_rating": "4.6",
+      "ios_reviews": "12220",
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%8A%9F%E5%A4%AB%E5%A5%87%E9%81%87%E8%AE%B0",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "希望城",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260422/15492870757",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/54/43/58/54435891-a262-7838-68cd-1ba085cf91e1/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
       "tags_cn": "建造 / 冒险 / 探索 / 种田 / 抓宠 / 模拟 / 休闲",
       "tags_vn": [
         "Xây dựng",
@@ -1825,19 +1987,21 @@
       ],
       "publisher": "",
       "developer": "上海玉鹤智仁信息科技有限公司",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.3",
       "reviews_16p": "22",
       "pub_time": "04-17",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%B8%8C%E6%9C%9B%E5%9F%8E&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "6751797935",
+      "ios_url": "https://apps.apple.com/cn/app/id6751797935",
+      "ios_rating": "4.3",
+      "ios_reviews": "193",
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%B8%8C%E6%9C%9B%E5%9F%8E",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "大道仙途",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260415/11371488723",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/41/d8/9d/41d89d9b-498d-9d23-e215-a625c09aa746/AppIcon-0-0-1x_U007epad-0-1-85-220.png/200x200bb.jpg",
       "tags_cn": "角色扮演 / 修仙 / 休闲 / 养成",
       "tags_vn": [
         "Nhập vai RPG",
@@ -1847,19 +2011,21 @@
       ],
       "publisher": "六爻工作室",
       "developer": "六爻工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.2",
       "reviews_16p": "22",
       "pub_time": "05-10",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%A4%A7%E9%81%93%E4%BB%99%E9%80%94&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "6764294147",
+      "ios_url": "https://apps.apple.com/cn/app/id6764294147",
+      "ios_rating": "4.4",
+      "ios_reviews": "208",
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%A4%A7%E9%81%93%E4%BB%99%E9%80%94",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "蛙蛙豹豹的树屋",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx~sykb/20241209/09523525552",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/50/f5/a5/50f5a5c0-94f7-4f43-5436-791dae9c12ef/AppIcon-0-0-1x_U007emarketing-0-11-0-0-85-220.png/200x200bb.jpg",
       "tags_cn": "休闲 / 萌宠 / 经营 / 养成 / 放置 / 温馨治愈 / 独立游戏",
       "tags_vn": [
         "Casual",
@@ -1870,15 +2036,17 @@
       ],
       "publisher": "瓜乓乓工作室",
       "developer": "瓜乓乓工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.9",
       "reviews_16p": "13",
       "pub_time": "5天前",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E8%9B%99%E8%9B%99%E8%B1%B9%E8%B1%B9%E7%9A%84%E6%A0%91%E5%B1%8B&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "672984826",
+      "ios_url": "https://apps.apple.com/cn/app/id672984826",
+      "ios_rating": "4.9",
+      "ios_reviews": "298074",
+      "taptap_url": "https://www.taptap.cn/search?q=%E8%9B%99%E8%9B%99%E8%B1%B9%E8%B1%B9%E7%9A%84%E6%A0%91%E5%B1%8B",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "龙渊王座",
@@ -1891,6 +2059,8 @@
       ],
       "publisher": "",
       "developer": "贪玩游戏",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "5",
       "reviews_16p": "12",
       "pub_time": "5天前",
@@ -1898,12 +2068,12 @@
       "ios_url": "",
       "ios_rating": "",
       "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%BE%99%E6%B8%8A%E7%8E%8B%E5%BA%A7&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%BE%99%E6%B8%8A%E7%8E%8B%E5%BA%A7",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "耀世格斗",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260410/11591577893",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ee/29/70/ee29701f-fbf2-53ad-f7cf-4eed1f1e1891/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
       "tags_cn": "动作 / 卡牌 / 格斗 / 二次元 / 回合 / 横版 / 3D",
       "tags_vn": [
         "Action",
@@ -1914,19 +2084,21 @@
       ],
       "publisher": "",
       "developer": "聚玩游戏",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "2.7",
       "reviews_16p": "25",
       "pub_time": "02-06",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E8%80%80%E4%B8%96%E6%A0%BC%E6%96%97&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "6766809811",
+      "ios_url": "https://apps.apple.com/cn/app/id6766809811",
+      "ios_rating": "4.3",
+      "ios_reviews": "124",
+      "taptap_url": "https://www.taptap.cn/search?q=%E8%80%80%E4%B8%96%E6%A0%BC%E6%96%97",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "天空岛传说",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx~sykb/20241114/10495334024",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9d/9b/01/9d9b012b-00ff-e41c-2186-335355468366/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
       "tags_cn": "模拟经营 / 收集 / 养成 / 休闲 / 温馨治愈 / 钓鱼 / 经营 / 美食 / 萌宠 / 独立游戏",
       "tags_vn": [
         "Kinh doanh mô phỏng",
@@ -1937,19 +2109,21 @@
       ],
       "publisher": "霓诺网络",
       "developer": "霓诺网络",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.4",
       "reviews_16p": "13",
       "pub_time": "01-16",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%A4%A9%E7%A9%BA%E5%B2%9B%E4%BC%A0%E8%AF%B4&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "6742528029",
+      "ios_url": "https://apps.apple.com/cn/app/id6742528029",
+      "ios_rating": "3.5",
+      "ios_reviews": "879",
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%A4%A9%E7%A9%BA%E5%B2%9B%E4%BC%A0%E8%AF%B4",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "梦幻新诛仙：轻享",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260521/16463846932",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/13/85/f5/1385f5ec-8486-a307-b63c-a4e00d45cbb6/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
       "tags_cn": "多平台 / 角色扮演 / MMO / 回合 / 经营 / 中国风",
       "tags_vn": [
         "Nhập vai RPG",
@@ -1960,19 +2134,21 @@
       ],
       "publisher": "完美世界游戏",
       "developer": "完美世界游戏",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.8",
       "reviews_16p": "15",
       "pub_time": "03-24",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%A2%A6%E5%B9%BB%E6%96%B0%E8%AF%9B%E4%BB%99%EF%BC%9A%E8%BD%BB%E4%BA%AB&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "1555236168",
+      "ios_url": "https://apps.apple.com/cn/app/id1555236168",
+      "ios_rating": "4.7",
+      "ios_reviews": "147481",
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%A2%A6%E5%B9%BB%E6%96%B0%E8%AF%9B%E4%BB%99%EF%BC%9A%E8%BD%BB%E4%BA%AB",
+      "fetched_at": "2026-06-05 07:42 UTC"
     },
     {
       "name": "织梦森林",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260129/15072559441",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/02/7d/2d/027d2dbf-4b72-a0c3-a007-17c370d191cb/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/200x200bb.jpg",
       "tags_cn": "换装 / 模拟经营 / 养成 / 女性向",
       "tags_vn": [
         "Thay trang phục",
@@ -1982,19 +2158,21 @@
       ],
       "publisher": "",
       "developer": "37手游",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "2.9",
       "reviews_16p": "19",
       "pub_time": "05-14",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E7%BB%87%E6%A2%A6%E6%A3%AE%E6%9E%97&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "6758001864",
+      "ios_url": "https://apps.apple.com/cn/app/id6758001864",
+      "ios_rating": "4.2",
+      "ios_reviews": "226",
+      "taptap_url": "https://www.taptap.cn/search?q=%E7%BB%87%E6%A2%A6%E6%A3%AE%E6%9E%97",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "暴雪之界",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20251202/16480568364",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5f/e6/00/5fe60061-e4a1-dda4-7140-5c236be1a381/AppIcon-0-0-1x_U007emarketing-0-8-0-0-85-220.png/200x200bb.jpg",
       "tags_cn": "剧情 / 角色扮演 / 策略",
       "tags_vn": [
         "Cốt truyện",
@@ -2003,19 +2181,21 @@
       ],
       "publisher": "暴雪之界",
       "developer": "暴雪之界",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.8",
       "reviews_16p": "14",
       "pub_time": "2025-12",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%9A%B4%E9%9B%AA%E4%B9%8B%E7%95%8C&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "6744099992",
+      "ios_url": "https://apps.apple.com/cn/app/id6744099992",
+      "ios_rating": "4.9",
+      "ios_reviews": "13822",
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%9A%B4%E9%9B%AA%E4%B9%8B%E7%95%8C",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "枫叶骑士团",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260421/13411314593",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7c/41/c1/7c41c1b7-b9d7-7673-d505-e8cd254d533a/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/200x200bb.jpg",
       "tags_cn": "动作 / 多人联机 / 即时战斗 / 冒险 / 日系",
       "tags_vn": [
         "Action",
@@ -2026,19 +2206,21 @@
       ],
       "publisher": "",
       "developer": "深蓝幻境(成都)网络技术有限公司",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.5",
       "reviews_16p": "15",
       "pub_time": "04-30",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%9E%AB%E5%8F%B6%E9%AA%91%E5%A3%AB%E5%9B%A2&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "6754752741",
+      "ios_url": "https://apps.apple.com/cn/app/id6754752741",
+      "ios_rating": "0",
+      "ios_reviews": "0",
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%9E%AB%E5%8F%B6%E9%AA%91%E5%A3%AB%E5%9B%A2",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "海兽餐厅",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx~sykb/20250509/11194718873",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/49/44/04/49440466-ebe1-bbf1-6717-fd1e2aed8bf4/AppIcon-0-0-1x_U007ephone-0-11-0-85-220.png/200x200bb.jpg",
       "tags_cn": "探索 / 动物 / 种田 / 模拟经营 / 手绘 / 策略 / 解压 / 经营 / 冒险 / 模拟 / 收集 / 休闲 / 养成 / 放置",
       "tags_vn": [
         "探索",
@@ -2049,34 +2231,38 @@
       ],
       "publisher": "",
       "developer": "三脚猫工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.2",
       "reviews_16p": "12",
       "pub_time": "2025-09",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%B5%B7%E5%85%BD%E9%A4%90%E5%8E%85&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "6449174422",
+      "ios_url": "https://apps.apple.com/cn/app/id6449174422",
+      "ios_rating": "4.5",
+      "ios_reviews": "831",
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%B5%B7%E5%85%BD%E9%A4%90%E5%8E%85",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "三国伏魔录",
-      "icon_url": "https://img.16p.com/auto/8c/e4/8ce4e885628c6b0b733d903e024cb89c.png",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1a/f4/1d/1af41d3f-e939-985c-4130-9f451e099424/AppIcon-1x_U007emarketing-0-7-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "动作",
       "tags_vn": [
         "Action"
       ],
       "publisher": "Shenzhen CL Entertainment Co., Ltd",
       "developer": "Shenzhen CL Entertainment Co., Ltd",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.7",
       "reviews_16p": "14",
       "pub_time": "2019-04",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E4%B8%89%E5%9B%BD%E4%BC%8F%E9%AD%94%E5%BD%95&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "1614985411",
+      "ios_url": "https://apps.apple.com/cn/app/id1614985411",
+      "ios_rating": "4.7",
+      "ios_reviews": "2963",
+      "taptap_url": "https://www.taptap.cn/search?q=%E4%B8%89%E5%9B%BD%E4%BC%8F%E9%AD%94%E5%BD%95",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "凡人灵境游",
@@ -2091,6 +2277,8 @@
       ],
       "publisher": "",
       "developer": "方舟未来",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.2",
       "reviews_16p": "16",
       "pub_time": "02-06",
@@ -2098,12 +2286,12 @@
       "ios_url": "",
       "ios_rating": "",
       "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%87%A1%E4%BA%BA%E7%81%B5%E5%A2%83%E6%B8%B8&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%87%A1%E4%BA%BA%E7%81%B5%E5%A2%83%E6%B8%B8",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "风暴幸存者",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260406/12002929954",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/d9/47/96/d94796d3-d174-4e52-b43c-0e5193652cac/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/200x200bb.jpg",
       "tags_cn": "动作 / Roguelike / 割草 / 解压 / 休闲",
       "tags_vn": [
         "Action",
@@ -2114,19 +2302,21 @@
       ],
       "publisher": "",
       "developer": "DDLStudio",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "2.8",
       "reviews_16p": "19",
       "pub_time": "04-17",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%A3%8E%E6%9A%B4%E5%B9%B8%E5%AD%98%E8%80%85&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "6448081375",
+      "ios_url": "https://apps.apple.com/cn/app/id6448081375",
+      "ios_rating": "1.7",
+      "ios_reviews": "6",
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%A3%8E%E6%9A%B4%E5%B9%B8%E5%AD%98%E8%80%85",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "Hello Kitty My Dream Store",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260506/10381761234",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/09/d4/9f/09d49fcb-db12-7b8c-e309-d290ef6855c0/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "合成 / 模拟经营 / 休闲 / 养成 / 收集",
       "tags_vn": [
         "合成",
@@ -2137,15 +2327,17 @@
       ],
       "publisher": "",
       "developer": "苏州沁游网络科技有限公司",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.3",
       "reviews_16p": "15",
       "pub_time": "01-18",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=Hello%20Kitty%20My%20Dream%20Store&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "1591329077",
+      "ios_url": "https://apps.apple.com/cn/app/id1591329077",
+      "ios_rating": "4.8",
+      "ios_reviews": "63190",
+      "taptap_url": "https://www.taptap.cn/search?q=Hello%20Kitty%20My%20Dream%20Store",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "糟糕！我被女忍包围了！2",
@@ -2160,6 +2352,8 @@
       ],
       "publisher": "游戏玄学",
       "developer": "游戏玄学",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "2.7",
       "reviews_16p": "19",
       "pub_time": "5天前",
@@ -2167,12 +2361,12 @@
       "ios_url": "",
       "ios_rating": "",
       "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E7%B3%9F%E7%B3%95%EF%BC%81%E6%88%91%E8%A2%AB%E5%A5%B3%E5%BF%8D%E5%8C%85%E5%9B%B4%E4%BA%86%EF%BC%812&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E7%B3%9F%E7%B3%95%EF%BC%81%E6%88%91%E8%A2%AB%E5%A5%B3%E5%BF%8D%E5%8C%85%E5%9B%B4%E4%BA%86%EF%BC%812",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "打工吧！小精灵",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260212/14592174199",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/59/0d/40/590d40b6-89c7-1fc9-d2d4-80835433815b/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.jpeg/200x200bb.jpg",
       "tags_cn": "抓宠 / 模拟经营 / 养成 / 冒险",
       "tags_vn": [
         "Bắt pet",
@@ -2182,19 +2376,21 @@
       ],
       "publisher": "",
       "developer": "战火互娱",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.9",
       "reviews_16p": "12",
       "pub_time": "01-31",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%89%93%E5%B7%A5%E5%90%A7%EF%BC%81%E5%B0%8F%E7%B2%BE%E7%81%B5&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "1438611407",
+      "ios_url": "https://apps.apple.com/cn/app/id1438611407",
+      "ios_rating": "5",
+      "ios_reviews": "1",
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%89%93%E5%B7%A5%E5%90%A7%EF%BC%81%E5%B0%8F%E7%B2%BE%E7%81%B5",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "全民游戏大亨2",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260425/1117012822",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/2b/bd/5f/2bbd5f88-b846-bd25-bc9c-a83e7a870db5/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/200x200bb.jpg",
       "tags_cn": "经营 / 模拟 / 文字 / 单机",
       "tags_vn": [
         "经营",
@@ -2204,15 +2400,17 @@
       ],
       "publisher": "",
       "developer": "小王个人工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.1",
       "reviews_16p": "11",
       "pub_time": "5天前",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%85%A8%E6%B0%91%E6%B8%B8%E6%88%8F%E5%A4%A7%E4%BA%A82&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "1602205428",
+      "ios_url": "https://apps.apple.com/cn/app/id1602205428",
+      "ios_rating": "4.8",
+      "ios_reviews": "15603",
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%85%A8%E6%B0%91%E6%B8%B8%E6%88%8F%E5%A4%A7%E4%BA%A82",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "星光小队",
@@ -2226,6 +2424,8 @@
       ],
       "publisher": "灰阶映射工作室",
       "developer": "灰阶映射工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.1",
       "reviews_16p": "11",
       "pub_time": "2025-02",
@@ -2233,8 +2433,8 @@
       "ios_url": "",
       "ios_rating": "",
       "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%98%9F%E5%85%89%E5%B0%8F%E9%98%9F&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%98%9F%E5%85%89%E5%B0%8F%E9%98%9F",
+      "fetched_at": "2026-06-05 07:43 UTC"
     }
   ],
   "rank30": [
@@ -2248,6 +2448,8 @@
       ],
       "publisher": "HK HORTOR TECHNOLOGY LIMITED",
       "developer": "HK HORTOR TECHNOLOGY LIMITED",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.6",
       "reviews_16p": "4095",
       "pub_time": "04-19",
@@ -2255,8 +2457,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6758614459",
       "ios_rating": "4.6",
       "ios_reviews": "4155",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E8%82%A5%E9%B9%85%E7%BE%8E%E9%A3%9F%E8%A1%97&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E8%82%A5%E9%B9%85%E7%BE%8E%E9%A3%9F%E8%A1%97",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "饥困荒野-饥荒：新家园",
@@ -2271,6 +2473,8 @@
       ],
       "publisher": "腾讯",
       "developer": "猪人工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.7",
       "reviews_16p": "4789",
       "pub_time": "2023-07",
@@ -2278,8 +2482,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id1557845520",
       "ios_rating": "4.9",
       "ios_reviews": "3635",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%A5%A5%E5%9B%B0%E8%8D%92%E9%87%8E-%E9%A5%A5%E8%8D%92%EF%BC%9A%E6%96%B0%E5%AE%B6%E5%9B%AD&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%A5%A5%E5%9B%B0%E8%8D%92%E9%87%8E-%E9%A5%A5%E8%8D%92%EF%BC%9A%E6%96%B0%E5%AE%B6%E5%9B%AD",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "驯龙之旅",
@@ -2294,6 +2498,8 @@
       ],
       "publisher": "咪咕互动娱乐有限公司",
       "developer": "咪咕互动娱乐有限公司",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.4",
       "reviews_16p": "2894",
       "pub_time": "03-26",
@@ -2301,8 +2507,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6758429228",
       "ios_rating": "4.7",
       "ios_reviews": "2043",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%A9%AF%E9%BE%99%E4%B9%8B%E6%97%85&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%A9%AF%E9%BE%99%E4%B9%8B%E6%97%85",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "崩坏：因缘精灵-崩坏IP新作",
@@ -2317,6 +2523,8 @@
       ],
       "publisher": "米哈游®",
       "developer": "米哈游®",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.5",
       "reviews_16p": "1285",
       "pub_time": "2025-09",
@@ -2324,8 +2532,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6478654994",
       "ios_rating": "4.1",
       "ios_reviews": "347820",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%B4%A9%E5%9D%8F%EF%BC%9A%E5%9B%A0%E7%BC%98%E7%B2%BE%E7%81%B5-%E5%B4%A9%E5%9D%8FIP%E6%96%B0%E4%BD%9C&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%B4%A9%E5%9D%8F%EF%BC%9A%E5%9B%A0%E7%BC%98%E7%B2%BE%E7%81%B5-%E5%B4%A9%E5%9D%8FIP%E6%96%B0%E4%BD%9C",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "遮天：帝路争锋",
@@ -2337,6 +2545,8 @@
       ],
       "publisher": "Guangzhou Hengshui Yule Network Technology Co.,Ltd",
       "developer": "Guangzhou Hengshui Yule Network Technology Co.,Ltd",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.5",
       "reviews_16p": "1244",
       "pub_time": "04-02",
@@ -2344,8 +2554,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6757068180",
       "ios_rating": "4.5",
       "ios_reviews": "1259",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%81%AE%E5%A4%A9%EF%BC%9A%E5%B8%9D%E8%B7%AF%E4%BA%89%E9%94%8B&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%81%AE%E5%A4%A9%EF%BC%9A%E5%B8%9D%E8%B7%AF%E4%BA%89%E9%94%8B",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "风之国世界",
@@ -2360,6 +2570,8 @@
       ],
       "publisher": "苏州茉莉",
       "developer": "苏州茉莉",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.7",
       "reviews_16p": "526",
       "pub_time": "2025-12",
@@ -2367,8 +2579,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6755951632",
       "ios_rating": "4.7",
       "ios_reviews": "615",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%A3%8E%E4%B9%8B%E5%9B%BD%E4%B8%96%E7%95%8C&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%A3%8E%E4%B9%8B%E5%9B%BD%E4%B8%96%E7%95%8C",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "七界梦谭",
@@ -2383,6 +2595,8 @@
       ],
       "publisher": "飞光阁工作室",
       "developer": "飞光阁工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.6",
       "reviews_16p": "477",
       "pub_time": "2024-04",
@@ -2390,8 +2604,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id1639302958",
       "ios_rating": "4.5",
       "ios_reviews": "1150",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E4%B8%83%E7%95%8C%E6%A2%A6%E8%B0%AD&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E4%B8%83%E7%95%8C%E6%A2%A6%E8%B0%AD",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "新星足球世界",
@@ -2404,6 +2618,8 @@
       ],
       "publisher": "Shenzhen Qianhai Hongcheng Games Co.,Ltd",
       "developer": "Shenzhen Qianhai Hongcheng Games Co.,Ltd",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.8",
       "reviews_16p": "426",
       "pub_time": "04-15",
@@ -2411,8 +2627,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6755859299",
       "ios_rating": "4.8",
       "ios_reviews": "432",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%96%B0%E6%98%9F%E8%B6%B3%E7%90%83%E4%B8%96%E7%95%8C&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%96%B0%E6%98%9F%E8%B6%B3%E7%90%83%E4%B8%96%E7%95%8C",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "卡厄思梦境",
@@ -2427,6 +2643,8 @@
       ],
       "publisher": "腾讯",
       "developer": "腾讯",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3",
       "reviews_16p": "694",
       "pub_time": "2025-09",
@@ -2434,8 +2652,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6751272153",
       "ios_rating": "3.4",
       "ios_reviews": "2190",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%8D%A1%E5%8E%84%E6%80%9D%E6%A2%A6%E5%A2%83&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%8D%A1%E5%8E%84%E6%80%9D%E6%A2%A6%E5%A2%83",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "遗忘之海-记忆环游海洋开放世界",
@@ -2450,15 +2668,17 @@
       ],
       "publisher": "网易游戏",
       "developer": "网易游戏",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.5",
       "reviews_16p": "496",
       "pub_time": "2025-05",
       "ios_id": "6755943637",
       "ios_url": "https://apps.apple.com/cn/app/id6755943637",
-      "ios_rating": "0",
+      "ios_rating": "0.0",
       "ios_reviews": "0",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%81%97%E5%BF%98%E4%B9%8B%E6%B5%B7-%E8%AE%B0%E5%BF%86%E7%8E%AF%E6%B8%B8%E6%B5%B7%E6%B4%8B%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%81%97%E5%BF%98%E4%B9%8B%E6%B5%B7-%E8%AE%B0%E5%BF%86%E7%8E%AF%E6%B8%B8%E6%B5%B7%E6%B4%8B%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "斗罗大陆：诛邪传说",
@@ -2473,6 +2693,8 @@
       ],
       "publisher": "贪玩游戏",
       "developer": "贪玩游戏",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4",
       "reviews_16p": "343",
       "pub_time": "2024-09",
@@ -2480,8 +2702,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6471468360",
       "ios_rating": "4.8",
       "ios_reviews": "102048",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%96%97%E7%BD%97%E5%A4%A7%E9%99%86%EF%BC%9A%E8%AF%9B%E9%82%AA%E4%BC%A0%E8%AF%B4&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%96%97%E7%BD%97%E5%A4%A7%E9%99%86%EF%BC%9A%E8%AF%9B%E9%82%AA%E4%BC%A0%E8%AF%B4",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "夜幕之下-全员恶人群像",
@@ -2496,6 +2718,8 @@
       ],
       "publisher": "不眠夜工作室",
       "developer": "不眠夜工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.8",
       "reviews_16p": "339",
       "pub_time": "2025-04",
@@ -2503,8 +2727,8 @@
       "ios_url": "",
       "ios_rating": "",
       "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%A4%9C%E5%B9%95%E4%B9%8B%E4%B8%8B-%E5%85%A8%E5%91%98%E6%81%B6%E4%BA%BA%E7%BE%A4%E5%83%8F&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%A4%9C%E5%B9%95%E4%B9%8B%E4%B8%8B-%E5%85%A8%E5%91%98%E6%81%B6%E4%BA%BA%E7%BE%A4%E5%83%8F",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "镭明闪击",
@@ -2519,6 +2743,8 @@
       ],
       "publisher": "北京朝夕光年信息技术有限公司",
       "developer": "反射狐工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.4",
       "reviews_16p": "171",
       "pub_time": "2024-01",
@@ -2526,8 +2752,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6738116963",
       "ios_rating": "4.8",
       "ios_reviews": "2562",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%95%AD%E6%98%8E%E9%97%AA%E5%87%BB&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%95%AD%E6%98%8E%E9%97%AA%E5%87%BB",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "轨道连结-先试玩后解锁",
@@ -2542,6 +2768,8 @@
       ],
       "publisher": "",
       "developer": "良心工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.4",
       "reviews_16p": "67",
       "pub_time": "05-22",
@@ -2549,8 +2777,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id1247141931",
       "ios_rating": "4.6",
       "ios_reviews": "200",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E8%BD%A8%E9%81%93%E8%BF%9E%E7%BB%93-%E5%85%88%E8%AF%95%E7%8E%A9%E5%90%8E%E8%A7%A3%E9%94%81&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E8%BD%A8%E9%81%93%E8%BF%9E%E7%BB%93-%E5%85%88%E8%AF%95%E7%8E%A9%E5%90%8E%E8%A7%A3%E9%94%81",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "东离剑游纪",
@@ -2565,6 +2793,8 @@
       ],
       "publisher": "",
       "developer": "北京瓜栗科技",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.1",
       "reviews_16p": "63",
       "pub_time": "02-28",
@@ -2572,8 +2802,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6443397311",
       "ios_rating": "3.8",
       "ios_reviews": "17",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E4%B8%9C%E7%A6%BB%E5%89%91%E6%B8%B8%E7%BA%AA&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E4%B8%9C%E7%A6%BB%E5%89%91%E6%B8%B8%E7%BA%AA",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "闪耀吧！噜咪",
@@ -2588,19 +2818,21 @@
       ],
       "publisher": "",
       "developer": "bilibili游戏",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.7",
       "reviews_16p": "47",
       "pub_time": "2025-12",
       "ios_id": "6754912970",
       "ios_url": "https://apps.apple.com/cn/app/id6754912970",
-      "ios_rating": "0",
+      "ios_rating": "0.0",
       "ios_reviews": "0",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%97%AA%E8%80%80%E5%90%A7%EF%BC%81%E5%99%9C%E5%92%AA&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%97%AA%E8%80%80%E5%90%A7%EF%BC%81%E5%99%9C%E5%92%AA",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "永恒树之歌：创世-正版移植手游",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260522/10030681497",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c4/b8/ca/c4b8cabd-aa0b-6373-a649-68cb110009d1/AppIcon-1x_U007epad-0-11-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "编辑推荐 / 买断制 / 多平台 / Steam移植 / 沙盒 / 建造 / 模拟经营 / 冒险 / 探索 / 休闲 / 种田 / 农场模拟 / 独立佳作",
       "tags_vn": [
         "Mua một lần",
@@ -2611,15 +2843,17 @@
       ],
       "publisher": "",
       "developer": "十英工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.2",
       "reviews_16p": "53",
       "pub_time": "05-08",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%B0%B8%E6%81%92%E6%A0%91%E4%B9%8B%E6%AD%8C%EF%BC%9A%E5%88%9B%E4%B8%96-%E6%AD%A3%E7%89%88%E7%A7%BB%E6%A4%8D%E6%89%8B%E6%B8%B8&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "6756012530",
+      "ios_url": "https://apps.apple.com/cn/app/id6756012530",
+      "ios_rating": "4.7",
+      "ios_reviews": "1470",
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%B0%B8%E6%81%92%E6%A0%91%E4%B9%8B%E6%AD%8C%EF%BC%9A%E5%88%9B%E4%B8%96-%E6%AD%A3%E7%89%88%E7%A7%BB%E6%A4%8D%E6%89%8B%E6%B8%B8",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "心跳陷落",
@@ -2633,6 +2867,8 @@
       ],
       "publisher": "",
       "developer": "liuyunzi",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.1",
       "reviews_16p": "70",
       "pub_time": "2025-11",
@@ -2640,8 +2876,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6760686111",
       "ios_rating": "4.2",
       "ios_reviews": "546",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%BF%83%E8%B7%B3%E9%99%B7%E8%90%BD&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%BF%83%E8%B7%B3%E9%99%B7%E8%90%BD",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "从零开始的钓鱼人生Lift",
@@ -2656,6 +2892,8 @@
       ],
       "publisher": "风和日丽游戏工作室",
       "developer": "风和日丽游戏工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.4",
       "reviews_16p": "59",
       "pub_time": "05-07",
@@ -2663,8 +2901,8 @@
       "ios_url": "",
       "ios_rating": "",
       "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E9%92%93%E9%B1%BC%E4%BA%BA%E7%94%9FLift&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E9%92%93%E9%B1%BC%E4%BA%BA%E7%94%9FLift",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "东煌纪",
@@ -2679,6 +2917,8 @@
       ],
       "publisher": "浩凡游戏",
       "developer": "浩凡游戏",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "2.5",
       "reviews_16p": "87",
       "pub_time": "04-24",
@@ -2686,8 +2926,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6762333081",
       "ios_rating": "4.8",
       "ios_reviews": "1229",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E4%B8%9C%E7%85%8C%E7%BA%AA&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E4%B8%9C%E7%85%8C%E7%BA%AA",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "灵魂潮汐2",
@@ -2702,6 +2942,8 @@
       ],
       "publisher": "成都星启兴网络有限责任公司",
       "developer": "成都星启兴网络有限责任公司",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.5",
       "reviews_16p": "37",
       "pub_time": "05-22",
@@ -2709,8 +2951,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id1611146480",
       "ios_rating": "4.7",
       "ios_reviews": "1342",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E7%81%B5%E9%AD%82%E6%BD%AE%E6%B1%902&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E7%81%B5%E9%AD%82%E6%BD%AE%E6%B1%902",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "哀鸿：城破十日记",
@@ -2725,6 +2967,8 @@
       ],
       "publisher": "零创游戏",
       "developer": "零创游戏",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.9",
       "reviews_16p": "42",
       "pub_time": "03-24",
@@ -2732,8 +2976,8 @@
       "ios_url": "",
       "ios_rating": "",
       "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%93%80%E9%B8%BF%EF%BC%9A%E5%9F%8E%E7%A0%B4%E5%8D%81%E6%97%A5%E8%AE%B0&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%93%80%E9%B8%BF%EF%BC%9A%E5%9F%8E%E7%A0%B4%E5%8D%81%E6%97%A5%E8%AE%B0",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "斗破苍穹：斗帝之路",
@@ -2748,6 +2992,8 @@
       ],
       "publisher": "",
       "developer": "37手游",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.8",
       "reviews_16p": "42",
       "pub_time": "01-13",
@@ -2755,8 +3001,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6757068180",
       "ios_rating": "4.5",
       "ios_reviews": "1259",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%96%97%E7%A0%B4%E8%8B%8D%E7%A9%B9%EF%BC%9A%E6%96%97%E5%B8%9D%E4%B9%8B%E8%B7%AF&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%96%97%E7%A0%B4%E8%8B%8D%E7%A9%B9%EF%BC%9A%E6%96%97%E5%B8%9D%E4%B9%8B%E8%B7%AF",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "旅人日记",
@@ -2771,15 +3017,17 @@
       ],
       "publisher": "",
       "developer": "厦门炉火网络科技有限公司",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.7",
       "reviews_16p": "30",
       "pub_time": "03-31",
       "ios_id": "6751485025",
       "ios_url": "https://apps.apple.com/cn/app/id6751485025",
-      "ios_rating": "0",
+      "ios_rating": "0.0",
       "ios_reviews": "0",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%97%85%E4%BA%BA%E6%97%A5%E8%AE%B0&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%97%85%E4%BA%BA%E6%97%A5%E8%AE%B0",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "我的末日小队",
@@ -2794,6 +3042,8 @@
       ],
       "publisher": "西铭游戏",
       "developer": "西铭游戏",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.3",
       "reviews_16p": "41",
       "pub_time": "05-14",
@@ -2801,12 +3051,12 @@
       "ios_url": "https://apps.apple.com/cn/app/id6474464810",
       "ios_rating": "4.6",
       "ios_reviews": "2505",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%88%91%E7%9A%84%E6%9C%AB%E6%97%A5%E5%B0%8F%E9%98%9F&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%88%91%E7%9A%84%E6%9C%AB%E6%97%A5%E5%B0%8F%E9%98%9F",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "宗师之上",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260518/1356215520",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/aa/95/26/aa952623-e7eb-1aa1-3243-8344aa5287fa/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "角色扮演 / 放置 / 修仙 / 养成 / 冒险 / 休闲 / 合成",
       "tags_vn": [
         "Nhập vai RPG",
@@ -2817,15 +3067,17 @@
       ],
       "publisher": "",
       "developer": "广州灵犀互动娱乐有限公司",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.1",
       "reviews_16p": "35",
       "pub_time": "2025-11",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%AE%97%E5%B8%88%E4%B9%8B%E4%B8%8A&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "6755095931",
+      "ios_url": "https://apps.apple.com/cn/app/id6755095931",
+      "ios_rating": "4.8",
+      "ios_reviews": "18479",
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%AE%97%E5%B8%88%E4%B9%8B%E4%B8%8A",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "萌神契约",
@@ -2840,6 +3092,8 @@
       ],
       "publisher": "",
       "developer": "游艺春秋",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.6",
       "reviews_16p": "26",
       "pub_time": "2025-09",
@@ -2847,8 +3101,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id1668979935",
       "ios_rating": "4.6",
       "ios_reviews": "1092",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E8%90%8C%E7%A5%9E%E5%A5%91%E7%BA%A6&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E8%90%8C%E7%A5%9E%E5%A5%91%E7%BA%A6",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "英雄之时",
@@ -2863,6 +3117,8 @@
       ],
       "publisher": "",
       "developer": "厦门游乐互动科技有限公司",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.2",
       "reviews_16p": "22",
       "pub_time": "2025-08",
@@ -2870,12 +3126,12 @@
       "ios_url": "https://apps.apple.com/cn/app/id6502422743",
       "ios_rating": "4.5",
       "ios_reviews": "29",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E8%8B%B1%E9%9B%84%E4%B9%8B%E6%97%B6&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E8%8B%B1%E9%9B%84%E4%B9%8B%E6%97%B6",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "曙光纪元",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260508/15321438292",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2a/bf/9d/2abf9d0c-14e4-08a1-d8e6-1096a2ba1dd7/AppIcon-0-0-1x_U007epad-0-1-85-220.png/200x200bb.jpg",
       "tags_cn": "搜打撤 / 末日 / 割草 / 废土",
       "tags_vn": [
         "Extraction Shooter",
@@ -2885,15 +3141,17 @@
       ],
       "publisher": "游一点意思工作室",
       "developer": "游一点意思工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.7",
       "reviews_16p": "21",
       "pub_time": "05-24",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%9B%99%E5%85%89%E7%BA%AA%E5%85%83&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "6744009984",
+      "ios_url": "https://apps.apple.com/cn/app/id6744009984",
+      "ios_rating": "4.7",
+      "ios_reviews": "3085",
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%9B%99%E5%85%89%E7%BA%AA%E5%85%83",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "蛮荒领主",
@@ -2908,6 +3166,8 @@
       ],
       "publisher": "6kwgame",
       "developer": "6kwgame",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.5",
       "reviews_16p": "22",
       "pub_time": "03-24",
@@ -2915,8 +3175,8 @@
       "ios_url": "",
       "ios_rating": "",
       "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E8%9B%AE%E8%8D%92%E9%A2%86%E4%B8%BB&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E8%9B%AE%E8%8D%92%E9%A2%86%E4%B8%BB",
+      "fetched_at": "2026-06-05 07:43 UTC"
     }
   ],
   "rank90": [
@@ -2930,6 +3190,8 @@
       ],
       "publisher": "Shenzhen Tencent Tianyou Technology Ltd",
       "developer": "Shenzhen Tencent Tianyou Technology Ltd",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.3",
       "reviews_16p": "8.5万",
       "pub_time": "04-02",
@@ -2937,8 +3199,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id1612566389",
       "ios_rating": "4.3",
       "ios_reviews": "84876",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E4%B8%96%E7%95%8C&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E4%B8%96%E7%95%8C",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "异环-自由开放都市",
@@ -2953,6 +3215,8 @@
       ],
       "publisher": "苏州幻塔网络科技有限公司",
       "developer": "苏州幻塔",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.5",
       "reviews_16p": "8.3万",
       "pub_time": "2025-12",
@@ -2960,12 +3224,12 @@
       "ios_url": "https://apps.apple.com/cn/app/id6514281568",
       "ios_rating": "3.5",
       "ios_reviews": "20145",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%BC%82%E7%8E%AF-%E8%87%AA%E7%94%B1%E5%BC%80%E6%94%BE%E9%83%BD%E5%B8%82&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%BC%82%E7%8E%AF-%E8%87%AA%E7%94%B1%E5%BC%80%E6%94%BE%E9%83%BD%E5%B8%82",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "幻想少女公会",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260318/15443056309",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ca/a4/7e/caa47e70-a962-4a0f-6fcb-f4b4cf93aa5a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
       "tags_cn": "萌娘 / 像素 / 放置 / 卡牌 / 收集 / 异世界 / 休闲 / 竖屏 / 独立游戏 / 二次元",
       "tags_vn": [
         "萌娘",
@@ -2976,19 +3240,21 @@
       ],
       "publisher": "深圳市凉屋游戏科技有限公司",
       "developer": "深圳市凉屋游戏科技有限公司",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.4",
       "reviews_16p": "1.3万",
       "pub_time": "2025-03",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%B9%BB%E6%83%B3%E5%B0%91%E5%A5%B3%E5%85%AC%E4%BC%9A&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "6464342701",
+      "ios_url": "https://apps.apple.com/cn/app/id6464342701",
+      "ios_rating": "4.8",
+      "ios_reviews": "859",
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%B9%BB%E6%83%B3%E5%B0%91%E5%A5%B3%E5%85%AC%E4%BC%9A",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "洛克王国：世界",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx~sykb/20240809/1826193408",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/29/e4/84/29e4845d-33aa-8bc9-a0cb-022c005d7b56/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "编辑推荐 / 高自由度 / 多平台 / 开放世界 / 抓宠 / 多人联机 / 冒险 / 回合 / 策略 / 养成 / 怀旧向 / 休闲 / 页游改编",
       "tags_vn": [
         "Thế giới mở",
@@ -2999,15 +3265,17 @@
       ],
       "publisher": "腾讯",
       "developer": "腾讯",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "2.7",
       "reviews_16p": "3.9万",
       "pub_time": "2024-08",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%EF%BC%9A%E4%B8%96%E7%95%8C&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "6478654994",
+      "ios_url": "https://apps.apple.com/cn/app/id6478654994",
+      "ios_rating": "4.1",
+      "ios_reviews": "347820",
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%EF%BC%9A%E4%B8%96%E7%95%8C",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "三国：天下归心",
@@ -3022,6 +3290,8 @@
       ],
       "publisher": "",
       "developer": "上饶越昶网络科技有限公司",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.6",
       "reviews_16p": "9913",
       "pub_time": "2025-10",
@@ -3029,8 +3299,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6753060186",
       "ios_rating": "4.6",
       "ios_reviews": "9804",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E4%B8%89%E5%9B%BD%EF%BC%9A%E5%A4%A9%E4%B8%8B%E5%BD%92%E5%BF%83&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E4%B8%89%E5%9B%BD%EF%BC%9A%E5%A4%A9%E4%B8%8B%E5%BD%92%E5%BF%83",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "神泣：纷争",
@@ -3042,6 +3312,8 @@
       ],
       "publisher": "Zhejiang UmarkNetwork Technology Co.,Ltd",
       "developer": "Zhejiang UmarkNetwork Technology Co.,Ltd",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.7",
       "reviews_16p": "4532",
       "pub_time": "04-10",
@@ -3049,8 +3321,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6752375425",
       "ios_rating": "4.7",
       "ios_reviews": "4539",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E7%A5%9E%E6%B3%A3%EF%BC%9A%E7%BA%B7%E4%BA%89&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E7%A5%9E%E6%B3%A3%EF%BC%9A%E7%BA%B7%E4%BA%89",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "肥鹅美食街",
@@ -3062,6 +3334,8 @@
       ],
       "publisher": "HK HORTOR TECHNOLOGY LIMITED",
       "developer": "HK HORTOR TECHNOLOGY LIMITED",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.6",
       "reviews_16p": "4095",
       "pub_time": "04-19",
@@ -3069,8 +3343,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6758614459",
       "ios_rating": "4.6",
       "ios_reviews": "4155",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E8%82%A5%E9%B9%85%E7%BE%8E%E9%A3%9F%E8%A1%97&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E8%82%A5%E9%B9%85%E7%BE%8E%E9%A3%9F%E8%A1%97",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "饥困荒野-饥荒：新家园",
@@ -3085,6 +3359,8 @@
       ],
       "publisher": "腾讯",
       "developer": "猪人工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.7",
       "reviews_16p": "4789",
       "pub_time": "2023-07",
@@ -3092,8 +3368,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id1557845520",
       "ios_rating": "4.9",
       "ios_reviews": "3635",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%A5%A5%E5%9B%B0%E8%8D%92%E9%87%8E-%E9%A5%A5%E8%8D%92%EF%BC%9A%E6%96%B0%E5%AE%B6%E5%9B%AD&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%A5%A5%E5%9B%B0%E8%8D%92%E9%87%8E-%E9%A5%A5%E8%8D%92%EF%BC%9A%E6%96%B0%E5%AE%B6%E5%9B%AD",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "驯龙之旅",
@@ -3108,6 +3384,8 @@
       ],
       "publisher": "咪咕互动娱乐有限公司",
       "developer": "咪咕互动娱乐有限公司",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.4",
       "reviews_16p": "2894",
       "pub_time": "03-26",
@@ -3115,8 +3393,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6758429228",
       "ios_rating": "4.7",
       "ios_reviews": "2043",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%A9%AF%E9%BE%99%E4%B9%8B%E6%97%85&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%A9%AF%E9%BE%99%E4%B9%8B%E6%97%85",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "王者荣耀世界",
@@ -3131,6 +3409,8 @@
       ],
       "publisher": "腾讯天美工作室",
       "developer": "腾讯天美工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.2",
       "reviews_16p": "3449",
       "pub_time": "2025-04",
@@ -3138,8 +3418,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id1612566389",
       "ios_rating": "4.3",
       "ios_reviews": "84876",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E4%B8%96%E7%95%8C&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E4%B8%96%E7%95%8C",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "亿万光年",
@@ -3154,6 +3434,8 @@
       ],
       "publisher": "雷霆游戏",
       "developer": "未知矩阵",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.5",
       "reviews_16p": "1447",
       "pub_time": "2024-01",
@@ -3161,8 +3443,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6757353974",
       "ios_rating": "4.5",
       "ios_reviews": "1349",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E4%BA%BF%E4%B8%87%E5%85%89%E5%B9%B4&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E4%BA%BF%E4%B8%87%E5%85%89%E5%B9%B4",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "崩坏：因缘精灵-崩坏IP新作",
@@ -3177,6 +3459,8 @@
       ],
       "publisher": "米哈游®",
       "developer": "米哈游®",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.5",
       "reviews_16p": "1285",
       "pub_time": "2025-09",
@@ -3184,8 +3468,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6478654994",
       "ios_rating": "4.1",
       "ios_reviews": "347820",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%B4%A9%E5%9D%8F%EF%BC%9A%E5%9B%A0%E7%BC%98%E7%B2%BE%E7%81%B5-%E5%B4%A9%E5%9D%8FIP%E6%96%B0%E4%BD%9C&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%B4%A9%E5%9D%8F%EF%BC%9A%E5%9B%A0%E7%BC%98%E7%B2%BE%E7%81%B5-%E5%B4%A9%E5%9D%8FIP%E6%96%B0%E4%BD%9C",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "遮天：帝路争锋",
@@ -3197,6 +3481,8 @@
       ],
       "publisher": "Guangzhou Hengshui Yule Network Technology Co.,Ltd",
       "developer": "Guangzhou Hengshui Yule Network Technology Co.,Ltd",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.5",
       "reviews_16p": "1244",
       "pub_time": "04-02",
@@ -3204,12 +3490,12 @@
       "ios_url": "https://apps.apple.com/cn/app/id6757068180",
       "ios_rating": "4.5",
       "ios_reviews": "1259",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%81%AE%E5%A4%A9%EF%BC%9A%E5%B8%9D%E8%B7%AF%E4%BA%89%E9%94%8B&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%81%AE%E5%A4%A9%EF%BC%9A%E5%B8%9D%E8%B7%AF%E4%BA%89%E9%94%8B",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "蓝色星原：旅谣",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260224/1111372117",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/29/a2/e1/29a2e139-9b49-dc2d-1d0a-9ed416e2b8e5/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
       "tags_cn": "绝赞立绘 / 多平台 / 近期热门预约 / 萌宠 / 多端互通 / 模拟经营 / 养成 / 角色扮演 / 美少女 / 3D / 探索 / 二次元 / 萌娘 / 抓宠 / 冒险 / 开放世界",
       "tags_vn": [
         "绝赞立绘",
@@ -3220,15 +3506,17 @@
       ],
       "publisher": "上海积咪网络科技有限公司",
       "developer": "上海积咪网络科技有限公司",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.6",
       "reviews_16p": "1044",
       "pub_time": "2024-03",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E8%93%9D%E8%89%B2%E6%98%9F%E5%8E%9F%EF%BC%9A%E6%97%85%E8%B0%A3&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "6446981035",
+      "ios_url": "https://apps.apple.com/cn/app/id6446981035",
+      "ios_rating": "4.6",
+      "ios_reviews": "12973",
+      "taptap_url": "https://www.taptap.cn/search?q=%E8%93%9D%E8%89%B2%E6%98%9F%E5%8E%9F%EF%BC%9A%E6%97%85%E8%B0%A3",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "伍六七：暗影交锋",
@@ -3243,6 +3531,8 @@
       ],
       "publisher": "啊吉游",
       "developer": "啊吉游",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.1",
       "reviews_16p": "870",
       "pub_time": "04-09",
@@ -3250,12 +3540,12 @@
       "ios_url": "",
       "ios_rating": "",
       "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E4%BC%8D%E5%85%AD%E4%B8%83%EF%BC%9A%E6%9A%97%E5%BD%B1%E4%BA%A4%E9%94%8B&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E4%BC%8D%E5%85%AD%E4%B8%83%EF%BC%9A%E6%9A%97%E5%BD%B1%E4%BA%A4%E9%94%8B",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "王者万象棋",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260525/09450742988",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/86/b3/b9/86b3b9ca-fbe8-77fe-710f-88fd38b95158/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/200x200bb.jpg",
       "tags_cn": "多平台 / 近期热门预约 / 策略 / 竞技 / 战棋 / 自走棋 / 多端互通",
       "tags_vn": [
         "Chiến thuật",
@@ -3265,19 +3555,21 @@
       ],
       "publisher": "腾讯",
       "developer": "腾讯",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4",
       "reviews_16p": "815",
       "pub_time": "2022-11",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E7%8E%8B%E8%80%85%E4%B8%87%E8%B1%A1%E6%A3%8B&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "1614798032",
+      "ios_url": "https://apps.apple.com/cn/app/id1614798032",
+      "ios_rating": "0",
+      "ios_reviews": "0",
+      "taptap_url": "https://www.taptap.cn/search?q=%E7%8E%8B%E8%80%85%E4%B8%87%E8%B1%A1%E6%A3%8B",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "机械启元-机械兽生存新游",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20250822/13364887261",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/64/80/4b/64804b73-1369-a9eb-fd8e-90189ff82056/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
       "tags_cn": "多平台 / 搜打拆 / 射击 / 搜打撤 / SOC / 开放世界 / 多端互通 / 生存 / 沙盒 / 硬核 / 建造 / 多人联机",
       "tags_vn": [
         "搜打拆",
@@ -3288,15 +3580,17 @@
       ],
       "publisher": "英雄互娱",
       "developer": "Halo工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.5",
       "reviews_16p": "927",
       "pub_time": "2025-08",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%9C%BA%E6%A2%B0%E5%90%AF%E5%85%83-%E6%9C%BA%E6%A2%B0%E5%85%BD%E7%94%9F%E5%AD%98%E6%96%B0%E6%B8%B8&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "1585105852",
+      "ios_url": "https://apps.apple.com/cn/app/id1585105852",
+      "ios_rating": "4.8",
+      "ios_reviews": "100087",
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%9C%BA%E6%A2%B0%E5%90%AF%E5%85%83-%E6%9C%BA%E6%A2%B0%E5%85%BD%E7%94%9F%E5%AD%98%E6%96%B0%E6%B8%B8",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "风之国世界",
@@ -3311,6 +3605,8 @@
       ],
       "publisher": "苏州茉莉",
       "developer": "苏州茉莉",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.7",
       "reviews_16p": "526",
       "pub_time": "2025-12",
@@ -3318,8 +3614,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6755951632",
       "ios_rating": "4.7",
       "ios_reviews": "615",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%A3%8E%E4%B9%8B%E5%9B%BD%E4%B8%96%E7%95%8C&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%A3%8E%E4%B9%8B%E5%9B%BD%E4%B8%96%E7%95%8C",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "高能探宝团",
@@ -3331,6 +3627,8 @@
       ],
       "publisher": "Hainan Kakacattle Network Technology Co., Ltd.",
       "developer": "Hainan Kakacattle Network Technology Co., Ltd.",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.7",
       "reviews_16p": "518",
       "pub_time": "04-09",
@@ -3338,8 +3636,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6758931051",
       "ios_rating": "4.7",
       "ios_reviews": "518",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%AB%98%E8%83%BD%E6%8E%A2%E5%AE%9D%E5%9B%A2&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%AB%98%E8%83%BD%E6%8E%A2%E5%AE%9D%E5%9B%A2",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "怪物猎人：旅人",
@@ -3354,6 +3652,8 @@
       ],
       "publisher": "腾讯",
       "developer": "腾讯",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.5",
       "reviews_16p": "723",
       "pub_time": "2025-11",
@@ -3361,8 +3661,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6446450832",
       "ios_rating": "4.8",
       "ios_reviews": "928",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%80%AA%E7%89%A9%E7%8C%8E%E4%BA%BA%EF%BC%9A%E6%97%85%E4%BA%BA&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%80%AA%E7%89%A9%E7%8C%8E%E4%BA%BA%EF%BC%9A%E6%97%85%E4%BA%BA",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "七界梦谭",
@@ -3377,6 +3677,8 @@
       ],
       "publisher": "飞光阁工作室",
       "developer": "飞光阁工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.6",
       "reviews_16p": "477",
       "pub_time": "2024-04",
@@ -3384,8 +3686,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id1639302958",
       "ios_rating": "4.5",
       "ios_reviews": "1150",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E4%B8%83%E7%95%8C%E6%A2%A6%E8%B0%AD&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E4%B8%83%E7%95%8C%E6%A2%A6%E8%B0%AD",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "新星足球世界",
@@ -3398,6 +3700,8 @@
       ],
       "publisher": "Shenzhen Qianhai Hongcheng Games Co.,Ltd",
       "developer": "Shenzhen Qianhai Hongcheng Games Co.,Ltd",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.8",
       "reviews_16p": "426",
       "pub_time": "04-15",
@@ -3405,8 +3709,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6755859299",
       "ios_rating": "4.8",
       "ios_reviews": "432",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%96%B0%E6%98%9F%E8%B6%B3%E7%90%83%E4%B8%96%E7%95%8C&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%96%B0%E6%98%9F%E8%B6%B3%E7%90%83%E4%B8%96%E7%95%8C",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "卡厄思梦境",
@@ -3421,6 +3725,8 @@
       ],
       "publisher": "腾讯",
       "developer": "腾讯",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3",
       "reviews_16p": "694",
       "pub_time": "2025-09",
@@ -3428,8 +3734,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6751272153",
       "ios_rating": "3.4",
       "ios_reviews": "2190",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%8D%A1%E5%8E%84%E6%80%9D%E6%A2%A6%E5%A2%83&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%8D%A1%E5%8E%84%E6%80%9D%E6%A2%A6%E5%A2%83",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "时空猎人·觉醒",
@@ -3444,15 +3750,17 @@
       ],
       "publisher": "猎人觉醒工作室",
       "developer": "猎人觉醒工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4",
       "reviews_16p": "466",
       "pub_time": "2025-07",
       "ios_id": "6754126909",
       "ios_url": "https://apps.apple.com/cn/app/id6754126909",
-      "ios_rating": "0",
+      "ios_rating": "0.0",
       "ios_reviews": "0",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%97%B6%E7%A9%BA%E7%8C%8E%E4%BA%BA%C2%B7%E8%A7%89%E9%86%92&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%97%B6%E7%A9%BA%E7%8C%8E%E4%BA%BA%C2%B7%E8%A7%89%E9%86%92",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "遗忘之海-记忆环游海洋开放世界",
@@ -3467,19 +3775,21 @@
       ],
       "publisher": "网易游戏",
       "developer": "网易游戏",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.5",
       "reviews_16p": "496",
       "pub_time": "2025-05",
       "ios_id": "6755943637",
       "ios_url": "https://apps.apple.com/cn/app/id6755943637",
-      "ios_rating": "0",
+      "ios_rating": "0.0",
       "ios_reviews": "0",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%81%97%E5%BF%98%E4%B9%8B%E6%B5%B7-%E8%AE%B0%E5%BF%86%E7%8E%AF%E6%B8%B8%E6%B5%B7%E6%B4%8B%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%81%97%E5%BF%98%E4%B9%8B%E6%B5%B7-%E8%AE%B0%E5%BF%86%E7%8E%AF%E6%B8%B8%E6%B5%B7%E6%B4%8B%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "小花仙：拉贝尔之约",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20251212/20451767870",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c2/84/60/c28460c5-c262-8f46-957a-cbd10a610d32/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
       "tags_cn": "模拟经营 / 休闲 / 益智 / 女性向",
       "tags_vn": [
         "Kinh doanh mô phỏng",
@@ -3489,15 +3799,17 @@
       ],
       "publisher": "上海淘米网络科技有限公司",
       "developer": "上海淘米网络科技有限公司",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "2.9",
       "reviews_16p": "622",
       "pub_time": "2025-12",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%B0%8F%E8%8A%B1%E4%BB%99%EF%BC%9A%E6%8B%89%E8%B4%9D%E5%B0%94%E4%B9%8B%E7%BA%A6&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "6754075491",
+      "ios_url": "https://apps.apple.com/cn/app/id6754075491",
+      "ios_rating": "2.8",
+      "ios_reviews": "549",
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%B0%8F%E8%8A%B1%E4%BB%99%EF%BC%9A%E6%8B%89%E8%B4%9D%E5%B0%94%E4%B9%8B%E7%BA%A6",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "星布谷地-米哈游生活模拟新作",
@@ -3512,6 +3824,8 @@
       ],
       "publisher": "米哈游®",
       "developer": "米哈游®",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.4",
       "reviews_16p": "329",
       "pub_time": "2025-10",
@@ -3519,8 +3833,8 @@
       "ios_url": "",
       "ios_rating": "",
       "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%98%9F%E5%B8%83%E8%B0%B7%E5%9C%B0-%E7%B1%B3%E5%93%88%E6%B8%B8%E7%94%9F%E6%B4%BB%E6%A8%A1%E6%8B%9F%E6%96%B0%E4%BD%9C&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%98%9F%E5%B8%83%E8%B0%B7%E5%9C%B0-%E7%B1%B3%E5%93%88%E6%B8%B8%E7%94%9F%E6%B4%BB%E6%A8%A1%E6%8B%9F%E6%96%B0%E4%BD%9C",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "斗罗大陆：诛邪传说",
@@ -3535,6 +3849,8 @@
       ],
       "publisher": "贪玩游戏",
       "developer": "贪玩游戏",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4",
       "reviews_16p": "343",
       "pub_time": "2024-09",
@@ -3542,12 +3858,12 @@
       "ios_url": "https://apps.apple.com/cn/app/id6471468360",
       "ios_rating": "4.8",
       "ios_reviews": "102048",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%96%97%E7%BD%97%E5%A4%A7%E9%99%86%EF%BC%9A%E8%AF%9B%E9%82%AA%E4%BC%A0%E8%AF%B4&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%96%97%E7%BD%97%E5%A4%A7%E9%99%86%EF%BC%9A%E8%AF%9B%E9%82%AA%E4%BC%A0%E8%AF%B4",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "双生幻想",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260127/18413683237",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7c/76/8b/7c768b6e-3cb1-9cfe-77f3-1bf8a9f5ee74/GameIcon-1x_U007emarketing-0-8-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "放置 / 角色扮演 / 策略 / 卡牌 / 养成 / 美少女 / 二次元",
       "tags_vn": [
         "Idle",
@@ -3558,15 +3874,17 @@
       ],
       "publisher": "",
       "developer": "广州穗游网络科技有限公司",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.4",
       "reviews_16p": "415",
       "pub_time": "03-22",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%8F%8C%E7%94%9F%E5%B9%BB%E6%83%B3&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "1620342430",
+      "ios_url": "https://apps.apple.com/cn/app/id1620342430",
+      "ios_rating": "4.5",
+      "ios_reviews": "44587",
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%8F%8C%E7%94%9F%E5%B9%BB%E6%83%B3",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "龙符：天祭",
@@ -3578,6 +3896,8 @@
       ],
       "publisher": "Guangzhou Xingyao Future Information Technology Co., Ltd",
       "developer": "Guangzhou Xingyao Future Information Technology Co., Ltd",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.5",
       "reviews_16p": "294",
       "pub_time": "04-02",
@@ -3585,14 +3905,14 @@
       "ios_url": "https://apps.apple.com/cn/app/id6757591556",
       "ios_rating": "4.5",
       "ios_reviews": "294",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%BE%99%E7%AC%A6%EF%BC%9A%E5%A4%A9%E7%A5%AD&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%BE%99%E7%AC%A6%EF%BC%9A%E5%A4%A9%E7%A5%AD",
+      "fetched_at": "2026-06-05 07:43 UTC"
     }
   ],
   "rankyr": [
     {
       "name": "鹅鸭杀",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e0/47/4c/e0474cd3-1f43-1cdf-b308-f7d3cd8b20ac/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e0/47/4c/e0474cd3-1f43-1cdf-b308-f7d3cd8b20ac/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/200x200bb.jpg",
       "tags_cn": "家庭聚会 / 休闲",
       "tags_vn": [
         "家庭聚会",
@@ -3600,19 +3920,21 @@
       ],
       "publisher": "Chengdu Kingsoft Shiyou Zhuoli Technology Co., Ltd.",
       "developer": "Chengdu Kingsoft Shiyou Zhuoli Technology Co., Ltd.",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.7",
       "reviews_16p": "14万",
       "pub_time": "2025-08",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%B9%85%E9%B8%AD%E6%9D%80&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "6740756173",
+      "ios_url": "https://apps.apple.com/cn/app/id6740756173",
+      "ios_rating": "4.7",
+      "ios_reviews": "138699",
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%B9%85%E9%B8%AD%E6%9D%80",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "元气骑士",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/80/c7/89/80c789b1-de30-b663-d37a-aa0d70dc1d50/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/73/b4/ac/73b4aca2-77a4-1e36-e397-5ba375f71503/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
       "tags_cn": "娱乐 / 休闲 / 动作",
       "tags_vn": [
         "娱乐",
@@ -3621,19 +3943,21 @@
       ],
       "publisher": "深圳市凉屋游戏科技有限公司",
       "developer": "深圳市凉屋游戏科技有限公司",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.4",
       "reviews_16p": "17万",
       "pub_time": "2018-07",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%85%83%E6%B0%94%E9%AA%91%E5%A3%AB&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "1184159988",
+      "ios_url": "https://apps.apple.com/cn/app/id1184159988",
+      "ios_rating": "4.8",
+      "ios_reviews": "2773605",
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%85%83%E6%B0%94%E9%AA%91%E5%A3%AB",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "战双帕弥什",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/9a/cd/bd/9acdbd88-43f5-a379-9434-27d4c65c6ba1/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7c/25/0d/7c250d70-4b47-0d57-d69a-f44619b12566/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "动作 / 角色扮演",
       "tags_vn": [
         "Action",
@@ -3641,15 +3965,17 @@
       ],
       "publisher": "广州库洛科技有限公司",
       "developer": "广州库洛科技有限公司",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.1",
       "reviews_16p": "15万",
       "pub_time": "2018-07",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%88%98%E5%8F%8C%E5%B8%95%E5%BC%A5%E4%BB%80&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "1461695441",
+      "ios_url": "https://apps.apple.com/cn/app/id1461695441",
+      "ios_rating": "4.1",
+      "ios_reviews": "98815",
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%88%98%E5%8F%8C%E5%B8%95%E5%BC%A5%E4%BB%80",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "王者荣耀世界",
@@ -3661,6 +3987,8 @@
       ],
       "publisher": "Shenzhen Tencent Tianyou Technology Ltd",
       "developer": "Shenzhen Tencent Tianyou Technology Ltd",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.3",
       "reviews_16p": "8.5万",
       "pub_time": "04-02",
@@ -3668,27 +3996,29 @@
       "ios_url": "https://apps.apple.com/cn/app/id1612566389",
       "ios_rating": "4.3",
       "ios_reviews": "84876",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E4%B8%96%E7%95%8C&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E4%B8%96%E7%95%8C",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "冒险之星",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cc/4f/dd/cc4fdd55-211f-937f-be2c-3f05ebefe1fc/AppIcon-1x_U007epad-0-11-0-85-220-0.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cc/4f/dd/cc4fdd55-211f-937f-be2c-3f05ebefe1fc/AppIcon-1x_U007epad-0-11-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "冒险",
       "tags_vn": [
         "Phiêu lưu"
       ],
       "publisher": "Hainan Changwan Network Technology Co., Ltd",
       "developer": "Hainan Changwan Network Technology Co., Ltd",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.7",
       "reviews_16p": "3.7万",
       "pub_time": "2025-07",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%86%92%E9%99%A9%E4%B9%8B%E6%98%9F&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "6747479318",
+      "ios_url": "https://apps.apple.com/cn/app/id6747479318",
+      "ios_rating": "4.7",
+      "ios_reviews": "37253",
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%86%92%E9%99%A9%E4%B9%8B%E6%98%9F",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "异环-自由开放都市",
@@ -3703,6 +4033,8 @@
       ],
       "publisher": "苏州幻塔网络科技有限公司",
       "developer": "苏州幻塔",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.5",
       "reviews_16p": "8.3万",
       "pub_time": "2025-12",
@@ -3710,46 +4042,50 @@
       "ios_url": "https://apps.apple.com/cn/app/id6514281568",
       "ios_rating": "3.5",
       "ios_reviews": "20145",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%BC%82%E7%8E%AF-%E8%87%AA%E7%94%B1%E5%BC%80%E6%94%BE%E9%83%BD%E5%B8%82&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%BC%82%E7%8E%AF-%E8%87%AA%E7%94%B1%E5%BC%80%E6%94%BE%E9%83%BD%E5%B8%82",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "远光84",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cb/d3/14/cbd314ef-cd9e-86b6-d112-992cf8b9574a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cb/d3/14/cbd314ef-cd9e-86b6-d112-992cf8b9574a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
       "tags_cn": "动作",
       "tags_vn": [
         "Action"
       ],
       "publisher": "Shanghai Lilith Computer Technology Company Limited",
       "developer": "Shanghai Lilith Computer Technology Company Limited",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.7",
       "reviews_16p": "2.6万",
       "pub_time": "2025-06",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E8%BF%9C%E5%85%8984&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "6746230019",
+      "ios_url": "https://apps.apple.com/cn/app/id6746230019",
+      "ios_rating": "4.7",
+      "ios_reviews": "25751",
+      "taptap_url": "https://www.taptap.cn/search?q=%E8%BF%9C%E5%85%8984",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "遗弃之地",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/8b/6b/69/8b6b6904-3263-2ede-f945-bd05156e7018/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/8b/6b/69/8b6b6904-3263-2ede-f945-bd05156e7018/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/200x200bb.jpg",
       "tags_cn": "策略",
       "tags_vn": [
         "Chiến thuật"
       ],
       "publisher": "Beijing Hortor Technology Co., Ltd.",
       "developer": "Beijing Hortor Technology Co., Ltd.",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.7",
       "reviews_16p": "2.2万",
       "pub_time": "2025-11",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%81%97%E5%BC%83%E4%B9%8B%E5%9C%B0&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "6752552410",
+      "ios_url": "https://apps.apple.com/cn/app/id6752552410",
+      "ios_rating": "4.6",
+      "ios_reviews": "22131",
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%81%97%E5%BC%83%E4%B9%8B%E5%9C%B0",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "武林外传：十年之约",
@@ -3761,6 +4097,8 @@
       ],
       "publisher": "Zhejiang UmarkNetwork Technology Co.,Ltd",
       "developer": "Zhejiang UmarkNetwork Technology Co.,Ltd",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.7",
       "reviews_16p": "2.1万",
       "pub_time": "2025-07",
@@ -3768,12 +4106,12 @@
       "ios_url": "",
       "ios_rating": "",
       "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%AD%A6%E6%9E%97%E5%A4%96%E4%BC%A0%EF%BC%9A%E5%8D%81%E5%B9%B4%E4%B9%8B%E7%BA%A6&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%AD%A6%E6%9E%97%E5%A4%96%E4%BC%A0%EF%BC%9A%E5%8D%81%E5%B9%B4%E4%B9%8B%E7%BA%A6",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "勇者联盟",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5f/e6/00/5fe60061-e4a1-dda4-7140-5c236be1a381/AppIcon-0-0-1x_U007emarketing-0-8-0-0-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5f/e6/00/5fe60061-e4a1-dda4-7140-5c236be1a381/AppIcon-0-0-1x_U007emarketing-0-8-0-0-85-220.png/200x200bb.jpg",
       "tags_cn": "冒险 / 角色扮演",
       "tags_vn": [
         "Phiêu lưu",
@@ -3781,15 +4119,17 @@
       ],
       "publisher": "Guangzhou Aiyou Network technology Co.,ltd",
       "developer": "Guangzhou Aiyou Network technology Co.,ltd",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.9",
       "reviews_16p": "1.4万",
       "pub_time": "2025-07",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%8B%87%E8%80%85%E8%81%94%E7%9B%9F&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "6744099992",
+      "ios_url": "https://apps.apple.com/cn/app/id6744099992",
+      "ios_rating": "4.9",
+      "ios_reviews": "13822",
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%8B%87%E8%80%85%E8%81%94%E7%9B%9F",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "烹饪环游记",
@@ -3802,6 +4142,8 @@
       ],
       "publisher": "Shenzhenshi Qixunxinyou Technology Co.,Ltd",
       "developer": "Shenzhenshi Qixunxinyou Technology Co.,Ltd",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.7",
       "reviews_16p": "1.3万",
       "pub_time": "2025-07",
@@ -3809,12 +4151,12 @@
       "ios_url": "",
       "ios_rating": "",
       "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E7%83%B9%E9%A5%AA%E7%8E%AF%E6%B8%B8%E8%AE%B0&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E7%83%B9%E9%A5%AA%E7%8E%AF%E6%B8%B8%E8%AE%B0",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "幻想少女公会",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260318/15443056309",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ca/a4/7e/caa47e70-a962-4a0f-6fcb-f4b4cf93aa5a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
       "tags_cn": "萌娘 / 像素 / 放置 / 卡牌 / 收集 / 异世界 / 休闲 / 竖屏 / 独立游戏 / 二次元",
       "tags_vn": [
         "萌娘",
@@ -3825,19 +4167,21 @@
       ],
       "publisher": "深圳市凉屋游戏科技有限公司",
       "developer": "深圳市凉屋游戏科技有限公司",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.4",
       "reviews_16p": "1.3万",
       "pub_time": "2025-03",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%B9%BB%E6%83%B3%E5%B0%91%E5%A5%B3%E5%85%AC%E4%BC%9A&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "6464342701",
+      "ios_url": "https://apps.apple.com/cn/app/id6464342701",
+      "ios_rating": "4.8",
+      "ios_reviews": "859",
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%B9%BB%E6%83%B3%E5%B0%91%E5%A5%B3%E5%85%AC%E4%BC%9A",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "洛克王国：世界",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx~sykb/20240809/1826193408",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/29/e4/84/29e4845d-33aa-8bc9-a0cb-022c005d7b56/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "编辑推荐 / 高自由度 / 多平台 / 开放世界 / 抓宠 / 多人联机 / 冒险 / 回合 / 策略 / 养成 / 怀旧向 / 休闲 / 页游改编",
       "tags_vn": [
         "Thế giới mở",
@@ -3848,15 +4192,17 @@
       ],
       "publisher": "腾讯",
       "developer": "腾讯",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "2.7",
       "reviews_16p": "3.9万",
       "pub_time": "2024-08",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%EF%BC%9A%E4%B8%96%E7%95%8C&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "6478654994",
+      "ios_url": "https://apps.apple.com/cn/app/id6478654994",
+      "ios_rating": "4.1",
+      "ios_reviews": "347820",
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%EF%BC%9A%E4%B8%96%E7%95%8C",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "开心大碰撞",
@@ -3869,6 +4215,8 @@
       ],
       "publisher": "Xiamen Yuchangfeng Network Technology Co., Ltd.",
       "developer": "Xiamen Yuchangfeng Network Technology Co., Ltd.",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.7",
       "reviews_16p": "9825",
       "pub_time": "2025-06",
@@ -3876,8 +4224,8 @@
       "ios_url": "",
       "ios_rating": "",
       "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%BC%80%E5%BF%83%E5%A4%A7%E7%A2%B0%E6%92%9E&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%BC%80%E5%BF%83%E5%A4%A7%E7%A2%B0%E6%92%9E",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "三国：天下归心",
@@ -3892,6 +4240,8 @@
       ],
       "publisher": "",
       "developer": "上饶越昶网络科技有限公司",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.6",
       "reviews_16p": "9913",
       "pub_time": "2025-10",
@@ -3899,27 +4249,29 @@
       "ios_url": "https://apps.apple.com/cn/app/id6753060186",
       "ios_rating": "4.6",
       "ios_reviews": "9804",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E4%B8%89%E5%9B%BD%EF%BC%9A%E5%A4%A9%E4%B8%8B%E5%BD%92%E5%BF%83&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E4%B8%89%E5%9B%BD%EF%BC%9A%E5%A4%A9%E4%B8%8B%E5%BD%92%E5%BF%83",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "遮天：凡尘一叶",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/52/3f/25/523f256c-a590-1994-096a-657ed4733fb8/AppIcon-0-0-1x_U007emarketing-0-11-0-0-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/52/3f/25/523f256c-a590-1994-096a-657ed4733fb8/AppIcon-0-0-1x_U007emarketing-0-11-0-0-85-220.png/200x200bb.jpg",
       "tags_cn": "角色扮演",
       "tags_vn": [
         "Nhập vai RPG"
       ],
       "publisher": "Shanghai QuanNi Network Technology Co.,Ltd",
       "developer": "Shanghai QuanNi Network Technology Co.,Ltd",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.8",
       "reviews_16p": "8104",
       "pub_time": "2025-08",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%81%AE%E5%A4%A9%EF%BC%9A%E5%87%A1%E5%B0%98%E4%B8%80%E5%8F%B6&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "6746748077",
+      "ios_url": "https://apps.apple.com/cn/app/id6746748077",
+      "ios_rating": "4.7",
+      "ios_reviews": "8105",
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%81%AE%E5%A4%A9%EF%BC%9A%E5%87%A1%E5%B0%98%E4%B8%80%E5%8F%B6",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "飞飞：重逢",
@@ -3931,6 +4283,8 @@
       ],
       "publisher": "Zhejiang UmarkNetwork Technology Co.,Ltd",
       "developer": "Zhejiang UmarkNetwork Technology Co.,Ltd",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.6",
       "reviews_16p": "8438",
       "pub_time": "2025-06",
@@ -3938,12 +4292,12 @@
       "ios_url": "",
       "ios_rating": "",
       "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%A3%9E%E9%A3%9E%EF%BC%9A%E9%87%8D%E9%80%A2&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%A3%9E%E9%A3%9E%EF%BC%9A%E9%87%8D%E9%80%A2",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "无畏契约：源能行动",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx~sykb/20250808/19022110615",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0b/9f/c4/0b9fc498-11ab-ce07-0a18-4bc0588e6a14/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "编辑推荐 / 战术博弈 / 多平台 / 射击 / 竞技 / 多人联机 / 动作 / 枪战 / 第一人称 / 美漫风",
       "tags_vn": [
         "战术博弈",
@@ -3954,15 +4308,17 @@
       ],
       "publisher": "拳头游戏（Riot Games）",
       "developer": "腾讯",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.8",
       "reviews_16p": "1.1万",
       "pub_time": "2025-05",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%97%A0%E7%95%8F%E5%A5%91%E7%BA%A6%EF%BC%9A%E6%BA%90%E8%83%BD%E8%A1%8C%E5%8A%A8&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "ios_id": "6535673811",
+      "ios_url": "https://apps.apple.com/cn/app/id6535673811",
+      "ios_rating": "4.0",
+      "ios_reviews": "86165",
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%97%A0%E7%95%8F%E5%A5%91%E7%BA%A6%EF%BC%9A%E6%BA%90%E8%83%BD%E8%A1%8C%E5%8A%A8",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "逆战：未来-S2赛季",
@@ -3977,6 +4333,8 @@
       ],
       "publisher": "腾讯",
       "developer": "腾讯",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.7",
       "reviews_16p": "1.0万",
       "pub_time": "2024-02",
@@ -3984,8 +4342,8 @@
       "ios_url": "",
       "ios_rating": "",
       "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%80%86%E6%88%98%EF%BC%9A%E6%9C%AA%E6%9D%A5-S2%E8%B5%9B%E5%AD%A3&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%80%86%E6%88%98%EF%BC%9A%E6%9C%AA%E6%9D%A5-S2%E8%B5%9B%E5%AD%A3",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "失控进化-7月9日上线",
@@ -4000,6 +4358,8 @@
       ],
       "publisher": "",
       "developer": "腾讯",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.2",
       "reviews_16p": "8211",
       "pub_time": "2025-04",
@@ -4007,8 +4367,8 @@
       "ios_url": "",
       "ios_rating": "",
       "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%A4%B1%E6%8E%A7%E8%BF%9B%E5%8C%96-7%E6%9C%889%E6%97%A5%E4%B8%8A%E7%BA%BF&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%A4%B1%E6%8E%A7%E8%BF%9B%E5%8C%96-7%E6%9C%889%E6%97%A5%E4%B8%8A%E7%BA%BF",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "神泣：纷争",
@@ -4020,6 +4380,8 @@
       ],
       "publisher": "Zhejiang UmarkNetwork Technology Co.,Ltd",
       "developer": "Zhejiang UmarkNetwork Technology Co.,Ltd",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.7",
       "reviews_16p": "4532",
       "pub_time": "04-10",
@@ -4027,8 +4389,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6752375425",
       "ios_rating": "4.7",
       "ios_reviews": "4539",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E7%A5%9E%E6%B3%A3%EF%BC%9A%E7%BA%B7%E4%BA%89&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E7%A5%9E%E6%B3%A3%EF%BC%9A%E7%BA%B7%E4%BA%89",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "现代战舰 - 送055大驱",
@@ -4040,6 +4402,8 @@
       ],
       "publisher": "Beijing AirInbox Information Technologies",
       "developer": "Beijing AirInbox Information Technologies",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.9",
       "reviews_16p": "6027",
       "pub_time": "2025-06",
@@ -4047,8 +4411,8 @@
       "ios_url": "",
       "ios_rating": "",
       "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E7%8E%B0%E4%BB%A3%E6%88%98%E8%88%B0%20-%20%E9%80%81055%E5%A4%A7%E9%A9%B1&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E7%8E%B0%E4%BB%A3%E6%88%98%E8%88%B0%20-%20%E9%80%81055%E5%A4%A7%E9%A9%B1",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "桥梁大亨 - 模拟经营 搭桥造桥模拟器",
@@ -4060,6 +4424,8 @@
       ],
       "publisher": "AkerSun  Technology Co.,Ltd.",
       "developer": "AkerSun  Technology Co.,Ltd.",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "5",
       "reviews_16p": "3834",
       "pub_time": "2025-08",
@@ -4067,8 +4433,8 @@
       "ios_url": "",
       "ios_rating": "",
       "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%A1%A5%E6%A2%81%E5%A4%A7%E4%BA%A8%20-%20%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5%20%E6%90%AD%E6%A1%A5%E9%80%A0%E6%A1%A5%E6%A8%A1%E6%8B%9F%E5%99%A8&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%A1%A5%E6%A2%81%E5%A4%A7%E4%BA%A8%20-%20%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5%20%E6%90%AD%E6%A1%A5%E9%80%A0%E6%A1%A5%E6%A8%A1%E6%8B%9F%E5%99%A8",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "肥鹅美食街",
@@ -4080,6 +4446,8 @@
       ],
       "publisher": "HK HORTOR TECHNOLOGY LIMITED",
       "developer": "HK HORTOR TECHNOLOGY LIMITED",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.6",
       "reviews_16p": "4095",
       "pub_time": "04-19",
@@ -4087,8 +4455,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id6758614459",
       "ios_rating": "4.6",
       "ios_reviews": "4155",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E8%82%A5%E9%B9%85%E7%BE%8E%E9%A3%9F%E8%A1%97&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E8%82%A5%E9%B9%85%E7%BE%8E%E9%A3%9F%E8%A1%97",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "现代战舰-国服",
@@ -4103,6 +4471,8 @@
       ],
       "publisher": "Artstorm",
       "developer": "战火互娱",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.5",
       "reviews_16p": "5519",
       "pub_time": "2025-04",
@@ -4110,8 +4480,8 @@
       "ios_url": "",
       "ios_rating": "",
       "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E7%8E%B0%E4%BB%A3%E6%88%98%E8%88%B0-%E5%9B%BD%E6%9C%8D&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E7%8E%B0%E4%BB%A3%E6%88%98%E8%88%B0-%E5%9B%BD%E6%9C%8D",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "饥困荒野-饥荒：新家园",
@@ -4126,6 +4496,8 @@
       ],
       "publisher": "腾讯",
       "developer": "猪人工作室",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "3.7",
       "reviews_16p": "4789",
       "pub_time": "2023-07",
@@ -4133,8 +4505,8 @@
       "ios_url": "https://apps.apple.com/cn/app/id1557845520",
       "ios_rating": "4.9",
       "ios_reviews": "3635",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%A5%A5%E5%9B%B0%E8%8D%92%E9%87%8E-%E9%A5%A5%E8%8D%92%EF%BC%9A%E6%96%B0%E5%AE%B6%E5%9B%AD&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%A5%A5%E5%9B%B0%E8%8D%92%E9%87%8E-%E9%A5%A5%E8%8D%92%EF%BC%9A%E6%96%B0%E5%AE%B6%E5%9B%AD",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "决斗学院",
@@ -4146,6 +4518,8 @@
       ],
       "publisher": "Shenzhen Fangyuan Interactive Entertainment Technology Co.Ltd",
       "developer": "Shenzhen Fangyuan Interactive Entertainment Technology Co.Ltd",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.6",
       "reviews_16p": "3501",
       "pub_time": "2025-11",
@@ -4153,8 +4527,8 @@
       "ios_url": "",
       "ios_rating": "",
       "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E5%86%B3%E6%96%97%E5%AD%A6%E9%99%A2&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E5%86%B3%E6%96%97%E5%AD%A6%E9%99%A2",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "这个你会吗 - 纸牌分类接龙脑洞大闯关",
@@ -4166,6 +4540,8 @@
       ],
       "publisher": "PicoPoch Co., Ltd.",
       "developer": "PicoPoch Co., Ltd.",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.9",
       "reviews_16p": "3181",
       "pub_time": "2025-11",
@@ -4173,8 +4549,8 @@
       "ios_url": "",
       "ios_rating": "",
       "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E8%BF%99%E4%B8%AA%E4%BD%A0%E4%BC%9A%E5%90%97%20-%20%E7%BA%B8%E7%89%8C%E5%88%86%E7%B1%BB%E6%8E%A5%E9%BE%99%E8%84%91%E6%B4%9E%E5%A4%A7%E9%97%AF%E5%85%B3&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E8%BF%99%E4%B8%AA%E4%BD%A0%E4%BC%9A%E5%90%97%20-%20%E7%BA%B8%E7%89%8C%E5%88%86%E7%B1%BB%E6%8E%A5%E9%BE%99%E8%84%91%E6%B4%9E%E5%A4%A7%E9%97%AF%E5%85%B3",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "魔力宝贝回忆—魔法之巅",
@@ -4185,6 +4561,8 @@
       ],
       "publisher": "Jiangsu Leplay Wireless Technology Co., LTD",
       "developer": "Jiangsu Leplay Wireless Technology Co., LTD",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.7",
       "reviews_16p": "3224",
       "pub_time": "2025-06",
@@ -4192,8 +4570,8 @@
       "ios_url": "",
       "ios_rating": "",
       "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E9%AD%94%E5%8A%9B%E5%AE%9D%E8%B4%9D%E5%9B%9E%E5%BF%86%E2%80%94%E9%AD%94%E6%B3%95%E4%B9%8B%E5%B7%85&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E9%AD%94%E5%8A%9B%E5%AE%9D%E8%B4%9D%E5%9B%9E%E5%BF%86%E2%80%94%E9%AD%94%E6%B3%95%E4%B9%8B%E5%B7%85",
+      "fetched_at": "2026-06-05 07:43 UTC"
     },
     {
       "name": "源星战域",
@@ -4204,6 +4582,8 @@
       ],
       "publisher": "Shanghai Xiyuan Network Technology Company Limited",
       "developer": "Shanghai Xiyuan Network Technology Company Limited",
+      "testtype_cn": "",
+      "testtype_vn": "",
       "score_16p": "4.8",
       "reviews_16p": "3179",
       "pub_time": "2025-07",
@@ -4211,10 +4591,10 @@
       "ios_url": "",
       "ios_rating": "",
       "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search-result?q=%E6%BA%90%E6%98%9F%E6%88%98%E5%9F%9F&type=app",
-      "fetched_at": "2026-06-05 07:30 UTC"
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%BA%90%E6%98%9F%E6%88%98%E5%9F%9F",
+      "fetched_at": "2026-06-05 07:43 UTC"
     }
   ],
-  "updated_at": "2026-06-05 07:30 UTC",
+  "updated_at": "2026-06-05 07:43 UTC",
   "source": "16p.com + iTunes API"
 }
