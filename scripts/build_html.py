@@ -13,16 +13,16 @@ LIVE     = os.path.join(BASE, "live_data.json")
 
 # ── Translation tables ───────────────────────────────────────────────────────
 TAG_VI = {
-    "角色扮演":"Nhập vai RPG","动作":"Action","策略":"Chiến thuật","休闲":"Casual",
+    "角色扮演":"RPG","动作":"Hành động","策略":"Chiến thuật","休闲":"Casual",
     "冒险":"Phiêu lưu","卡牌":"Thẻ bài","回合":"Turn-based","养成":"Nuôi dưỡng",
-    "放置":"Idle","SLG":"SLG","MMORPG":"MMORPG","Roguelike":"Roguelike",
-    "开放世界":"Thế giới mở","多人联机":"Multiplayer","二次元":"Anime/2D",
+    "放置":"Idle / AFK","SLG":"SLG","MMORPG":"MMORPG","Roguelike":"Roguelike",
+    "开放世界":"Open World","多人联机":"Multiplayer","二次元":"ACG / Anime",
     "模拟经营":"Kinh doanh","模拟":"Mô phỏng","沙盒":"Sandbox","生存":"Sinh tồn",
     "建造":"Xây dựng","收集":"Thu thập","解谜":"Giải đố","塔防":"Tower Defense",
     "射击":"Bắn súng","格斗":"Đối kháng","三国":"Tam Quốc","武侠":"Võ hiệp",
     "修仙":"Tu tiên","中国风":"Phong cách TQ","末日":"Tận thế","科幻":"Sci-fi",
     "独立游戏":"Indie","抓宠":"Bắt pet","自走棋":"Auto Chess",
-    "搜打撤":"Extraction Shooter","割草":"Hack & Slash","MOBA":"MOBA","MMO":"MMO",
+    "搜打撤":"Loot & Extract","割草":"Hack & Slash","MOBA":"MOBA","MMO":"MMO",
     "动漫改编":"Chuyển thể anime","体育":"Thể thao","即时策略":"RTS",
     "经营":"Kinh doanh","多结局":"Đa kết thúc","视觉小说":"Visual Novel",
     "女性向":"Dành cho nữ","换装":"Thay trang phục","钓鱼":"Câu cá","航海":"Hàng hải",
@@ -49,7 +49,26 @@ SKIP_TAGS = {
     '近期下载','多平台','高自由度',
 }
 
-GENRE_VI = dict(TAG_VI)  # same map for genre
+# Bảng dịch Thể loại theo file Excel "Tong_Hop_Du_Lieu_Van_Hanh_Game.xlsx"
+GENRE_VI = {
+    "MMO":"MMO", "MOBA":"MOBA", "Roguelike":"Roguelike", "Roguelite":"Roguelite",
+    "SLG":"SLG", "二次元":"ACG / Anime", "休闲":"Casual", "体育":"Thể thao",
+    "修仙":"Tu Tiên", "像素":"Pixel", "冒险":"Phiêu lưu", "动作":"Hành động",
+    "即时策略":"RTS", "历史":"Lịch sử", "家庭聚会":"Party Game",
+    "开放世界":"Open World", "抓宠":"Bắt pet", "搜打撤":"Loot & Extract",
+    "放置":"Idle / AFK", "模拟":"Mô phỏng", "模拟经营":"Quản lý mô phỏng",
+    "沙盒":"Sandbox", "策略":"Chiến thuật", "视觉小说":"Visual Novel",
+    "角色扮演":"RPG", "钓鱼":"Câu cá", "高自由度":"Tự do cao",
+    "MMORPG":"MMORPG", "卡牌":"Thẻ bài", "回合":"Turn-based",
+    "养成":"Nuôi dưỡng", "塔防":"Tower Defense", "射击":"Bắn súng",
+    "格斗":"Đối kháng", "三国":"Tam Quốc", "武侠":"Võ hiệp",
+    "末日":"Tận thế", "科幻":"Sci-fi", "独立游戏":"Indie",
+    "自走棋":"Auto Chess", "割草":"Hack & Slash", "战术博弈":"Chiến thuật đấu trí",
+    "解谜":"Giải đố", "都市":"Đô thị", "3D":"3D", "中国风":"Phong cách TQ",
+    "动漫改编":"Chuyển thể anime", "小说改编":"Chuyển thể tiểu thuyết",
+    "经营":"Kinh doanh", "多结局":"Đa kết thúc", "合成":"Ghép/Merge",
+    "温暖治愈":"Healing/Nhẹ nhàng", "竞技":"Cạnh tranh",
+}
 
 TAPTAP_IDS = {
     "王者荣耀世界":"744415","异环-自由开放都市":"714119","三国：天下归心":"759941",
@@ -122,6 +141,47 @@ DEV_EN = {
     "冠诺网络":"Guannuo Network","觉诺网络":"Juenuo Network",
 }
 
+
+LISTING = {
+    "腾讯":"是 (HKEX: 0700.HK)",
+    "腾讯天美工作室":"是 (HKEX: 0700.HK)",
+    "腾讯天美工作室群":"是 (HKEX: 0700.HK)",
+    "腾讯光子工作室群":"是 (HKEX: 0700.HK)",
+    "Shenzhen Tencent Tianyou Technology Ltd":"是 (HKEX: 0700.HK)",
+    "Tencent TiMi Studio":"是 (HKEX: 0700.HK)",
+    "Tencent TiMi Studio Group":"是 (HKEX: 0700.HK)",
+    "Tencent Tianyou Tech":"是 (HKEX: 0700.HK)",
+    "网易游戏":"是 (NASDAQ: NTES / HKEX: 9999)",
+    "网易":"是 (NASDAQ: NTES / HKEX: 9999)",
+    "NetEase Games":"是 (NASDAQ: NTES / HKEX: 9999)",
+    "米哈游®":"否 (Công ty tư nhân)",
+    "miHoYo Co., Ltd.":"否 (Công ty tư nhân)",
+    "bilibili游戏":"是 (NASDAQ: BILI / HKEX: 9626)",
+    "bilibili Games":"是 (NASDAQ: BILI / HKEX: 9626)",
+    "完美世界游戏":"是 (SZSE: 002624)",
+    "Perfect World Games":"是 (SZSE: 002624)",
+    "朝夕光年":"否 (ByteDance tư nhân)",
+    "Morningstar (ByteDance)":"否 (ByteDance tư nhân)",
+    "Kuro Games":"否 (Công ty tư nhân)",
+    "Kuro Games (Kuro Technology)":"否 (Công ty tư nhân)",
+    "37手游":"是 (SZSE: 002555)",
+    "37Games":"是 (SZSE: 002555)",
+    "Hypergryph Co., Ltd.":"否 (Công ty tư nhân)",
+    "Lilith Games Co., Ltd.":"否 (Công ty tư nhân)",
+    "ChillyRoom Inc.":"否 (Công ty tư nhân)",
+    "Gaggle Studios":"否 (Công ty tư nhân)",
+    "西山居":"是 (Kingsoft HKEX: 3888.HK)",
+    "Seasun Games (Kingsoft)":"是 (Kingsoft HKEX: 3888.HK)",
+    "Netmarble Corp.":"是 (KRX: 251270)",
+    "Square Enix Co., Ltd.":"是 (TYO: 9684)",
+    "中手游（CMG）":"是 (HKEX: 0302.HK)",
+    "Charme Games (CMG)":"是 (HKEX: 0302.HK)",
+    "巨人网络":"是 (SZSE: 002558)",
+    "Giant Network Group":"是 (SZSE: 002558)",
+    "TanWan Games":"否 (Công ty tư nhân)",
+    "贪玩游戏":"否 (Công ty tư nhân)",
+}
+
 HL_TAGS = {'slg','mmorpg','cbg','casual','turn-based','shooting','extraction'}
 
 def is_highlight(tags_list):
@@ -191,7 +251,7 @@ def build_game(g, is_rank=False, idx=0):
         "Developer EN":             dev_en,
         "Quốc gia/ Vùng lãnh thổ": "Trung Quốc",
         "Năm thành lập":            "",
-        "Niêm yết 上市":             "",
+        "Niêm yết 上市":             LISTING.get(dev_cn, LISTING.get(dev_en, "")),
         "Core Gameplay":            g.get('tags_cn',''),
         "Core Gameplay VN":         core_vn,
         "Highlight":                "⭐ HIGHLIGHT" if is_highlight(tags_raw) else "",
