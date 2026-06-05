@@ -68,6 +68,13 @@ GENRE_VI = {
     "动漫改编":"Chuyển thể anime", "小说改编":"Chuyển thể tiểu thuyết",
     "经营":"Kinh doanh", "多结局":"Đa kết thúc", "合成":"Ghép/Merge",
     "温暖治愈":"Healing/Nhẹ nhàng", "竞技":"Cạnh tranh",
+    "战争":"Chiến tranh","生存":"Sinh tồn","多人联机":"Multiplayer",
+    "建造":"Xây dựng","收集":"Thu thập","剧情":"Story-rich",
+    "克苏鲁":"Cthulhu","海战":"Hải chiến","航海":"Hàng hải",
+    "桌游":"Board game","战术竞技":"Battle Royale","刷宝":"Loot / Cày cuốc",
+    "废土":"Wasteland","农场模拟":"Nông trại","换装":"Thời trang",
+    "恋爱":"Hẹn hò","女性向":"Otome / Nữ tính","单机":"Offline / Chơi đơn",
+    "足球":"Bóng đá",
 }
 
 TAPTAP_IDS = {
