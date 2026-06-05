@@ -1,83 +1,58 @@
 name: 🎮 Daily Game Data Update
 
 on:
-  # Chạy mỗi ngày lúc 8:00 sáng GMT+7 (1:00 UTC)
   schedule:
-    - cron: "0 1 * * *"
-
-  # Cho phép chạy thủ công từ GitHub Actions tab
+    - cron: "0 1 * * *"   # 8:00 AM GMT+7
   workflow_dispatch:
-    inputs:
-      skip_taptap:
-        description: "Skip TapTap fetch (dùng data cũ)"
-        required: false
-        default: "false"
-        type: boolean
 
 permissions:
-  contents: write   # để push index.html và taptap_data.json
+  contents: write
 
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
 
     steps:
-      # ── 1. Checkout repo ──────────────────────────────────────────────────
       - name: 📥 Checkout
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      # ── 2. Setup Python ───────────────────────────────────────────────────
       - name: 🐍 Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-          cache: "pip"
 
-      - name: 📦 Install dependencies
-        run: |
-          pip install requests
+      - name: 📡 Fetch 16p.com + iTunes
+        run: python scripts/fetch_all.py
+        continue-on-error: true
 
-      # ── 3. Fetch TapTap live data ─────────────────────────────────────────
-      - name: 🎮 Fetch TapTap Data
-        if: ${{ inputs.skip_taptap != 'true' }}
-        run: python scripts/fetch_taptap.py
-        continue-on-error: true   # Không fail toàn bộ job nếu TapTap block
-
-      # ── 4. Sync Google Sheets premium KPIs ───────────────────────────────
       - name: 📊 Sync Google Sheets KPIs
         run: python scripts/fetch_sheets.py
         env:
           SHEETS_CSV_URL: ${{ secrets.SHEETS_CSV_URL }}
         continue-on-error: true
 
-      # ── 5. Build index.html ───────────────────────────────────────────────
       - name: 🔨 Build index.html
         run: python scripts/build_html.py
 
-      # ── 6. Commit & push ──────────────────────────────────────────────────
       - name: 💾 Commit & Push
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add index.html taptap_data.json
-          # Chỉ commit nếu có thay đổi
+          git add index.html live_data.json || true
           git diff --staged --quiet || git commit -m "🤖 Auto update: $(date +'%Y-%m-%d %H:%M UTC')"
           git push
 
-      # ── 7. Log summary ────────────────────────────────────────────────────
       - name: 📋 Summary
         if: always()
         run: |
           echo "## 🎮 Game Tracker Update Summary" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "- **Date:** $(date +'%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
-          if [ -f taptap_data.json ]; then
-            COUNT=$(python -c "import json; d=json.load(open('taptap_data.json')); print(len(d))")
-            echo "- **Games tracked:** $COUNT" >> $GITHUB_STEP_SUMMARY
-            ERRORS=$(python -c "import json; d=json.load(open('taptap_data.json')); print(sum(1 for v in d.values() if v.get('error')))")
-            echo "- **TapTap errors:** $ERRORS" >> $GITHUB_STEP_SUMMARY
+          if [ -f live_data.json ]; then
+            NG=$(python -c "import json; d=json.load(open('live_data.json')); print(len(d.get('newgames',[])))")
+            echo "- **Games tracked:** $NG" >> $GITHUB_STEP_SUMMARY
           fi
           echo "- **Site:** https://jtgh26.github.io/game-tracker/" >> $GITHUB_STEP_SUMMARY
