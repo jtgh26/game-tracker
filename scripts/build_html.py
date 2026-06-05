@@ -1,16 +1,161 @@
 #!/usr/bin/env python3
 """
 build_html.py
-Đọc live_data.json → inject vào index_template.html → xuất index.html
-Nếu không có live_data.json thì giữ nguyên index_template.html
+Đọc live_data.json → translate tags → inject vào index_template.html → xuất index.html
 """
 import json, os, re
 from datetime import datetime, timezone
 
-BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE     = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE = os.path.join(BASE, "index_template.html")
 OUTPUT   = os.path.join(BASE, "index.html")
 LIVE     = os.path.join(BASE, "live_data.json")
+
+# ── Translation tables ───────────────────────────────────────────────────────
+TAG_VI = {
+    "角色扮演":"Nhập vai RPG","动作":"Action","策略":"Chiến thuật","休闲":"Casual",
+    "冒险":"Phiêu lưu","卡牌":"Thẻ bài","回合":"Turn-based","养成":"Nuôi dưỡng",
+    "放置":"Idle","SLG":"SLG","MMORPG":"MMORPG","Roguelike":"Roguelike",
+    "开放世界":"Thế giới mở","多人联机":"Multiplayer","二次元":"Anime/2D",
+    "模拟经营":"Kinh doanh","模拟":"Mô phỏng","沙盒":"Sandbox","生存":"Sinh tồn",
+    "建造":"Xây dựng","收集":"Thu thập","解谜":"Giải đố","塔防":"Tower Defense",
+    "射击":"Bắn súng","格斗":"Đối kháng","三国":"Tam Quốc","武侠":"Võ hiệp",
+    "修仙":"Tu tiên","中国风":"Phong cách TQ","末日":"Tận thế","科幻":"Sci-fi",
+    "独立游戏":"Indie","抓宠":"Bắt pet","自走棋":"Auto Chess",
+    "搜打撤":"Extraction Shooter","割草":"Hack & Slash","MOBA":"MOBA","MMO":"MMO",
+    "动漫改编":"Chuyển thể anime","体育":"Thể thao","即时策略":"RTS",
+    "经营":"Kinh doanh","多结局":"Đa kết thúc","视觉小说":"Visual Novel",
+    "女性向":"Dành cho nữ","换装":"Thay trang phục","钓鱼":"Câu cá","航海":"Hàng hải",
+    "3D":"3D","历史":"Lịch sử","战争":"Chiến tranh","像素":"Pixel",
+    "Roguelite":"Roguelite","暗黑":"Dark","萌宠":"Cute Pet","文字":"Text/Story",
+    "单机":"Single-player","都市":"Đô thị","废土":"Hậu tận thế","家庭聚会":"Party",
+    "桌游":"Board game","竞技":"Cạnh tranh","足球":"Bóng đá","刷宝":"Loot/Grind",
+    "高自由度":"Tự do cao","多平台":"Đa nền tảng","战术博弈":"Chiến thuật",
+    "沙盘":"Sa bàn","第一人称":"Góc nhìn thứ nhất","极致视听享受":"Âm thanh & đồ họa",
+    "UE5":"UE5","恐怖惊悚":"Kinh dị","克苏鲁":"Cthulhu","社交":"Xã hội",
+    "竖屏":"Màn hình dọc","弹幕":"Bullet hell","涂色":"Tô màu",
+    "派对游戏":"Party game","异世界":"Isekai","温暖治愈":"Healing/Ấm áp",
+    "合成":"Ghép/Merge","经典重现":"Classic revival","跑酷":"Parkour",
+    "音乐":"Âm nhạc","益智":"Trí tuệ","烹饪":"Nấu ăn","探索":"Khám phá",
+    "国漫":"Truyện tranh TQ","小说改编":"Chuyển thể tiểu thuyết",
+    "多端互通":"Cross-platform","高画质":"Đồ họa cao","竞速":"Đua xe",
+    "开荒":"Khai hoang","PVP":"PVP","PVE":"PVE","挂机":"AFK/Idle",
+    "策略卡牌":"Thẻ bài chiến thuật","二次元卡牌":"Thẻ bài anime",
+}
+
+SKIP_TAGS = {
+    '编辑推荐','近期下载飙升','多端互通','高画质','近期热门预约',
+    '安心购','策略拉满','编辑精选','买断制','Steam移植',
+    '近期下载','多平台','高自由度',
+}
+
+GENRE_VI = dict(TAG_VI)  # same map for genre
+
+TAPTAP_IDS = {
+    "王者荣耀世界":"744415","异环-自由开放都市":"714119","三国：天下归心":"759941",
+    "神泣：纷争":"839042","饥困荒野-饥荒：新家园":"194039","原神":"168332",
+    "崩坏：星穹铁道":"225069","明日方舟":"158138","无限暖暖":"247283",
+    "鸣潮":"234280","元气骑士":"35077","战双帕弥什":"162255",
+    "鹅鸭杀":"202498","光遇":"135596",
+}
+
+GAME_NAMES_EN = {
+    "王者荣耀世界":"Honor of Kings World","异环-自由开放都市":"Anomaly Ring",
+    "三国：天下归心":"Three Kingdoms: Unite the World","神泣：纷争":"Shenqi: Conflict",
+    "肥鹅美食街":"Fat Goose Food Street","饥困荒野-饥荒：新家园":"Don't Starve Together Mobile",
+    "驯龙之旅":"Dragon Journey","崩坏：因缘精灵-崩坏IP新作":"Honkai: Enchanted Elves",
+    "遮天：帝路争锋":"Zhetian: Emperor's Road","七界梦谭":"Seven Realms Dream",
+    "卡厄思梦境":"Caos Dream","新星足球世界":"New Star Soccer World",
+    "遗忘之海-记忆环游海洋开放世界":"Forgotten Ocean",
+    "斗罗大陆：诛邪传说":"Soul Land: Dragon Legend",
+    "三国：百将牌":"Three Kingdoms: Hundred Generals","镭明闪击":"Radiant Strike",
+    "东离剑游纪":"Thunderbolt Fantasy Mobile","灵魂潮汐2":"Aether Gazer 2",
+    "旅人日记":"Traveler's Diary","斗破苍穹：斗帝之路":"Battle Through the Heavens",
+    "闪耀吧！噜咪":"Shine! Lumi","曙光纪元":"Dawn Era","蛮荒领主":"Savage Lord",
+    "鹅鸭杀":"Goose Goose Duck","元气骑士":"Soul Knight",
+    "战双帕弥什":"Punishing: Gray Raven","原神":"Genshin Impact",
+    "无限暖暖":"Infinity Nikki","鸣潮":"Wuthering Waves",
+    "崩坏：星穹铁道":"Honkai: Star Rail","明日方舟":"Arknights",
+    "光遇":"Sky: Children of the Light","世界之光":"Light of the World",
+    "天空岛传说":"Sky Island Legend","亿万光年":"Billion Light Years",
+    "头号禁区":"Forbidden Zone No.1","高能探宝团":"Energy Explorer",
+    "大航海时代：起源":"Age of Sail: Origins","归环-时间循环开放世界":"Cycle: Time Loop",
+    "冲吧！帕克":"Go Go Park!","我的末日小队":"My Doomsday Squad",
+    "宗师之上":"Above the Grandmaster","萌神契约":"Moe God Contract",
+    "英雄之时":"Heroes of Time","迷失之径":"Lost Path",
+    "我嘎嘎乱杀":"I Kill Everywhere","幻想少女公会":"Fantasy Girls Guild",
+    "洛克王国：世界":"Rock Kingdom World","我的奶茶屋":"My Milk Tea Shop",
+    "东煌纪":"East Huang Chronicles","哀鸿：城破十日记":"Lamenting: Ten Days",
+}
+
+DEV_EN = {
+    "腾讯天美工作室":"Tencent TiMi Studio","腾讯天美工作室群":"Tencent TiMi Studio Group",
+    "苏州幻塔":"Hotta Studio","苏州幻塔网络科技有限公司":"Hotta Studio",
+    "上饶越昶网络科技有限公司":"Yuechang Network Tech","米哈游®":"miHoYo Co., Ltd.",
+    "猪人工作室":"Pig Studios","咪咕互动娱乐有限公司":"Migu Interactive",
+    "帝路争锋工作室":"Emperor's Road Studio","飞光阁工作室":"FeiGuangGe Studio",
+    "bilibili游戏":"bilibili Games","反射狐工作室":"Reflex Fox Studio",
+    "朝夕光年":"Morningstar (ByteDance)","北京瓜栗科技":"Beijing Guali Tech",
+    "成都星启兴网络有限责任公司":"Chengdu Xingqixing Network",
+    "厦门炉火网络科技有限公司":"Xiamen Luhuo Network","贪玩游戏":"TanWan Games",
+    "37手游":"37Games","网易游戏":"NetEase Games","腾讯":"Tencent",
+    "完美世界游戏":"Perfect World Games","西铭游戏":"Ximing Games",
+    "广州灵犀互动娱乐有限公司":"Linxi Interactive","浩凡游戏":"Haofan Games",
+    "HK HORTOR TECHNOLOGY LIMITED":"HORTOR TECHNOLOGY (HK)",
+    "Zhejiang UmarkNetwork Technology Co.,Ltd":"Zhejiang UmarkNetwork",
+    "Shenzhen Tencent Tianyou Technology Ltd":"Tencent Tianyou Tech",
+    "Shangrao Yuechang Network Technology Co., Ltd":"Yuechang Network Tech",
+    "Shenzhen Qianhai Hongcheng Games Co.,Ltd":"Hongcheng Games",
+    "世界之光工作室":"Light of World Studio","鱼小齐工作室":"Fish Xiaoqi Studio",
+    "海气泡游戏":"Haiqipao Games","零创游戏":"Lingchuang Games",
+    "勾陈一工作室":"Gouchen Yi Studio","大千互娱":"Daqian Interactive",
+    "苏州茉莉":"Suzhou Moli Games","灰阶映射工作室":"Grayscale Mapping Studio",
+    "雷霆游戏":"TaoTao (Thunder) Games","未知矩阵":"Unknown Matrix Studio",
+    "烛月游戏":"Zhuyue Games","萨罗斯网络科技（深圳）有限公司":"Saros Network Tech",
+    "脑浆炸裂工作室":"Brain Explosion Studio","游一点意思工作室":"Youdian Yisi Studio",
+    "6kwgame":"6kwgame","六阿哥游戏工作室":"Liu Ago Game Studio",
+    "Gaggle Studios":"Gaggle Studios","ChillyRoom":"ChillyRoom Inc.",
+    "Kuro Games":"Kuro Games (Kuro Technology)","37手游":"37Games",
+    "游艺春秋":"Youyi Chunqiu","厦门游乐互动科技有限公司":"Xiamen Youle Interactive",
+    "Gamersky Games":"Gamersky Games","小王个人工作室":"Xiao Wang Solo Studio",
+    "游戏玄学":"Game Metaphysics Studio","瓜乒乓工作室":"Gua Pingpang Studio",
+    "冠诺网络":"Guannuo Network","觉诺网络":"Juenuo Network",
+}
+
+HL_TAGS = {'slg','mmorpg','cbg','casual','turn-based','shooting','extraction'}
+
+def is_highlight(tags_list):
+    tl = ' '.join(tags_list).lower()
+    # CN tags check
+    cn_hl = any(t in ' '.join(tags_list) for t in ['SLG','MMORPG','塔防','射击'])
+    return cn_hl or any(k in tl for k in HL_TAGS)
+
+def translate_tags(tags_list, max_n=6):
+    res, seen = [], set()
+    for t in (tags_list or []):
+        if t in SKIP_TAGS: continue
+        vn = TAG_VI.get(t, t)
+        if vn not in seen:
+            seen.add(vn); res.append(vn)
+        if len(res) >= max_n: break
+    return res
+
+def fmt_time(t):
+    if not t: return ''
+    t = str(t).strip()
+    if re.match(r'^\d{4}-\d{2}-\d{2}$', t):
+        p = t.split('-'); return f"{p[2]}/{p[1]}/{p[0]}"
+    elif re.match(r'^\d{2}-\d{2}$', t):
+        return f"2026-{t}"  # MM-DD → keep as-is with year
+    elif re.match(r'^\d{4}-\d{2}$', t):
+        p = t.split('-'); return f"{p[1]}/{p[0]}"
+    return t
+
+def tt_url(name):
+    if name in TAPTAP_IDS:
+        return f"https://www.taptap.cn/app/{TAPTAP_IDS[name]}"
+    import urllib.parse
+    return f"https://www.taptap.cn/search?q={urllib.parse.quote(name)}"
 
 def esc(obj):
     if isinstance(obj, dict): return {k: esc(v) for k, v in obj.items()}
@@ -18,14 +163,61 @@ def esc(obj):
     if isinstance(obj, str): return obj.replace('\n', '\\n').replace('\r', '')
     return obj
 
+def build_game(g, is_rank=False, idx=0):
+    name     = g.get('name','')
+    tags_raw = [t.strip() for t in (g.get('tags_cn','') or '').split('/') if t.strip()]
+    tags_vn  = translate_tags(tags_raw)
+    genre_cn = tags_raw[0] if tags_raw else ''
+    genre_vn = TAG_VI.get(genre_cn, genre_cn)
+
+    dev_cn = g.get('developer','') or g.get('publisher','')
+    dev_en = DEV_EN.get(dev_cn, dev_cn)
+
+    ios_id  = g.get('ios_id','')
+    ios_url = g.get('ios_url','') or (f"https://apps.apple.com/cn/app/id{ios_id}" if ios_id and ios_id != '0' else '')
+
+    core_vn = '\\n'.join(f'• {t}' for t in tags_vn) if tags_vn else ''
+
+    result = {
+        "Tên gốc":                  name,
+        "Tên tiếng Trung (nếu khác)": "",
+        "Tên tiếng Anh (nếu khác)": GAME_NAMES_EN.get(name, ''),
+        "Thể loại":                 genre_vn,
+        "Trạng thái phát hành":     g.get('testtype_cn','公测'),
+        "Trạng thái (Tiếng Việt)":  g.get('testtype_vn','Open Beta'),
+        "Thời gian":                fmt_time(g.get('pub_time','')),
+        "Khu vực phát hành":        "Trung Quốc",
+        "Developer":                dev_cn,
+        "Developer EN":             dev_en,
+        "Quốc gia/ Vùng lãnh thổ": "Trung Quốc",
+        "Năm thành lập":            "",
+        "Niêm yết 上市":             "",
+        "Core Gameplay":            g.get('tags_cn',''),
+        "Core Gameplay VN":         core_vn,
+        "Highlight":                "⭐ HIGHLIGHT" if is_highlight(tags_raw) else "",
+        "Mainsite":                 "",
+        "AppStore":                 ios_url,
+        "GooglePlay":               "",
+        "Store CN":                 f"TapTap: {tt_url(name)}",
+        "ios_id":                   ios_id,
+        "taptap_id":                TAPTAP_IDS.get(name,''),
+        "icon_url":                 g.get('icon_url',''),
+        "score_16p":                str(g.get('score_16p','')),
+        "reviews_16p":              str(g.get('reviews_16p','')),
+    }
+    if is_rank:
+        result["Hạng"] = str(g.get('rank', idx+1))
+    else:
+        result["STT"] = str(g.get('stt', idx+1))
+
+    return result
+
 def main():
     # Read template
     if not os.path.exists(TEMPLATE):
-        # Fallback: copy index.html as template if template missing
         if os.path.exists(OUTPUT):
-            import shutil
-            shutil.copy(OUTPUT, TEMPLATE)
-            print(f"  Created template from existing index.html")
+            import shutil; shutil.copy(OUTPUT, TEMPLATE)
+            print("  Created template from index.html")
         else:
             print("✗ No template found"); return
 
@@ -34,121 +226,37 @@ def main():
 
     updated_at = datetime.now(timezone.utc).strftime("%d/%m/%Y %H:%M UTC")
 
-    # Inject live data if available
     if os.path.exists(LIVE):
         with open(LIVE, 'r', encoding='utf-8') as f:
             live = json.load(f)
 
-        TAG_VI = {
-            "角色扮演":"Nhập vai RPG","动作":"Action","策略":"Chiến thuật",
-            "休闲":"Casual","冒险":"Phiêu lưu","卡牌":"Thẻ bài","回合":"Turn-based",
-            "养成":"Nuôi dưỡng","放置":"Idle","SLG":"SLG","MMORPG":"MMORPG",
-            "Roguelike":"Roguelike","开放世界":"Thế giới mở","多人联机":"Multiplayer",
-            "二次元":"Anime/2D","模拟经营":"Kinh doanh","模拟":"Mô phỏng",
-            "沙盒":"Sandbox","生存":"Sinh tồn","建造":"Xây dựng","收集":"Thu thập",
-            "塔防":"Tower Defense","射击":"Bắn súng","三国":"Tam Quốc",
-            "武侠":"Võ hiệp","修仙":"Tu tiên","末日":"Tận thế","科幻":"Sci-fi",
-            "独立游戏":"Indie","抓宠":"Bắt pet","自走棋":"Auto Chess",
-            "搜打撤":"Extraction Shooter","割草":"Hack & Slash","MOBA":"MOBA",
-            "MMO":"MMO","动漫改编":"Chuyển thể anime","视觉小说":"Visual Novel",
-            "女性向":"Nữ tính","换装":"Thay trang phục","钓鱼":"Câu cá",
-            "航海":"Hàng hải","3D":"3D","农场模拟":"Nông trại","体育":"Thể thao",
-        }
-        SKIP = {'编辑推荐','近期下载飙升','多端互通','高自由度','多平台',
-                '高画质','近期热门预约','安心购','策略拉满'}
-
-        def translate_tags(tags_list, n=5):
-            res, seen = [], set()
-            for t in (tags_list or []):
-                if t in SKIP: continue
-                vn = TAG_VI.get(t, t)
-                if vn not in seen:
-                    seen.add(vn); res.append(vn)
-                if len(res) >= n: break
-            return res
-
-        def is_hl(tags):
-            tl = ' '.join(tags).lower()
-            return any(k in tl for k in ['slg','mmorpg','cbg','casual','turn','射击','塔防'])
-
-        import urllib.parse
-        TAPTAP_IDS = {
-            "王者荣耀世界":"744415","异环-自由开放都市":"714119",
-            "三国：天下归心":"759941","神泣：纷争":"839042",
-            "饥困荒野-饥荒：新家园":"194039","原神":"168332",
-            "崩坏：星穹铁道":"225069","明日方舟":"158138",
-            "无限暖暖":"247283","鸣潮":"234280","元气骑士":"35077",
-            "战双帕弥什":"162255","鹅鸭杀":"202498","光遇":"135596",
-        }
-
-        def tt_url(name):
-            if name in TAPTAP_IDS:
-                return f"https://www.taptap.cn/app/{TAPTAP_IDS[name]}"
-            return f"https://www.taptap.cn/search?q={urllib.parse.quote(name)}"
-
-        def build_game(g, is_rank=False):
-            tags = (g.get('tags_cn') or '').split(' / ')
-            tags = [t.strip() for t in tags if t.strip()]
-            tags_vn = translate_tags(tags)
-            ios_id  = g.get('ios_id') or g.get('appStoreId', '')
-            ios_url = g.get('ios_url') or (f"https://apps.apple.com/cn/app/id{ios_id}" if ios_id and ios_id != '0' else '')
-            name = g.get('name', '')
-            base = {
-                "Tên gốc": name,
-                "Tên tiếng Trung (nếu khác)": "",
-                "Tên tiếng Anh (nếu khác)": "",
-                "Thể loại": tags[0] if tags else '',
-                "Trạng thái phát hành": g.get('testtype_cn','公测运营') if is_rank else g.get('testtype_cn','公测'),
-                "Trạng thái (Tiếng Việt)": g.get('testtype_vn','Open Beta / Đang vận hành') if is_rank else g.get('testtype_vn','Open Beta'),
-                "Khu vực phát hành": "Trung Quốc",
-                "Developer": g.get('developer') or g.get('publisher', ''),
-                "Developer EN": g.get('developer') or g.get('publisher', ''),
-                "Quốc gia/ Vùng lãnh thổ": "Trung Quốc",
-                "Năm thành lập": "", "Niêm yết 上市": "",
-                "Core Gameplay": ' / '.join(tags),
-                "Core Gameplay VN": '\\n'.join(f'• {t}' for t in tags_vn),
-                "Highlight": "⭐ HIGHLIGHT" if is_hl(tags) else "",
-                "Mainsite": "", "AppStore": ios_url, "GooglePlay": "",
-                "Store CN": f"TapTap: {tt_url(name)}",
-                "ios_id": ios_id, "taptap_id": TAPTAP_IDS.get(name,''),
-                "icon_url": g.get('icon') or g.get('icon_url',''),
-                "score_16p": str(g.get('score_16p','')),
-                "reviews_16p": str(g.get('reviews_16p','')),
-            }
-            if is_rank:
-                base["Hạng"] = str(g.get('rank',''))
-                base["Thời gian"] = ""
-            else:
-                base["STT"] = str(g.get('stt', ''))
-                base["Thời gian"] = str(g.get('pub_time','') or g.get('pubTime',''))
-            return base
-
         new_raw = {
-            "newgames": [build_game(g, False) for g in live.get('newgames', [])],
-            "bxh_30":   [build_game(g, True)  for g in live.get('rank30', [])],
-            "bxh_90":   [build_game(g, True)  for g in live.get('rank90', [])],
-            "bxh_year": [build_game(g, True)  for g in live.get('rankyr', [])],
+            "newgames": [build_game(g, False, i) for i,g in enumerate(live.get('newgames',[]))],
+            "bxh_30":   [build_game(g, True,  i) for i,g in enumerate(live.get('rank30',[]))],
+            "bxh_90":   [build_game(g, True,  i) for i,g in enumerate(live.get('rank90',[]))],
+            "bxh_year": [build_game(g, True,  i) for i,g in enumerate(live.get('rankyr',[]))],
         }
 
         data_js = json.dumps(esc(new_raw), ensure_ascii=False)
         assert '\n' not in data_js.replace('\\n',''), "newline leak!"
+
         html = re.sub(r'const RAW=\{.*?\};', f'const RAW={data_js};', html, count=1, flags=re.DOTALL)
-        print(f"  ✓ Injected live data: {len(new_raw['newgames'])} newgames, {len(new_raw['bxh_30'])} rank30")
+
+        # Stats
+        ng  = new_raw['newgames']
+        hl  = sum(1 for g in ng if g.get('Highlight'))
+        print(f"  ✓ Built: {len(ng)} newgames, {hl} highlights")
+        print(f"  Sample: {ng[0]['Tên gốc']} | {ng[0]['Thể loại']} | {ng[0]['Trạng thái (Tiếng Việt)']} | {ng[0]['Thời gian']}")
     else:
-        print("  ⚠ No live_data.json — using template data as-is")
+        print("  ⚠ No live_data.json")
 
     # Update timestamp
-    html = re.sub(
-        r'(id="last-updated">)[^<]*(<)',
-        f'\\g<1>{updated_at}\\g<2>',
-        html
-    )
-    # Also replace placeholder
+    html = re.sub(r'(id="last-updated">)[^<]*(<)', f'\\g<1>{updated_at}\\g<2>', html)
     html = html.replace('__UPDATED_AT__', updated_at)
 
     with open(OUTPUT, 'w', encoding='utf-8') as f:
         f.write(html)
-    print(f"✓ Built index.html ({len(html):,} bytes) — {updated_at}")
+    print(f"✓ index.html built ({len(html):,} bytes) — {updated_at}")
 
 if __name__ == '__main__':
     main()
