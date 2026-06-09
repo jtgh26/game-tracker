@@ -25,7 +25,7 @@
       "ios_rating": "4.3",
       "ios_reviews": "84876",
       "taptap_url": "https://www.taptap.cn/app/744415",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "stt": "2",
@@ -52,7 +52,7 @@
       "ios_rating": "3.5",
       "ios_reviews": "20145",
       "taptap_url": "https://www.taptap.cn/app/714119",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "stt": "3",
@@ -79,7 +79,7 @@
       "ios_rating": "4.6",
       "ios_reviews": "9804",
       "taptap_url": "https://www.taptap.cn/app/759941",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "stt": "4",
@@ -102,7 +102,7 @@
       "ios_rating": "4.7",
       "ios_reviews": "4539",
       "taptap_url": "https://www.taptap.cn/app/839042",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "stt": "5",
@@ -125,7 +125,7 @@
       "ios_rating": "4.6",
       "ios_reviews": "4155",
       "taptap_url": "https://www.taptap.cn/search?q=%E8%82%A5%E9%B9%85%E7%BE%8E%E9%A3%9F%E8%A1%97",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "stt": "6",
@@ -152,7 +152,7 @@
       "ios_rating": "4.9",
       "ios_reviews": "3635",
       "taptap_url": "https://www.taptap.cn/app/194039",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "stt": "7",
@@ -179,7 +179,7 @@
       "ios_rating": "4.7",
       "ios_reviews": "2043",
       "taptap_url": "https://www.taptap.cn/search?q=%E9%A9%AF%E9%BE%99%E4%B9%8B%E6%97%85",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "stt": "8",
@@ -206,7 +206,7 @@
       "ios_rating": "4.1",
       "ios_reviews": "347820",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%B4%A9%E5%9D%8F%EF%BC%9A%E5%9B%A0%E7%BC%98%E7%B2%BE%E7%81%B5-%E5%B4%A9%E5%9D%8FIP%E6%96%B0%E4%BD%9C",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "stt": "9",
@@ -233,7 +233,7 @@
       "ios_rating": "4.5",
       "ios_reviews": "1259",
       "taptap_url": "https://www.taptap.cn/search?q=%E9%81%AE%E5%A4%A9%EF%BC%9A%E5%B8%9D%E8%B7%AF%E4%BA%89%E9%94%8B",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "stt": "10",
@@ -260,7 +260,7 @@
       "ios_rating": "",
       "ios_reviews": "",
       "taptap_url": "https://www.taptap.cn/search?q=%E4%BC%8D%E5%85%AD%E4%B8%83%EF%BC%9A%E6%9A%97%E5%BD%B1%E4%BA%A4%E9%94%8B",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "stt": "11",
@@ -286,34 +286,30 @@
       "ios_rating": "4.7",
       "ios_reviews": "615",
       "taptap_url": "https://www.taptap.cn/search?q=%E9%A3%8E%E4%B9%8B%E5%9B%BD%E4%B8%96%E7%95%8C",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "stt": "12",
       "name": "高能探宝团",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8a/a6/05/8aa605e5-536d-57e7-401d-97c725374434/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/200x200bb.jpg",
-      "tags_cn": "Roguelite / 策略 / 回合 / 卡牌 / 收集 / 三国",
+      "tags_cn": "卡牌 / 冒险",
       "tags_vn": [
-        "Roguelite",
-        "Chiến thuật",
-        "Turn-based",
         "Thẻ bài",
-        "Thu thập",
-        "Tam Quốc"
+        "Phiêu lưu"
       ],
       "publisher": "Hainan Kakacattle Network Technology Co., Ltd.",
-      "developer": "高能探宝团工作室",
+      "developer": "Hainan Kakacattle Network Technology Co., Ltd.",
       "testtype_cn": "公测",
       "testtype_vn": "Open Beta",
       "score_16p": "4.7",
-      "reviews_16p": "80",
-      "pub_time": "03-15",
+      "reviews_16p": "518",
+      "pub_time": "04-09",
       "ios_id": "6758931051",
       "ios_url": "https://apps.apple.com/cn/app/id6758931051",
       "ios_rating": "4.7",
       "ios_reviews": "518",
       "taptap_url": "https://www.taptap.cn/search?q=%E9%AB%98%E8%83%BD%E6%8E%A2%E5%AE%9D%E5%9B%A2",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "stt": "13",
@@ -340,7 +336,7 @@
       "ios_rating": "4.8",
       "ios_reviews": "928",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%80%AA%E7%89%A9%E7%8C%8E%E4%BA%BA%EF%BC%9A%E6%97%85%E4%BA%BA",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "stt": "14",
@@ -367,7 +363,7 @@
       "ios_rating": "4.5",
       "ios_reviews": "1150",
       "taptap_url": "https://www.taptap.cn/search?q=%E4%B8%83%E7%95%8C%E6%A2%A6%E8%B0%AD",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "stt": "15",
@@ -391,7 +387,7 @@
       "ios_rating": "4.8",
       "ios_reviews": "432",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%96%B0%E6%98%9F%E8%B6%B3%E7%90%83%E4%B8%96%E7%95%8C",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "stt": "16",
@@ -418,7 +414,7 @@
       "ios_rating": "3.4",
       "ios_reviews": "2190",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%8D%A1%E5%8E%84%E6%80%9D%E6%A2%A6%E5%A2%83",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "stt": "17",
@@ -445,7 +441,7 @@
       "ios_rating": "0.0",
       "ios_reviews": "0",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%97%B6%E7%A9%BA%E7%8C%8E%E4%BA%BA%C2%B7%E8%A7%89%E9%86%92",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "stt": "18",
@@ -472,7 +468,7 @@
       "ios_rating": "0.0",
       "ios_reviews": "0",
       "taptap_url": "https://www.taptap.cn/search?q=%E9%81%97%E5%BF%98%E4%B9%8B%E6%B5%B7",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "stt": "19",
@@ -499,7 +495,7 @@
       "ios_rating": "",
       "ios_reviews": "",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%98%9F%E5%B8%83%E8%B0%B7%E5%9C%B0-%E7%B1%B3%E5%93%88%E6%B8%B8%E7%94%9F%E6%B4%BB%E6%A8%A1%E6%8B%9F%E6%96%B0%E4%BD%9C",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "stt": "20",
@@ -526,7 +522,7 @@
       "ios_rating": "4.8",
       "ios_reviews": "102048",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%96%97%E7%BD%97%E5%A4%A7%E9%99%86%EF%BC%9A%E8%AF%9B%E9%82%AA%E4%BC%A0%E8%AF%B4",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "stt": "21",
@@ -552,7 +548,7 @@
       "ios_rating": "4.5",
       "ios_reviews": "294",
       "taptap_url": "https://www.taptap.cn/search?q=%E9%BE%99%E7%AC%A6%EF%BC%9A%E5%A4%A9%E7%A5%AD",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "stt": "22",
@@ -579,7 +575,7 @@
       "ios_rating": "",
       "ios_reviews": "",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%A4%9C%E5%B9%95%E4%B9%8B%E4%B8%8B-%E5%85%A8%E5%91%98%E6%81%B6%E4%BA%BA%E7%BE%A4%E5%83%8F",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "stt": "23",
@@ -603,7 +599,7 @@
       "ios_rating": "4.6",
       "ios_reviews": "236",
       "taptap_url": "https://www.taptap.cn/search?q=%E7%94%9F%E8%AE%A1%E4%B8%8E%E6%B2%89%E5%86%A4",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "stt": "24",
@@ -630,7 +626,7 @@
       "ios_rating": "4.3",
       "ios_reviews": "470",
       "taptap_url": "https://www.taptap.cn/search?q=%E4%B8%89%E5%9B%BD%EF%BC%9A%E7%99%BE%E5%B0%86%E7%89%8C",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "stt": "25",
@@ -656,7 +652,7 @@
       "ios_rating": "4.8",
       "ios_reviews": "173",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%86%B2%E5%90%A7%EF%BC%81%E5%B8%95%E5%85%8B",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "stt": "26",
@@ -683,7 +679,7 @@
       "ios_rating": "",
       "ios_reviews": "",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%BD%92%E7%8E%AF-%E6%97%B6%E9%97%B4%E5%BE%AA%E7%8E%AF%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "stt": "27",
@@ -710,7 +706,7 @@
       "ios_rating": "4.9",
       "ios_reviews": "23895",
       "taptap_url": "https://www.taptap.cn/search?q=%E4%B9%B1%E6%B6%82%E5%BD%A9%E4%B8%96%E7%95%8C-%E7%BE%8E%E5%B0%91%E5%A5%B3%E5%BC%B9%E5%B9%95%E5%B0%84%E5%87%BB",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "stt": "28",
@@ -737,7 +733,7 @@
       "ios_rating": "4.8",
       "ios_reviews": "2562",
       "taptap_url": "https://www.taptap.cn/search?q=%E9%95%AD%E6%98%8E%E9%97%AA%E5%87%BB",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "stt": "29",
@@ -764,7 +760,7 @@
       "ios_rating": "4.5",
       "ios_reviews": "7818",
       "taptap_url": "https://www.taptap.cn/search?q=%E4%B8%96%E7%95%8C%E4%B9%8B%E5%85%89",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "stt": "30",
@@ -786,7 +782,7 @@
       "ios_rating": "4.0",
       "ios_reviews": "132",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%A4%A7%E8%88%AA%E6%B5%B7%E6%97%B6%E4%BB%A3%EF%BC%9A%E8%B5%B7%E6%BA%90",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "stt": "31",
@@ -813,7 +809,7 @@
       "ios_rating": "4.8",
       "ios_reviews": "8214",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%88%91%E7%9A%84%E5%A5%B6%E8%8C%B6%E5%B1%8B",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "stt": "32",
@@ -840,10 +836,37 @@
       "ios_rating": "4.6",
       "ios_reviews": "200",
       "taptap_url": "https://www.taptap.cn/search?q=%E8%BD%A8%E9%81%93%E8%BF%9E%E7%BB%93-%E5%85%88%E8%AF%95%E7%8E%A9%E5%90%8E%E8%A7%A3%E9%94%81",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "stt": "33",
+      "name": "盛世天下：女帝篇",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6f/f8/57/6ff8571c-38c5-51a1-503e-85b4a30fe21e/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/200x200bb.jpg",
+      "tags_cn": "编辑推荐 / 买断制 / 剧情党狂喜 / 沉浸式体验 / 互动影像 / 剧情 / Steam移植 / 角色扮演 / 中国风 / 女性向 / AVG / 应用 / 叙事 / 历史 / 电影质感",
+      "tags_vn": [
+        "剧情党狂喜",
+        "沉浸式体验",
+        "互动影像",
+        "剧情",
+        "Nhập vai RPG",
+        "Phong cách TQ"
+      ],
+      "publisher": "Shenzhen Tencent Tianyou Technology Ltd",
+      "developer": "腾讯",
+      "testtype_cn": "公测",
+      "testtype_vn": "Open Beta",
+      "score_16p": "4.7",
+      "reviews_16p": "57",
+      "pub_time": "05-22",
+      "ios_id": "6743148949",
+      "ios_url": "https://apps.apple.com/cn/app/id6743148949",
+      "ios_rating": "4.8",
+      "ios_reviews": "32512",
+      "taptap_url": "https://www.taptap.cn/search?q=%E7%9B%9B%E4%B8%96%E5%A4%A9%E4%B8%8B%EF%BC%9A%E5%A5%B3%E5%B8%9D%E7%AF%87",
+      "fetched_at": "2026-06-09 12:19 UTC"
+    },
+    {
+      "stt": "34",
       "name": "东离剑游纪",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7a/cc/c8/7accc881-5dda-fec4-97c9-89b7314cbd35/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "动作 / 武侠 / 角色扮演 / 中国风 / 二次元 / 动漫改编 / 3D / 高画质",
@@ -867,10 +890,10 @@
       "ios_rating": "3.8",
       "ios_reviews": "17",
       "taptap_url": "https://www.taptap.cn/search?q=%E4%B8%9C%E7%A6%BB%E5%89%91%E6%B8%B8%E7%BA%AA",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "34",
+      "stt": "35",
       "name": "闪耀吧！噜咪",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/64/51/f7/6451f73e-771f-f542-f0bc-bed57b01a3bb/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "开放世界 / 抓宠 / 多人联机 / 冒险 / 回合",
@@ -893,10 +916,10 @@
       "ios_rating": "0.0",
       "ios_reviews": "0",
       "taptap_url": "https://www.taptap.cn/search?q=%E9%97%AA%E8%80%80%E5%90%A7%EF%BC%81%E5%99%9C%E5%92%AA",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "35",
+      "stt": "36",
       "name": "永恒树之歌：创世-正版移植手游",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c4/b8/ca/c4b8cabd-aa0b-6373-a649-68cb110009d1/AppIcon-1x_U007epad-0-11-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "编辑推荐 / 买断制 / 多平台 / Steam移植 / 沙盒 / 建造 / 模拟经营 / 冒险 / 探索 / 休闲 / 种田 / 农场模拟 / 独立佳作",
@@ -920,10 +943,10 @@
       "ios_rating": "4.7",
       "ios_reviews": "1470",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%B0%B8%E6%81%92%E6%A0%91%E4%B9%8B%E6%AD%8C%EF%BC%9A%E5%88%9B%E4%B8%96-%E6%AD%A3%E7%89%88%E7%A7%BB%E6%A4%8D%E6%89%8B%E6%B8%B8",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "36",
+      "stt": "37",
       "name": "Car Driving and Drifting Games",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6b/93/61/6b9361fb-3864-f054-0f41-e5676b67cfb5/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
       "tags_cn": "角色扮演 / 娱乐 / 冒险",
@@ -944,10 +967,10 @@
       "ios_rating": "4.4",
       "ios_reviews": "50",
       "taptap_url": "https://www.taptap.cn/search?q=Car%20Driving%20and%20Drifting%20Games",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "37",
+      "stt": "38",
       "name": "斗兽战场",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fe/b2/79/feb279ea-2069-0c72-1eaf-49a83594f846/AppIcon-1x_U007emarketing-0-11-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "SLG / 策略 / 废土 / 机甲 / 恐龙 / 末日",
@@ -971,10 +994,10 @@
       "ios_rating": "3.4",
       "ios_reviews": "1044",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%96%97%E5%85%BD%E6%88%98%E5%9C%BA",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "38",
+      "stt": "39",
       "name": "心跳陷落",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/48/06/61/4806612f-e79a-64c0-a88f-eafed7958302/AppIcon-1x_U007emarketing-0-7-85-220-0.png/200x200bb.jpg",
       "tags_cn": "近期下载飙升 / 休闲 / 换装 / 恋爱 / 女性向",
@@ -996,10 +1019,10 @@
       "ios_rating": "4.2",
       "ios_reviews": "546",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%BF%83%E8%B7%B3%E9%99%B7%E8%90%BD",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "39",
+      "stt": "40",
       "name": "东煌纪",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f7/6e/c7/f76ec798-511a-95f0-d32a-59c4bdd4f391/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/200x200bb.jpg",
       "tags_cn": "抓宠 / 回合 / 卡牌 / 养成 / 模拟经营 / 冒险 / 策略 / 模拟",
@@ -1023,10 +1046,10 @@
       "ios_rating": "4.8",
       "ios_reviews": "1229",
       "taptap_url": "https://www.taptap.cn/search?q=%E4%B8%9C%E7%85%8C%E7%BA%AA",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "40",
+      "stt": "41",
       "name": "菜鸡梦想家",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b4/8b/67/b48b672a-a456-df7f-52b9-42914c4c7d9f/AppIcon-0-0-1x_U007epad-0-0-0-1-0-0-85-220.png/200x200bb.jpg",
       "tags_cn": "编辑器 / 模拟 / 经营 / 剧情 / 沙盒 / 收集 / 休闲 / 模拟经营 / 手绘 / 竖屏 / 换装 / 模拟人生 / 装饰&装修",
@@ -1050,10 +1073,10 @@
       "ios_rating": "4.7",
       "ios_reviews": "552297",
       "taptap_url": "https://www.taptap.cn/search?q=%E8%8F%9C%E9%B8%A1%E6%A2%A6%E6%83%B3%E5%AE%B6",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "41",
+      "stt": "42",
       "name": "从零开始的钓鱼人生Lift",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20250709/09073244831",
       "tags_cn": "钓鱼 / Roguelite / 异世界 / 休闲 / 单机",
@@ -1076,10 +1099,10 @@
       "ios_rating": "",
       "ios_reviews": "",
       "taptap_url": "https://www.taptap.cn/search?q=%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E9%92%93%E9%B1%BC%E4%BA%BA%E7%94%9FLift",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "42",
+      "stt": "43",
       "name": "嘎嘎射击",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/dc/fc/3e/dcfc3e43-39e2-4b7b-3a16-0ed60b14ecf0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
       "tags_cn": "射击 / 动作 / 竞技 / 枪战",
@@ -1101,10 +1124,10 @@
       "ios_rating": "4.0",
       "ios_reviews": "800586",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%98%8E%E5%98%8E%E5%B0%84%E5%87%BB",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "43",
+      "stt": "44",
       "name": "造梦西游之黎尤浩劫篇",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bd/c3/4e/bdc34e05-3b36-a275-bd78-5d17e4ef5918/AppIcon-1x_U007emarketing-0-11-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "动作 / 角色扮演 / 西游 / 闯关 / 格斗 / 策略 / 冒险 / 养成 / 横版",
@@ -1128,10 +1151,10 @@
       "ios_rating": "0.0",
       "ios_reviews": "0",
       "taptap_url": "https://www.taptap.cn/search?q=%E9%80%A0%E6%A2%A6%E8%A5%BF%E6%B8%B8%E4%B9%8B%E9%BB%8E%E5%B0%A4%E6%B5%A9%E5%8A%AB%E7%AF%87",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "44",
+      "stt": "45",
       "name": "神将世界",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ac/84/4f/ac844f69-4910-b042-9a23-8d4b0010e9fa/AppIcon-0-0-1x_U007emarketing-0-8-0-0-85-220.png/200x200bb.jpg",
       "tags_cn": "格斗 / 中国风 / 怀旧向 / 三国 / 端游改编",
@@ -1154,10 +1177,36 @@
       "ios_rating": "3.1",
       "ios_reviews": "40440",
       "taptap_url": "https://www.taptap.cn/search?q=%E7%A5%9E%E5%B0%86%E4%B8%96%E7%95%8C",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "45",
+      "stt": "46",
+      "name": "月相计划",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1b/fa/f2/1bfaf239-17cc-6647-4eac-fcbe1818e670/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
+      "tags_cn": "多平台 / Roguelike / 策略 / 涂色 / 自走棋 / 多端互通",
+      "tags_vn": [
+        "Đa nền tảng",
+        "Roguelike",
+        "Chiến thuật",
+        "Tô màu",
+        "Auto Chess"
+      ],
+      "publisher": "月影工作室",
+      "developer": "月影工作室",
+      "testtype_cn": "公测",
+      "testtype_vn": "Open Beta",
+      "score_16p": "4.4",
+      "reviews_16p": "38",
+      "pub_time": "2025-09",
+      "ios_id": "6764259731",
+      "ios_url": "https://apps.apple.com/cn/app/id6764259731",
+      "ios_rating": "0",
+      "ios_reviews": "0",
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%9C%88%E7%9B%B8%E8%AE%A1%E5%88%92",
+      "fetched_at": "2026-06-09 12:19 UTC"
+    },
+    {
+      "stt": "47",
       "name": "灵魂潮汐2",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c7/73/60/c77360d9-1e60-7a5d-e5e1-4963023be00a/AppIcon-0-0-1x_U007emarketing-0-6-0-0-85-220.png/200x200bb.jpg",
       "tags_cn": "多平台 / 角色扮演 / 剧情 / 策略 / 回合 / 二次元",
@@ -1181,10 +1230,10 @@
       "ios_rating": "4.7",
       "ios_reviews": "1342",
       "taptap_url": "https://www.taptap.cn/search?q=%E7%81%B5%E9%AD%82%E6%BD%AE%E6%B1%902",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "46",
+      "stt": "48",
       "name": "哀鸿：城破十日记",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20250208/17345113062",
       "tags_cn": "多平台 / 多结局 / 冒险 / 视觉小说 / galgame / 剧情 / 文字 / 角色扮演 / 中国风 / PC游戏 / 独立游戏",
@@ -1208,10 +1257,10 @@
       "ios_rating": "",
       "ios_reviews": "",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%93%80%E9%B8%BF%EF%BC%9A%E5%9F%8E%E7%A0%B4%E5%8D%81%E6%97%A5%E8%AE%B0",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "47",
+      "stt": "49",
       "name": "妖错图",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2e/6d/c8/2e6dc8e7-5d1a-4106-58ef-e407bad7b837/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
       "tags_cn": "策略 / MMO / 回合 / 中国风 / 模拟经营 / 古风 / 山海经",
@@ -1235,10 +1284,10 @@
       "ios_rating": "4.5",
       "ios_reviews": "47",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%A6%96%E9%94%99%E5%9B%BE",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "48",
+      "stt": "50",
       "name": "斗破苍穹：斗帝之路",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/42/4a/0b/424a0bcb-c6e9-8750-462b-a672de7de985/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/200x200bb.jpg",
       "tags_cn": "角色扮演 / 放置 / MMO / 中国风 / 动漫改编",
@@ -1261,10 +1310,10 @@
       "ios_rating": "4.5",
       "ios_reviews": "1259",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%96%97%E7%A0%B4%E8%8B%8D%E7%A9%B9%EF%BC%9A%E6%96%97%E5%B8%9D%E4%B9%8B%E8%B7%AF",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "49",
+      "stt": "51",
       "name": "孤勇无双",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/67/f3/6f/67f36f65-4738-9d36-4ca0-173cc3d7ca02/AppIcon-1x_U007emarketing-0-6-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "Roguelike / 动作 / 格斗 / 角色扮演 / 街机 / 横版 / 美少女",
@@ -1288,10 +1337,10 @@
       "ios_rating": "4.5",
       "ios_reviews": "304",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%AD%A4%E5%8B%87%E6%97%A0%E5%8F%8C",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "50",
+      "stt": "52",
       "name": "百战天虫-正版移植手游",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/42/38/f9/4238f9d8-b5d8-c9db-9f6c-5f0196019455/AppIcon-1x_U007emarketing-0-11-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "编辑推荐 / 买断制 / 超爽打击 / 经典重现 / 策略 / 射击 / 手绘 / 动作 / 闯关 / 角色扮演 / 冒险 / 独立游戏 / 怀旧向 / Steam移植",
@@ -1315,10 +1364,10 @@
       "ios_rating": "4.8",
       "ios_reviews": "115629",
       "taptap_url": "https://www.taptap.cn/search?q=%E7%99%BE%E6%88%98%E5%A4%A9%E8%99%AB-%E6%AD%A3%E7%89%88%E7%A7%BB%E6%A4%8D%E6%89%8B%E6%B8%B8",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "51",
+      "stt": "53",
       "name": "旅人日记",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/8c/72/d5/8c72d538-0963-5a3e-dd33-b1b0a3e33c4a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
       "tags_cn": "MMO / 养成 / 模拟经营 / 冒险 / 角色扮演 / 二次元 / 经营 / 模拟",
@@ -1342,10 +1391,10 @@
       "ios_rating": "0.0",
       "ios_reviews": "0",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%97%85%E4%BA%BA%E6%97%A5%E8%AE%B0",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "52",
+      "stt": "54",
       "name": "Monster Storm",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/14/27/96/1427965d-e730-35ab-657d-7036cffacebc/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "休闲 / 角色扮演",
@@ -1365,10 +1414,10 @@
       "ios_rating": "4.6",
       "ios_reviews": "28",
       "taptap_url": "https://www.taptap.cn/search?q=Monster%20Storm",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "53",
+      "stt": "55",
       "name": "星绘友晴天-宇宙生活模拟新游",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b9/a2/38/b9a23866-0bc7-a9c9-6295-93e3bf9a7d8d/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/200x200bb.jpg",
       "tags_cn": "多平台 / 模拟经营 / 派对游戏 / 开放世界 / 休闲 / 社交 / 建造 / 钓鱼 / 模拟 / 多端互通 / 多人联机",
@@ -1392,10 +1441,10 @@
       "ios_rating": "4.6",
       "ios_reviews": "671",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%98%9F%E7%BB%98%E5%8F%8B%E6%99%B4%E5%A4%A9-%E5%AE%87%E5%AE%99%E7%94%9F%E6%B4%BB%E6%A8%A1%E6%8B%9F%E6%96%B0%E6%B8%B8",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "54",
+      "stt": "56",
       "name": "代号：深渊之歌",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260407/10391648747",
       "tags_cn": "角色扮演 / 卡牌 / 经营 / 二次元 / 养成 / 冒险 / 休闲 / 模拟经营 / 生存",
@@ -1419,10 +1468,10 @@
       "ios_rating": "",
       "ios_reviews": "",
       "taptap_url": "https://www.taptap.cn/search?q=%E4%BB%A3%E5%8F%B7%EF%BC%9A%E6%B7%B1%E6%B8%8A%E4%B9%8B%E6%AD%8C",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "55",
+      "stt": "57",
       "name": "我的末日小队",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/37/0f/48/370f483b-96be-0c32-70a7-ddf2878db348/AppIcon-1x_U007ephone-0-10-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "策略 / 休闲 / 末日 / 冒险 / 单机",
@@ -1445,10 +1494,10 @@
       "ios_rating": "4.6",
       "ios_reviews": "2505",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%88%91%E7%9A%84%E6%9C%AB%E6%97%A5%E5%B0%8F%E9%98%9F",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "56",
+      "stt": "58",
       "name": "借眼",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/24/2b/6f/242b6f44-5e7c-5fef-0ff5-2ab9c9d6c895/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "解谜 / 剧情 / 密室逃脱 / 悬疑 / 恐怖惊悚 / 独立游戏",
@@ -1472,10 +1521,10 @@
       "ios_rating": "4.6",
       "ios_reviews": "953",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%80%9F%E7%9C%BC",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "57",
+      "stt": "59",
       "name": "小鸡守卫",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/28/52/a8/2852a848-5083-8e19-d36d-326067e4ea00/AppIcon-0-0-1x_U007epad-0-85-220.png/200x200bb.jpg",
       "tags_cn": "塔防 / 策略 / Roguelike / 合成 / 卡通",
@@ -1498,10 +1547,10 @@
       "ios_rating": "4.4",
       "ios_reviews": "219",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%B0%8F%E9%B8%A1%E5%AE%88%E5%8D%AB",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "58",
+      "stt": "60",
       "name": "无尽花界",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/52/17/a7/5217a742-6f5b-539e-acc2-92e4400483b8/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
       "tags_cn": "美少女 / 卡牌 / 策略 / 唯美 / 魔幻",
@@ -1524,10 +1573,10 @@
       "ios_rating": "4.4",
       "ios_reviews": "244",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%97%A0%E5%B0%BD%E8%8A%B1%E7%95%8C",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "59",
+      "stt": "61",
       "name": "代号：拳皇VS",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20251009/10041212375",
       "tags_cn": "动作 / 格斗 / 竞技 / 街机",
@@ -1549,10 +1598,10 @@
       "ios_rating": "",
       "ios_reviews": "",
       "taptap_url": "https://www.taptap.cn/search?q=%E4%BB%A3%E5%8F%B7%EF%BC%9A%E6%8B%B3%E7%9A%87VS",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "60",
+      "stt": "62",
       "name": "宗师之上",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/aa/95/26/aa952623-e7eb-1aa1-3243-8344aa5287fa/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "角色扮演 / 放置 / 修仙 / 养成 / 冒险 / 休闲 / 合成",
@@ -1576,10 +1625,10 @@
       "ios_rating": "4.8",
       "ios_reviews": "18479",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%AE%97%E5%B8%88%E4%B9%8B%E4%B8%8A",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "61",
+      "stt": "63",
       "name": "萌神契约",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d5/a4/86/d5a4861e-1539-96da-aea9-ba7fc1568599/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "二次元 / 足球 / 卡牌 / 放置 / 日系",
@@ -1602,10 +1651,10 @@
       "ios_rating": "4.6",
       "ios_reviews": "1092",
       "taptap_url": "https://www.taptap.cn/search?q=%E8%90%8C%E7%A5%9E%E5%A5%91%E7%BA%A6",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "62",
+      "stt": "64",
       "name": "英雄之时",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/20/b5/81/20b581dd-c8de-757b-13db-2a9e984acb55/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
       "tags_cn": "买断制 / 多平台 / 策略 / 回合 / Steam移植 / 像素 / 独立游戏",
@@ -1628,10 +1677,10 @@
       "ios_rating": "4.5",
       "ios_reviews": "29",
       "taptap_url": "https://www.taptap.cn/search?q=%E8%8B%B1%E9%9B%84%E4%B9%8B%E6%97%B6",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "63",
+      "stt": "65",
       "name": "古今2-风起蓬莱",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/49/6a/66/496a6683-fb32-bca8-6045-03709cbab547/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "DBG / 武侠 / Roguelike / 江湖 / 中国风 / 卡牌",
@@ -1655,10 +1704,10 @@
       "ios_rating": "3.7",
       "ios_reviews": "18",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%8F%A4%E4%BB%8A2-%E9%A3%8E%E8%B5%B7%E8%93%AC%E8%8E%B1",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "64",
+      "stt": "66",
       "name": "对不起，我是警察",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cd/28/d8/cd28d85b-9ad7-507f-81d6-5470041144b3/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "多平台 / 互动影像 / 角色扮演 / 第一人称 / 剧情 / 冒险 / Steam移植",
@@ -1682,10 +1731,10 @@
       "ios_rating": "3.5",
       "ios_reviews": "35",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%AF%B9%E4%B8%8D%E8%B5%B7%EF%BC%8C%E6%88%91%E6%98%AF%E8%AD%A6%E5%AF%9F",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "65",
+      "stt": "67",
       "name": "我不是魔王",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/0f/ad/1e/0fad1ea0-1b04-872f-81c0-1c9d6351bb27/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
       "tags_cn": "多平台 / Roguelike / 吸血鬼幸存者like / Steam移植 / 单机",
@@ -1707,10 +1756,10 @@
       "ios_rating": "4.8",
       "ios_reviews": "10477",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%88%91%E4%B8%8D%E6%98%AF%E9%AD%94%E7%8E%8B",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "66",
+      "stt": "68",
       "name": "迷失之径",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/50/e5/94/50e5946f-e42f-fa90-f577-8d957687098e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
       "tags_cn": "买断制 / 安心购 / 策略拉满 / 多平台 / Roguelike / 策略 / Steam移植 / 卡牌 / 独立游戏 / 休闲",
@@ -1734,10 +1783,10 @@
       "ios_rating": "4.2",
       "ios_reviews": "8",
       "taptap_url": "https://www.taptap.cn/search?q=%E8%BF%B7%E5%A4%B1%E4%B9%8B%E5%BE%84",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "67",
+      "stt": "69",
       "name": "真・三国无双 天下",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ef/f8/05/eff80570-b5a1-a9d1-f72f-53ce3df18966/AppIcon-1x_U007epad-0-1-85-220-0.png/200x200bb.jpg",
       "tags_cn": "动作 / 割草 / 角色扮演 / 三国 / 高画质",
@@ -1759,10 +1808,10 @@
       "ios_rating": "0.0",
       "ios_reviews": "0",
       "taptap_url": "https://www.taptap.cn/search?q=%E7%9C%9F%E3%83%BB%E4%B8%89%E5%9B%BD%E6%97%A0%E5%8F%8C%20%E5%A4%A9%E4%B8%8B",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "68",
+      "stt": "70",
       "name": "曙光纪元",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2a/bf/9d/2abf9d0c-14e4-08a1-d8e6-1096a2ba1dd7/AppIcon-0-0-1x_U007epad-0-1-85-220.png/200x200bb.jpg",
       "tags_cn": "搜打撤 / 末日 / 割草 / 废土",
@@ -1784,10 +1833,10 @@
       "ios_rating": "4.7",
       "ios_reviews": "3085",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%9B%99%E5%85%89%E7%BA%AA%E5%85%83",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "69",
+      "stt": "71",
       "name": "蛮荒领主",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260429/16305585287",
       "tags_cn": "历史 / 战争 / SLG / 角色扮演 / 卡牌",
@@ -1810,10 +1859,10 @@
       "ios_rating": "",
       "ios_reviews": "",
       "taptap_url": "https://www.taptap.cn/search?q=%E8%9B%AE%E8%8D%92%E9%A2%86%E4%B8%BB",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "70",
+      "stt": "72",
       "name": "我嘎嘎乱杀",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e0/ae/6b/e0ae6b9f-593b-707c-88b3-2d69a4c3738e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
       "tags_cn": "放置 / 刷宝 / 割草 / 独立游戏 / 休闲",
@@ -1836,10 +1885,10 @@
       "ios_rating": "4.9",
       "ios_reviews": "282",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%88%91%E5%98%8E%E5%98%8E%E4%B9%B1%E6%9D%80",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "71",
+      "stt": "73",
       "name": "功夫奇遇记",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2b/d5/15/2bd51516-7991-ff5e-facc-ce463d3fdb45/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/200x200bb.jpg",
       "tags_cn": "单机 / 动作 / 格斗 / 闯关 / 休闲",
@@ -1862,10 +1911,10 @@
       "ios_rating": "4.6",
       "ios_reviews": "12220",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%8A%9F%E5%A4%AB%E5%A5%87%E9%81%87%E8%AE%B0",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "72",
+      "stt": "74",
       "name": "希望城",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/54/43/58/54435891-a262-7838-68cd-1ba085cf91e1/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
       "tags_cn": "建造 / 冒险 / 探索 / 种田 / 抓宠 / 模拟 / 休闲",
@@ -1889,10 +1938,10 @@
       "ios_rating": "4.3",
       "ios_reviews": "193",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%B8%8C%E6%9C%9B%E5%9F%8E",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "73",
+      "stt": "75",
       "name": "大道仙途",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/41/d8/9d/41d89d9b-498d-9d23-e215-a625c09aa746/AppIcon-0-0-1x_U007epad-0-1-85-220.png/200x200bb.jpg",
       "tags_cn": "角色扮演 / 修仙 / 休闲 / 养成",
@@ -1914,10 +1963,10 @@
       "ios_rating": "4.4",
       "ios_reviews": "208",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%A4%A7%E9%81%93%E4%BB%99%E9%80%94",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "74",
+      "stt": "76",
       "name": "蛙蛙豹豹的树屋",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/50/f5/a5/50f5a5c0-94f7-4f43-5436-791dae9c12ef/AppIcon-0-0-1x_U007emarketing-0-11-0-0-85-220.png/200x200bb.jpg",
       "tags_cn": "休闲 / 萌宠 / 经营 / 养成 / 放置 / 温馨治愈 / 独立游戏",
@@ -1941,10 +1990,10 @@
       "ios_rating": "4.9",
       "ios_reviews": "298074",
       "taptap_url": "https://www.taptap.cn/search?q=%E8%9B%99%E8%9B%99%E8%B1%B9%E8%B1%B9%E7%9A%84%E6%A0%91%E5%B1%8B",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "75",
+      "stt": "77",
       "name": "龙渊王座",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260508/19285073801",
       "tags_cn": "角色扮演 / 暗黑 / 开放世界 / 高画质",
@@ -1965,10 +2014,10 @@
       "ios_rating": "",
       "ios_reviews": "",
       "taptap_url": "https://www.taptap.cn/search?q=%E9%BE%99%E6%B8%8A%E7%8E%8B%E5%BA%A7",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "76",
+      "stt": "78",
       "name": "耀世格斗",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ee/29/70/ee29701f-fbf2-53ad-f7cf-4eed1f1e1891/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
       "tags_cn": "动作 / 卡牌 / 格斗 / 二次元 / 回合 / 横版 / 3D",
@@ -1992,10 +2041,10 @@
       "ios_rating": "4.3",
       "ios_reviews": "124",
       "taptap_url": "https://www.taptap.cn/search?q=%E8%80%80%E4%B8%96%E6%A0%BC%E6%96%97",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "77",
+      "stt": "79",
       "name": "天空岛传说",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9d/9b/01/9d9b012b-00ff-e41c-2186-335355468366/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
       "tags_cn": "模拟经营 / 收集 / 养成 / 休闲 / 温馨治愈 / 钓鱼 / 经营 / 美食 / 萌宠 / 独立游戏",
@@ -2019,10 +2068,10 @@
       "ios_rating": "3.5",
       "ios_reviews": "879",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%A4%A9%E7%A9%BA%E5%B2%9B%E4%BC%A0%E8%AF%B4",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "78",
+      "stt": "80",
       "name": "梦幻新诛仙：轻享",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/13/85/f5/1385f5ec-8486-a307-b63c-a4e00d45cbb6/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
       "tags_cn": "多平台 / 角色扮演 / MMO / 回合 / 经营 / 中国风",
@@ -2046,10 +2095,10 @@
       "ios_rating": "4.7",
       "ios_reviews": "147481",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%A2%A6%E5%B9%BB%E6%96%B0%E8%AF%9B%E4%BB%99%EF%BC%9A%E8%BD%BB%E4%BA%AB",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "79",
+      "stt": "81",
       "name": "织梦森林",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/02/7d/2d/027d2dbf-4b72-a0c3-a007-17c370d191cb/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/200x200bb.jpg",
       "tags_cn": "换装 / 模拟经营 / 养成 / 女性向",
@@ -2071,10 +2120,10 @@
       "ios_rating": "4.2",
       "ios_reviews": "226",
       "taptap_url": "https://www.taptap.cn/search?q=%E7%BB%87%E6%A2%A6%E6%A3%AE%E6%9E%97",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "80",
+      "stt": "82",
       "name": "暴雪之界",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5f/e6/00/5fe60061-e4a1-dda4-7140-5c236be1a381/AppIcon-0-0-1x_U007emarketing-0-8-0-0-85-220.png/200x200bb.jpg",
       "tags_cn": "剧情 / 角色扮演 / 策略",
@@ -2095,10 +2144,10 @@
       "ios_rating": "4.9",
       "ios_reviews": "13822",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%9A%B4%E9%9B%AA%E4%B9%8B%E7%95%8C",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "81",
+      "stt": "83",
       "name": "枫叶骑士团",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7c/41/c1/7c41c1b7-b9d7-7673-d505-e8cd254d533a/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/200x200bb.jpg",
       "tags_cn": "动作 / 多人联机 / 即时战斗 / 冒险 / 日系",
@@ -2121,37 +2170,10 @@
       "ios_rating": "0.0",
       "ios_reviews": "0",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%9E%AB%E5%8F%B6%E9%AA%91%E5%A3%AB%E5%9B%A2",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "82",
-      "name": "凡人灵境游",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260408/13513175887",
-      "tags_cn": "策略 / 卡牌 / 修仙 / 养成 / 武侠 / 角色扮演 / 仙侠 / 古风",
-      "tags_vn": [
-        "Chiến thuật",
-        "Thẻ bài",
-        "Tu tiên",
-        "Nuôi dưỡng",
-        "Võ hiệp",
-        "Nhập vai RPG"
-      ],
-      "publisher": "",
-      "developer": "方舟未来",
-      "testtype_cn": "公测",
-      "testtype_vn": "Open Beta",
-      "score_16p": "3.2",
-      "reviews_16p": "16",
-      "pub_time": "02-06",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search?q=%E5%87%A1%E4%BA%BA%E7%81%B5%E5%A2%83%E6%B8%B8",
-      "fetched_at": "2026-06-08 14:53 UTC"
-    },
-    {
-      "stt": "83",
+      "stt": "84",
       "name": "风暴幸存者",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/d9/47/96/d94796d3-d174-4e52-b43c-0e5193652cac/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/200x200bb.jpg",
       "tags_cn": "动作 / Roguelike / 割草 / 解压 / 休闲",
@@ -2174,10 +2196,10 @@
       "ios_rating": "1.7",
       "ios_reviews": "6",
       "taptap_url": "https://www.taptap.cn/search?q=%E9%A3%8E%E6%9A%B4%E5%B9%B8%E5%AD%98%E8%80%85",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "84",
+      "stt": "85",
       "name": "Hello Kitty My Dream Store",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/09/d4/9f/09d49fcb-db12-7b8c-e309-d290ef6855c0/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "合成 / 模拟经营 / 休闲 / 养成 / 收集",
@@ -2200,10 +2222,10 @@
       "ios_rating": "4.8",
       "ios_reviews": "63190",
       "taptap_url": "https://www.taptap.cn/search?q=Hello%20Kitty%20My%20Dream%20Store",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "85",
+      "stt": "86",
       "name": "糟糕！我被女忍包围了！2",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260430/13445315909",
       "tags_cn": "多结局 / 第一人称 / 二次元 / 恋爱 / 角色扮演 / 电影质感",
@@ -2227,10 +2249,10 @@
       "ios_rating": "",
       "ios_reviews": "",
       "taptap_url": "https://www.taptap.cn/search?q=%E7%B3%9F%E7%B3%95%EF%BC%81%E6%88%91%E8%A2%AB%E5%A5%B3%E5%BF%8D%E5%8C%85%E5%9B%B4%E4%BA%86%EF%BC%812",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "86",
+      "stt": "87",
       "name": "打工吧！小精灵",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/59/0d/40/590d40b6-89c7-1fc9-d2d4-80835433815b/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.jpeg/200x200bb.jpg",
       "tags_cn": "抓宠 / 模拟经营 / 养成 / 冒险",
@@ -2252,10 +2274,10 @@
       "ios_rating": "5.0",
       "ios_reviews": "1",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%89%93%E5%B7%A5%E5%90%A7%EF%BC%81%E5%B0%8F%E7%B2%BE%E7%81%B5",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "87",
+      "stt": "88",
       "name": "星光小队",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx~sykb/20241027/15421570235",
       "tags_cn": "Roguelite / 独立游戏 / 动作 / 射击",
@@ -2277,10 +2299,10 @@
       "ios_rating": "",
       "ios_reviews": "",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%98%9F%E5%85%89%E5%B0%8F%E9%98%9F",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "88",
+      "stt": "89",
       "name": "猫咪和汤：魔法与美食",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/88/fa/bf/88fabf37-7a90-b2a7-45e9-e6aa2679d8e3/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
       "tags_cn": "萌化少女心 / 休闲 / 模拟人生 / 装饰&装修 / 经营 / 模拟 / 独立游戏 / 放置 / 模拟经营 / 收集 / 养成 / 温馨治愈",
@@ -2304,10 +2326,10 @@
       "ios_rating": "0.0",
       "ios_reviews": "0",
       "taptap_url": "https://www.taptap.cn/search?q=%E7%8C%AB%E5%92%AA%E5%92%8C%E6%B1%A4%EF%BC%9A%E9%AD%94%E6%B3%95%E4%B8%8E%E7%BE%8E%E9%A3%9F",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "89",
+      "stt": "90",
       "name": "勇者幻兽录",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/35/79/fa/3579fa43-818d-6be8-6dd6-c47d453d7dcc/AppIcon-1x_U007epad-0-1-85-220-0.png/200x200bb.jpg",
       "tags_cn": "角色扮演 / MMO / 日系 / 冒险 / 社交",
@@ -2330,10 +2352,10 @@
       "ios_rating": "4.7",
       "ios_reviews": "70678",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%8B%87%E8%80%85%E5%B9%BB%E5%85%BD%E5%BD%95",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "90",
+      "stt": "91",
       "name": "星辰变：归来",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9c/d8/5d/9cd85d0a-2a94-4d15-6bbb-381c91bcfa4c/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/200x200bb.jpg",
       "tags_cn": "角色扮演 / MMO / 冒险 / 探索 / 养成",
@@ -2356,33 +2378,7 @@
       "ios_rating": "4.8",
       "ios_reviews": "237",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%98%9F%E8%BE%B0%E5%8F%98%EF%BC%9A%E5%BD%92%E6%9D%A5",
-      "fetched_at": "2026-06-08 14:53 UTC"
-    },
-    {
-      "stt": "91",
-      "name": "闪之轨迹：北方战役",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20251203/14394173155",
-      "tags_cn": "角色扮演 / 剧情 / 二次元 / 动漫改编 / 日系",
-      "tags_vn": [
-        "Nhập vai RPG",
-        "剧情",
-        "Anime/2D",
-        "Chuyển thể anime",
-        "日系"
-      ],
-      "publisher": "杭州凤侠网络科技有限公司",
-      "developer": "杭州凤侠网络科技有限公司",
-      "testtype_cn": "公测",
-      "testtype_vn": "Open Beta",
-      "score_16p": "3.7",
-      "reviews_16p": "12",
-      "pub_time": "2025-11",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "ios_reviews": "",
-      "taptap_url": "https://www.taptap.cn/search?q=%E9%97%AA%E4%B9%8B%E8%BD%A8%E8%BF%B9%EF%BC%9A%E5%8C%97%E6%96%B9%E6%88%98%E5%BD%B9",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "stt": "92",
@@ -2395,7 +2391,7 @@
         "Text/Story",
         "Single-player"
       ],
-      "publisher": "涛 蒋",
+      "publisher": "小王个人工作室",
       "developer": "小王个人工作室",
       "testtype_cn": "试玩",
       "testtype_vn": "试玩",
@@ -2407,10 +2403,35 @@
       "ios_rating": "4.8",
       "ios_reviews": "15658",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%85%A8%E6%B0%91%E6%B8%B8%E6%88%8F%E5%A4%A7%E4%BA%A82",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "stt": "93",
+      "name": "江山北望",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/23/6b/fe/236bfee3-2677-97e1-1bf1-7f895a513893/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/200x200bb.jpg",
+      "tags_cn": "策略 / 角色扮演 / 模拟 / 历史",
+      "tags_vn": [
+        "Chiến thuật",
+        "Nhập vai RPG",
+        "Mô phỏng",
+        "Lịch sử"
+      ],
+      "publisher": "艳 王",
+      "developer": "木焱工作室",
+      "testtype_cn": "公测",
+      "testtype_vn": "Open Beta",
+      "score_16p": "4.9",
+      "reviews_16p": "8",
+      "pub_time": "3天前",
+      "ios_id": "6450410133",
+      "ios_url": "https://apps.apple.com/cn/app/id6450410133",
+      "ios_rating": "4.6",
+      "ios_reviews": "314",
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%B1%9F%E5%B1%B1%E5%8C%97%E6%9C%9B",
+      "fetched_at": "2026-06-09 12:19 UTC"
+    },
+    {
+      "stt": "94",
       "name": "深海寿司新版",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260509/1653162587",
       "tags_cn": "休闲 / 合成 / 经营 / 温馨治愈 / 装饰&装修",
@@ -2433,10 +2454,10 @@
       "ios_rating": "",
       "ios_reviews": "",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%B7%B1%E6%B5%B7%E5%AF%BF%E5%8F%B8%E6%96%B0%E7%89%88",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "94",
+      "stt": "95",
       "name": "最终的梦幻岛",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/13/e7/5e/13e75e04-d14c-d55d-febf-bd6d3b0e04e7/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/200x200bb.jpg",
       "tags_cn": "模拟经营 / 角色扮演 / 种田 / 建造 / 温馨治愈 / 策略 / 养成 / 独立游戏",
@@ -2457,13 +2478,13 @@
       "pub_time": "2026-06-01",
       "ios_id": "6755289079",
       "ios_url": "https://apps.apple.com/cn/app/id6755289079",
-      "ios_rating": "0",
+      "ios_rating": "0.0",
       "ios_reviews": "0",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%9C%80%E7%BB%88%E7%9A%84%E6%A2%A6%E5%B9%BB%E5%B2%9B",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "95",
+      "stt": "96",
       "name": "MinuteTreasure",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/70/9b/72/709b72ec-393e-5377-4ec8-b8663e166e41/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
       "tags_cn": "模拟 / 角色扮演 / 娱乐",
@@ -2481,13 +2502,13 @@
       "pub_time": "04-02",
       "ios_id": "6759699741",
       "ios_url": "https://apps.apple.com/cn/app/id6759699741",
-      "ios_rating": "5",
+      "ios_rating": "5.0",
       "ios_reviews": "7",
       "taptap_url": "https://www.taptap.cn/search?q=MinuteTreasure",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "96",
+      "stt": "97",
       "name": "Fun Taxi Driving Simulator 3D",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3d/8e/cb/3d8ecbdb-cb93-7861-b225-aab96126ac6c/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "模拟 / 角色扮演",
@@ -2504,13 +2525,13 @@
       "pub_time": "04-02",
       "ios_id": "6757705021",
       "ios_url": "https://apps.apple.com/cn/app/id6757705021",
-      "ios_rating": "4",
+      "ios_rating": "4.0",
       "ios_reviews": "9",
       "taptap_url": "https://www.taptap.cn/search?q=Fun%20Taxi%20Driving%20Simulator%203D",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "97",
+      "stt": "98",
       "name": "和平武馆",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b2/47/2f/b2472f1d-a23c-4fb7-c189-3de0c37bf991/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "经营 / 模拟经营 / 武侠",
@@ -2518,7 +2539,7 @@
         "Kinh doanh",
         "Võ hiệp"
       ],
-      "publisher": "Shanghai DeerBeat Network Technology Co., Ltd.",
+      "publisher": "上海虫咖信息科技有限公司",
       "developer": "上海虫咖信息科技有限公司",
       "testtype_cn": "公测",
       "testtype_vn": "Open Beta",
@@ -2530,10 +2551,10 @@
       "ios_rating": "4.6",
       "ios_reviews": "50",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%92%8C%E5%B9%B3%E6%AD%A6%E9%A6%86",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "98",
+      "stt": "99",
       "name": "篮球少女：飞跃巅峰",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx~sykb/20250409/21143367626",
       "tags_cn": "策略 / 篮球 / 卡牌 / 模拟 / 养成 / 二次元 / 美少女 / 日系 / 体育",
@@ -2557,10 +2578,10 @@
       "ios_rating": "",
       "ios_reviews": "",
       "taptap_url": "https://www.taptap.cn/search?q=%E7%AF%AE%E7%90%83%E5%B0%91%E5%A5%B3%EF%BC%9A%E9%A3%9E%E8%B7%83%E5%B7%85%E5%B3%B0",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "stt": "99",
+      "stt": "100",
       "name": "逃出金光洞",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/12/ed/7d/12ed7dc4-4cb1-a9ed-0df7-8419a476b06e/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/200x200bb.jpg",
       "tags_cn": "策略 / Roguelike / 搜打撤 / 卡牌 / 修仙 / 单机",
@@ -2572,7 +2593,7 @@
         "Tu tiên",
         "Single-player"
       ],
-      "publisher": "Beijing Damai Cultural Media Development Co., Ltd.",
+      "publisher": "飞鸟工作室",
       "developer": "飞鸟工作室",
       "testtype_cn": "公测",
       "testtype_vn": "Open Beta",
@@ -2584,34 +2605,7 @@
       "ios_rating": "3.2",
       "ios_reviews": "114857",
       "taptap_url": "https://www.taptap.cn/search?q=%E9%80%83%E5%87%BA%E9%87%91%E5%85%89%E6%B4%9E",
-      "fetched_at": "2026-06-08 14:53 UTC"
-    },
-    {
-      "stt": "100",
-      "name": "宝石战争",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8c/31/ec/8c31ec91-f476-da99-209b-acecff6d6a4a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
-      "tags_cn": "多平台 / 卡牌 / 策略 / 收集 / Steam移植 / 消除 / 休闲 / 独立游戏",
-      "tags_vn": [
-        "Đa nền tảng",
-        "Thẻ bài",
-        "Chiến thuật",
-        "Thu thập",
-        "消除",
-        "Casual"
-      ],
-      "publisher": "505 Games",
-      "developer": "小五工作室",
-      "testtype_cn": "公测",
-      "testtype_vn": "Open Beta",
-      "score_16p": "4.6",
-      "reviews_16p": "7",
-      "pub_time": "2025-08",
-      "ios_id": "6751681478",
-      "ios_url": "https://apps.apple.com/cn/app/id6751681478",
-      "ios_rating": "0",
-      "ios_reviews": "0",
-      "taptap_url": "https://www.taptap.cn/search?q=%E5%AE%9D%E7%9F%B3%E6%88%98%E4%BA%89",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     }
   ],
   "rank30": [
@@ -2636,7 +2630,7 @@
       "ios_rating": "4.6",
       "ios_reviews": "4155",
       "taptap_url": "https://www.taptap.cn/search?q=%E8%82%A5%E9%B9%85%E7%BE%8E%E9%A3%9F%E8%A1%97",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "2",
@@ -2663,7 +2657,7 @@
       "ios_rating": "4.9",
       "ios_reviews": "3635",
       "taptap_url": "https://www.taptap.cn/app/194039",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "3",
@@ -2690,7 +2684,7 @@
       "ios_rating": "4.7",
       "ios_reviews": "2043",
       "taptap_url": "https://www.taptap.cn/search?q=%E9%A9%AF%E9%BE%99%E4%B9%8B%E6%97%85",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "4",
@@ -2717,7 +2711,7 @@
       "ios_rating": "4.1",
       "ios_reviews": "347820",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%B4%A9%E5%9D%8F%EF%BC%9A%E5%9B%A0%E7%BC%98%E7%B2%BE%E7%81%B5-%E5%B4%A9%E5%9D%8FIP%E6%96%B0%E4%BD%9C",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "5",
@@ -2740,7 +2734,7 @@
       "ios_rating": "4.5",
       "ios_reviews": "1259",
       "taptap_url": "https://www.taptap.cn/search?q=%E9%81%AE%E5%A4%A9%EF%BC%9A%E5%B8%9D%E8%B7%AF%E4%BA%89%E9%94%8B",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "6",
@@ -2766,7 +2760,7 @@
       "ios_rating": "4.7",
       "ios_reviews": "615",
       "taptap_url": "https://www.taptap.cn/search?q=%E9%A3%8E%E4%B9%8B%E5%9B%BD%E4%B8%96%E7%95%8C",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "7",
@@ -2793,7 +2787,7 @@
       "ios_rating": "4.5",
       "ios_reviews": "1150",
       "taptap_url": "https://www.taptap.cn/search?q=%E4%B8%83%E7%95%8C%E6%A2%A6%E8%B0%AD",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "8",
@@ -2817,7 +2811,7 @@
       "ios_rating": "4.8",
       "ios_reviews": "432",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%96%B0%E6%98%9F%E8%B6%B3%E7%90%83%E4%B8%96%E7%95%8C",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "9",
@@ -2844,7 +2838,7 @@
       "ios_rating": "3.4",
       "ios_reviews": "2190",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%8D%A1%E5%8E%84%E6%80%9D%E6%A2%A6%E5%A2%83",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "10",
@@ -2871,7 +2865,7 @@
       "ios_rating": "0.0",
       "ios_reviews": "0",
       "taptap_url": "https://www.taptap.cn/search?q=%E9%81%97%E5%BF%98%E4%B9%8B%E6%B5%B7",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "11",
@@ -2898,7 +2892,7 @@
       "ios_rating": "4.8",
       "ios_reviews": "102048",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%96%97%E7%BD%97%E5%A4%A7%E9%99%86%EF%BC%9A%E8%AF%9B%E9%82%AA%E4%BC%A0%E8%AF%B4",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "12",
@@ -2925,7 +2919,7 @@
       "ios_rating": "",
       "ios_reviews": "",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%A4%9C%E5%B9%95%E4%B9%8B%E4%B8%8B-%E5%85%A8%E5%91%98%E6%81%B6%E4%BA%BA%E7%BE%A4%E5%83%8F",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "13",
@@ -2952,7 +2946,7 @@
       "ios_rating": "4.8",
       "ios_reviews": "2562",
       "taptap_url": "https://www.taptap.cn/search?q=%E9%95%AD%E6%98%8E%E9%97%AA%E5%87%BB",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "14",
@@ -2979,10 +2973,37 @@
       "ios_rating": "4.6",
       "ios_reviews": "200",
       "taptap_url": "https://www.taptap.cn/search?q=%E8%BD%A8%E9%81%93%E8%BF%9E%E7%BB%93-%E5%85%88%E8%AF%95%E7%8E%A9%E5%90%8E%E8%A7%A3%E9%94%81",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "15",
+      "name": "盛世天下：女帝篇",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6f/f8/57/6ff8571c-38c5-51a1-503e-85b4a30fe21e/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/200x200bb.jpg",
+      "tags_cn": "编辑推荐 / 买断制 / 剧情党狂喜 / 沉浸式体验 / 互动影像 / 剧情 / Steam移植 / 角色扮演 / 中国风 / 女性向 / AVG / 应用 / 叙事 / 历史 / 电影质感",
+      "tags_vn": [
+        "剧情党狂喜",
+        "沉浸式体验",
+        "互动影像",
+        "剧情",
+        "Nhập vai RPG",
+        "Phong cách TQ"
+      ],
+      "publisher": "Shenzhen Tencent Tianyou Technology Ltd",
+      "developer": "腾讯",
+      "testtype_cn": "公测",
+      "testtype_vn": "Open Beta",
+      "score_16p": "4.7",
+      "reviews_16p": "57",
+      "pub_time": "05-22",
+      "ios_id": "6743148949",
+      "ios_url": "https://apps.apple.com/cn/app/id6743148949",
+      "ios_rating": "4.8",
+      "ios_reviews": "32512",
+      "taptap_url": "https://www.taptap.cn/search?q=%E7%9B%9B%E4%B8%96%E5%A4%A9%E4%B8%8B%EF%BC%9A%E5%A5%B3%E5%B8%9D%E7%AF%87",
+      "fetched_at": "2026-06-09 12:19 UTC"
+    },
+    {
+      "rank": "16",
       "name": "永恒树之歌：创世-正版移植手游",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c4/b8/ca/c4b8cabd-aa0b-6373-a649-68cb110009d1/AppIcon-1x_U007epad-0-11-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "编辑推荐 / 买断制 / 多平台 / Steam移植 / 沙盒 / 建造 / 模拟经营 / 冒险 / 探索 / 休闲 / 种田 / 农场模拟 / 独立佳作",
@@ -3006,10 +3027,10 @@
       "ios_rating": "4.7",
       "ios_reviews": "1470",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%B0%B8%E6%81%92%E6%A0%91%E4%B9%8B%E6%AD%8C%EF%BC%9A%E5%88%9B%E4%B8%96-%E6%AD%A3%E7%89%88%E7%A7%BB%E6%A4%8D%E6%89%8B%E6%B8%B8",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "rank": "16",
+      "rank": "17",
       "name": "心跳陷落",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/48/06/61/4806612f-e79a-64c0-a88f-eafed7958302/AppIcon-1x_U007emarketing-0-7-85-220-0.png/200x200bb.jpg",
       "tags_cn": "近期下载飙升 / 休闲 / 换装 / 恋爱 / 女性向",
@@ -3031,10 +3052,10 @@
       "ios_rating": "4.2",
       "ios_reviews": "546",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%BF%83%E8%B7%B3%E9%99%B7%E8%90%BD",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "rank": "17",
+      "rank": "18",
       "name": "东煌纪",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f7/6e/c7/f76ec798-511a-95f0-d32a-59c4bdd4f391/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/200x200bb.jpg",
       "tags_cn": "抓宠 / 回合 / 卡牌 / 养成 / 模拟经营 / 冒险 / 策略 / 模拟",
@@ -3058,10 +3079,10 @@
       "ios_rating": "4.8",
       "ios_reviews": "1229",
       "taptap_url": "https://www.taptap.cn/search?q=%E4%B8%9C%E7%85%8C%E7%BA%AA",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "rank": "18",
+      "rank": "19",
       "name": "从零开始的钓鱼人生Lift",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20250709/09073244831",
       "tags_cn": "钓鱼 / Roguelite / 异世界 / 休闲 / 单机",
@@ -3084,10 +3105,36 @@
       "ios_rating": "",
       "ios_reviews": "",
       "taptap_url": "https://www.taptap.cn/search?q=%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E9%92%93%E9%B1%BC%E4%BA%BA%E7%94%9FLift",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "rank": "19",
+      "rank": "20",
+      "name": "月相计划",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1b/fa/f2/1bfaf239-17cc-6647-4eac-fcbe1818e670/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
+      "tags_cn": "多平台 / Roguelike / 策略 / 涂色 / 自走棋 / 多端互通",
+      "tags_vn": [
+        "Đa nền tảng",
+        "Roguelike",
+        "Chiến thuật",
+        "Tô màu",
+        "Auto Chess"
+      ],
+      "publisher": "月影工作室",
+      "developer": "月影工作室",
+      "testtype_cn": "公测",
+      "testtype_vn": "Open Beta",
+      "score_16p": "4.4",
+      "reviews_16p": "38",
+      "pub_time": "2025-09",
+      "ios_id": "6764259731",
+      "ios_url": "https://apps.apple.com/cn/app/id6764259731",
+      "ios_rating": "0",
+      "ios_reviews": "0",
+      "taptap_url": "https://www.taptap.cn/search?q=%E6%9C%88%E7%9B%B8%E8%AE%A1%E5%88%92",
+      "fetched_at": "2026-06-09 12:19 UTC"
+    },
+    {
+      "rank": "21",
       "name": "灵魂潮汐2",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c7/73/60/c77360d9-1e60-7a5d-e5e1-4963023be00a/AppIcon-0-0-1x_U007emarketing-0-6-0-0-85-220.png/200x200bb.jpg",
       "tags_cn": "多平台 / 角色扮演 / 剧情 / 策略 / 回合 / 二次元",
@@ -3111,10 +3158,10 @@
       "ios_rating": "4.7",
       "ios_reviews": "1342",
       "taptap_url": "https://www.taptap.cn/search?q=%E7%81%B5%E9%AD%82%E6%BD%AE%E6%B1%902",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "rank": "20",
+      "rank": "22",
       "name": "哀鸿：城破十日记",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20250208/17345113062",
       "tags_cn": "多平台 / 多结局 / 冒险 / 视觉小说 / galgame / 剧情 / 文字 / 角色扮演 / 中国风 / PC游戏 / 独立游戏",
@@ -3138,10 +3185,10 @@
       "ios_rating": "",
       "ios_reviews": "",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%93%80%E9%B8%BF%EF%BC%9A%E5%9F%8E%E7%A0%B4%E5%8D%81%E6%97%A5%E8%AE%B0",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "rank": "21",
+      "rank": "23",
       "name": "斗破苍穹：斗帝之路",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/42/4a/0b/424a0bcb-c6e9-8750-462b-a672de7de985/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/200x200bb.jpg",
       "tags_cn": "角色扮演 / 放置 / MMO / 中国风 / 动漫改编",
@@ -3164,10 +3211,10 @@
       "ios_rating": "4.5",
       "ios_reviews": "1259",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%96%97%E7%A0%B4%E8%8B%8D%E7%A9%B9%EF%BC%9A%E6%96%97%E5%B8%9D%E4%B9%8B%E8%B7%AF",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "rank": "22",
+      "rank": "24",
       "name": "旅人日记",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/8c/72/d5/8c72d538-0963-5a3e-dd33-b1b0a3e33c4a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
       "tags_cn": "MMO / 养成 / 模拟经营 / 冒险 / 角色扮演 / 二次元 / 经营 / 模拟",
@@ -3191,10 +3238,10 @@
       "ios_rating": "0.0",
       "ios_reviews": "0",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%97%85%E4%BA%BA%E6%97%A5%E8%AE%B0",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "rank": "23",
+      "rank": "25",
       "name": "我的末日小队",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/37/0f/48/370f483b-96be-0c32-70a7-ddf2878db348/AppIcon-1x_U007ephone-0-10-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "策略 / 休闲 / 末日 / 冒险 / 单机",
@@ -3217,10 +3264,10 @@
       "ios_rating": "4.6",
       "ios_reviews": "2505",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%88%91%E7%9A%84%E6%9C%AB%E6%97%A5%E5%B0%8F%E9%98%9F",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "rank": "24",
+      "rank": "26",
       "name": "宗师之上",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/aa/95/26/aa952623-e7eb-1aa1-3243-8344aa5287fa/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "角色扮演 / 放置 / 修仙 / 养成 / 冒险 / 休闲 / 合成",
@@ -3244,10 +3291,10 @@
       "ios_rating": "4.8",
       "ios_reviews": "18479",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%AE%97%E5%B8%88%E4%B9%8B%E4%B8%8A",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "rank": "25",
+      "rank": "27",
       "name": "萌神契约",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d5/a4/86/d5a4861e-1539-96da-aea9-ba7fc1568599/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/200x200bb.jpg",
       "tags_cn": "二次元 / 足球 / 卡牌 / 放置 / 日系",
@@ -3270,10 +3317,10 @@
       "ios_rating": "4.6",
       "ios_reviews": "1092",
       "taptap_url": "https://www.taptap.cn/search?q=%E8%90%8C%E7%A5%9E%E5%A5%91%E7%BA%A6",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "rank": "26",
+      "rank": "28",
       "name": "英雄之时",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/20/b5/81/20b581dd-c8de-757b-13db-2a9e984acb55/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/200x200bb.jpg",
       "tags_cn": "买断制 / 多平台 / 策略 / 回合 / Steam移植 / 像素 / 独立游戏",
@@ -3296,10 +3343,10 @@
       "ios_rating": "4.5",
       "ios_reviews": "29",
       "taptap_url": "https://www.taptap.cn/search?q=%E8%8B%B1%E9%9B%84%E4%B9%8B%E6%97%B6",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "rank": "27",
+      "rank": "29",
       "name": "曙光纪元",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2a/bf/9d/2abf9d0c-14e4-08a1-d8e6-1096a2ba1dd7/AppIcon-0-0-1x_U007epad-0-1-85-220.png/200x200bb.jpg",
       "tags_cn": "搜打撤 / 末日 / 割草 / 废土",
@@ -3321,10 +3368,10 @@
       "ios_rating": "4.7",
       "ios_reviews": "3085",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%9B%99%E5%85%89%E7%BA%AA%E5%85%83",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
-      "rank": "28",
+      "rank": "30",
       "name": "蛮荒领主",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260429/16305585287",
       "tags_cn": "历史 / 战争 / SLG / 角色扮演 / 卡牌",
@@ -3347,58 +3394,7 @@
       "ios_rating": "",
       "ios_reviews": "",
       "taptap_url": "https://www.taptap.cn/search?q=%E8%9B%AE%E8%8D%92%E9%A2%86%E4%B8%BB",
-      "fetched_at": "2026-06-08 14:53 UTC"
-    },
-    {
-      "rank": "29",
-      "name": "功夫奇遇记",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2b/d5/15/2bd51516-7991-ff5e-facc-ce463d3fdb45/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/200x200bb.jpg",
-      "tags_cn": "单机 / 动作 / 格斗 / 闯关 / 休闲",
-      "tags_vn": [
-        "Single-player",
-        "Action",
-        "Đối kháng",
-        "闯关",
-        "Casual"
-      ],
-      "publisher": "伊丝露德",
-      "developer": "伊丝露德",
-      "testtype_cn": "删档测试",
-      "testtype_vn": "CBT (Xóa data)",
-      "score_16p": "4.9",
-      "reviews_16p": "14",
-      "pub_time": "2026-05-11",
-      "ios_id": "1072658887",
-      "ios_url": "https://apps.apple.com/cn/app/id1072658887",
-      "ios_rating": "4.6",
-      "ios_reviews": "12220",
-      "taptap_url": "https://www.taptap.cn/search?q=%E5%8A%9F%E5%A4%AB%E5%A5%87%E9%81%87%E8%AE%B0",
-      "fetched_at": "2026-06-08 14:53 UTC"
-    },
-    {
-      "rank": "30",
-      "name": "大道仙途",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/41/d8/9d/41d89d9b-498d-9d23-e215-a625c09aa746/AppIcon-0-0-1x_U007epad-0-1-85-220.png/200x200bb.jpg",
-      "tags_cn": "角色扮演 / 修仙 / 休闲 / 养成",
-      "tags_vn": [
-        "Nhập vai RPG",
-        "Tu tiên",
-        "Casual",
-        "Nuôi dưỡng"
-      ],
-      "publisher": "六爻工作室",
-      "developer": "六爻工作室",
-      "testtype_cn": "公测",
-      "testtype_vn": "Open Beta",
-      "score_16p": "3.2",
-      "reviews_16p": "22",
-      "pub_time": "05-10",
-      "ios_id": "6764294147",
-      "ios_url": "https://apps.apple.com/cn/app/id6764294147",
-      "ios_rating": "4.4",
-      "ios_reviews": "208",
-      "taptap_url": "https://www.taptap.cn/search?q=%E5%A4%A7%E9%81%93%E4%BB%99%E9%80%94",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     }
   ],
   "rank90": [
@@ -3423,7 +3419,7 @@
       "ios_rating": "4.3",
       "ios_reviews": "84876",
       "taptap_url": "https://www.taptap.cn/app/744415",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "2",
@@ -3450,7 +3446,7 @@
       "ios_rating": "3.5",
       "ios_reviews": "20145",
       "taptap_url": "https://www.taptap.cn/app/714119",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "3",
@@ -3477,7 +3473,7 @@
       "ios_rating": "4.8",
       "ios_reviews": "859",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%B9%BB%E6%83%B3%E5%B0%91%E5%A5%B3%E5%85%AC%E4%BC%9A",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "4",
@@ -3504,7 +3500,7 @@
       "ios_rating": "4.1",
       "ios_reviews": "347820",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%EF%BC%9A%E4%B8%96%E7%95%8C",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "5",
@@ -3531,7 +3527,7 @@
       "ios_rating": "4.6",
       "ios_reviews": "9804",
       "taptap_url": "https://www.taptap.cn/app/759941",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "6",
@@ -3554,7 +3550,7 @@
       "ios_rating": "4.7",
       "ios_reviews": "4539",
       "taptap_url": "https://www.taptap.cn/app/839042",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "7",
@@ -3577,7 +3573,7 @@
       "ios_rating": "4.6",
       "ios_reviews": "4155",
       "taptap_url": "https://www.taptap.cn/search?q=%E8%82%A5%E9%B9%85%E7%BE%8E%E9%A3%9F%E8%A1%97",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "8",
@@ -3604,7 +3600,7 @@
       "ios_rating": "4.9",
       "ios_reviews": "3635",
       "taptap_url": "https://www.taptap.cn/app/194039",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "9",
@@ -3631,7 +3627,7 @@
       "ios_rating": "4.7",
       "ios_reviews": "2043",
       "taptap_url": "https://www.taptap.cn/search?q=%E9%A9%AF%E9%BE%99%E4%B9%8B%E6%97%85",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "10",
@@ -3658,7 +3654,7 @@
       "ios_rating": "4.3",
       "ios_reviews": "84876",
       "taptap_url": "https://www.taptap.cn/app/744415",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "11",
@@ -3685,7 +3681,7 @@
       "ios_rating": "4.5",
       "ios_reviews": "1349",
       "taptap_url": "https://www.taptap.cn/search?q=%E4%BA%BF%E4%B8%87%E5%85%89%E5%B9%B4",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "12",
@@ -3712,7 +3708,7 @@
       "ios_rating": "4.1",
       "ios_reviews": "347820",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%B4%A9%E5%9D%8F%EF%BC%9A%E5%9B%A0%E7%BC%98%E7%B2%BE%E7%81%B5-%E5%B4%A9%E5%9D%8FIP%E6%96%B0%E4%BD%9C",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "13",
@@ -3735,7 +3731,7 @@
       "ios_rating": "4.5",
       "ios_reviews": "1259",
       "taptap_url": "https://www.taptap.cn/search?q=%E9%81%AE%E5%A4%A9%EF%BC%9A%E5%B8%9D%E8%B7%AF%E4%BA%89%E9%94%8B",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "14",
@@ -3762,7 +3758,7 @@
       "ios_rating": "4.6",
       "ios_reviews": "12973",
       "taptap_url": "https://www.taptap.cn/search?q=%E8%93%9D%E8%89%B2%E6%98%9F%E5%8E%9F%EF%BC%9A%E6%97%85%E8%B0%A3",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "15",
@@ -3789,7 +3785,7 @@
       "ios_rating": "",
       "ios_reviews": "",
       "taptap_url": "https://www.taptap.cn/search?q=%E4%BC%8D%E5%85%AD%E4%B8%83%EF%BC%9A%E6%9A%97%E5%BD%B1%E4%BA%A4%E9%94%8B",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "16",
@@ -3815,7 +3811,7 @@
       "ios_rating": "0.0",
       "ios_reviews": "0",
       "taptap_url": "https://www.taptap.cn/search?q=%E7%8E%8B%E8%80%85%E4%B8%87%E8%B1%A1%E6%A3%8B",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "17",
@@ -3842,7 +3838,7 @@
       "ios_rating": "4.8",
       "ios_reviews": "100087",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%9C%BA%E6%A2%B0%E5%90%AF%E5%85%83-%E6%9C%BA%E6%A2%B0%E5%85%BD%E7%94%9F%E5%AD%98%E6%96%B0%E6%B8%B8",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "18",
@@ -3868,7 +3864,7 @@
       "ios_rating": "4.7",
       "ios_reviews": "615",
       "taptap_url": "https://www.taptap.cn/search?q=%E9%A3%8E%E4%B9%8B%E5%9B%BD%E4%B8%96%E7%95%8C",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "19",
@@ -3891,7 +3887,7 @@
       "ios_rating": "4.7",
       "ios_reviews": "518",
       "taptap_url": "https://www.taptap.cn/search?q=%E9%AB%98%E8%83%BD%E6%8E%A2%E5%AE%9D%E5%9B%A2",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "20",
@@ -3918,7 +3914,7 @@
       "ios_rating": "4.8",
       "ios_reviews": "928",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%80%AA%E7%89%A9%E7%8C%8E%E4%BA%BA%EF%BC%9A%E6%97%85%E4%BA%BA",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "21",
@@ -3945,7 +3941,7 @@
       "ios_rating": "4.5",
       "ios_reviews": "1150",
       "taptap_url": "https://www.taptap.cn/search?q=%E4%B8%83%E7%95%8C%E6%A2%A6%E8%B0%AD",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "22",
@@ -3969,7 +3965,7 @@
       "ios_rating": "4.8",
       "ios_reviews": "432",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%96%B0%E6%98%9F%E8%B6%B3%E7%90%83%E4%B8%96%E7%95%8C",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "23",
@@ -3996,7 +3992,7 @@
       "ios_rating": "3.4",
       "ios_reviews": "2190",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%8D%A1%E5%8E%84%E6%80%9D%E6%A2%A6%E5%A2%83",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "24",
@@ -4023,7 +4019,7 @@
       "ios_rating": "0.0",
       "ios_reviews": "0",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%97%B6%E7%A9%BA%E7%8C%8E%E4%BA%BA%C2%B7%E8%A7%89%E9%86%92",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "25",
@@ -4050,7 +4046,7 @@
       "ios_rating": "0.0",
       "ios_reviews": "0",
       "taptap_url": "https://www.taptap.cn/search?q=%E9%81%97%E5%BF%98%E4%B9%8B%E6%B5%B7",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "26",
@@ -4075,7 +4071,7 @@
       "ios_rating": "2.8",
       "ios_reviews": "549",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%B0%8F%E8%8A%B1%E4%BB%99%EF%BC%9A%E6%8B%89%E8%B4%9D%E5%B0%94%E4%B9%8B%E7%BA%A6",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "27",
@@ -4102,7 +4098,7 @@
       "ios_rating": "",
       "ios_reviews": "",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%98%9F%E5%B8%83%E8%B0%B7%E5%9C%B0-%E7%B1%B3%E5%93%88%E6%B8%B8%E7%94%9F%E6%B4%BB%E6%A8%A1%E6%8B%9F%E6%96%B0%E4%BD%9C",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "28",
@@ -4129,7 +4125,7 @@
       "ios_rating": "4.5",
       "ios_reviews": "44587",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%8F%8C%E7%94%9F%E5%B9%BB%E6%83%B3",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "29",
@@ -4156,7 +4152,7 @@
       "ios_rating": "4.8",
       "ios_reviews": "102048",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%96%97%E7%BD%97%E5%A4%A7%E9%99%86%EF%BC%9A%E8%AF%9B%E9%82%AA%E4%BC%A0%E8%AF%B4",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "30",
@@ -4179,7 +4175,7 @@
       "ios_rating": "4.5",
       "ios_reviews": "294",
       "taptap_url": "https://www.taptap.cn/search?q=%E9%BE%99%E7%AC%A6%EF%BC%9A%E5%A4%A9%E7%A5%AD",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     }
   ],
   "rankyr": [
@@ -4204,7 +4200,7 @@
       "ios_rating": "4.7",
       "ios_reviews": "138699",
       "taptap_url": "https://www.taptap.cn/app/202498",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "2",
@@ -4228,7 +4224,7 @@
       "ios_rating": "4.8",
       "ios_reviews": "2773605",
       "taptap_url": "https://www.taptap.cn/app/35077",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "3",
@@ -4251,7 +4247,7 @@
       "ios_rating": "4.1",
       "ios_reviews": "98815",
       "taptap_url": "https://www.taptap.cn/app/162255",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "4",
@@ -4274,7 +4270,7 @@
       "ios_rating": "4.3",
       "ios_reviews": "84876",
       "taptap_url": "https://www.taptap.cn/app/744415",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "5",
@@ -4296,7 +4292,7 @@
       "ios_rating": "4.7",
       "ios_reviews": "37253",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%86%92%E9%99%A9%E4%B9%8B%E6%98%9F",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "6",
@@ -4323,7 +4319,7 @@
       "ios_rating": "3.5",
       "ios_reviews": "20145",
       "taptap_url": "https://www.taptap.cn/app/714119",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "7",
@@ -4345,7 +4341,7 @@
       "ios_rating": "4.7",
       "ios_reviews": "25751",
       "taptap_url": "https://www.taptap.cn/search?q=%E8%BF%9C%E5%85%8984",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "8",
@@ -4367,7 +4363,7 @@
       "ios_rating": "4.6",
       "ios_reviews": "22131",
       "taptap_url": "https://www.taptap.cn/search?q=%E9%81%97%E5%BC%83%E4%B9%8B%E5%9C%B0",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "9",
@@ -4390,7 +4386,7 @@
       "ios_rating": "4.6",
       "ios_reviews": "20694",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%AD%A6%E6%9E%97%E5%A4%96%E4%BC%A0%EF%BC%9A%E5%8D%81%E5%B9%B4%E4%B9%8B%E7%BA%A6",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "10",
@@ -4413,7 +4409,7 @@
       "ios_rating": "4.9",
       "ios_reviews": "13822",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%8B%87%E8%80%85%E8%81%94%E7%9B%9F",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "11",
@@ -4437,7 +4433,7 @@
       "ios_rating": "4.7",
       "ios_reviews": "13196",
       "taptap_url": "https://www.taptap.cn/search?q=%E7%83%B9%E9%A5%AA%E7%8E%AF%E6%B8%B8%E8%AE%B0",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "12",
@@ -4464,7 +4460,7 @@
       "ios_rating": "4.8",
       "ios_reviews": "859",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%B9%BB%E6%83%B3%E5%B0%91%E5%A5%B3%E5%85%AC%E4%BC%9A",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "13",
@@ -4491,7 +4487,7 @@
       "ios_rating": "4.1",
       "ios_reviews": "347820",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%EF%BC%9A%E4%B8%96%E7%95%8C",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "14",
@@ -4515,7 +4511,7 @@
       "ios_rating": "4.7",
       "ios_reviews": "9825",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%BC%80%E5%BF%83%E5%A4%A7%E7%A2%B0%E6%92%9E",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "15",
@@ -4542,7 +4538,7 @@
       "ios_rating": "4.6",
       "ios_reviews": "9804",
       "taptap_url": "https://www.taptap.cn/app/759941",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "16",
@@ -4564,7 +4560,7 @@
       "ios_rating": "4.7",
       "ios_reviews": "8105",
       "taptap_url": "https://www.taptap.cn/search?q=%E9%81%AE%E5%A4%A9%EF%BC%9A%E5%87%A1%E5%B0%98%E4%B8%80%E5%8F%B6",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "17",
@@ -4587,7 +4583,7 @@
       "ios_rating": "4.6",
       "ios_reviews": "8439",
       "taptap_url": "https://www.taptap.cn/search?q=%E9%A3%9E%E9%A3%9E%EF%BC%9A%E9%87%8D%E9%80%A2",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "18",
@@ -4614,7 +4610,7 @@
       "ios_rating": "4.0",
       "ios_reviews": "86165",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%97%A0%E7%95%8F%E5%A5%91%E7%BA%A6%EF%BC%9A%E6%BA%90%E8%83%BD%E8%A1%8C%E5%8A%A8",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "19",
@@ -4641,7 +4637,7 @@
       "ios_rating": "4.7",
       "ios_reviews": "145329",
       "taptap_url": "https://www.taptap.cn/search?q=%E9%80%86%E6%88%98%EF%BC%9A%E6%9C%AA%E6%9D%A5-S2%E8%B5%9B%E5%AD%A3",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "20",
@@ -4668,7 +4664,7 @@
       "ios_rating": "4.8",
       "ios_reviews": "18479",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%A4%B1%E6%8E%A7%E8%BF%9B%E5%8C%96-7%E6%9C%889%E6%97%A5%E4%B8%8A%E7%BA%BF",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "21",
@@ -4691,7 +4687,7 @@
       "ios_rating": "4.7",
       "ios_reviews": "4539",
       "taptap_url": "https://www.taptap.cn/app/839042",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "22",
@@ -4714,7 +4710,7 @@
       "ios_rating": "3.8",
       "ios_reviews": "6026",
       "taptap_url": "https://www.taptap.cn/search?q=%E7%8E%B0%E4%BB%A3%E6%88%98%E8%88%B0%20-%20%E9%80%81055%E5%A4%A7%E9%A9%B1",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "23",
@@ -4737,7 +4733,7 @@
       "ios_rating": "4.9",
       "ios_reviews": "3834",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%A1%A5%E6%A2%81%E5%A4%A7%E4%BA%A8%20-%20%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5%20%E6%90%AD%E6%A1%A5%E9%80%A0%E6%A1%A5%E6%A8%A1%E6%8B%9F%E5%99%A8",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "24",
@@ -4760,7 +4756,7 @@
       "ios_rating": "4.6",
       "ios_reviews": "4155",
       "taptap_url": "https://www.taptap.cn/search?q=%E8%82%A5%E9%B9%85%E7%BE%8E%E9%A3%9F%E8%A1%97",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "25",
@@ -4787,7 +4783,7 @@
       "ios_rating": "4.3",
       "ios_reviews": "3690",
       "taptap_url": "https://www.taptap.cn/search?q=%E7%8E%B0%E4%BB%A3%E6%88%98%E8%88%B0-%E5%9B%BD%E6%9C%8D",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "26",
@@ -4814,7 +4810,7 @@
       "ios_rating": "4.9",
       "ios_reviews": "3635",
       "taptap_url": "https://www.taptap.cn/app/194039",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "27",
@@ -4837,7 +4833,7 @@
       "ios_rating": "4.6",
       "ios_reviews": "3512",
       "taptap_url": "https://www.taptap.cn/search?q=%E5%86%B3%E6%96%97%E5%AD%A6%E9%99%A2",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "28",
@@ -4860,7 +4856,7 @@
       "ios_rating": "4.8",
       "ios_reviews": "3181",
       "taptap_url": "https://www.taptap.cn/search?q=%E8%BF%99%E4%B8%AA%E4%BD%A0%E4%BC%9A%E5%90%97%20-%20%E7%BA%B8%E7%89%8C%E5%88%86%E7%B1%BB%E6%8E%A5%E9%BE%99%E8%84%91%E6%B4%9E%E5%A4%A7%E9%97%AF%E5%85%B3",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "29",
@@ -4882,7 +4878,7 @@
       "ios_rating": "4.7",
       "ios_reviews": "3241",
       "taptap_url": "https://www.taptap.cn/search?q=%E9%AD%94%E5%8A%9B%E5%AE%9D%E8%B4%9D%E5%9B%9E%E5%BF%86%E2%80%94%E9%AD%94%E6%B3%95%E4%B9%8B%E5%B7%85",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     },
     {
       "rank": "30",
@@ -4904,9 +4900,9 @@
       "ios_rating": "4.7",
       "ios_reviews": "3179",
       "taptap_url": "https://www.taptap.cn/search?q=%E6%BA%90%E6%98%9F%E6%88%98%E5%9F%9F",
-      "fetched_at": "2026-06-08 14:53 UTC"
+      "fetched_at": "2026-06-09 12:19 UTC"
     }
   ],
-  "updated_at": "2026-06-08 14:53 UTC",
+  "updated_at": "2026-06-09 12:19 UTC",
   "source": "16p.com test_game+new_game_list + iTunes API"
 }
