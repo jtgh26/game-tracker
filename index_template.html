@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>🎮 Game Market Tracker – 16p.com</title>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b0f1a;--surface:#111827;--s2:#1a2235;--s3:#212d42;
+  --border:rgba(255,255,255,0.07);--border2:rgba(255,255,255,0.13);
+  --accent:#3b82f6;--accent2:#60a5fa;
+  --gold:#f59e0b;--gold2:#fcd34d;
+  --green:#10b981;--red:#ef4444;--purple:#8b5cf6;--pink:#ec4899;
+  --text:#f1f5f9;--text2:#94a3b8;--text3:#64748b;
+  --hl-bg:rgba(245,158,11,0.08);--hl-border:rgba(245,158,11,0.3);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Be Vietnam Pro','Noto Sans SC',sans-serif;font-size:14px;line-height:1.5}
+
+/* HEADER */
+.hdr{background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 50%,#0f172a 100%);border-bottom:1px solid var(--border2);padding:0 24px;position:sticky;top:0;z-index:100;backdrop-filter:blur(12px)}
+.hdr-in{max-width:1600px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}
+.logo-icon{width:34px;height:34px;background:linear-gradient(135deg,#3b82f6,#8b5cf6);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px}
+.logo-text{font-size:15px;font-weight:700;color:var(--text)}
+.logo-sub{font-size:11px;color:var(--text3);font-weight:400}
+.src-badge{font-size:11px;padding:4px 10px;background:rgba(59,130,246,0.15);border:1px solid rgba(59,130,246,0.3);border-radius:20px;color:var(--accent2);text-decoration:none;white-space:nowrap}
+.src-badge:hover{background:rgba(59,130,246,0.25)}
+
+/* LAYOUT */
+.main{max-width:1600px;margin:0 auto;padding:24px}
+
+/* TABS */
+.tabs{display:flex;gap:4px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:4px;margin-bottom:24px;width:fit-content}
+.tab{padding:8px 18px;border-radius:9px;border:none;background:transparent;color:var(--text2);font-family:inherit;font-size:13px;font-weight:500;cursor:pointer;transition:all .2s;white-space:nowrap;display:flex;align-items:center;gap:6px}
+.tab:hover{color:var(--text);background:var(--s2)}
+.tab.active{background:var(--accent);color:#fff;font-weight:600;box-shadow:0 2px 8px rgba(59,130,246,.35)}
+.tab-cnt{background:rgba(255,255,255,.15);border-radius:10px;padding:1px 7px;font-size:11px}
+.tab.active .tab-cnt{background:rgba(255,255,255,.25)}
+
+/* SECTION */
+.section{display:none}.section.active{display:block}
+
+/* STATS */
+.stats-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:20px}
+.stat-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:14px 16px;display:flex;align-items:center;gap:12px}
+.stat-icon{width:38px;height:38px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.stat-lbl{font-size:11px;color:var(--text3);margin-bottom:2px}
+.stat-val{font-size:20px;font-weight:700}
+
+/* TOOLBAR */
+.toolbar{display:flex;gap:10px;margin-bottom:16px;flex-wrap:wrap;align-items:center}
+.search-box{flex:1;min-width:200px;max-width:320px;background:var(--surface);border:1px solid var(--border2);border-radius:8px;padding:8px 12px;color:var(--text);font-family:inherit;font-size:13px;outline:none;transition:border-color .2s}
+.search-box:focus{border-color:var(--accent)}
+.search-box::placeholder{color:var(--text3)}
+.fsel{background:var(--surface);border:1px solid var(--border2);border-radius:8px;padding:8px 10px;color:var(--text);font-family:inherit;font-size:13px;outline:none;cursor:pointer;min-width:130px}
+.fsel:focus{border-color:var(--accent)}
+.fsel option{background:var(--s2)}
+.hl-tog{display:flex;align-items:center;gap:7px;background:var(--surface);border:1px solid var(--border2);border-radius:8px;padding:8px 12px;cursor:pointer;font-size:12px;color:var(--text2);user-select:none;transition:all .2s}
+.hl-tog.on{border-color:var(--gold);color:var(--gold2);background:rgba(245,158,11,.08)}
+.hl-dot{width:14px;height:14px;border-radius:50%;background:var(--text3);transition:background .2s}
+.hl-tog.on .hl-dot{background:var(--gold)}
+.res-cnt{font-size:12px;color:var(--text3);margin-left:auto}
+
+/* EXPORT BTN */
+.exp-btn{display:flex;align-items:center;gap:6px;padding:8px 14px;background:linear-gradient(135deg,rgba(16,185,129,.2),rgba(5,150,105,.15));border:1px solid rgba(16,185,129,.35);border-radius:8px;color:#34d399;font-family:inherit;font-size:12px;font-weight:600;cursor:pointer;transition:all .2s;white-space:nowrap}
+.exp-btn:hover{background:linear-gradient(135deg,rgba(16,185,129,.3),rgba(5,150,105,.25));border-color:rgba(16,185,129,.5)}
+
+/* TABLE */
+.tbl-wrap{background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:visible}
+.tbl-scroll{overflow-x:auto;overflow-y:visible;border-radius:12px}
+table{width:100%;border-collapse:collapse;min-width:1200px}
+thead th{background:var(--s2);padding:10px 12px;text-align:left;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--text3);border-bottom:1px solid var(--border2);white-space:nowrap;cursor:pointer;user-select:none;position:relative;overflow:visible}
+thead th:hover{color:var(--text)}
+thead th .si{opacity:.4;margin-left:4px;font-size:10px}
+thead th.sorted .si{opacity:1;color:var(--accent2)}
+thead th.no-sort{cursor:default}
+tbody tr{border-bottom:1px solid var(--border);transition:background .12s}
+tbody tr:last-child{border-bottom:none}
+tbody tr:hover{background:var(--s2)}
+tbody tr.hl-row{background:var(--hl-bg);border-left:3px solid var(--gold)}
+tbody tr.hl-row:hover{background:rgba(245,158,11,.13)}
+td{padding:10px 12px;vertical-align:top;font-size:13px;color:var(--text)}
+td.muted{color:var(--text2)}
+
+/* CELLS */
+.gname{min-width:160px}
+.gname-orig{font-weight:600;font-size:15px;font-family:'Noto Sans SC',sans-serif}
+.gname-en{color:var(--text2);font-size:12px;margin-top:2px}
+.gname-cn{color:var(--text3);font-size:11px}
+
+.gbadge{display:inline-block;padding:3px 8px;border-radius:5px;font-size:11px;font-weight:600;white-space:nowrap}
+.g-mmorpg{background:rgba(139,92,246,.2);color:#a78bfa;border:1px solid rgba(139,92,246,.3)}
+.g-slg{background:rgba(239,68,68,.15);color:#fca5a5;border:1px solid rgba(239,68,68,.25)}
+.g-arpg{background:rgba(16,185,129,.15);color:#6ee7b7;border:1px solid rgba(16,185,129,.25)}
+.g-casual{background:rgba(236,72,153,.15);color:#f9a8d4;border:1px solid rgba(236,72,153,.25)}
+.g-cbg{background:rgba(245,158,11,.15);color:#fcd34d;border:1px solid rgba(245,158,11,.25)}
+.g-turn{background:rgba(59,130,246,.15);color:#93c5fd;border:1px solid rgba(59,130,246,.25)}
+.g-moba{background:rgba(20,184,166,.15);color:#5eead4;border:1px solid rgba(20,184,166,.25)}
+.g-def{background:rgba(100,116,139,.15);color:#94a3b8;border:1px solid rgba(100,116,139,.2)}
+
+.sbadge{display:inline-block;padding:3px 8px;border-radius:5px;font-size:11px;font-weight:500;white-space:nowrap}
+.s-ob{background:rgba(16,185,129,.15);color:#6ee7b7;border:1px solid rgba(16,185,129,.3)}
+.s-cbt{background:rgba(245,158,11,.15);color:#fcd34d;border:1px solid rgba(245,158,11,.3)}
+.s-obt{background:rgba(59,130,246,.15);color:#93c5fd;border:1px solid rgba(59,130,246,.3)}
+.s-tech{background:rgba(100,116,139,.15);color:#94a3b8;border:1px solid rgba(100,116,139,.25)}
+.s-live{background:rgba(16,185,129,.1);color:#34d399;border:1px solid rgba(16,185,129,.2)}
+.s-glob{background:rgba(139,92,246,.15);color:#c4b5fd;border:1px solid rgba(139,92,246,.3)}
+
+.rbadge{display:inline-flex;align-items:center;gap:4px;padding:3px 8px;border-radius:5px;font-size:11px;font-weight:500;white-space:nowrap}
+.r-cn{background:rgba(239,68,68,.12);color:#fca5a5;border:1px solid rgba(239,68,68,.2)}
+.r-asia{background:rgba(59,130,246,.12);color:#93c5fd;border:1px solid rgba(59,130,246,.2)}
+.r-oth{background:rgba(100,116,139,.12);color:#94a3b8;border:1px solid rgba(100,116,139,.2)}
+
+.hl-star{font-size:16px;filter:drop-shadow(0 0 4px rgba(245,158,11,.6))}
+
+.rank-b{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px}
+.rk1{background:linear-gradient(135deg,#f59e0b,#d97706);color:#fff}
+.rk2{background:linear-gradient(135deg,#94a3b8,#64748b);color:#fff}
+.rk3{background:linear-gradient(135deg,#cd7f32,#a0522d);color:#fff}
+.rkn{background:var(--s3);color:var(--text2);font-size:13px}
+
+.dev-cell{min-width:180px}
+.dev-name{font-weight:500;font-size:13px}
+.dev-en{font-size:11px;color:var(--text3);margin-top:1px}
+.dev-meta{font-size:11px;color:var(--text3);margin-top:2px}
+.lst-y{color:#34d399;font-size:11px}
+.lst-n{color:var(--text3);font-size:11px}
+
+.gp-cell{max-width:280px;min-width:180px;font-size:12px;color:var(--text2);line-height:1.7}
+.gp-cell ul{padding-left:14px}
+.gp-cell li{margin-bottom:2px}
+
+.link-cell{min-width:160px}
+.store-links{display:flex;flex-direction:column;gap:4px}
+.store-link{display:inline-flex;align-items:center;gap:5px;padding:3px 8px;border-radius:5px;font-size:11px;font-weight:500;text-decoration:none;white-space:nowrap;transition:all .15s}
+.store-link:hover{opacity:.8}
+.sl-web{background:rgba(59,130,246,.15);color:#93c5fd;border:1px solid rgba(59,130,246,.25)}
+.sl-ios{background:rgba(16,185,129,.15);color:#6ee7b7;border:1px solid rgba(16,185,129,.25)}
+.sl-gp{background:rgba(139,92,246,.15);color:#a78bfa;border:1px solid rgba(139,92,246,.25)}
+.sl-cn{background:rgba(245,158,11,.12);color:#fcd34d;border:1px solid rgba(245,158,11,.2)}
+.sl-none{color:var(--text3);font-size:11px}
+
+/* RANK TABS */
+.rank-tabs{display:flex;gap:6px;margin-bottom:16px}
+.rtab{padding:7px 16px;border-radius:8px;border:1px solid var(--border2);background:var(--surface);color:var(--text2);font-family:inherit;font-size:13px;font-weight:500;cursor:pointer;transition:all .2s}
+.rtab:hover{color:var(--text);background:var(--s2)}
+.rtab.active{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+
+/* MODAL */
+.modal-ov{position:fixed;inset:0;z-index:200;background:rgba(0,0,0,.75);backdrop-filter:blur(4px);display:none;align-items:center;justify-content:center;padding:20px}
+.modal-ov.open{display:flex}
+.modal{background:var(--s2);border:1px solid var(--border2);border-radius:16px;padding:28px;max-width:680px;width:100%;max-height:90vh;overflow-y:auto;animation:mIn .2s ease}
+@keyframes mIn{from{opacity:0;transform:scale(.95) translateY(8px)}to{opacity:1;transform:scale(1) translateY(0)}}
+.m-hdr{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:20px;gap:12px}
+.m-title{font-size:22px;font-weight:700;font-family:'Noto Sans SC',sans-serif}
+.m-title-en{font-size:14px;color:var(--text2);font-weight:400;margin-top:3px}
+.m-close{width:32px;height:32px;border-radius:8px;border:1px solid var(--border2);background:transparent;color:var(--text2);cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .2s}
+.m-close:hover{background:var(--s3);color:var(--text)}
+.m-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
+.m-field{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:12px}
+.m-flbl{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--text3);margin-bottom:4px}
+.m-fval{font-size:13px;color:var(--text);font-weight:500}
+.m-gp{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px;margin-bottom:12px}
+.m-gp-lbl{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--text3);margin-bottom:8px}
+.m-gp-txt{font-size:13px;color:var(--text2);line-height:1.7}
+.m-gp-txt ul{padding-left:16px}
+.m-gp-txt li{margin-bottom:3px}
+.m-stores{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px;margin-bottom:12px}
+.m-stores-lbl{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--text3);margin-bottom:10px}
+.m-store-links{display:flex;flex-wrap:wrap;gap:8px}
+
+/* PERFORMANCE MODAL */
+.perf-wrap{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px;margin-bottom:12px}
+.perf-lbl{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--text3);margin-bottom:12px;display:flex;align-items:center;justify-content:space-between}
+.perf-add-btn{font-size:11px;padding:3px 10px;background:rgba(59,130,246,.15);border:1px solid rgba(59,130,246,.3);border-radius:5px;color:var(--accent2);cursor:pointer;font-family:inherit;transition:all .15s}
+.perf-add-btn:hover{background:rgba(59,130,246,.25)}
+.perf-entries{display:flex;flex-direction:column;gap:8px;margin-bottom:10px}
+.perf-entry{background:var(--s2);border:1px solid var(--border);border-radius:8px;padding:10px 12px}
+.perf-entry-hdr{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.perf-entry-date{font-size:11px;color:var(--text3);font-weight:500}
+.perf-del-btn{font-size:10px;color:var(--text3);cursor:pointer;background:none;border:none;font-family:inherit;transition:color .15s}
+.perf-del-btn:hover{color:var(--red)}
+.perf-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:6px}
+.perf-kpi{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:8px 10px}
+.perf-kpi-k{font-size:10px;color:var(--text3);margin-bottom:2px}
+.perf-kpi-v{font-size:13px;font-weight:600;color:var(--text)}
+.perf-empty{text-align:center;padding:20px;color:var(--text3);font-size:12px}
+
+/* PERF INPUT FORM */
+.perf-form{background:var(--s3);border:1px solid var(--border2);border-radius:8px;padding:14px;margin-top:8px}
+.perf-form-title{font-size:12px;font-weight:600;color:var(--text2);margin-bottom:10px}
+.perf-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}
+.perf-inp{background:var(--surface);border:1px solid var(--border2);border-radius:6px;padding:7px 10px;color:var(--text);font-family:inherit;font-size:12px;outline:none;width:100%;transition:border-color .15s}
+.perf-inp:focus{border-color:var(--accent)}
+.perf-inp::placeholder{color:var(--text3)}
+.perf-inp-lbl{font-size:10px;color:var(--text3);margin-bottom:3px}
+.perf-form-btns{display:flex;gap:8px;justify-content:flex-end}
+.perf-save-btn{padding:6px 14px;background:var(--accent);border:none;border-radius:6px;color:#fff;font-family:inherit;font-size:12px;font-weight:600;cursor:pointer}
+.perf-cancel-btn{padding:6px 14px;background:var(--s2);border:1px solid var(--border2);border-radius:6px;color:var(--text2);font-family:inherit;font-size:12px;cursor:pointer}
+
+/* FOOTER */
+.footer{text-align:center;padding:32px 24px;color:var(--text3);font-size:12px;border-top:1px solid var(--border);margin-top:40px}
+.footer a{color:var(--accent2);text-decoration:none}
+
+/* TOOLTIP */
+.hl-th-icon{cursor:default;font-size:15px;display:inline-block}
+#js-tip{position:fixed;z-index:99999;background:#1e293b;color:#f1f5f9;font-size:12px;padding:7px 12px;border-radius:8px;border:1px solid rgba(255,255,255,0.15);box-shadow:0 8px 24px rgba(0,0,0,.5);pointer-events:none;white-space:nowrap;opacity:0;transition:opacity .15s;max-width:360px;white-space:normal;line-height:1.5}
+#js-tip.visible{opacity:1}
+
+
+/* APP ICON */
+.game-icon-wrap{width:44px;height:44px;flex-shrink:0;border-radius:10px;overflow:hidden;background:var(--s3);border:1px solid var(--border);position:relative}
+.game-icon-img{width:44px;height:44px;object-fit:cover;border-radius:10px;display:block}
+.game-icon-fallback{width:44px;height:44px;display:flex;align-items:center;justify-content:center;font-size:18px;font-family:'Noto Sans SC',sans-serif;font-weight:700;color:#fff;border-radius:10px;line-height:1}
+.game-name-cell-inner{display:flex;align-items:flex-start;gap:10px}
+.game-name-texts{display:flex;flex-direction:column;justify-content:center;min-width:0}
+/* Modal icon */
+.m-icon-wrap{width:60px;height:60px;border-radius:14px;overflow:hidden;border:1px solid var(--border2);flex-shrink:0}
+.m-icon-img{width:60px;height:60px;object-fit:cover;display:block}
+.m-icon-fallback{width:60px;height:60px;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:700;color:#fff;font-family:'Noto Sans SC',sans-serif}
+
+
+.s-shutdown{background:rgba(100,116,139,0.2);color:#94a3b8;border:1px solid rgba(100,116,139,0.4);text-decoration:line-through}
+.shutdown-row{opacity:0.6}
+.shutdown-row:hover{opacity:0.8}
+
+.subtabs{display:flex;gap:8px;padding:14px 20px 0;border-bottom:1px solid var(--border)}
+.subtab{padding:8px 18px;border:1px solid var(--border);border-bottom:none;border-radius:8px 8px 0 0;
+  background:var(--s2);color:var(--text2);cursor:pointer;font-size:13px;font-weight:600;
+  transition:all .2s;font-family:'Noto Sans SC',sans-serif}
+.subtab:hover{background:var(--s3);color:var(--text1)}
+.subtab.active{background:var(--accent1);color:#fff;border-color:var(--accent1)}
+.subtab-cnt{background:rgba(255,255,255,0.25);border-radius:10px;padding:1px 7px;
+  font-size:11px;margin-left:6px;font-weight:700}
+
+
+.ip-badge{display:inline-block;background:rgba(124,58,237,0.15);color:#a78bfa;
+  border:1px solid rgba(124,58,237,0.3);border-radius:6px;padding:2px 7px;
+  font-size:11px;font-weight:600;white-space:nowrap}
+.rating-cell{text-align:center;font-size:12px;font-weight:700;line-height:1.8;white-space:nowrap}
+/* ── STORE BUTTONS ── */
+.store-cell{display:flex;flex-direction:column;gap:5px;padding:4px 0}
+.store-btn{
+  display:inline-flex;align-items:center;gap:5px;
+  padding:5px 10px;border-radius:7px;font-size:11.5px;font-weight:600;
+  border:1px solid transparent;text-decoration:none;
+  transition:all .15s ease;white-space:nowrap;cursor:pointer;
+  font-family:'Noto Sans SC',sans-serif;line-height:1;
+  min-width:110px;
+}
+.store-btn:hover{transform:translateY(-1px);filter:brightness(1.15)}
+.store-btn.web    {background:#1e3a5f;color:#60a5fa;border-color:#2d5a9e}
+.store-btn.web:hover{background:#254a77}
+.store-btn.ios    {background:#1a3a1a;color:#4ade80;border-color:#2d5e2d}
+.store-btn.ios:hover{background:#224822}
+.store-btn.taptap {background:#2a1f08;color:#f59e0b;border-color:#78490a}
+.store-btn.taptap:hover{background:#362807}
+.store-btn.taptap.search{opacity:0.8}
+.store-btn.bili   {background:#0d2535;color:#38bdf8;border-color:#0e4d6e}
+.store-btn.bili:hover{background:#0f3248}
+.store-btn.hygb   {background:#1f1a08;color:#f0c060;border-color:#6b4f10}
+.store-btn.hygb:hover{background:#2a2008}
+.genre-badge{display:inline-block;background:var(--s3);color:var(--text2);
+  border:1px solid var(--border);border-radius:6px;padding:2px 8px;
+  font-size:11px;white-space:nowrap;max-width:120px;overflow:hidden;text-overflow:ellipsis}
+
+
+
+/* TAPTAP PANEL */
+.tt-panel{background:var(--s3);border:1px solid var(--border2);border-radius:8px;padding:12px;margin-bottom:12px}
+.tt-panel-lbl{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--text3);margin-bottom:10px;display:flex;align-items:center;justify-content:space-between}
+.tt-fetched{font-size:10px;color:var(--text3);font-style:italic}
+.tt-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:8px}
+.tt-kpi{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:8px 10px}
+.tt-kpi-k{font-size:10px;color:var(--text3);margin-bottom:3px}
+.tt-kpi-v{font-size:14px;font-weight:700;color:var(--text)}
+.tt-kpi-v.good{color:#10b981}.tt-kpi-v.warn{color:#f59e0b}.tt-kpi-v.bad{color:#ef4444}
+.tt-bar-wrap{display:flex;align-items:center;gap:6px}
+.tt-bar{width:60px;height:5px;background:rgba(255,255,255,.1);border-radius:3px;overflow:hidden;flex-shrink:0}
+.tt-bar-fill{height:100%;border-radius:3px}
+.tt-err{font-size:11px;color:var(--text3);font-style:italic;padding:8px 0}
+.tt-taptap-link{font-size:11px;color:var(--accent2);text-decoration:none}
+.tt-taptap-link:hover{text-decoration:underline}
+
+/* EMPTY */
+.empty{text-align:center;padding:60px 20px;color:var(--text3)}
+.empty-icon{font-size:40px;margin-bottom:12px}
+
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:var(--surface)}
+::-webkit-scrollbar-thumb{background:var(--s3);border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:var(--text3)}
+
+@media(max-width:768px){
+  .tabs{width:100%;overflow-x:auto}
+  .m-grid{grid-template-columns:1fr}
+  .stats-row{grid-template-columns:1fr 1fr}
+  .perf-form-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <div class="hdr-in">
+    <a class="logo" href="#">
+      <div class="logo-icon">🎮</div>
+      <div><div class="logo-text">Game Market Tracker</div><div class="logo-sub">Nguồn: 16p.com (玩匠) · Tháng 6/2026</div></div>
+    </a>
+    <div style="font-size:12px;color:var(--text3)">Auto update: <span style="color:var(--accent2)" id="last-updated">__UPDATED_AT__</span></div>
+    <a class="src-badge" href="https://www.16p.com" target="_blank">↗ 16p.com</a>
+  </div>
+</header>
+
+<main class="main">
+  <div class="tabs">
+    <button class="tab active" onclick="switchTab('newgame',this)">🆕 Game Mới <span class="tab-cnt" id="tc-ng">20</span></button>
+    <button class="tab" onclick="switchTab('rankings',this)">🔥 Bảng Xếp Hạng</button>
+  </div>
+
+  <!-- ══ NEW GAMES ══ -->
+  <div class="section active" id="sec-newgame">
+  <!-- Sub-tabs for time range -->
+  <div class="subtabs" id="ng-subtabs">
+    <button class="subtab active" data-days="30"  onclick="switchNGTab(30,this)">📅 30 ngày</button>
+    <button class="subtab"        data-days="90"  onclick="switchNGTab(90,this)">📅 90 ngày</button>
+    <button class="subtab"        data-days="180" onclick="switchNGTab(180,this)">📅 180 ngày</button>
+  </div>
+    <div class="stats-row" id="ng-stats"></div>
+    <div class="toolbar">
+      <input class="search-box" id="ng-q" placeholder="🔍  Tìm game, developer..." oninput="filterNG()">
+      <select class="fsel" id="ng-genre" onchange="filterNG()"><option value="">Tất cả thể loại</option></select>
+      <select class="fsel" id="ng-region" onchange="filterNG()">
+        <option value="">Tất cả khu vực</option><option>Trung Quốc</option><option>Toàn Châu Á</option>
+      </select>
+      <select class="fsel" id="ng-status" onchange="filterNG()"><option value="">Tất cả trạng thái</option></select>
+      <button class="hl-tog" id="ng-hl" onclick="togHL('ng')"><div class="hl-dot"></div>Chỉ Highlight</button>
+      <button class="exp-btn" onclick="exportCSV('ng')">⬇ Export CSV</button>
+      <span class="res-cnt" id="ng-cnt"></span>
+    </div>
+    <div class="tbl-wrap"><div class="tbl-scroll">
+      <table id="ng-tbl">
+        <thead><tr>
+          <th onclick="sortNG(0)" data-c="0">STT<span class="si">↕</span></th>
+          <th class="no-sort">TÊN GAME</th>
+          <th class="no-sort" style="width:90px">IP</th>
+          <th onclick="sortNG(2)" data-c="2">THỂ LOẠI<span class="si">↕</span></th>
+          <th class="no-sort">TRẠNG THÁI</th>
+          <th onclick="sortNG(4)" data-c="4">THỜI GIAN<span class="si">↕</span></th>
+          <th class="no-sort">KHU VỰC</th>
+          <th class="no-sort" style="width:80px;text-align:center">CN TapTap</th>
+          <th class="no-sort">DEVELOPER</th>
+          <th class="no-sort">CORE GAMEPLAY (VI)</th>
+          <th class="no-sort">STORES / WEBSITE</th>
+          <th class="no-sort" style="text-align:center;width:40px">
+            <span class="hl-th-icon" title="⭐ HIGHLIGHT khi thuộc thể loại: MMORPG / RPG / SLG / Casual / Shooting / Turn-based Shooting / Card Battle Game" onmouseenter="showTip(event,this)" onmouseleave="hideTip()" data-tip="⭐ HIGHLIGHT = Thể loại: MMORPG / RPG / SLG / Casual / Shooting / Turn-based Shooting / Card Battle Game">⭐</span>
+          </th>
+        </tr></thead>
+        <tbody id="ng-body"></tbody>
+      </table>
+    </div></div>
+  </div>
+
+  <!-- ══ RANKINGS ══ -->
+  <div class="section" id="sec-rankings">
+    <div class="rank-tabs">
+      <button class="rtab active" onclick="switchRank('30d',this)">📊 BXH 30 Ngày</button>
+      <button class="rtab" onclick="switchRank('90d',this)">📊 BXH 90 Ngày</button>
+      <button class="rtab" onclick="switchRank('year',this)">🏆 BXH Năm</button>
+    </div>
+    <!-- 30d -->
+    <div id="r-30d">
+      <div class="stats-row" id="r30-stats"></div>
+      <div class="toolbar">
+        <input class="search-box" id="r30-q" placeholder="🔍  Tìm kiếm..." oninput="filterRank('30d')">
+        <select class="fsel" id="r30-genre" onchange="filterRank('30d')"><option value="">Tất cả thể loại</option></select>
+        <button class="hl-tog" id="r30-hl" onclick="togHL('r30')"><div class="hl-dot"></div>Chỉ Highlight</button>
+        <button class="exp-btn" onclick="exportCSV('r30')">⬇ Export CSV</button>
+        <span class="res-cnt" id="r30-cnt"></span>
+      </div>
+      <div class="tbl-wrap"><div class="tbl-scroll">
+        <table><thead><tr>
+          <th>Hạng</th><th class="no-sort">Tên Game</th><th class="no-sort">Thể loại</th>
+          <th class="no-sort">Trạng thái</th><th class="no-sort">Khu vực</th>
+          <th class="no-sort">Developer</th><th class="no-sort">Core Gameplay (VI)</th>
+          <th class="no-sort">Stores / Website</th>
+          <th style="text-align:center" class="no-sort"><span class="hl-th-icon" data-tip="⭐ Game có thể quan tâm: MMORPG, SLG, CBG, Casual, Turn-based, Shooting" onmouseenter="showTip(event,this)" onmouseleave="hideTip()">⭐</span></th>
+        </tr></thead><tbody id="r30-body"></tbody></table>
+      </div></div>
+    </div>
+    <!-- 90d -->
+    <div id="r-90d" style="display:none">
+      <div class="stats-row" id="r90-stats"></div>
+      <div class="toolbar">
+        <input class="search-box" id="r90-q" placeholder="🔍  Tìm kiếm..." oninput="filterRank('90d')">
+        <select class="fsel" id="r90-genre" onchange="filterRank('90d')"><option value="">Tất cả thể loại</option></select>
+        <button class="hl-tog" id="r90-hl" onclick="togHL('r90')"><div class="hl-dot"></div>Chỉ Highlight</button>
+        <button class="exp-btn" onclick="exportCSV('r90')">⬇ Export CSV</button>
+        <span class="res-cnt" id="r90-cnt"></span>
+      </div>
+      <div class="tbl-wrap"><div class="tbl-scroll">
+        <table><thead><tr>
+          <th>Hạng</th><th class="no-sort">Tên Game</th><th class="no-sort">Thể loại</th>
+          <th class="no-sort">Trạng thái</th><th class="no-sort">Khu vực</th>
+          <th class="no-sort">Developer</th><th class="no-sort">Core Gameplay (VI)</th>
+          <th class="no-sort">Stores / Website</th>
+          <th style="text-align:center" class="no-sort"><span class="hl-th-icon" data-tip="⭐ Game có thể quan tâm: MMORPG, SLG, CBG, Casual, Turn-based, Shooting" onmouseenter="showTip(event,this)" onmouseleave="hideTip()">⭐</span></th>
+        </tr></thead><tbody id="r90-body"></tbody></table>
+      </div></div>
+    </div>
+    <!-- year -->
+    <div id="r-year" style="display:none">
+      <div class="stats-row" id="ryr-stats"></div>
+      <div class="toolbar">
+        <input class="search-box" id="ryr-q" placeholder="🔍  Tìm kiếm..." oninput="filterRank('year')">
+        <select class="fsel" id="ryr-genre" onchange="filterRank('year')"><option value="">Tất cả thể loại</option></select>
+        <button class="hl-tog" id="ryr-hl" onclick="togHL('ryr')"><div class="hl-dot"></div>Chỉ Highlight</button>
+        <button class="exp-btn" onclick="exportCSV('ryr')">⬇ Export CSV</button>
+        <span class="res-cnt" id="ryr-cnt"></span>
+      </div>
+      <div class="tbl-wrap"><div class="tbl-scroll">
+        <table><thead><tr>
+          <th>Hạng</th><th class="no-sort">Tên Game</th><th class="no-sort">Thể loại</th>
+          <th class="no-sort">Trạng thái</th><th class="no-sort">Khu vực</th>
+          <th class="no-sort">Developer</th><th class="no-sort">Core Gameplay (VI)</th>
+          <th class="no-sort">Stores / Website</th>
+          <th style="text-align:center" class="no-sort"><span class="hl-th-icon" data-tip="⭐ Game có thể quan tâm: MMORPG, SLG, CBG, Casual, Turn-based, Shooting" onmouseenter="showTip(event,this)" onmouseleave="hideTip()">⭐</span></th>
+        </tr></thead><tbody id="ryr-body"></tbody></table>
+      </div></div>
+    </div>
+  </div>
+</main>
+
+<!-- MODAL -->
+<div class="modal-ov" id="modal-ov" onclick="closeMOv(event)">
+<div class="modal" id="modal-box">
+  <div class="m-hdr">
+    <div style="display:flex;align-items:center;gap:14px">
+      <div id="m-icon-slot"></div>
+      <div>
+        <div class="m-title" id="m-title"></div>
+        <div class="m-title-en" id="m-title-en"></div>
+      </div>
+    </div>
+    <button class="m-close" onclick="closeMDirect()">✕</button>
+  </div>
+  <div class="m-grid" id="m-grid"></div>
+  <div class="m-gp" id="m-gp-wrap">
+    <div class="m-gp-lbl">🕹 Core Gameplay (Tiếng Việt)</div>
+    <div class="m-gp-txt" id="m-gp"></div>
+  </div>
+  <div class="m-stores" id="m-stores-wrap">
+    <div class="m-stores-lbl">🔗 Stores & Website</div>
+    <div class="m-store-links" id="m-store-links"></div>
+  </div>
+  <!-- PERFORMANCE TRACKER -->
+  <div class="perf-wrap" id="m-perf-wrap">
+    <div class="perf-lbl">
+      <span>📊 Data Performance</span>
+      <button class="perf-add-btn" onclick="showPerfForm()">+ Nhập KPI thủ công</button>
+    </div>
+    <!-- TapTap Live Section -->
+    <div class="tt-panel" id="m-tt-panel">
+      <div class="tt-panel-lbl">
+        <span>🎮 TapTap Live Data</span>
+        <a class="tt-taptap-link" id="m-tt-link" href="#" target="_blank">Xem trên TapTap ↗</a>
+      </div>
+      <div id="m-tt-content"></div>
+    </div>
+    <!-- Manual KPI entries -->
+    <div style="font-size:11px;color:var(--text3);margin-bottom:8px;font-weight:500">📋 KPI Premium (Data.ai / Sensor Tower / nhập tay)</div>
+    <div class="perf-entries" id="perf-entries"></div>
+    <div id="perf-form-wrap"></div>
+  </div>
+</div>
+</div>
+
+<footer class="footer">
+  Game Market Tracker · Dữ liệu từ <a href="https://www.16p.com" target="_blank">16p.com (玩匠)</a> · Tháng 6/2026
+</footer>
+
+<script>
+const RAW=__LIVE_DATA__;
+
+// ── PERF STORAGE (in-memory, keyed by game name) ──
+const perfDB = {};
+const _clickCache = {};
+const TAPTAP = {};
+const UPDATED_AT = "Chưa có data live (chạy GitHub Actions)";
+let currentGameKey = '';
+
+const HL_GENRES=['mmorpg','cbg','slg','casual','turn-based','turn','shooting'];
+function isHL(genre){
+  // Highlight khi thuộc: MMORPG, RPG, SLG, Casual, Shooting, Turn-based Shooting, Card Battle Game
+  const HL = ['mmorpg','rpg','slg','casual','shooting','turn-based','card battle',
+              '角色扮演','修仙'];
+  const parts = (genre||'').toLowerCase().split('/').map(p=>p.trim());
+  return HL.some(h => parts.some(p => p === h || p.startsWith(h)));
+}
+
+function gCls(g){
+  const l=(g||'').toLowerCase();
+  if(l.includes('mmorpg'))return'g-mmorpg';
+  if(l.includes('slg'))return'g-slg';
+  if(l.includes('arpg'))return'g-arpg';
+  if(l.includes('casual'))return'g-casual';
+  if(l.includes('cbg'))return'g-cbg';
+  if(l.includes('turn'))return'g-turn';
+  if(l.includes('moba'))return'g-moba';
+  return'g-def';
+}
+function sCls(s){
+  const l=(s||'').toLowerCase();
+  if(l.includes('ngừng')||l.includes('shutdown')||l.includes('停运'))return's-shutdown';
+  if(l.includes('global'))return's-glob';
+  if(l.includes('open beta')||l.includes('vận hành'))return l.includes('vận hành')?'s-live':'s-ob';
+  if(l.includes('obt')||l.includes('không xóa'))return's-obt';
+  if(l.includes('cbt')||l.includes('xóa'))return's-cbt';
+  if(l.includes('kỹ thuật'))return's-tech';
+  return's-tech';
+}
+function rCls(r){
+  if(!r)return'r-oth';
+  if(r.includes('Trung Quốc'))return'r-cn';
+  if(r.includes('Châu Á'))return'r-asia';
+  return'r-oth';
+}
+function rankB(n){
+  const c=n==1?'rk1':n==2?'rk2':n==3?'rk3':'rkn';
+  return`<div class="rank-b ${c}">${n}</div>`;
+}
+function fmtDate(d){
+  if(!d)return'—';
+  // Already formatted like 2026-06-15 → keep, or 2026-06 → keep
+  return d;
+}
+function gpBullets(txt){
+  if(!txt)return'<span style="color:var(--text3)">—</span>';
+  const lines=txt.split(/\\n|\n|\\\\n/).map(l=>l.trim()).filter(Boolean);
+  return'<ul>'+lines.map(l=>`<li>${l.replace(/^[•·\-]\s*/,'')}</li>`).join('')+'</ul>';
+}
+function storeLinks(g, compact=false){
+  const links=[];
+  if(g.Mainsite) links.push(`<a class="store-link sl-web" href="${g.Mainsite}" target="_blank">🌐 Official</a>`);
+  if(g.AppStore) links.push(`<a class="store-link sl-ios" href="${g.AppStore}" target="_blank">🍎 App Store</a>`);
+  if(g.GooglePlay) links.push(`<a class="store-link sl-gp" href="${g.GooglePlay}" target="_blank">▶ Google Play</a>`);
+  if(g['Store CN']){
+    const cn=g['Store CN'];
+    const url=cn.match(/https?:\/\/[^\s|]+/);
+    if(url) links.push(`<a class="store-link sl-cn" href="${url[0].trim()}" target="_blank">🇨🇳 ${cn.split(':')[0]}</a>`);
+  }
+  if(!links.length)return'<span class="sl-none">—</span>';
+  if(compact) return`<div class="store-links">${links.join('')}</div>`;
+  return links.join('');
+}
+
+
+// ── APP ICON HELPERS ────────────────────────────────────────────────
+const ICON_COLORS=['#7c3aed','#2563eb','#0891b2','#059669','#d97706','#dc2626','#db2777','#4f46e5','#0d9488','#c2410c'];
+function iconColor(name){let h=0;for(let c of (name||''))h=(h*31+c.charCodeAt(0))&0xffff;return ICON_COLORS[h%ICON_COLORS.length];}
+function gameInitial(name){const cjk=(name||'').match(/[\u4e00-\u9fff\u3040-\u30ff]/);if(cjk)return cjk[0];return((name||'').replace(/[^a-zA-Z0-9]/g,'')[0]||'?').toUpperCase();}
+
+function iconHTMLFetch(g, size=44, radius=10){
+  const name    = g['Tên gốc']||'';
+  const iosId   = g.ios_id||'';
+  const iconUrl = g.icon_url||'';  // pre-fetched by GitHub Actions
+  const mainsite= g.Mainsite||'';
+  const color   = iconColor(name);
+  const initial = gameInitial(name);
+  const sz = size+'px';
+  const br = radius+'px';
+  const fs = Math.round(size*0.44)+'px';
+
+  // Fallback avatar HTML (used on img error)
+  const avatarStyle = `width:${sz};height:${sz};border-radius:${br};background:${color};display:flex;align-items:center;justify-content:center;font-size:${fs};font-weight:800;color:#fff;font-family:'Noto Sans SC',sans-serif;flex-shrink:0;letter-spacing:-1px`;
+  const avatarEl    = `<div style="${avatarStyle}">${initial}</div>`;
+  const wrapStyle   = `width:${sz};height:${sz};border-radius:${br};overflow:hidden;flex-shrink:0;background:${color};border:1.5px solid rgba(255,255,255,0.12)`;
+
+  // Priority 1: pre-fetched icon_url from iTunes (via GitHub Actions)
+  if(iconUrl){
+    return `<div style="${wrapStyle}"><img src="${iconUrl}" width="${size}" height="${size}" style="object-fit:cover;display:block;border-radius:${br}" onerror="this.parentElement.outerHTML='${avatarEl.replace(/'/g,"\\'").replace(/"/g,'&quot;')}'" loading="lazy"></div>`;
+  }
+
+  // Priority 2: iTunes artwork via CORS-free URL pattern
+  // Apple artwork URLs are publicly accessible if you know them
+  // Pattern: https://is1-ssl.mzstatic.com/image/thumb/{collection}/{assetid}/60x60bb.jpg
+  // We can't predict the path without API, so use avatar for now
+
+  // Priority 3: Colored avatar (always works, looks great)
+  return `<div style="${wrapStyle};display:flex;align-items:center;justify-content:center"><span style="font-size:${fs};font-weight:800;color:#fff;font-family:'Noto Sans SC',sans-serif">${initial}</span></div>`;
+}
+
+
+function switchNGTab(days, btn){
+  document.querySelectorAll('.subtab').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  CURRENT_NG_DAYS = days;
+  filterNG();
+}
+let CURRENT_NG_DAYS = 30;
+
+function daysAgo(g_or_str){
+  // Accept either a game object (use date_sort) or a raw string
+  let s;
+  if(typeof g_or_str === 'object' && g_or_str !== null){
+    s = g_or_str.date_sort || g_or_str['Thời gian'] || '';
+  } else {
+    s = g_or_str || '';
+  }
+  s = s.toString().trim();
+  if(!s) return 9999;
+  try {
+    let d;
+    // YYYY-MM-DD (from date_sort field - most reliable)
+    if(/^\d{4}-\d{2}-\d{2}$/.test(s)) d = new Date(s + 'T00:00:00');
+    // DD/MM/YY (display format)
+    else if(/^\d{2}\/\d{2}\/\d{2}$/.test(s)){
+      const p=s.split('/'); d=new Date(`20${p[2]}-${p[1]}-${p[0]}T00:00:00`);
+    }
+    // MM/YY
+    else if(/^\d{2}\/\d{2}$/.test(s)){
+      const p=s.split('/'); d=new Date(`20${p[1]}-${p[0]}-01T00:00:00`);
+    }
+    // YY only
+    else if(/^\d{2}$/.test(s)) d=new Date(`20${s}-06-01T00:00:00`);
+    else return 9999;
+    if(isNaN(d.getTime())) return 9999;
+    return Math.max(0, Math.floor((Date.now()-d.getTime())/(1000*60*60*24)));
+  } catch(e){ return 9999; }
+}
+
+
+function renderHLDashboard(games){
+  const hlGames = games.filter(g=>isHL(g['Thể loại']));
+  const dashboard = document.getElementById('hl-dashboard');
+  const chart = document.getElementById('hl-genre-chart');
+  if(!dashboard||!chart) return;
+  // Count by genre
+  const counts = {};
+  hlGames.forEach(g=>{
+    const genre = (g['Thể loại']||'Khác').split(' / ').pop(); // Get VI part
+    counts[genre] = (counts[genre]||0)+1;
+  });
+  const total = hlGames.length;
+  const sorted = Object.entries(counts).sort((a,b)=>b[1]-a[1]);
+  const colors = ['#7c3aed','#2563eb','#059669','#d97706','#dc2626','#db2777','#0891b2','#4f46e5'];
+  chart.innerHTML = sorted.map(([genre,cnt],i)=>{
+    const pct = total ? Math.round(cnt/total*100) : 0;
+    return `<div style="background:var(--s3);border:1px solid var(--border);border-radius:10px;padding:10px 14px;min-width:140px">
+      <div style="font-size:11px;color:var(--text3);margin-bottom:4px">${genre}</div>
+      <div style="font-size:22px;font-weight:800;color:${colors[i%colors.length]}">${cnt}</div>
+      <div style="font-size:11px;color:var(--text3)">${pct}% highlight</div>
+      <div style="margin-top:6px;height:3px;background:var(--border);border-radius:2px">
+        <div style="height:3px;background:${colors[i%colors.length]};border-radius:2px;width:${pct}%"></div>
+      </div>
+    </div>`;
+  }).join('');
+  // Show total
+  chart.innerHTML += `<div style="background:var(--s2);border:1px solid var(--accent1);border-radius:10px;padding:10px 14px;min-width:140px">
+    <div style="font-size:11px;color:var(--accent2);margin-bottom:4px">TỔNG HIGHLIGHT</div>
+    <div style="font-size:22px;font-weight:800;color:var(--accent1)">${total}</div>
+    <div style="font-size:11px;color:var(--text3)">${total} / ${games.length} games</div>
+  </div>`;
+}
+
+// ── FILTER STATES ──
+const FS={ng:{hl:false,sortCol:null,sortDir:1},r30:{hl:false},r90:{hl:false},ryr:{hl:false}};
+
+// ── POPULATE SELECTS ──
+function popGenre(id,arr,key='Thể loại'){
+  const sel=document.getElementById(id);
+  [...new Set(arr.map(g=>g[key]).filter(Boolean))].sort().forEach(v=>{
+    const o=document.createElement('option');o.value=v;o.textContent=v;sel.appendChild(o);
+  });
+}
+function popStatus(id,arr){
+  const sel=document.getElementById(id);
+  [...new Set(arr.map(g=>g['Trạng thái (Tiếng Việt)']).filter(Boolean))].sort().forEach(v=>{
+    const o=document.createElement('option');o.value=v;o.textContent=v;sel.appendChild(o);
+  });
+}
+
+// ── RENDER STATS ──
+function renderStats(cid,games){
+  const el=document.getElementById(cid);
+  if(!el)return;
+  const hl=games.filter(g=>isHL(g['Thể loại'])).length;
+  const cn=games.filter(g=>(g['Khu vực phát hành']||'').includes('Trung Quốc')).length;
+  const asia=games.filter(g=>(g['Khu vực phát hành']||'').includes('Châu Á')).length;
+  const genres=[...new Set(games.map(g=>g['Thể loại']).filter(Boolean))].length;
+  el.innerHTML=`
+    <div class="stat-card"><div class="stat-icon" style="background:rgba(59,130,246,.15)">🎮</div><div><div class="stat-lbl">Tổng</div><div class="stat-val" style="color:var(--accent2)">${games.length}</div></div></div>
+    <div class="stat-card"><div class="stat-icon" style="background:rgba(245,158,11,.15)">⭐</div><div><div class="stat-lbl">Highlight</div><div class="stat-val" style="color:var(--gold)">${hl}</div></div></div>
+    <div class="stat-card"><div class="stat-icon" style="background:rgba(239,68,68,.15)">🇨🇳</div><div><div class="stat-lbl">Trung Quốc</div><div class="stat-val" style="color:#fca5a5">${cn}</div></div></div>
+    <div class="stat-card"><div class="stat-icon" style="background:rgba(16,185,129,.15)">🌏</div><div><div class="stat-lbl">Toàn Châu Á</div><div class="stat-val" style="color:var(--green)">${asia}</div></div></div>
+    <div class="stat-card"><div class="stat-icon" style="background:rgba(139,92,246,.15)">🎯</div><div><div class="stat-lbl">Thể loại</div><div class="stat-val" style="color:#a78bfa">${genres}</div></div></div>
+  `;
+}
+
+// ── RENDER NEW GAMES ──
+function renderNG(arr){
+  const tb=document.getElementById('ng-body');
+  if(!arr.length){
+    tb.innerHTML='<tr><td colspan="13"><div class="empty"><div class="empty-icon">🔍</div><p>Không có kết quả</p></div></td></tr>';
+    document.getElementById('ng-cnt').textContent='0 game';
+    return;
+  }
+  tb.innerHTML=arr.map((g,i)=>{
+    const genre   = g['Thể loại']||'';
+    const ios     = parseFloat(g.ios_rating||0);
+    const tt      = parseFloat(g.taptap_rating||g.score_16p||0);
+    const hl      = isHL(genre);
+    const svn     = g['Trạng thái (Tiếng Việt)']||'';
+    const sbi     = g['Trạng thái phát hành']||'';  // bilingual
+    const stCls   = sCls(svn);
+    const listing = g['Niêm yết 上市']||'';
+    const listCls = listing.includes('是')?'lst-yes':'lst-no';
+    const listTxt = listing.includes('是')?listing.replace('是 (','').replace(')',''):'Chưa niêm yết';
+    const devEN   = g['Developer EN']?`<div class="dev-en">${g['Developer EN']}</div>`:'';
+    const region  = g['Khu vực phát hành']||'';
+    const rCls    = region.includes('Trung')?'r-cn':'r-asia';
+
+    // IP badge
+    const ipText = g['IP']
+      ? `<span class="ip-badge">${g['IP']}</span>`
+      : '<span style="color:var(--text3);font-size:11px">—</span>';
+
+    // TapTap rating
+    const ttCell = tt >= 7.0
+      ? `<span style="color:#10b981;font-weight:700">▲ ${tt}</span>`
+      : tt > 0
+        ? `<span style="color:var(--text3)">▲ ${tt}</span>`
+        : '<span style="color:var(--text3)">—</span>';
+
+    // Store buttons — stacked vertically
+    const appUrl  = g['AppStore']||'';
+    const ttUrl   = (g['Store CN']||'').replace('TapTap: ','');
+    const mainUrl = g['Mainsite']||'';
+    const ttDirect = g.store_taptap || (g.taptap_id ? 'https://www.taptap.cn/app/'+g.taptap_id : '') || ((g['Store CN']||'').replace('TapTap: ','')) || '';
+    const biliUrl  = g.store_bilibili || ('https://search.bilibili.com/all?keyword='+encodeURIComponent(g['Tên gốc']||''));
+    const hygbUrl  = g.store_hygb || ('https://www.hygb.cn/gamelist?keyword='+encodeURIComponent(g['Tên gốc']||''));
+    const ttIsDirect = ttDirect && !ttDirect.includes('/search?');
+    // Only show links that are likely valid
+    function validUrl(u){ return u && u.startsWith('http') && !u.includes('undefined') && !u.includes('null'); }
+    // App Store CN URL: /cn/app/ works for CN games
+    const appUrlCN = appUrl ? appUrl.replace('/app/id', '/cn/app/id') : '';
+    const storeBtns = [
+      validUrl(mainUrl)  ? `<a href="${mainUrl}"  target="_blank" rel="noopener" class="store-btn web">🌐 Official</a>` : '',
+      validUrl(appUrlCN) ? `<a href="${appUrlCN}" target="_blank" rel="noopener" class="store-btn ios">🍎 App Store</a>` : '',
+      validUrl(ttDirect) ? `<a href="${ttDirect}" target="_blank" rel="noopener" class="store-btn taptap${ttIsDirect?'':' search'}"><img src="https://img.tapimg.net/market/images/0ef6508b0b0b32e8e762f01ef0d8de04.png" style="width:13px;height:13px;vertical-align:middle;margin-right:3px;border-radius:3px">${ttIsDirect?'TapTap':'TapTap 🔍'}</a>` : '',
+    ].filter(Boolean).join('');
+
+    // Status: show bilingual (CN / VI)
+    const statusCell = `<span class="status-badge ${stCls}">${svn}</span>
+      <div style="font-size:10px;color:var(--text3);margin-top:3px">${sbi.split(' / ')[0]||''}</div>`;
+
+    _clickCache['ng__'+i]=g;
+    return `<tr class="${hl?'hl-row':''}" data-ck="ng__${i}" style="cursor:pointer">
+      <td class="stt">${i+1}</td>
+      <td class="gname">
+        <div style="display:flex;align-items:flex-start;gap:10px">
+          ${iconHTMLFetch(g,44,10)}
+          <div style="display:flex;flex-direction:column;justify-content:center;min-width:0">
+            <div class="gname-orig">${g['Tên gốc']}</div>
+            ${g['Tên tiếng Anh (nếu khác)']?`<div class="gname-en">${g['Tên tiếng Anh (nếu khác)']}</div>`:''}
+          </div>
+        </div>
+      </td>
+      <td style="text-align:center">${ipText}</td>
+      <td><span class="genre-badge">${genre}</span></td>
+      <td>${statusCell}</td>
+      <td class="time-cell">${g['Thời gian']||''}</td>
+      <td><span class="region-badge ${rCls}">${region}</span></td>
+      <td class="rating-cell" style="text-align:center">${ttCell}</td>
+      <td class="dev-cell">
+        <div class="dev-name">${g['Developer']||''}</div>
+        ${devEN}
+        <div class="dev-meta">${g['Quốc gia/ Vùng lãnh thổ']||''}</div>
+        <span class="listing ${listCls}">${listTxt}</span>
+      </td>
+      <td class="gameplay-cell"><ul class="gp-bullets">${gpBullets(g['Core Gameplay VN'])}</ul></td>
+      <td class="store-cell" style="white-space:normal;line-height:2">${storeBtns||'—'}</td>
+      <td class="hl-cell">${hl?'⭐':''}</td>
+    </tr>`;
+  }).join('');
+  document.getElementById('ng-cnt').textContent=arr.length+' game';
+}
+
+
+function filterNG(){
+  const q=document.getElementById('ng-q').value.toLowerCase();
+  const genre=document.getElementById('ng-genre').value;
+  const region=document.getElementById('ng-region').value;
+  const status=document.getElementById('ng-status').value;
+  const hlOnly=FS['ng']&&FS['ng'].hl;
+  let d=[...RAW.newgames];
+  // Filter by time range (sub-tabs)
+  d=d.filter(g=>daysAgo(g)<=CURRENT_NG_DAYS);
+  // Sort by date desc
+  d.sort((a,b)=>daysAgo(a)-daysAgo(b));
+  if(q)d=d.filter(g=>JSON.stringify(g).toLowerCase().includes(q));
+  if(genre)d=d.filter(g=>(g['Thể loại']||'').includes(genre));
+  if(region)d=d.filter(g=>g['Khu vực phát hành']===region);
+  if(status)d=d.filter(g=>(g['Trạng thái (Tiếng Việt)']||'').includes(status));
+  if(hlOnly){
+    d=d.filter(g=>isHL(g['Thể loại']));
+    const dash=document.getElementById('hl-dashboard');
+    if(dash){dash.style.display='block'; renderHLDashboard(RAW.newgames.filter(g=>daysAgo(g)<=CURRENT_NG_DAYS));}
+  } else {
+    const dash=document.getElementById('hl-dashboard');
+    if(dash) dash.style.display='none';
+  }
+  renderNG(d);
+  renderStats('ng-stats',d);
+  // Update subtab counts
+  [30,90,180].forEach(days=>{
+    const cnt=RAW.newgames.filter(g=>daysAgo(g)<=days).length;
+    const btn=document.querySelector(`.subtab[data-days="${days}"]`);
+    if(btn) btn.innerHTML=btn.innerHTML.replace(/<span class="subtab-cnt">.*?<\/span>/,'')
+      +`<span class="subtab-cnt">${cnt}</span>`;
+  });
+}
+
+function sortNG(col){
+  if(_ngSortCol===col)_ngSortDir*=-1; else{_ngSortCol=col;_ngSortDir=1;}
+  FS.ng.sortCol=_ngSortCol;FS.ng.sortDir=_ngSortDir;
+  document.querySelectorAll('#ng-tbl thead th').forEach((th,i)=>{
+    th.classList.toggle('sorted',i===col);
+    const si=th.querySelector('.si');
+    if(si)si.textContent=i===col?(_ngSortDir===1?'↑':'↓'):'↕';
+  });
+  filterNG();
+}
+
+// ── RENDER RANKINGS ──
+function renderRank(arr,tbid){
+  const tb=document.getElementById(tbid);
+  if(!arr.length){tb.innerHTML='<tr><td colspan="9"><div class="empty"><div class="empty-icon">🔍</div><p>Không có kết quả</p></div></td></tr>';return;}
+  tb.innerHTML=arr.map((g,i)=>{
+    const hl=isHL(g['Thể loại']);
+    const svn=g['Trạng thái (Tiếng Việt)']||g['Trạng thái']||'';
+    const listed=(g['Niêm yết 上市']||'').startsWith('是');
+    const devenText=g['Developer EN']?`<div class="dev-en">${g['Developer EN']}</div>`:'';
+    _clickCache[tbid+'__'+i]=g;
+    return`<tr class="${hl?'hl-row':''}" data-ck="${tbid}__${i}" style="cursor:pointer">
+      <td style="text-align:center">${rankB(parseInt(g['Hạng'])||0)}</td>
+      <td class="gname">
+        <div style="display:flex;align-items:flex-start;gap:10px">
+          ${iconHTMLFetch(g,44,10)}
+          <div style="display:flex;flex-direction:column;justify-content:center;min-width:0">
+            <div class="gname-orig">${g['Tên gốc']}</div>
+            ${g['Tên tiếng Anh (nếu khác)']?`<div class="gname-en">${g['Tên tiếng Anh (nếu khác)']}</div>`:''}
+          </div>
+        </div>
+      </td>
+      <td><span class="gbadge ${gCls(g['Thể loại'])}">${g['Thể loại']||'—'}</span></td>
+      <td>
+        <span class="sbadge ${sCls(svn)}">${svn}</span>
+        <div style="font-size:10px;color:var(--text3);margin-top:3px">${g['Trạng thái']||''}</div>
+      </td>
+      <td><span class="rbadge ${rCls(g['Khu vực phát hành'])}">${g['Khu vực phát hành']||'—'}</span></td>
+      <td class="dev-cell">
+        <div class="dev-name">${g.Developer||'—'}</div>${devenText}
+        <div class="dev-meta">${g['Quốc gia/ Vùng lãnh thổ']||''}${g['Năm thành lập']?' · '+g['Năm thành lập']:''}</div>
+        <div class="${listed?'lst-y':'lst-n'}">${listed?'✓ Niêm yết':'Chưa niêm yết'}</div>
+      </td>
+      <td class="gp-cell">${gpBullets(g['Core Gameplay VN'])}</td>
+      <td class="link-cell" onclick="event.stopPropagation()">${storeLinks(g,true)}</td>
+      <td style="text-align:center">${hl?'<span class="hl-star">⭐</span>':''}</td>
+    </tr>`;
+  }).join('');
+}
+
+function filterRank(period){
+  const px=period==='30d'?'r30':period==='90d'?'r90':'ryr';
+  const rk=period==='30d'?'bxh_30':period==='90d'?'bxh_90':'bxh_year';
+  const tbid=px+'-body';
+  const q=document.getElementById(px+'-q').value.toLowerCase();
+  const genre=document.getElementById(px+'-genre').value;
+  let d=[...RAW[rk]];
+  if(q)d=d.filter(g=>JSON.stringify(g).toLowerCase().includes(q));
+  if(genre)d=d.filter(g=>g['Thể loại']===genre);
+  if(FS[px].hl)d=d.filter(g=>isHL(g['Thể loại']));
+  renderRank(d,tbid);
+  document.getElementById(px+'-cnt').textContent=d.length+' game';
+}
+
+// ── TOGGLE HL ──
+function togHL(px){
+  FS[px].hl=!FS[px].hl;
+  const btn=document.getElementById(px+'-hl');
+  btn.classList.toggle('on',FS[px].hl);
+  if(px==='ng')filterNG();
+  else filterRank(px==='r30'?'30d':px==='r90'?'90d':'year');
+}
+
+// ── EXPORT CSV ──
+function exportCSV(src){
+  let data,name;
+  if(src==='ng'){data=RAW.newgames;name='GameMoi_16p';}
+  else if(src==='r30'){data=RAW.bxh_30;name='BXH30ngay_16p';}
+  else if(src==='r90'){data=RAW.bxh_90;name='BXH90ngay_16p';}
+  else{data=RAW.bxh_year;name='BXHNam_16p';}
+  if(!data||!data.length)return;
+  const keys=Object.keys(data[0]).filter(k=>!['Core Gameplay'].includes(k));
+  const rows=[keys.join(','),...data.map(g=>keys.map(k=>{
+    const v=(g[k]||'').toString().replace(/\n/g,' ').replace(/,/g,';');
+    return`"${v}"`;
+  }).join(','))];
+  const blob=new Blob(['\uFEFF'+rows.join('\r\n')],{type:'text/csv;charset=utf-8'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);
+  a.download=`${name}_${new Date().toISOString().slice(0,10)}.csv`;a.click();
+}
+
+// ── MODAL ──
+let currentGame=null;
+function openModal(g){
+  currentGame = g;
+  const isRank='Hạng' in g;
+  document.getElementById('m-title').textContent=g['Tên gốc']||'';
+  const parts=[g['Tên tiếng Anh (nếu khác)'],g['Tên tiếng Trung (nếu khác)']].filter(Boolean);
+  document.getElementById('m-title-en').textContent=parts.join(' · ');
+  // Render icon in modal
+  const iconSlot = document.getElementById('m-icon-slot');
+  if(iconSlot) iconSlot.innerHTML = iconHTMLFetch(g, 60, 14);
+  const svn=g['Trạng thái (Tiếng Việt)']||g['Trạng thái']||g['Trạng thái phát hành']||'';
+  const sKey=isRank?'Trạng thái':'Trạng thái phát hành';
+  const listed=(g['Niêm yết 上市']||'').startsWith('是');
+  const fields=[
+    ['Thể loại',`<span class="gbadge ${gCls(g['Thể loại'])}">${g['Thể loại']||'—'}</span>`],
+    ['Trạng thái',`<span class="sbadge ${sCls(svn)}">${svn}</span> <span style="color:var(--text3);font-size:11px">(${g[sKey]||''})</span>`],
+    isRank?['Hạng',rankB(parseInt(g['Hạng'])||0)]:['Thời gian',fmtDate(g['Thời gian'])],
+    ['Khu vực',`<span class="rbadge ${rCls(g['Khu vực phát hành'])}">${g['Khu vực phát hành']||'—'}</span>`],
+    ['Developer',`<strong>${g.Developer||'—'}</strong>${g['Developer EN']?`<br><span style="font-size:11px;color:var(--text3)">${g['Developer EN']}</span>`:''}`],
+    ['Quốc gia',g['Quốc gia/ Vùng lãnh thổ']||'—'],
+    ['Năm thành lập',g['Năm thành lập']||'—'],
+    ['Niêm yết',`<span class="${listed?'lst-y':'lst-n'}">${listed?'✓ Đã niêm yết':'Chưa niêm yết'}</span><br><span style="font-size:11px;color:var(--text3)">${g['Niêm yết 上市']||''}</span>`],
+  ];
+  document.getElementById('m-grid').innerHTML=fields.map(([l,v])=>`<div class="m-field"><div class="m-flbl">${l}</div><div class="m-fval">${v}</div></div>`).join('');
+  // Gameplay bullets
+  document.getElementById('m-gp').innerHTML=gpBullets(g['Core Gameplay VN'])||`<span style="color:var(--text3)">${g['Core Gameplay']||'—'}</span>`;
+  // Stores
+  const slinks=[];
+  if(g.Mainsite)slinks.push(`<a class="store-link sl-web" href="${g.Mainsite}" target="_blank">🌐 Official Website</a>`);
+  if(g.AppStore)slinks.push(`<a class="store-link sl-ios" href="${g.AppStore}" target="_blank">🍎 App Store</a>`);
+  if(g.GooglePlay)slinks.push(`<a class="store-link sl-gp" href="${g.GooglePlay}" target="_blank">▶ Google Play</a>`);
+  if(g['Store CN']){
+    const cn=g['Store CN'];
+    const parts2=cn.split('|').map(s=>s.trim());
+    parts2.forEach(p=>{
+      const m=p.match(/(.+?):\s*(https?:\/\/\S+)/);
+      if(m)slinks.push(`<a class="store-link sl-cn" href="${m[2]}" target="_blank">🇨🇳 ${m[1]}</a>`);
+    });
+  }
+  document.getElementById('m-store-links').innerHTML=slinks.length?slinks.join(''):'<span class="sl-none">Chưa có thông tin</span>';
+  // Performance
+  currentGameKey=g['Tên gốc'];
+  renderPerfEntries();
+  document.getElementById('perf-form-wrap').innerHTML='';
+  // ── TapTap live panel ──
+  const ttKey = g['Tên gốc'];
+  const tt = (typeof TAPTAP !== 'undefined') ? (TAPTAP[ttKey] || null) : null;
+  const ttLinkEl = document.getElementById('m-tt-link');
+  // Find taptap_id from Store CN
+  const storeCN = g['Store CN'] || '';
+  const ttIdMatch = storeCN.match(/taptap\.cn\/app\/(\d+)/);
+  const ttId = ttIdMatch ? ttIdMatch[1] : null;
+  if(ttId && ttLinkEl) ttLinkEl.href = 'https://www.taptap.cn/app/' + ttId;
+
+  const ttContent = document.getElementById('m-tt-content');
+  if(tt && !tt.error){
+    const score = tt.rating || 0;
+    const scoreColor = score >= 8 ? 'good' : score >= 6 ? 'warn' : 'bad';
+    const heatColor  = (tt.heat||0) >= 7 ? 'good' : (tt.heat||0) >= 4 ? 'warn' : 'bad';
+    ttContent.innerHTML = `
+      <div class="tt-grid">
+        <div class="tt-kpi">
+          <div class="tt-kpi-k">⭐ Rating</div>
+          <div class="tt-bar-wrap">
+            <div class="tt-bar"><div class="tt-bar-fill" style="width:${Math.min(100,score*10)}%;background:${score>=8?'#10b981':score>=6?'#f59e0b':'#ef4444'}"></div></div>
+            <span class="tt-kpi-v ${scoreColor}">${score || 'N/A'}</span>
+          </div>
+        </div>
+        <div class="tt-kpi"><div class="tt-kpi-k">💬 Lượt đánh giá</div><div class="tt-kpi-v">${tt.rating_count||'N/A'}</div></div>
+        <div class="tt-kpi"><div class="tt-kpi-k">❤️ Người theo dõi</div><div class="tt-kpi-v">${tt.fans||'N/A'}</div></div>
+        <div class="tt-kpi"><div class="tt-kpi-k">👁 Lượt xem</div><div class="tt-kpi-v">${tt.hits||'N/A'}</div></div>
+        <div class="tt-kpi">
+          <div class="tt-kpi-k">🔥 Heat Score</div>
+          <div class="tt-bar-wrap">
+            <div class="tt-bar"><div class="tt-bar-fill" style="width:${Math.min(100,(tt.heat||0)*10)}%;background:${(tt.heat||0)>=7?'#10b981':(tt.heat||0)>=4?'#f59e0b':'#ef4444'}"></div></div>
+            <span class="tt-kpi-v ${heatColor}">${tt.heat||'N/A'}</span>
+          </div>
+        </div>
+      </div>
+      <div class="tt-fetched" style="margin-top:8px">Cập nhật: ${tt.fetched_at||'—'}</div>
+    `;
+  } else if(tt && tt.error){
+    ttContent.innerHTML = `<div class="tt-err">⚠ Không lấy được data TapTap: ${tt.error}</div>`;
+  } else {
+    ttContent.innerHTML = `<div class="tt-err">Chưa có data TapTap. Chạy GitHub Actions để fetch.</div>`;
+  }
+
+  document.getElementById('modal-ov').classList.add('open');
+}
+function closeMOv(e){if(e.target===document.getElementById('modal-ov'))closeMDirect();}
+function closeMDirect(){document.getElementById('modal-ov').classList.remove('open');}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMDirect();});
+
+// ── PERFORMANCE TRACKER ──
+function renderPerfEntries(){
+  const entries=(perfDB[currentGameKey]||[]);
+  const el=document.getElementById('perf-entries');
+  if(!entries.length){
+    el.innerHTML='<div class="perf-empty">Chưa có dữ liệu performance. Nhấn "+ Thêm dữ liệu" để cập nhật.</div>';
+    return;
+  }
+  const KPI_LABELS={dau:'DAU',nru:'NRU (Daily)',install:'Installs',ltv:'LTV',arpu:'ARPU',revenue:'Revenue',retention_d1:'Retention D1',retention_d7:'Retention D7',retention_d30:'Retention D30',note:'Ghi chú'};
+  el.innerHTML=entries.map((e,i)=>`
+    <div class="perf-entry">
+      <div class="perf-entry-hdr">
+        <div class="perf-entry-date">📅 ${e.date}</div>
+        <button class="perf-del-btn" onclick="delPerf(${i})">✕ Xóa</button>
+      </div>
+      <div class="perf-kpis">
+        ${Object.entries(KPI_LABELS).filter(([k])=>e[k]).map(([k,l])=>`
+          <div class="perf-kpi"><div class="perf-kpi-k">${l}</div><div class="perf-kpi-v">${e[k]}</div></div>
+        `).join('')}
+      </div>
+    </div>
+  `).join('');
+}
+
+function showPerfForm(){
+  const today=new Date().toISOString().slice(0,10);
+  document.getElementById('perf-form-wrap').innerHTML=`
+    <div class="perf-form">
+      <div class="perf-form-title">📝 Nhập dữ liệu performance mới</div>
+      <div class="perf-form-grid">
+        <div><div class="perf-inp-lbl">Ngày ghi nhận *</div><input class="perf-inp" id="pf-date" type="date" value="${today}"></div>
+        <div><div class="perf-inp-lbl">DAU (Daily Active Users)</div><input class="perf-inp" id="pf-dau" placeholder="vd: 500,000"></div>
+        <div><div class="perf-inp-lbl">NRU (New Registered Users / ngày)</div><input class="perf-inp" id="pf-nru" placeholder="vd: 12,000"></div>
+        <div><div class="perf-inp-lbl">Installs (tổng / ngày)</div><input class="perf-inp" id="pf-install" placeholder="vd: 80,000"></div>
+        <div><div class="perf-inp-lbl">LTV (Life Time Value)</div><input class="perf-inp" id="pf-ltv" placeholder="vd: $15.5"></div>
+        <div><div class="perf-inp-lbl">ARPU (Avg Revenue Per User)</div><input class="perf-inp" id="pf-arpu" placeholder="vd: $2.3"></div>
+        <div><div class="perf-inp-lbl">Revenue (doanh thu)</div><input class="perf-inp" id="pf-revenue" placeholder="vd: $1.2M"></div>
+        <div><div class="perf-inp-lbl">Retention D1 (%)</div><input class="perf-inp" id="pf-r1" placeholder="vd: 45%"></div>
+        <div><div class="perf-inp-lbl">Retention D7 (%)</div><input class="perf-inp" id="pf-r7" placeholder="vd: 22%"></div>
+        <div><div class="perf-inp-lbl">Retention D30 (%)</div><input class="perf-inp" id="pf-r30" placeholder="vd: 10%"></div>
+      </div>
+      <div><div class="perf-inp-lbl">Ghi chú</div><input class="perf-inp" id="pf-note" placeholder="Ghi chú thêm..."></div>
+      <div class="perf-form-btns" style="margin-top:10px">
+        <button class="perf-cancel-btn" onclick="document.getElementById('perf-form-wrap').innerHTML=''">Hủy</button>
+        <button class="perf-save-btn" onclick="savePerf()">💾 Lưu</button>
+      </div>
+    </div>
+  `;
+  document.getElementById('perf-form-wrap').scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+
+function savePerf(){
+  const date=document.getElementById('pf-date').value;
+  if(!date){alert('Vui lòng chọn ngày');return;}
+  const entry={
+    date,
+    dau:document.getElementById('pf-dau').value,
+    nru:document.getElementById('pf-nru').value,
+    install:document.getElementById('pf-install').value,
+    ltv:document.getElementById('pf-ltv').value,
+    arpu:document.getElementById('pf-arpu').value,
+    revenue:document.getElementById('pf-revenue').value,
+    retention_d1:document.getElementById('pf-r1').value,
+    retention_d7:document.getElementById('pf-r7').value,
+    retention_d30:document.getElementById('pf-r30').value,
+    note:document.getElementById('pf-note').value,
+  };
+  if(!perfDB[currentGameKey])perfDB[currentGameKey]=[];
+  perfDB[currentGameKey].unshift(entry);
+  renderPerfEntries();
+  document.getElementById('perf-form-wrap').innerHTML='';
+}
+
+function delPerf(idx){
+  if(!perfDB[currentGameKey])return;
+  perfDB[currentGameKey].splice(idx,1);
+  renderPerfEntries();
+}
+
+// ── TAB SWITCHING ──
+function switchTab(id,btn){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('sec-'+id).classList.add('active');
+}
+let curRank='30d';
+function switchRank(period,btn){
+  curRank=period;
+  document.querySelectorAll('.rtab').forEach(t=>t.classList.remove('active'));
+  btn.classList.add('active');
+  ['30d','90d','year'].forEach(p=>document.getElementById('r-'+p).style.display=p===period?'block':'none');
+}
+
+// ── INIT ──
+// Event delegation for table row clicks
+document.addEventListener('click', function(e){
+  const tr = e.target.closest('tr[data-ck]');
+  if(!tr) return;
+  const key = tr.getAttribute('data-ck');
+  const g = _clickCache[key];
+  if(g) openModal(g);
+});
+
+(function init(){
+  popGenre('ng-genre',RAW.newgames);
+  popStatus('ng-status',RAW.newgames);
+  popGenre('r30-genre',RAW.bxh_30);
+  popGenre('r90-genre',RAW.bxh_90);
+  popGenre('ryr-genre',RAW.bxh_year);
+  renderStats('ng-stats',RAW.newgames);
+  renderStats('r30-stats',RAW.bxh_30);
+  renderStats('r90-stats',RAW.bxh_90);
+  renderStats('ryr-stats',RAW.bxh_year);
+  filterNG();
+  filterRank('30d');filterRank('90d');filterRank('year');
+  document.getElementById('tc-ng').textContent=RAW.newgames.length;
+})();
+</script>
+
+<div id="js-tip"></div>
+<script>
+const _tip = document.getElementById('js-tip');
+let _tipTimer;
+function showTip(e, el){
+  clearTimeout(_tipTimer);
+  _tip.textContent = el.dataset.tip;
+  _tip.classList.add('visible');
+  moveTip(e);
+  el.addEventListener('mousemove', moveTip);
+}
+function moveTip(e){
+  const pad = 12;
+  let x = e.clientX + pad;
+  let y = e.clientY - _tip.offsetHeight - pad;
+  // Keep inside viewport
+  if(x + _tip.offsetWidth > window.innerWidth - pad) x = e.clientX - _tip.offsetWidth - pad;
+  if(y < pad) y = e.clientY + pad;
+  _tip.style.left = x + 'px';
+  _tip.style.top  = y + 'px';
+}
+function hideTip(){
+  _tip.classList.remove('visible');
+}
+</script>
+</body>
+</html>
