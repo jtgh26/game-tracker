@@ -122,13 +122,17 @@ def fetch_itunes(name, country='cn'):
             d = json.loads(r.read().decode('utf-8'))
         res = d.get('results', [])
         if res:
+            r0 = res[0]
+            # name_en: use trackName if different from search query (i.e. it's an EN name)
+            track_name = r0.get('trackName','')
             return {
-                'appId':    str(res[0].get('trackId','')),
-                'icon':     res[0].get('artworkUrl100','').replace('100x100bb','200x200bb'),
-                'rating':   round(res[0].get('averageUserRating',0),1),
-                'reviews':  res[0].get('userRatingCount',0),
-                'appUrl':   res[0].get('trackViewUrl',''),
-                'developer':res[0].get('artistName',''),
+                'appId':    str(r0.get('trackId','')),
+                'icon':     r0.get('artworkUrl100','').replace('100x100bb','200x200bb'),
+                'rating':   round(r0.get('averageUserRating',0),1),
+                'reviews':  r0.get('userRatingCount',0),
+                'appUrl':   r0.get('trackViewUrl',''),
+                'developer':r0.get('artistName',''),
+                'name_en':  track_name,
             }
     except: pass
     return None
@@ -269,9 +273,17 @@ def build_game(g, tags_data, itunes_cache, idx, is_rank=False):
 
     icon = (it['icon'] if it and it.get('icon') else '') or g.get('iconurl','')
 
+    # Get EN name from iTunes if available
+    name_en = (it.get('name_en','') if it else '') or ''
+    # Clean: if EN name is same as CN or contains only CN chars, discard
+    import re as _re
+    if name_en and _re.search(r'[\u4e00-\u9fff]', name_en):
+        name_en = ''
+
     result = {
         'stt' if not is_rank else 'rank': str(idx+1),
         'name':          name,
+        'name_en':       name_en,
         'icon_url':      icon,
         'tags_cn':       ' / '.join(tags),
         'tags_vn':       tags_vn,
