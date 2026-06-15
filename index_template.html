@@ -628,7 +628,7 @@ function daysAgo(g_or_str){
     else if(/^\d{2}$/.test(s)) d=new Date(`20${s}-06-01T00:00:00`);
     else return 9999;
     if(isNaN(d.getTime())) return 9999;
-    return Math.max(0, Math.floor((Date.now()-d.getTime())/(1000*60*60*24)));
+    return Math.floor((Date.now()-d.getTime())/(1000*60*60*24));
   } catch(e){ return 9999; }
 }
 
@@ -798,7 +798,7 @@ function filterNG(){
   const hlOnly=FS['ng']&&FS['ng'].hl;
   let d=[...RAW.newgames];
   // Filter by time range (sub-tabs)
-  d=d.filter(g=>daysAgo(g)<=CURRENT_NG_DAYS);
+  d=d.filter(g=>{ const da=daysAgo(g); return da<=CURRENT_NG_DAYS && da>=-30; });
   // Sort by date desc
   d.sort((a,b)=>daysAgo(a)-daysAgo(b));
   if(q)d=d.filter(g=>JSON.stringify(g).toLowerCase().includes(q));
@@ -808,7 +808,7 @@ function filterNG(){
   if(hlOnly){
     d=d.filter(g=>isHL(g['Thể loại']));
     const dash=document.getElementById('hl-dashboard');
-    if(dash){dash.style.display='block'; renderHLDashboard(RAW.newgames.filter(g=>daysAgo(g)<=CURRENT_NG_DAYS));}
+    if(dash){dash.style.display='block'; renderHLDashboard(RAW.newgames.filter(g=>{ const da=daysAgo(g); return da<=CURRENT_NG_DAYS && da>=-30; }));}
   } else {
     const dash=document.getElementById('hl-dashboard');
     if(dash) dash.style.display='none';
@@ -817,7 +817,7 @@ function filterNG(){
   renderStats('ng-stats',d);
   // Update subtab counts
   [30,90,180].forEach(days=>{
-    const cnt=RAW.newgames.filter(g=>daysAgo(g)<=days).length;
+    const cnt=RAW.newgames.filter(g=>{ const da=daysAgo(g); return da<=days && da>=-30; }).length;
     const btn=document.querySelector(`.subtab[data-days="${days}"]`);
     if(btn) btn.innerHTML=btn.innerHTML.replace(/<span class="subtab-cnt">.*?<\/span>/,'')
       +`<span class="subtab-cnt">${cnt}</span>`;
