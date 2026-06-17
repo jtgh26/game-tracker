@@ -38,6 +38,30 @@ TAG_VI = {
     "家庭聚会":"Party Game","试玩":"Demo","合成":"Ghép/Merge",
     "温暖治愈":"Healing","竞技":"Cạnh tranh","3D":"3D","像素":"Pixel",
     "Roguelite":"Roguelite","暗黑":"Dark",
+    "PC游戏":"PC Game",
+    "吉卜力画风":"Ghibli Art Style",
+    "美漫风":"Marvel/Comic Style",
+    "Steam高分神作":"Steam Masterpiece",
+    "up主推荐":"Creator's Pick",
+    "电影质感":"Cinematic",
+    "奥特曼":"Ultraman IP",
+    "剧情党狂喜":"Story Lover",
+    "沉浸式体验":"Immersive",
+    "娱乐":"Entertainment",
+    "独家游戏":"Exclusive",
+    "消除":"Match-3",
+    "卡通":"Cartoon",
+    "绝赞立绘":"Stunning Artwork",
+    "日系":"Japanese Style",
+    "篮球":"Basketball",
+    "游戏":"Game",
+    "国战":"Nation War",
+    "仙侠":"Xianxia",
+    "修仙":"Tu Tiên",
+    "武侠":"Wuxia",
+    "三国":"Tam Quốc",
+    "回合制":"Turn-based",
+    "策略RPG":"Strategy RPG",
 }
 
 SKIP_TAGS = {
@@ -133,6 +157,7 @@ def fetch_itunes(name, country='cn'):
                 'appUrl':   r0.get('trackViewUrl',''),
                 'developer':r0.get('artistName',''),
                 'name_en':  track_name,
+                'genre':    r0.get('primaryGenreName',''),
             }
     except: pass
     return None
@@ -195,14 +220,21 @@ def fetch_test_game_all(days_back=180, days_ahead=30):
 def fetch_new_game_list_tags():
     """
     SECONDARY: get gameplay tags + scores from new_game_list API.
-    Returns dict: gamename -> {gameplay, review_rate, review_num, gameweb, androidurl, taptap_id, itunes_appid}
+    Fetches broadly to cover as many games as possible.
+    Returns dict: gamename -> {gameplay, ...}
     """
     tags_map = {}
-    for date_range in [30, 60, 90, 180, 365]:
-        for p in [1, 2]:
-            url = f"https://www.16p.com/gamecenter/api/new_game_list?p={p}&ps=50&date_range={date_range}&type_range=2"
+    # Fetch with multiple date_range AND type_range combos to maximize coverage
+    combos = [
+        (30, 2), (60, 2), (90, 2), (180, 2), (365, 2),
+        (30, 1), (60, 1), (90, 1), (180, 1), (365, 1),  # type_range=1 = all regions
+    ]
+    for date_range, type_range in combos:
+        for p in [1, 2, 3]:
+            url = f"https://www.16p.com/gamecenter/api/new_game_list?p={p}&ps=50&date_range={date_range}&type_range={type_range}"
             data = fetch_json(url)
-            if not data: break
+            if not data or not isinstance(data, list): break
+            added = 0
             for g in data:
                 name = g.get('gamename','')
                 if name and name not in tags_map:
@@ -217,7 +249,9 @@ def fetch_new_game_list_tags():
                         'itunes_appid':str(g.get('itunes_appid','') or ''),
                         'format_time': g.get('format_time','') or g.get('publishtime',''),
                     }
-            time.sleep(0.3)
+                    added += 1
+            if added == 0: break  # no new games, stop paginating
+            time.sleep(0.2)
     print(f"  new_game_list tags: {len(tags_map)} games")
     return tags_map
 
@@ -239,6 +273,23 @@ def build_game(g, tags_data, itunes_cache, idx, is_rank=False):
     td = tags_data.get(name, {})
     tags = g.get('gameplay') or td.get('gameplay', [])
     tags = [t for t in tags if t]
+    # Fallback: use iTunes genre if no tags from 16p
+    if not tags and it and it.get('genre'):
+        genre_en = it.get('genre','')
+        # Map iTunes genres to CN tags
+        ITUNES_GENRE_MAP = {
+            'Games': [], 'Role Playing': ['角色扮演'],
+            'Action': ['动作'], 'Strategy': ['策略'],
+            'Casual': ['休闲'], 'Puzzle': ['解谜'],
+            'Adventure': ['冒险'], 'Simulation': ['模拟'],
+            'Sports': ['体育'], 'Racing': ['竞速'],
+            'Card': ['卡牌'], 'Board': ['桌游'],
+            'Music': ['音乐'], 'Trivia': ['益智'],
+            'Word': ['文字'], 'Entertainment': [],
+        }
+        for k, v in ITUNES_GENRE_MAP.items():
+            if k.lower() in genre_en.lower() and v:
+                tags = v; break
     tags_vn = translate_tags(tags)
 
     # Company info
@@ -284,6 +335,7 @@ def build_game(g, tags_data, itunes_cache, idx, is_rank=False):
         'stt' if not is_rank else 'rank': str(idx+1),
         'name':          name,
         'name_en':       name_en,
+        'itunes_genre':  it.get('genre','') if it else '',
         'icon_url':      icon,
         'tags_cn':       ' / '.join(tags),
         'tags_vn':       tags_vn,
