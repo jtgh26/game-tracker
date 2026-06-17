@@ -310,7 +310,7 @@ td.muted{color:var(--text2)}
       <div class="logo-icon">🎮</div>
       <div><div class="logo-text">Game Market Tracker</div><div class="logo-sub">Nguồn: 16p.com (玩匠) · Tháng 6/2026</div></div>
     </a>
-    <div style="font-size:12px;color:var(--text3)">Auto update: <span style="color:var(--accent2)" id="last-updated">17/06/2026 06:52 UTC</span></div>
+    <div style="font-size:12px;color:var(--text3)">Auto update: <span style="color:var(--accent2)" id="last-updated">17/06/2026 08:09 UTC</span></div>
     <a class="src-badge" href="https://www.16p.com" target="_blank">↗ 16p.com</a>
   </div>
 </header>
@@ -538,15 +538,8 @@ function fmtDate(d){
   return d;
 }
 function gpBullets(txt){
-  if(!txt||txt.length===0)return'<span style="color:var(--text3)">—</span>';
-  // Handle both Array (from live_data) and string (with \n bullets)
-  let lines;
-  if(Array.isArray(txt)){
-    lines=txt.filter(Boolean);
-  } else {
-    lines=String(txt).split(/\\n|\n|\\\\n/).map(l=>l.trim()).filter(Boolean);
-  }
-  if(!lines.length)return'<span style="color:var(--text3)">—</span>';
+  if(!txt)return'<span style="color:var(--text3)">—</span>';
+  const lines=txt.split(/\\n|\n|\\\\n/).map(l=>l.trim()).filter(Boolean);
   return'<ul>'+lines.map(l=>`<li>${l.replace(/^[•·\-]\s*/,'')}</li>`).join('')+'</ul>';
 }
 function storeLinks(g, compact=false){
@@ -788,7 +781,7 @@ function renderNG(arr){
         <div class="dev-meta">${g['Quốc gia/ Vùng lãnh thổ']||''}</div>
         <span class="listing ${listCls}">${listTxt}</span>
       </td>
-      <td class="gameplay-cell"><ul class="gp-bullets">${gpBullets(g['Core Gameplay VN']||g.tags_vn||'')}</ul></td>
+      <td class="gameplay-cell"><ul class="gp-bullets">${gpBullets(g['Core Gameplay VN'])}</ul></td>
       <td class="store-cell" style="white-space:normal;line-height:2">${storeBtns||'—'}</td>
       <td class="hl-cell">${hl?'⭐':''}</td>
     </tr>`;
@@ -874,7 +867,7 @@ function renderRank(arr,tbid){
         <div class="dev-meta">${g['Quốc gia/ Vùng lãnh thổ']||''}${g['Năm thành lập']?' · '+g['Năm thành lập']:''}</div>
         <div class="${listed?'lst-y':'lst-n'}">${listed?'✓ Niêm yết':'Chưa niêm yết'}</div>
       </td>
-      <td class="gp-cell">${gpBullets(g['Core Gameplay VN']||g.tags_vn||'')}</td>
+      <td class="gp-cell">${gpBullets(g['Core Gameplay VN'])}</td>
       <td class="link-cell" onclick="event.stopPropagation()">${storeLinks(g,true)}</td>
       <td style="text-align:center">${hl?'<span class="hl-star">⭐</span>':''}</td>
     </tr>`;
@@ -948,7 +941,7 @@ function openModal(g){
   ];
   document.getElementById('m-grid').innerHTML=fields.map(([l,v])=>`<div class="m-field"><div class="m-flbl">${l}</div><div class="m-fval">${v}</div></div>`).join('');
   // Gameplay bullets
-  document.getElementById('m-gp').innerHTML=gpBullets(g['Core Gameplay VN']||g.tags_vn||'')||`<span style="color:var(--text3)">${g['Core Gameplay']||'—'}</span>`;
+  document.getElementById('m-gp').innerHTML=gpBullets(g['Core Gameplay VN'])||`<span style="color:var(--text3)">${g['Core Gameplay']||'—'}</span>`;
   // Stores
   const slinks=[];
   if(g.Mainsite)slinks.push(`<a class="store-link sl-web" href="${g.Mainsite}" target="_blank">🌐 Official Website</a>`);
