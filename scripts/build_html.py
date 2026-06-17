@@ -1,3 +1,4 @@
+import re
 #!/usr/bin/env python3
 """
 build_html.py — SIMPLE injector
@@ -33,7 +34,41 @@ TAG_VI = {
     "足球":"Bóng đá","多结局":"Đa kết thúc","视觉小说":"Visual Novel",
     "家庭聚会":"Party Game","合成":"Ghép/Merge","温暖治愈":"Healing/Ấm áp",
     "竞技":"Cạnh tranh","3D":"3D","像素":"Pixel","Roguelite":"Roguelite",
-    "暗黑":"Dark","恐怖惊悚":"Kinh dị","克苏鲁":"Cthulhu","社交":"Xã hội",
+    "暗黑":"Dark",
+    "PC游戏":"PC Game",
+    "吉卜力画风":"Ghibli Art Style",
+    "美漫风":"Marvel/Comic Style",
+    "Steam高分神作":"Steam Masterpiece",
+    "up主推荐":"Creator's Pick",
+    "电影质感":"Cinematic",
+    "奥特曼":"Ultraman IP",
+    "剧情党狂喜":"Story Lover",
+    "沉浸式体验":"Immersive",
+    "娱乐":"Entertainment",
+    "独家游戏":"Exclusive",
+    "消除":"Match-3",
+    "卡通":"Cartoon",
+    "绝赞立绘":"Stunning Artwork",
+    "日系":"Japanese Style",
+    "篮球":"Basketball",
+    "游戏":"Game",
+    "国战":"Nation War",
+    "仙侠":"Xianxia",
+    "修仙":"Tu Tiên",
+    "武侠":"Wuxia",
+    "三国":"Tam Quốc",
+    "回合制":"Turn-based",
+    "策略RPG":"Strategy RPG","恐怖惊悚":"Kinh dị","克苏鲁":"Cthulhu","社交":"Xã hội",
+    "横版":"2D ngang","太空":"Vũ trụ","地牢":"Dungeon","探索":"Khám phá",
+    "剧情":"Story-rich","文字":"Text/Story","经营":"Kinh doanh","益智":"Trí tuệ",
+    "萌宠":"Cute Pet","钓鱼":"Câu cá","音游":"Rhythm game","节奏":"Nhịp điệu",
+    "闯关":"Platformer","街机":"Arcade","异世界":"Isekai","乙女":"Otome",
+    "枪战":"Bắn súng","机甲":"Mecha","第一人称":"FPS","第三人称":"TPS",
+    "西游":"Tây Du Ký","魔法":"Magic","种田":"Farming","手绘":"Hand-drawn",
+    "温馨治愈":"Healing","解压":"Stress relief","小说改编":"Chuyển thể tiểu thuyết",
+    "互动影像":"Interactive Film","类银河恶魔城":"Metroidvania",
+    "资源管理":"Resource Mgmt","空间解谜":"Spatial Puzzle","烧脑":"Brain puzzle",
+    "即时战斗":"Real-time Combat","装饰&装修":"Decoration","萌宠":"Cute Pet",
     "弹幕":"Bullet hell","异世界":"Isekai","经典重现":"Classic revival",
     "国漫":"Truyện tranh TQ","小说改编":"Chuyển thể tiểu thuyết",
     "高画质":"Đồ họa cao","竞速":"Đua xe","UE5":"UE5","PVP":"PVP","PVE":"PVE",
@@ -223,10 +258,31 @@ def esc(obj):
 def build_game(g, idx, is_rank=False):
     name    = g.get('name','')
     tags    = [t.strip() for t in (g.get('tags_cn','') or '').split('/') if t.strip()]
+    # If tags_cn empty, use tags_vn from live_data (already translated list)
+    live_tags_vn = g.get('tags_vn', [])
+    if isinstance(live_tags_vn, str):
+        live_tags_vn = [t.replace('•','').strip() for t in live_tags_vn.split('\\n') if t.strip()]
+    # If no tags from 16p, try iTunes genre as fallback
+    if not tags:
+        itunes_genre = g.get('itunes_genre','')
+        ITUNES_MAP = {
+            'Role Playing':['角色扮演'],'Action':['动作'],'Strategy':['策略'],
+            'Casual':['休闲'],'Puzzle':['解谜'],'Adventure':['冒险'],
+            'Simulation':['模拟'],'Sports':['体育'],'Racing':['竞速'],
+            'Card':['卡牌'],'Music':['音乐'],'Entertainment':[],
+        }
+        for k,v in ITUNES_MAP.items():
+            if k.lower() in itunes_genre.lower() and v:
+                tags = v; break
     tags_vn = translate_tags(tags)
+    # When tags_cn is empty, use tags_vn from live_data directly
+    if not tags_vn and live_tags_vn:
+        tags_vn = [t for t in live_tags_vn if not re.search(r'[\u4e00-\u9fff]', t)]
     genre_cn = tags[0] if tags else ''
+    if not genre_cn and tags_vn:
+        genre_cn = ''  # No CN genre available
     genre_vn = GENRE_VI.get(genre_cn, genre_cn)
-    genre_bi = f"{genre_cn} / {genre_vn}" if genre_cn and genre_vn != genre_cn else genre_cn
+    genre_bi = f"{genre_cn} / {genre_vn}" if genre_cn and genre_vn != genre_cn else (genre_vn or genre_cn)
 
     dev_cn  = g.get('developer','') or g.get('publisher','')
     dev_en  = DEV_EN.get(dev_cn, dev_cn)
@@ -263,7 +319,7 @@ def build_game(g, idx, is_rank=False):
         "Năm thành lập":            "",
         "Niêm yết 上市":             listing,
         "Core Gameplay":            ' / '.join(tags),
-        "Core Gameplay VN":         '\\n'.join(f'• {t}' for t in tags_vn),
+        "Core Gameplay VN":         '\\n'.join(f'• {t}' for t in (tags_vn or live_tags_vn)),
         "Highlight":                "⭐ HIGHLIGHT" if isHL(genre_bi) else "",
         "IP":                       IP_MAP.get(name,''),
         "Mainsite":                 mainsite,
