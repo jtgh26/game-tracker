@@ -1,4 +1,73 @@
 import re
+
+try:
+    from pypinyin import lazy_pinyin
+    HAS_PYPINYIN = True
+except ImportError:
+    HAS_PYPINYIN = False
+
+# ── Auto EN name generator (free, no API) ──────────────────────────────────
+_EN_KEYWORDS = {
+    "联盟3":"Alliance 3","联盟":"Alliance","传说":"Legend","世界之光":"Light of the World",
+    "开放世界":"Open World","修仙":"Cultivation","修真":"Cultivation",
+    "世界":"World","英雄":"Hero","战争":"War","王者":"King","荣耀":"Glory",
+    "龙":"Dragon","王国":"Kingdom","冒险":"Adventure","骑士":"Knight",
+    "守望":"Overwatch","弓箭":"Arrow","侠":"Hero","仙途":"Immortal Path",
+    "召唤师":"Summoner","纷争":"Strife","疯狂":"Crazy","法宝":"Treasure",
+    "漫漫":"Endless","时空":"Time Space","猎人":"Hunter","猎手":"Hunter",
+    "觉醒":"Awakening","彩虹":"Rainbow","攻势":"Siege","地牢":"Dungeon",
+    "蛙蛙":"Frog","豹豹":"Leopard","蛙":"Frog","树屋":"Treehouse",
+    "模拟器":"Simulator","野生":"Wild","狮子":"Lion","塔防":"Tower Defense",
+    "对战":"Battle","魔兽":"Warcraft","放置":"Idle","史莱姆":"Slime",
+    "城堡":"Castle","合并":"Merge","萌龙":"Dragon","岛":"Island",
+    "失控":"Uncontrolled","进化":"Evolution","末日":"Doomsday",
+    "开炮":"Cannon","天堂":"Lineage","盟约":"Covenant","六号":"Six",
+    "钢琴":"Piano","小镇":"Town","出租车":"Taxi","司机":"Driver",
+    "高手":"Master","精灵":"Sprite","超级":"Super","洞洞":"Hole",
+    "月相":"Moon Phase","计划":"Project","终极":"Ultimate","渊":"Abyss",
+    "王座":"Throne","纪元":"Era","曙光":"Dawn","蛮荒":"Savage",
+    "领主":"Lord","月":"Moon","星":"Star","梦":"Dream","神":"God",
+    "魂":"Soul","光":"Light","影":"Shadow","火":"Fire","剑":"Sword",
+    "帝":"Emperor","崛起":"Rise","守护":"Guardian","永恒":"Eternal",
+    "无敌":"Invincible","金":"Gold","银":"Silver","黑":"Black","白":"White",
+    "曙光":"Dawn","风之国":"Wind Nation","亿万":"Billions","光年":"Light Year",
+    "飘流":"Drifting","幻境":"Fantasy","新世界":"New World","方舟":"Ark",
+    "方舟":"Ark","诡秘":"Mysterious","战场":"Battlefield",
+    "峰":"Peak","界":"Realm","源":"Source",
+    "的":"","·":"","之":"","与":"and",
+}
+
+def _auto_en_name(cn_name):
+    if not cn_name: return ""
+    sorted_kw = sorted(_EN_KEYWORDS.items(), key=lambda x: -len(x[0]))
+    result = cn_name
+    used = {}
+    for cn, en in sorted_kw:
+        if cn and cn in result:
+            marker = f"«{len(used)}»"
+            result = result.replace(cn, marker, 1)
+            used[marker] = en
+    parts = []
+    tokens = re.split(r"(«\d+»)", result)
+    for token in tokens:
+        token = token.strip()
+        if not token: continue
+        if token in used:
+            v = used[token]
+            if v: parts.append(v)
+        else:
+            cn_chars = re.sub(r"[^\u4e00-\u9fff]", "", token)
+            alphanums = re.sub(r"[\u4e00-\u9fff·：:！？,，。\-\s]", "", token).strip()
+            if cn_chars:
+                if HAS_PYPINYIN:
+                    parts.append(" ".join(p.capitalize() for p in lazy_pinyin(cn_chars)))
+                else:
+                    parts.append(cn_chars)  # fallback: keep CN if no pypinyin
+            if alphanums:
+                parts.append(alphanums)
+    en = " ".join(p for p in parts if p.strip())
+    return re.sub(r"\s+", " ", en).strip()
+
 #!/usr/bin/env python3
 """
 build_html.py — SIMPLE injector
@@ -306,7 +375,7 @@ def build_game(g, idx, is_rank=False):
     result = {
         "Tên gốc":                  name,
         "Tên tiếng Trung (nếu khác)":"",
-        "Tên tiếng Anh (nếu khác)": GAME_NAMES_EN.get(name,'') or g.get('name_en',''),
+        "Tên tiếng Anh (nếu khác)": GAME_NAMES_EN.get(name,'') or g.get('name_en','') or _auto_en_name(name),
         "Thể loại":                 genre_bi,
         "Trạng thái phát hành":     f"{status_cn} / {status_vn}",
         "Trạng thái (Tiếng Việt)":  status_vn,
