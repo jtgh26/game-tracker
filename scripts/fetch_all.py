@@ -1,21 +1,35 @@
 #!/usr/bin/env python3
 """
-fetch_all.py — Daily fetch từ 16p.com (test_game API PRIMARY) + iTunes API
-test_game API = tất cả trạng thái (上线/试玩/删档测试/公测...)
-new_game_list API = chỉ để lấy tags/score
+fetch_all.py — Fetch qua Cloudflare Worker proxy (không bị block)
+Chạy tự động mỗi ngày trong GitHub Actions
 """
-
 import json, time, os, urllib.request, urllib.parse
 from datetime import datetime, timezone, timedelta
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT  = os.path.join(BASE, "live_data.json")
+OUT  = os.path.join(BASE, 'live_data.json')
 
-HEADERS_16P = {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
-    "Referer":    "https://www.16p.com/",
-    "Accept":     "application/json",
-}
+# Cloudflare Worker proxy URL — set trong GitHub Secrets
+PROXY_URL = os.environ.get('PROXY_URL', '').rstrip('/')
+if not PROXY_URL:
+    print("❌ PROXY_URL not set in environment/secrets")
+    print("   Add PROXY_URL to GitHub Secrets (Settings → Secrets → Actions)")
+    exit(1)
+
+def proxy_fetch(path, retries=2):
+    """Fetch 16p.com API qua Cloudflare Worker proxy"""
+    url = f"{PROXY_URL}?path={urllib.parse.quote(path)}"
+    for attempt in range(retries + 1):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "GameTracker/1.0"})
+            with urllib.request.urlopen(req, timeout=20) as r:
+                return json.loads(r.read().decode('utf-8'))
+        except Exception as e:
+            if attempt < retries:
+                time.sleep(2)
+            else:
+                print(f"  ✗ {path}: {e}")
+    return None
 
 TAG_VI = {
     "角色扮演":"RPG","动作":"Hành động","策略":"Chiến thuật","休闲":"Casual",
@@ -29,102 +43,59 @@ TAG_VI = {
     "末日":"Tận thế","科幻":"Sci-fi","独立游戏":"Indie","抓宠":"Bắt pet",
     "自走棋":"Auto Chess","搜打撤":"Loot & Extract","割草":"Hack & Slash",
     "MOBA":"MOBA","MMO":"MMO","动漫改编":"Chuyển thể anime","体育":"Thể thao",
-    "即时策略":"RTS","战术博弈":"Chiến thuật","都市":"Đô thị",
-    "历史":"Lịch sử","战争":"Chiến tranh","海战":"Hải chiến","航海":"Hàng hải",
-    "桌游":"Board game","战术竞技":"Battle Royale","刷宝":"Loot / Cày cuốc",
-    "废土":"Wasteland","农场模拟":"Nông trại","换装":"Thời trang",
-    "恋爱":"Hẹn hò","女性向":"Otome / Nữ tính","单机":"Offline / Chơi đơn",
-    "足球":"Bóng đá","多结局":"Đa kết thúc","视觉小说":"Visual Novel",
-    "家庭聚会":"Party Game","试玩":"Demo","合成":"Ghép/Merge",
-    "温暖治愈":"Healing","竞技":"Cạnh tranh","3D":"3D","像素":"Pixel",
-    "Roguelite":"Roguelite","暗黑":"Dark",
-    "PC游戏":"PC Game",
-    "吉卜力画风":"Ghibli Art Style",
-    "美漫风":"Marvel/Comic Style",
-    "Steam高分神作":"Steam Masterpiece",
-    "up主推荐":"Creator's Pick",
-    "电影质感":"Cinematic",
-    "奥特曼":"Ultraman IP",
-    "剧情党狂喜":"Story Lover",
-    "沉浸式体验":"Immersive",
-    "娱乐":"Entertainment",
-    "独家游戏":"Exclusive",
-    "消除":"Match-3",
-    "卡通":"Cartoon",
-    "绝赞立绘":"Stunning Artwork",
-    "日系":"Japanese Style",
-    "篮球":"Basketball",
-    "游戏":"Game",
-    "国战":"Nation War",
-    "仙侠":"Xianxia",
-    "修仙":"Tu Tiên",
-    "武侠":"Wuxia",
-    "三国":"Tam Quốc",
-    "回合制":"Turn-based",
-    "策略RPG":"Strategy RPG",
+    "即时策略":"RTS","都市":"Đô thị","历史":"Lịch sử","战争":"Chiến tranh",
+    "海战":"Hải chiến","航海":"Hàng hải","桌游":"Board game",
+    "战术竞技":"Battle Royale","刷宝":"Loot / Cày cuốc","废土":"Wasteland",
+    "换装":"Thời trang","恋爱":"Hẹn hò","女性向":"Otome / Nữ tính",
+    "单机":"Offline / Chơi đơn","足球":"Bóng đá","视觉小说":"Visual Novel",
+    "家庭聚会":"Party Game","合成":"Ghép/Merge","竞技":"Cạnh tranh",
+    "3D":"3D","像素":"Pixel","Roguelite":"Roguelite","暗黑":"Dark",
+    "横版":"2D ngang","太空":"Vũ trụ","地牢":"Dungeon","探索":"Khám phá",
+    "剧情":"Story-rich","文字":"Text/Story","经营":"Kinh doanh","益智":"Trí tuệ",
+    "萌宠":"Cute Pet","钓鱼":"Câu cá","音游":"Rhythm game","闯关":"Platformer",
+    "街机":"Arcade","异世界":"Isekai","乙女":"Otome","机甲":"Mecha",
+    "第一人称":"FPS","西游":"Tây Du Ký","魔法":"Magic","种田":"Farming",
+    "手绘":"Hand-drawn","类银河恶魔城":"Metroidvania","消除":"Match-3",
+    "卡通":"Cartoon","篮球":"Basketball","国战":"Nation War","修真":"Cultivation",
 }
-
 SKIP_TAGS = {
     '编辑推荐','近期下载飙升','多端互通','高画质','近期热门预约',
-    '安心购','策略拉满','编辑精选','多平台','高自由度',
-    '买断制','Steam移植','近期下载',
+    '安心购','策略拉满','编辑精选','买断制','Steam移植','多平台','高自由度',
 }
-
 TESTTYPE_MAP = {
-    "公测":                    ("公测",                    "Open Beta"),
-    "上线":                    ("上线",                    "Onlive / Launch"),
-    "试玩":                    ("试玩",                    "Demo"),
-    "删档测试":                ("删档测试",                "Clear data Test"),
-    "限量删档":                ("限量删档",                "Clear data Test (giới hạn)"),
-    "限量删档测试":            ("限量删档测试",            "Clear data Test (giới hạn)"),
-    "不限量不删档":            ("不限量不删档",            "Non-clear data Test (không giới hạn)"),
-    "限量不删档测试":          ("限量不删档测试",          "Non-clear data Test (giới hạn)"),
-    "删档计费测试":            ("删档计费测试",            "Paid Test xóa data"),
-    "限量删档计费测试":        ("限量删档计费测试",        "Paid Test xóa data (giới hạn)"),
-    "限量不删档计费":          ("限量不删档计费",          "Paid Test không xóa data (giới hạn)"),
-    "不删档计费":              ("不删档计费",              "Paid Test không xóa data"),
-    "不删档计费测试":          ("不删档计费测试",          "Paid Test không xóa data"),
-    "不限量不删档计费":        ("不限量不删档计费",        "Paid Test không xóa data (không giới hạn)"),
-    "计费删档内测":            ("计费删档内测",            "Paid Test nội bộ xóa data"),
-    "删档内测":                ("删档内测",                "Test nội bộ xóa data"),
-    "二次删档计费测试":        ("二次删档计费测试",        "Paid Test lần 2 không xóa data"),
-    "不计费限量删档":          ("不计费限量删档",          "Clear data Test giới hạn, không nạp tiền"),
-    "限量抢注删档计费测试":    ("限量抢注删档计费测试",    "Test giới hạn tranh suất đăng ký sớm"),
-    "限量删档技术测试":        ("限量删档技术测试",        "Limited Technical Test"),
-    "线下试玩会":              ("线下试玩会",              "Offline Playtest Event"),
-    "新增版本":                ("新增版本",                "Cập nhật phiên bản mới"),
-    "删档不计费测试":          ("删档不计费测试",          "Test xóa data không nạp tiền"),
-    "限量计费删档":            ("限量计费删档",            "Giới hạn số lượng, có nạp tiền và xóa data"),
-    "限量计费删档测试":        ("限量计费删档测试",        "Paid Test giới hạn xóa data"),
-    "公测运营":                ("公测运营",                "Onlive / Launch"),
-    "预约":                    ("预约",                    "Pre-register"),
-    "技术测试":                ("技术测试",                "Technical Test"),
-    "付费测试":                ("付费测试",                "Paid Test"),
-    "不删档测试":              ("不删档测试",              "Non-clear data Test"),
-    "限量测试":                ("限量测试",                "Limited Test"),
+    "公测":("公测","Open Beta"),"上线":("上线","Onlive / Launch"),
+    "试玩":("试玩","Demo"),"删档测试":("删档测试","Clear data Test"),
+    "限量删档":("限量删档","Clear data Test (giới hạn)"),
+    "限量删档测试":("限量删档测试","Clear data Test (giới hạn)"),
+    "不限量不删档":("不限量不删档","Non-clear data Test (không giới hạn)"),
+    "限量不删档测试":("限量不删档测试","Non-clear data Test (giới hạn)"),
+    "删档计费测试":("删档计费测试","Paid Test xóa data"),
+    "限量删档计费测试":("限量删档计费测试","Paid Test xóa data (giới hạn)"),
+    "限量不删档计费":("限量不删档计费","Paid Test không xóa data (giới hạn)"),
+    "不删档计费":("不删档计费","Paid Test không xóa data"),
+    "不删档计费测试":("不删档计费测试","Paid Test không xóa data"),
+    "不限量不删档计费":("不限量不删档计费","Paid Test không xóa data (không giới hạn)"),
+    "计费删档内测":("计费删档内测","Paid Test nội bộ xóa data"),
+    "删档内测":("删档内测","Test nội bộ xóa data"),
+    "线下试玩会":("线下试玩会","Offline Playtest Event"),
+    "新增版本":("新增版本","Cập nhật phiên bản mới"),
+    "删档不计费测试":("删档不计费测试","Test xóa data không nạp tiền"),
+    "限量计费删档":("限量计费删档","Giới hạn số lượng, có nạp tiền và xóa data"),
+    "公测运营":("公测运营","Onlive / Launch"),
+    "预约":("预约","Pre-register"),
 }
-
 TAPTAP_IDS = {
     "王者荣耀世界":"744415","异环-自由开放都市":"714119","三国：天下归心":"759941",
     "神泣：纷争":"839042","饥困荒野-饥荒：新家园":"194039","原神":"168332",
     "崩坏：星穹铁道":"225069","明日方舟":"158138","无限暖暖":"247283",
     "鸣潮":"234280","元气骑士":"35077","战双帕弥什":"162255",
     "鹅鸭杀":"202498","光遇":"135596","洛克王国：世界":"695501",
-    "遗忘之海-记忆环游海洋开放世界":"755604",
+    "遗忘之海-记忆环游海洋开放世界":"755604","天堂2：盟约":"196349",
 }
 
-def fetch_json(url, headers=None, timeout=12):
-    req = urllib.request.Request(url, headers=headers or HEADERS_16P)
-    try:
-        with urllib.request.urlopen(req, timeout=timeout) as r:
-            return json.loads(r.read().decode('utf-8'))
-    except Exception as e:
-        print(f"  ✗ {url[:70]}: {e}")
-        return None
-
-def translate_tags(tags_list, max_n=6):
+def translate_tags(tags, max_n=6):
     res, seen = [], set()
-    for t in (tags_list or []):
+    for t in (tags or []):
         if t in SKIP_TAGS: continue
         vn = TAG_VI.get(t, t)
         if vn not in seen:
@@ -132,321 +103,160 @@ def translate_tags(tags_list, max_n=6):
         if len(res) >= max_n: break
     return res
 
-def tt_url(name):
-    if name in TAPTAP_IDS:
-        return f"https://www.taptap.cn/app/{TAPTAP_IDS[name]}"
-    return f"https://www.taptap.cn/search?q={urllib.parse.quote(name)}"
-
-def fetch_itunes(name, country='cn'):
-    q = urllib.parse.quote(name)
-    url = f"https://itunes.apple.com/search?term={q}&country={country}&entity=software&limit=1"
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent":"iTunes/12.11.0"})
-        with urllib.request.urlopen(req, timeout=8) as r:
-            d = json.loads(r.read().decode('utf-8'))
-        res = d.get('results', [])
-        if res:
-            r0 = res[0]
-            # name_en: use trackName if different from search query (i.e. it's an EN name)
-            track_name = r0.get('trackName','')
-            return {
-                'appId':    str(r0.get('trackId','')),
-                'icon':     r0.get('artworkUrl100','').replace('100x100bb','200x200bb'),
-                'rating':   round(r0.get('averageUserRating',0),1),
-                'reviews':  r0.get('userRatingCount',0),
-                'appUrl':   r0.get('trackViewUrl',''),
-                'developer':r0.get('artistName',''),
-                'name_en':  track_name,
-                'genre':    r0.get('primaryGenreName',''),
-            }
-    except: pass
-    return None
-
-def fetch_test_game_all(days_back=180, days_ahead=30):
-    """
-    PRIMARY SOURCE: fetch test_game API for date range.
-    Returns ALL game statuses (上线/试玩/删档测试/公测/etc.)
-    """
+def fetch_test_game(days_back=180, days_ahead=30):
     all_games = {}
     today = datetime.now(timezone.utc)
-
-    dates_to_fetch = []
-    for d in range(-days_back, days_ahead+1, 3):  # every 3 days to reduce requests
+    dates = []
+    for d in range(-days_back, days_ahead+1, 3):
         dt = today + timedelta(days=d)
-        dates_to_fetch.append(dt.strftime('%Y-%m-%d'))
+        dates.append(dt.strftime('%Y-%m-%d'))
 
-    print(f"  Fetching {len(dates_to_fetch)} date points...")
-    for date_str in dates_to_fetch:
-        for type_range in [2]:  # 2 = CN domestic only
-            url = f"https://www.16p.com/gamecenter/api/test_game?date={date_str}&type_range={type_range}&p=1"
-            data = fetch_json(url)
-            if not data or 'dates' not in data: continue
-            for date, games in data['dates'].items():
-                for g in games:
-                    gid = g.get('gameid')
-                    if not gid or gid in all_games: continue
-                    gd = g.get('game', {})
-                    testtype = g.get('testtype','').strip()
-                    all_games[gid] = {
-                        'gameid':    gid,
-                        'gamename':  gd.get('gamename',''),
-                        'iconurl':   gd.get('iconurl',''),
-                        'testtype':  testtype,
-                        'testdate':  g.get('testdate', date),
-                        'area':      gd.get('area',''),
-                        'companys':  gd.get('companys',[]),
-                        'gameplay':  [],  # filled from new_game_list
-                        'review_rate': '',
-                        'review_num':  '',
-                        'gameweb':   gd.get('gameweb',''),
-                        'androidurl': gd.get('androidurl',''),
-                        'taptapurl':  gd.get('taptapurl',''),
-                        'taptap_id':  str(gd.get('taptap_id','') or ''),
-                        'itunes_appid': str(gd.get('itunes_appid','') or ''),
-                    }
-            time.sleep(0.15)
+    print(f"  Fetching {len(dates)} dates via proxy...")
+    for i, date_str in enumerate(dates):
+        path = f"/gamecenter/api/test_game?date={date_str}&type_range=2&p=1"
+        data = proxy_fetch(path)
+        if not data or 'dates' not in data: continue
+        for date, games in data['dates'].items():
+            for g in games:
+                gid = g.get('gameid')
+                if not gid or gid in all_games: continue
+                gd = g.get('game', {})
+                all_games[gid] = {
+                    'gamename': gd.get('gamename', ''),
+                    'iconurl':  gd.get('iconurl', ''),
+                    'testtype': g.get('testtype', '').strip(),
+                    'testdate': g.get('testdate', date),
+                    'companys': gd.get('companys', []),
+                    'gameweb':  gd.get('gameweb', ''),
+                }
+        if (i+1) % 20 == 0:
+            print(f"    [{i+1}/{len(dates)}] {len(all_games)} games")
+        time.sleep(0.15)
 
-    print(f"  test_game API: {len(all_games)} unique games across all statuses")
-
-    # Show status distribution
     counts = {}
     for g in all_games.values():
-        tt = g['testtype'] or '(unknown)'
-        counts[tt] = counts.get(tt,0) + 1
-    print(f"  Status breakdown: {dict(sorted(counts.items(), key=lambda x:-x[1])[:8])}")
-
+        counts[g['testtype']] = counts.get(g['testtype'], 0) + 1
+    print(f"  ✓ {len(all_games)} games | {dict(sorted(counts.items(),key=lambda x:-x[1])[:5])}")
     return list(all_games.values())
 
-def fetch_new_game_list_tags():
-    """
-    SECONDARY: get gameplay tags + scores from new_game_list API.
-    Fetches broadly to cover as many games as possible.
-    Returns dict: gamename -> {gameplay, ...}
-    """
+def fetch_tags():
     tags_map = {}
-    # Fetch with multiple date_range AND type_range combos to maximize coverage
-    combos = [
-        (30, 2), (60, 2), (90, 2), (180, 2), (365, 2),
-        (30, 1), (60, 1), (90, 1), (180, 1), (365, 1),  # type_range=1 = all regions
-    ]
-    for date_range, type_range in combos:
+    for dr in [30, 90, 180, 365]:
         for p in [1, 2, 3]:
-            url = f"https://www.16p.com/gamecenter/api/new_game_list?p={p}&ps=50&date_range={date_range}&type_range={type_range}"
-            data = fetch_json(url)
-            if not data or not isinstance(data, list): break
-            added = 0
+            path = f"/gamecenter/api/new_game_list?p={p}&ps=50&date_range={dr}&type_range=2"
+            data = proxy_fetch(path)
+            if not data: break
             for g in data:
-                name = g.get('gamename','')
+                name = g.get('gamename', '')
                 if name and name not in tags_map:
                     tags_map[name] = {
-                        'gameplay':    g.get('gameplay',[]),
-                        'review_rate': str(g.get('review_rate','')),
-                        'review_num':  str(g.get('review_num','')),
-                        'gameweb':     g.get('gameweb','') or g.get('mainsite',''),
-                        'androidurl':  g.get('androidurl',''),
-                        'taptapurl':   g.get('taptapurl',''),
-                        'taptap_id':   str(g.get('taptap_id','') or ''),
-                        'itunes_appid':str(g.get('itunes_appid','') or ''),
-                        'format_time': g.get('format_time','') or g.get('publishtime',''),
+                        'gameplay':    g.get('gameplay', []),
+                        'review_rate': str(g.get('review_rate', '')),
+                        'review_num':  str(g.get('review_num', '')),
+                        'gameweb':     g.get('gameweb', ''),
+                        'format_time': g.get('format_time', '') or g.get('publishtime', ''),
                     }
-                    added += 1
-            if added == 0: break  # no new games, stop paginating
             time.sleep(0.2)
-    print(f"  new_game_list tags: {len(tags_map)} games")
+    print(f"  ✓ Tags: {len(tags_map)} games")
     return tags_map
 
 def fetch_rankings():
     results = {}
     for period, label in [(30,'rank30'),(90,'rank90'),(365,'rankyr')]:
-        url = f"https://www.16p.com/gamecenter/api/new_game_list?p=1&ps=30&date_range={period}&type_range=2"
-        data = fetch_json(url)
-        results[label] = data or []
+        path = f"/gamecenter/api/new_game_list?p=1&ps=30&date_range={period}&type_range=2"
+        results[label] = proxy_fetch(path) or []
         time.sleep(0.3)
-        print(f"  rankings {period}d: {len(results[label])} games")
     return results
 
-def build_game(g, tags_data, itunes_cache, idx, is_rank=False):
-    name = g.get('gamename','') or g.get('name','')
+def build_entry(g, tags_data, idx, is_rank=False):
+    name = g.get('gamename', '')
     if not name: return None
-
-    # Get tags from secondary source
     td = tags_data.get(name, {})
-    tags = g.get('gameplay') or td.get('gameplay', [])
-    tags = [t for t in tags if t]
-    # Fallback: use iTunes genre if no tags from 16p
-    if not tags and it and it.get('genre'):
-        genre_en = it.get('genre','')
-        # Map iTunes genres to CN tags
-        ITUNES_GENRE_MAP = {
-            'Games': [], 'Role Playing': ['角色扮演'],
-            'Action': ['动作'], 'Strategy': ['策略'],
-            'Casual': ['休闲'], 'Puzzle': ['解谜'],
-            'Adventure': ['冒险'], 'Simulation': ['模拟'],
-            'Sports': ['体育'], 'Racing': ['竞速'],
-            'Card': ['卡牌'], 'Board': ['桌游'],
-            'Music': ['音乐'], 'Trivia': ['益智'],
-            'Word': ['文字'], 'Entertainment': [],
-        }
-        for k, v in ITUNES_GENRE_MAP.items():
-            if k.lower() in genre_en.lower() and v:
-                tags = v; break
+    tags = g.get('gameplay', []) or td.get('gameplay', [])
     tags_vn = translate_tags(tags)
-
-    # Company info
     companys = g.get('companys', [])
-    pub = next((c['name'] for c in companys if str(c.get('company_role_id',''))=='1'), '') or td.get('pub','')
-    dev = next((c['name'] for c in companys if str(c.get('company_role_id',''))=='2'), '') or td.get('dev','')
-
-    # Status - from test_game (ALL statuses)
-    testtype_raw = g.get('testtype','').strip()
-    status_pair = TESTTYPE_MAP.get(testtype_raw, (testtype_raw, testtype_raw or 'Open Beta'))
-
-    # iTunes
-    it = itunes_cache.get(name)
-    if not it:
-        it = fetch_itunes(name)
-        itunes_cache[name] = it
-        time.sleep(0.3)
-
-    # Store links
-    tt_id = (g.get('taptap_id') or td.get('taptap_id','') or TAPTAP_IDS.get(name,'') or '').strip()
-    if tt_id and tt_id != '0':
-        tt_direct = f"https://www.taptap.cn/app/{tt_id}"
-    else:
-        tt_direct = f"https://www.taptap.cn/search?q={urllib.parse.quote(name)}"
-
-    ios_id  = (g.get('itunes_appid') or td.get('itunes_appid','') or (it['appId'] if it else '')).strip()
-    ios_id  = ios_id if ios_id and ios_id != '0' else ''
-    ios_url = f"https://apps.apple.com/app/id{ios_id}" if ios_id else ''
-    mainsite = g.get('gameweb','') or td.get('gameweb','')
-
-    pub_time = g.get('testdate','') or td.get('format_time','') or g.get('pub_time','')
-
-    icon = (it['icon'] if it and it.get('icon') else '') or g.get('iconurl','')
-
-    # Get EN name from iTunes if available
-    name_en = (it.get('name_en','') if it else '') or ''
-    # Clean: if EN name is same as CN or contains only CN chars, discard
-    import re as _re
-    if name_en and _re.search(r'[\u4e00-\u9fff]', name_en):
-        name_en = ''
-
-    result = {
+    pub = next((c['name'] for c in companys if str(c.get('company_role_id',''))=='1'), '')
+    dev = next((c['name'] for c in companys if str(c.get('company_role_id',''))=='2'), '') or pub
+    tt = g.get('testtype', '').strip()
+    status = TESTTYPE_MAP.get(tt, (tt, tt or 'Open Beta'))
+    tt_id = TAPTAP_IDS.get(name, '')
+    tt_url = f"https://www.taptap.cn/app/{tt_id}" if tt_id else \
+             f"https://www.taptap.cn/search?q={urllib.parse.quote(name)}"
+    pub_time = g.get('testdate', '') or td.get('format_time', '')
+    return {
         'stt' if not is_rank else 'rank': str(idx+1),
-        'name':          name,
-        'name_en':       name_en,
-        'itunes_genre':  it.get('genre','') if it else '',
-        'icon_url':      icon,
-        'tags_cn':       ' / '.join(tags),
-        'tags_vn':       tags_vn,
-        'publisher':     pub,
-        'developer':     dev or pub,
-        'testtype_cn':   status_pair[0],
-        'testtype_vn':   status_pair[1],
-        'score_16p':     td.get('review_rate','') or g.get('review_rate',''),
-        'reviews_16p':   td.get('review_num','')  or g.get('review_num',''),
-        'pub_time':      pub_time,
-        'date_sort':     pub_time[:10] if len(pub_time)>=10 else pub_time,
-        'ios_id':        ios_id,
-        'ios_url':       ios_url,
-        'ios_rating':    str(it['rating']) if it else '',
-        'ios_reviews':   str(it['reviews']) if it else '',
-        'store_taptap':  tt_direct,
-        'store_bilibili':f"https://search.bilibili.com/all?keyword={urllib.parse.quote(name)}",
-        'store_hygb':    f"https://www.taptap.cn/search?q={urllib.parse.quote(name)}",
-        'Mainsite':      mainsite,
-        'fetched_at':    datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC'),
+        'name':         name,
+        'name_en':      '',
+        'icon_url':     g.get('iconurl', ''),
+        'tags_cn':      ' / '.join(tags),
+        'tags_vn':      tags_vn,
+        'publisher':    pub,
+        'developer':    dev,
+        'testtype_cn':  status[0],
+        'testtype_vn':  status[1],
+        'score_16p':    td.get('review_rate', ''),
+        'pub_time':     pub_time,
+        'date_sort':    pub_time[:10] if len(pub_time) >= 10 else pub_time,
+        'ios_id':       '',
+        'ios_url':      '',
+        'ios_rating':   '',
+        'store_taptap': tt_url,
+        'taptap_id':    tt_id,
+        'Mainsite':     g.get('gameweb', '') or td.get('gameweb', ''),
     }
-    return result
 
 def main():
-    print("🎮 Fetching 16p.com (ALL statuses) + iTunes...")
+    print(f"🎮 fetch_all.py via Cloudflare proxy: {PROXY_URL[:40]}...")
+    print(f"   {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}")
 
-    # Load iTunes cache
-    itunes_cache = {}
-    if os.path.exists(OUT):
-        try:
-            with open(OUT,'r') as f: old = json.load(f)
-            for ds in ['newgames','rank30','rank90','rankyr']:
-                for g in old.get(ds,[]):
-                    if g.get('ios_id') and g['ios_id'] not in ('0',''):
-                        itunes_cache[g['name']] = {
-                            'appId':g['ios_id'],'icon':g.get('icon_url',''),
-                            'rating':float(g.get('ios_rating',0) or 0),
-                            'reviews':int(g.get('ios_reviews',0) or 0),
-                            'developer':g.get('developer',''),
-                        }
-            print(f"  Loaded {len(itunes_cache)} cached iTunes entries")
-        except: pass
+    print("\n📡 test_game API (ALL statuses)...")
+    test_games = fetch_test_game()
 
-    # PRIMARY: test_game API → ALL statuses
-    print("\n📡 test_game API (PRIMARY — ALL statuses)...")
-    test_games = fetch_test_game_all(days_back=180, days_ahead=30)
+    print("\n📡 new_game_list (tags + scores)...")
+    tags_data = fetch_tags()
 
-    # SECONDARY: new_game_list → tags + scores
-    print("\n📡 new_game_list API (tags + scores only)...")
-    tags_data = fetch_new_game_list_tags()
-
-    # Rankings
     print("\n📡 Rankings...")
     rankings = fetch_rankings()
 
-    # Sort test_games by testdate desc
-    def sort_key(g):
-        d = g.get('testdate','')
-        return d if d else '2000-01-01'
-    test_games.sort(key=sort_key, reverse=True)
+    test_games.sort(key=lambda g: g.get('testdate',''), reverse=True)
 
-    # Build newgames list from test_game (all statuses)
-    print(f"\n🍎 Enriching {min(len(test_games),150)} newgames with iTunes...")
-    newgames = []
-    seen = set()
+    newgames, seen = [], set()
     for i, g in enumerate(test_games):
-        if i >= 150: break
-        name = g.get('gamename','')
+        if i >= 200: break
+        name = g.get('gamename', '')
         if not name or name in seen: continue
         seen.add(name)
-        result = build_game(g, tags_data, itunes_cache, len(newgames), False)
-        if result: newgames.append(result)
-        if (i+1) % 20 == 0:
-            print(f"  [{i+1}/{min(len(test_games),150)}]...")
+        entry = build_entry(g, tags_data, len(newgames), False)
+        if entry: newgames.append(entry)
 
-    # Build rankings
-    def process_ranks(raw_list, label):
-        results = []
-        for i, g in enumerate(raw_list[:30]):
-            name = g.get('gamename','')
-            if not name: continue
-            # For rankings, testtype defaults to 上线
-            if not g.get('testtype'):
-                g['testtype'] = '上线'
-            result = build_game(g, tags_data, itunes_cache, i, True)
-            if result: results.append(result)
-        print(f"  ✓ {label}: {len(results)} games")
-        return results
+    def build_ranks(raw):
+        res = []
+        for i, g in enumerate(raw[:30]):
+            if not g.get('testtype'): g['testtype'] = '上线'
+            entry = build_entry(g, tags_data.get(g.get('gamename',''),{}), i, True)
+            if entry: res.append(entry)
+        return res
 
-    print("\n🍎 Enriching rankings...")
     out = {
         'newgames': newgames,
-        'rank30':   process_ranks(rankings['rank30'],  'rank30'),
-        'rank90':   process_ranks(rankings['rank90'],  'rank90'),
-        'rankyr':   process_ranks(rankings['rankyr'],  'rankyr'),
+        'rank30':   build_ranks(rankings['rank30']),
+        'rank90':   build_ranks(rankings['rank90']),
+        'rankyr':   build_ranks(rankings['rankyr']),
         'updated_at': datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC'),
-        'source': '16p.com test_game (ALL statuses) + new_game_list (tags) + iTunes',
+        'source': '16p.com via Cloudflare Worker proxy',
     }
 
-    with open(OUT,'w',encoding='utf-8') as f:
+    with open(OUT, 'w', encoding='utf-8') as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
 
-    # Final stats
+    counts = {}
+    for g in newgames:
+        s = g.get('testtype_vn','?')
+        counts[s] = counts.get(s,0)+1
+
     print(f"\n✅ Saved {OUT}")
     print(f"   newgames={len(newgames)} | rank30={len(out['rank30'])}")
-    if newgames:
-        status_counts = {}
-        for g in newgames:
-            s = g.get('testtype_vn','?')
-            status_counts[s] = status_counts.get(s,0)+1
-        print(f"   Status breakdown: {dict(sorted(status_counts.items(), key=lambda x:-x[1])[:8])}")
+    print(f"   Statuses: {dict(sorted(counts.items(),key=lambda x:-x[1])[:5])}")
 
 if __name__ == '__main__':
     main()
