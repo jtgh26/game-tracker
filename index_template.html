@@ -15,6 +15,16 @@
   --text:#f1f5f9;--text2:#94a3b8;--text3:#64748b;
   --hl-bg:rgba(245,158,11,0.08);--hl-border:rgba(245,158,11,0.3);
 }
+/* ── LIGHT THEME ── */
+body.light{
+  --bg:#f0f4f8;--surface:#ffffff;--s2:#e8edf5;--s3:#dde3ee;
+  --border:rgba(0,0,0,0.09);--border2:rgba(0,0,0,0.15);
+  --accent:#2563eb;--accent2:#1d4ed8;
+  --gold:#d97706;--gold2:#b45309;
+  --green:#059669;--red:#dc2626;--purple:#7c3aed;--pink:#db2777;
+  --text:#0f172a;--text2:#475569;--text3:#94a3b8;
+  --hl-bg:rgba(217,119,6,0.08);--hl-border:rgba(217,119,6,0.3);
+}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font-family:'Be Vietnam Pro','Noto Sans SC',sans-serif;font-size:14px;line-height:1.5}
@@ -300,6 +310,21 @@ td.muted{color:var(--text2)}
   .stats-row{grid-template-columns:1fr 1fr}
   .perf-form-grid{grid-template-columns:1fr}
 }
+
+/* Light mode icon fallback */
+body.light .game-icon-fallback{background:var(--accent)!important;color:#fff!important}
+body.light .store-btn.web{background:#dbeafe;color:#1d4ed8;border-color:#bfdbfe}
+body.light .store-btn.ios{background:#dcfce7;color:#15803d;border-color:#bbf7d0}
+body.light .store-btn.taptap{background:#fef9c3;color:#92400e;border-color:#fde68a}
+body.light .region-badge.r-cn{background:#fee2e2;color:#991b1b;border-color:#fca5a5}
+body.light .region-badge.r-asia{background:#e0f2fe;color:#075985;border-color:#7dd3fc}
+body.light .hl-row{background:rgba(217,119,6,0.06)!important}
+body.light .status-badge{filter:brightness(0.9) saturate(1.2)}
+body.light thead th{background:var(--s2);color:var(--text2)}
+body.light .tb tr:hover td{background:rgba(37,99,235,0.05)!important}
+body.light .header{background:rgba(240,244,248,0.95)!important;backdrop-filter:blur(10px)}
+body.light .tab-bar{background:var(--surface);border-bottom:1px solid var(--border2)}
+
 </style>
 </head>
 <body>
@@ -310,7 +335,10 @@ td.muted{color:var(--text2)}
       <div class="logo-icon">🎮</div>
       <div><div class="logo-text">Game Market Tracker</div><div class="logo-sub">Nguồn: 16p.com (玩匠) · Tháng 6/2026</div></div>
     </a>
-    <div style="font-size:12px;color:var(--text3)">Auto update: <span style="color:var(--accent2)" id="last-updated">__UPDATED_AT__</span></div>
+    <div style="font-size:12px;color:var(--text3)">Auto update: <span style="color:var(--accent2)" id="last-updated">18/06/2026 03:48 UTC</span></div>
+    <button id="theme-toggle" onclick="toggleTheme()" style="background:var(--s2);border:1px solid var(--border2);color:var(--text2);padding:6px 12px;border-radius:8px;cursor:pointer;font-size:13px;display:flex;align-items:center;gap:6px;transition:all .2s">
+      <span id="theme-icon">☀️</span><span id="theme-label">Sáng</span>
+    </button>
     <a class="src-badge" href="https://www.16p.com" target="_blank">↗ 16p.com</a>
   </div>
 </header>
@@ -538,8 +566,15 @@ function fmtDate(d){
   return d;
 }
 function gpBullets(txt){
-  if(!txt)return'<span style="color:var(--text3)">—</span>';
-  const lines=txt.split(/\\n|\n|\\\\n/).map(l=>l.trim()).filter(Boolean);
+  if(!txt||txt.length===0)return'<span style="color:var(--text3)">—</span>';
+  // Handle both Array (from live_data) and string (with \n bullets)
+  let lines;
+  if(Array.isArray(txt)){
+    lines=txt.filter(Boolean);
+  } else {
+    lines=String(txt).split(/\\n|\n|\\\\n/).map(l=>l.trim()).filter(Boolean);
+  }
+  if(!lines.length)return'<span style="color:var(--text3)">—</span>';
   return'<ul>'+lines.map(l=>`<li>${l.replace(/^[•·\-]\s*/,'')}</li>`).join('')+'</ul>';
 }
 function storeLinks(g, compact=false){
@@ -667,6 +702,17 @@ function renderHLDashboard(games){
 }
 
 // ── FILTER STATES ──
+// ── THEME TOGGLE ──────────────────────────────────────────────
+function toggleTheme(){
+  const isLight=document.body.classList.toggle('light');
+  const icon=document.getElementById('theme-icon');
+  const label=document.getElementById('theme-label');
+  if(icon) icon.textContent=isLight?'🌙':'☀️';
+  if(label) label.textContent=isLight?'Tối':'Sáng';
+  try{localStorage.setItem('theme',isLight?'light':'dark');}catch(e){}
+}
+(function(){try{if(localStorage.getItem('theme')==='light'){document.body.classList.add('light');}}catch(e){}})();
+
 const FS={ng:{hl:false,sortCol:null,sortDir:1},r30:{hl:false},r90:{hl:false},ryr:{hl:false}};
 
 // ── POPULATE SELECTS ──
@@ -739,19 +785,9 @@ function renderNG(arr){
     const appUrl  = g['AppStore']||'';
     const ttUrl   = (g['Store CN']||'').replace('TapTap: ','');
     const mainUrl = g['Mainsite']||'';
-    const ttDirect = g.store_taptap || (g.taptap_id ? 'https://www.taptap.cn/app/'+g.taptap_id : '') || ((g['Store CN']||'').replace('TapTap: ','')) || '';
-    const biliUrl  = g.store_bilibili || ('https://search.bilibili.com/all?keyword='+encodeURIComponent(g['Tên gốc']||''));
-    const hygbUrl  = g.store_hygb || ('https://www.hygb.cn/gamelist?keyword='+encodeURIComponent(g['Tên gốc']||''));
-    const ttIsDirect = ttDirect && !ttDirect.includes('/search?');
-    // Only show links that are likely valid
-    function validUrl(u){ return u && u.startsWith('http') && !u.includes('undefined') && !u.includes('null'); }
-    // App Store CN URL: /cn/app/ works for CN games
-    const appUrlCN = appUrl ? appUrl.replace('/app/id', '/cn/app/id') : '';
-    const storeBtns = [
-      validUrl(mainUrl)  ? `<a href="${mainUrl}"  target="_blank" rel="noopener" class="store-btn web">🌐 Official</a>` : '',
-      validUrl(appUrlCN) ? `<a href="${appUrlCN}" target="_blank" rel="noopener" class="store-btn ios">🍎 App Store</a>` : '',
-      validUrl(ttDirect) ? `<a href="${ttDirect}" target="_blank" rel="noopener" class="store-btn taptap${ttIsDirect?'':' search'}"><img src="https://img.tapimg.net/market/images/0ef6508b0b0b32e8e762f01ef0d8de04.png" style="width:13px;height:13px;vertical-align:middle;margin-right:3px;border-radius:3px">${ttIsDirect?'TapTap':'TapTap 🔍'}</a>` : '',
-    ].filter(Boolean).join('');
+        // TapTap: chỉ show khi có direct ID (không còn trang trắng)
+    const ttId     = g.taptap_id || '';
+        ;
 
     // Status: show bilingual (CN / VI)
     const statusCell = `<span class="status-badge ${stCls}">${svn}</span>
@@ -781,7 +817,7 @@ function renderNG(arr){
         <div class="dev-meta">${g['Quốc gia/ Vùng lãnh thổ']||''}</div>
         <span class="listing ${listCls}">${listTxt}</span>
       </td>
-      <td class="gameplay-cell"><ul class="gp-bullets">${gpBullets(g['Core Gameplay VN'])}</ul></td>
+      <td class="gameplay-cell"><ul class="gp-bullets">${gpBullets(g['Core Gameplay VN']||g.tags_vn||'')}</ul></td>
       <td class="store-cell" style="white-space:normal;line-height:2">${storeBtns||'—'}</td>
       <td class="hl-cell">${hl?'⭐':''}</td>
     </tr>`;
@@ -867,7 +903,7 @@ function renderRank(arr,tbid){
         <div class="dev-meta">${g['Quốc gia/ Vùng lãnh thổ']||''}${g['Năm thành lập']?' · '+g['Năm thành lập']:''}</div>
         <div class="${listed?'lst-y':'lst-n'}">${listed?'✓ Niêm yết':'Chưa niêm yết'}</div>
       </td>
-      <td class="gp-cell">${gpBullets(g['Core Gameplay VN'])}</td>
+      <td class="gp-cell">${gpBullets(g['Core Gameplay VN']||g.tags_vn||'')}</td>
       <td class="link-cell" onclick="event.stopPropagation()">${storeLinks(g,true)}</td>
       <td style="text-align:center">${hl?'<span class="hl-star">⭐</span>':''}</td>
     </tr>`;
@@ -941,7 +977,7 @@ function openModal(g){
   ];
   document.getElementById('m-grid').innerHTML=fields.map(([l,v])=>`<div class="m-field"><div class="m-flbl">${l}</div><div class="m-fval">${v}</div></div>`).join('');
   // Gameplay bullets
-  document.getElementById('m-gp').innerHTML=gpBullets(g['Core Gameplay VN'])||`<span style="color:var(--text3)">${g['Core Gameplay']||'—'}</span>`;
+  document.getElementById('m-gp').innerHTML=gpBullets(g['Core Gameplay VN']||g.tags_vn||'')||`<span style="color:var(--text3)">${g['Core Gameplay']||'—'}</span>`;
   // Stores
   const slinks=[];
   if(g.Mainsite)slinks.push(`<a class="store-link sl-web" href="${g.Mainsite}" target="_blank">🌐 Official Website</a>`);
