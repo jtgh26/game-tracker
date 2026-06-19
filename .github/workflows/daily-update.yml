@@ -11,7 +11,7 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 30
 
     steps:
       - name: 📥 Checkout
@@ -27,6 +27,11 @@ jobs:
       - name: 📦 Install dependencies
         run: pip install pypinyin --break-system-packages || true
 
+      - name: 📡 Fetch data via Cloudflare proxy
+        env:
+          PROXY_URL: ${{ secrets.PROXY_URL }}
+        run: python scripts/fetch_all.py
+
       - name: 🔨 Build index.html
         run: python scripts/build_html.py
 
@@ -34,17 +39,17 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add index.html
-          git diff --staged --quiet || git commit -m "🤖 Auto build: $(date +'%Y-%m-%d %H:%M UTC')"
+          git add live_data.json index.html
+          git diff --staged --quiet || git commit -m "🤖 Auto update: $(date +'%Y-%m-%d %H:%M UTC')"
           git push
 
       - name: 📋 Summary
         if: always()
         run: |
-          echo "## 🎮 Game Tracker Build Summary" >> $GITHUB_STEP_SUMMARY
+          echo "## 🎮 Game Tracker Update" >> $GITHUB_STEP_SUMMARY
           echo "- **Date:** $(date +'%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
           if [ -f live_data.json ]; then
-            NG=$(python -c "import json; d=json.load(open('live_data.json')); print(len(d.get('newgames',[])))")
-            echo "- **Games tracked:** $NG" >> $GITHUB_STEP_SUMMARY
+            NG=$(python -c "import json; d=json.load(open('live_data.json')); print(len(d.get('newgames',[])))" 2>/dev/null || echo "?")
+            echo "- **Games:** $NG" >> $GITHUB_STEP_SUMMARY
           fi
           echo "- **Site:** https://jtgh26.github.io/game-tracker/" >> $GITHUB_STEP_SUMMARY
