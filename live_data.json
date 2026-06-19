@@ -5,20 +5,13 @@
       "name": "时空猎人·觉醒",
       "name_en": "",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b4/2b/cc/b42bcc1c-3715-a281-7a57-1f1753029079/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/512x512bb.jpg",
-      "tags_cn": "动作 / 横版 / 格斗 / 角色扮演 / 冒险 / 竞技",
-      "tags_vn": [
-        "Hành động",
-        "2D ngang",
-        "Đối kháng",
-        "RPG",
-        "Phiêu lưu",
-        "Cạnh tranh"
-      ],
+      "tags_cn": "",
+      "tags_vn": [],
       "publisher": "Guangzhou Zhongxu Shuke Information Technology Co., Ltd",
       "developer": "Guangzhou Zhongxu Shuke Information Technology Co., Ltd",
       "testtype_cn": "上线",
       "testtype_vn": "Onlive / Launch",
-      "score_16p": "4",
+      "score_16p": "",
       "pub_time": "2026-09-15",
       "date_sort": "2026-09-15",
       "ios_id": "",
@@ -4748,6 +4741,34 @@
     },
     {
       "stt": "194",
+      "name": "时空猎人·觉醒-7月2日上线",
+      "name_en": "",
+      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260618/1528106849",
+      "tags_cn": "动作 / 横版 / 格斗 / 角色扮演 / 冒险 / 竞技",
+      "tags_vn": [
+        "Hành động",
+        "2D ngang",
+        "Đối kháng",
+        "RPG",
+        "Phiêu lưu",
+        "Cạnh tranh"
+      ],
+      "publisher": "猎人觉醒工作室",
+      "developer": "猎人觉醒工作室",
+      "testtype_cn": "限量删档计费",
+      "testtype_vn": "限量删档计费",
+      "score_16p": "4",
+      "pub_time": "2026-04-23",
+      "date_sort": "2026-04-23",
+      "ios_id": "",
+      "ios_url": "",
+      "ios_rating": "",
+      "store_taptap": "https://www.taptap.cn/search?q=%E6%97%B6%E7%A9%BA%E7%8C%8E%E4%BA%BA%C2%B7%E8%A7%89%E9%86%92-7%E6%9C%882%E6%97%A5%E4%B8%8A%E7%BA%BF",
+      "taptap_id": "",
+      "Mainsite": ""
+    },
+    {
+      "stt": "195",
       "name": "求生之城",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260528/14495710879",
@@ -4775,7 +4796,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "195",
+      "stt": "196",
       "name": "伍六七：暗影交锋",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260409/11280644912",
@@ -4803,7 +4824,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "196",
+      "stt": "197",
       "name": "百战天虫-正版移植手游",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20251128/18574650322",
@@ -6353,9 +6374,9 @@
     },
     {
       "rank": "27",
-      "name": "时空猎人·觉醒",
+      "name": "时空猎人·觉醒-7月2日上线",
       "name_en": "",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260616/21075036627",
+      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260618/1528106849",
       "tags_cn": "动作 / 横版 / 格斗 / 角色扮演 / 冒险 / 竞技",
       "tags_vn": [
         "Hành động",
@@ -6375,7 +6396,7 @@
       "ios_id": "",
       "ios_url": "",
       "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E6%97%B6%E7%A9%BA%E7%8C%8E%E4%BA%BA%C2%B7%E8%A7%89%E9%86%92",
+      "store_taptap": "https://www.taptap.cn/search?q=%E6%97%B6%E7%A9%BA%E7%8C%8E%E4%BA%BA%C2%B7%E8%A7%89%E9%86%92-7%E6%9C%882%E6%97%A5%E4%B8%8A%E7%BA%BF",
       "taptap_id": "",
       "Mainsite": ""
     },
@@ -7215,6 +7236,6 @@
       "Mainsite": "https://apps.apple.com/cn/developer/shenzhen-beijiatewei-technology-co-ltd/id1743377661?uo=4"
     }
   ],
-  "updated_at": "2026-06-19 04:38 UTC",
+  "updated_at": "2026-06-19 06:54 UTC",
   "source": "16p.com via Cloudflare Worker proxy"
 }
