@@ -818,7 +818,20 @@ function renderNG(arr){
         <span class="listing ${listCls}">${listTxt}</span>
       </td>
       <td class="gameplay-cell"><ul class="gp-bullets">${gpBullets(g['Core Gameplay VN']||g.tags_vn||'')}</ul></td>
-      <td class="store-cell" style="white-space:normal;line-height:2">${storeBtns||'—'}</td>
+            // ── STORE BUTTONS ──────────────────────────────────────────────────────
+      const ttId     = g.taptap_id||'';
+      const ttDirect = ttId&&ttId!=='0' ? 'https://www.taptap.cn/app/'+ttId : '';
+      const appUrl   = g['AppStore']||g.ios_url||'';
+      const appUrlCN = appUrl ? appUrl.replace('/app/id','/cn/app/id').replace('/cn/cn/','/cn/') : '';
+      const mainUrl  = g['Mainsite']||g.Mainsite||'';
+      const hasRealSite = mainUrl&&mainUrl.startsWith('http')&&!mainUrl.includes('search')&&!mainUrl.includes('undefined');
+      function validUrl(u){ return u&&u.startsWith('http')&&!u.includes('undefined')&&!u.includes('null'); }
+      const storeBtns = [
+        hasRealSite        ? \`<a href="\${mainUrl}"  target="_blank" rel="noopener" class="store-btn web">🌐 Official</a>\` : '',
+        validUrl(appUrlCN) ? \`<a href="\${appUrlCN}" target="_blank" rel="noopener" class="store-btn ios">🍎 App Store</a>\` : '',
+        validUrl(ttDirect) ? \`<a href="\${ttDirect}" target="_blank" rel="noopener" class="store-btn taptap"><img src="https://img.tapimg.net/market/images/0ef6508b0b0b32e8e762f01ef0d8de04.png" style="width:13px;height:13px;vertical-align:middle;margin-right:3px;border-radius:3px">TapTap</a>\` : '',
+      ].filter(Boolean).join('');
+      <td class="store-cell">${storeBtns||'—'}</td>
       <td class="hl-cell">${hl?'⭐':''}</td>
     </tr>`;
   }).join('');
