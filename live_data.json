@@ -840,7 +840,7 @@
     },
     {
       "stt": "40",
-      "name": "雪松-预下载",
+      "name": "雪松",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx~sykb/20240907/13345177519",
       "tags_cn": "二次元 / 策略 / 硬核 / RTT / 养成 / 坦克 / 探索 / 剧情 / 角色扮演",
@@ -856,13 +856,13 @@
       "developer": "纳罗达制作委员会",
       "testtype_cn": "上线",
       "testtype_vn": "Onlive / Launch",
-      "score_16p": "4.3",
+      "score_16p": "3.7",
       "pub_time": "2026-06-22",
       "date_sort": "2026-06-22",
       "ios_id": "",
       "ios_url": "",
       "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E9%9B%AA%E6%9D%BE-%E9%A2%84%E4%B8%8B%E8%BD%BD",
+      "store_taptap": "https://www.taptap.cn/search?q=%E9%9B%AA%E6%9D%BE",
       "taptap_id": "",
       "Mainsite": ""
     },
@@ -870,7 +870,7 @@
       "stt": "41",
       "name": "合合梦幻岛",
       "name_en": "",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/72/cd/3b/72cd3b0b-45f0-4019-6ffe-e0162891e6bf/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/60/49/db/6049db83-5bf6-8670-49c2-2acc32ab4488/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
       "tags_cn": "休闲 / 娱乐 / 模拟",
       "tags_vn": [
         "Casual",
@@ -881,7 +881,7 @@
       "developer": "Shenzhen Bangbang Network Information Co., Ltd.",
       "testtype_cn": "上线",
       "testtype_vn": "Onlive / Launch",
-      "score_16p": "5",
+      "score_16p": "3.4",
       "pub_time": "2026-06-20",
       "date_sort": "2026-06-20",
       "ios_id": "",
@@ -2856,20 +2856,13 @@
       "name": "幻想九霄",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260523/14100046619",
-      "tags_cn": "角色扮演 / 刷宝 / 多人联机 / 休闲 / 修仙 / 养成",
-      "tags_vn": [
-        "RPG",
-        "Loot / Cày cuốc",
-        "Multiplayer",
-        "Casual",
-        "Tu Tiên",
-        "Nuôi dưỡng"
-      ],
+      "tags_cn": "",
+      "tags_vn": [],
       "publisher": "",
       "developer": "上海混沌奇点信息科技有限公司",
       "testtype_cn": "限量删档计费",
       "testtype_vn": "限量删档计费",
-      "score_16p": "0",
+      "score_16p": "",
       "pub_time": "2026-05-23",
       "date_sort": "2026-05-23",
       "ios_id": "",
@@ -2905,16 +2898,13 @@
       "name": "三国群雄传-挂机轻松养成",
       "name_en": "",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ad/e9/b9/ade9b996-6b10-af27-da90-c5fe56fb9b52/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
-      "tags_cn": "策略 / 卡牌",
-      "tags_vn": [
-        "Chiến thuật",
-        "Thẻ bài"
-      ],
+      "tags_cn": "",
+      "tags_vn": [],
       "publisher": "Shenzhen Yunhai Yuzhou Technology Co., Ltd.",
       "developer": "Shenzhen Yunhai Yuzhou Technology Co., Ltd.",
       "testtype_cn": "上线",
       "testtype_vn": "Onlive / Launch",
-      "score_16p": "0",
+      "score_16p": "",
       "pub_time": "2026-05-23",
       "date_sort": "2026-05-23",
       "ios_id": "",
@@ -2922,7 +2912,7 @@
       "ios_rating": "",
       "store_taptap": "https://www.taptap.cn/search?q=%E4%B8%89%E5%9B%BD%E7%BE%A4%E9%9B%84%E4%BC%A0-%E6%8C%82%E6%9C%BA%E8%BD%BB%E6%9D%BE%E5%85%BB%E6%88%90",
       "taptap_id": "",
-      "Mainsite": "https://apps.apple.com/cn/developer/%E6%B7%B1%E5%9C%B3%E4%BA%91%E6%B5%B7%E5%AE%87%E5%AE%99%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/id1686856799?uo=4"
+      "Mainsite": ""
     },
     {
       "stt": "119",
@@ -3304,7 +3294,7 @@
       "stt": "136",
       "name": "崩坏：因缘精灵-崩坏IP新作",
       "name_en": "",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20250826/15313730405",
+      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260622/0911141114",
       "tags_cn": "多平台 / 绝赞立绘 / 抓宠 / 自走棋 / 养成 / 角色扮演 / 二次元 / 剧情 / 策略",
       "tags_vn": [
         "绝赞立绘",
@@ -3402,13 +3392,19 @@
       "name": "不休的勇士-预下载",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260620/15333061621",
-      "tags_cn": "",
-      "tags_vn": [],
+      "tags_cn": "角色扮演 / 养成 / 冒险 / MMO / 社交",
+      "tags_vn": [
+        "RPG",
+        "Nuôi dưỡng",
+        "Phiêu lưu",
+        "MMO",
+        "社交"
+      ],
       "publisher": "广州穗游网络科技有限公司",
       "developer": "广州穗游网络科技有限公司",
       "testtype_cn": "删档计费测试",
       "testtype_vn": "Paid Test xóa data",
-      "score_16p": "",
+      "score_16p": "0",
       "pub_time": "2026-05-15",
       "date_sort": "2026-05-15",
       "ios_id": "",
@@ -3681,7 +3677,7 @@
       "developer": "厦门炉火网络科技有限公司",
       "testtype_cn": "删档计费测试",
       "testtype_vn": "Paid Test xóa data",
-      "score_16p": "3.8",
+      "score_16p": "3.7",
       "pub_time": "2026-05-13",
       "date_sort": "2026-05-13",
       "ios_id": "",
@@ -5027,7 +5023,7 @@
       "name": "遗忘之海-7月上线",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260429/09384062841",
-      "tags_cn": "多平台 / 开放世界 / 航海 / 冒险 / 角色扮演 / 海战",
+      "tags_cn": "编辑推荐 / 多平台 / 开放世界 / 航海 / 冒险 / 角色扮演 / 海战",
       "tags_vn": [
         "Open World",
         "Hàng hải",
@@ -5079,7 +5075,7 @@
     },
     {
       "rank": "11",
-      "name": "雪松-预下载",
+      "name": "雪松",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx~sykb/20240907/13345177519",
       "tags_cn": "二次元 / 策略 / 硬核 / RTT / 养成 / 坦克 / 探索 / 剧情 / 角色扮演",
@@ -5101,7 +5097,7 @@
       "ios_id": "",
       "ios_url": "",
       "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E9%9B%AA%E6%9D%BE-%E9%A2%84%E4%B8%8B%E8%BD%BD",
+      "store_taptap": "https://www.taptap.cn/search?q=%E9%9B%AA%E6%9D%BE",
       "taptap_id": "",
       "Mainsite": ""
     },
@@ -5975,8 +5971,8 @@
       "rank": "14",
       "name": "崩坏：因缘精灵-崩坏IP新作",
       "name_en": "",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20250826/15313730405",
-      "tags_cn": "多平台 / 绝赞立绘 / 抓宠 / 自走棋 / 养成 / 角色扮演 / 二次元 / 剧情 / 策略",
+      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260622/0911141114",
+      "tags_cn": "编辑推荐 / 多平台 / 绝赞立绘 / 抓宠 / 自走棋 / 养成 / 角色扮演 / 二次元 / 剧情 / 策略",
       "tags_vn": [
         "绝赞立绘",
         "Bắt pet",
@@ -6084,32 +6080,6 @@
     },
     {
       "rank": "18",
-      "name": "王者万象棋",
-      "name_en": "",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260617/17323024595",
-      "tags_cn": "多平台 / 策略 / 竞技 / 战棋 / 自走棋 / 多端互通",
-      "tags_vn": [
-        "Chiến thuật",
-        "Cạnh tranh",
-        "战棋",
-        "Auto Chess"
-      ],
-      "publisher": "腾讯",
-      "developer": "腾讯",
-      "testtype_cn": "上线",
-      "testtype_vn": "Onlive / Launch",
-      "score_16p": "",
-      "pub_time": "",
-      "date_sort": "",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E7%8E%8B%E8%80%85%E4%B8%87%E8%B1%A1%E6%A3%8B",
-      "taptap_id": "",
-      "Mainsite": ""
-    },
-    {
-      "rank": "19",
       "name": "机械启元-机械兽生存新游",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20250822/13364887261",
@@ -6137,7 +6107,7 @@
       "Mainsite": ""
     },
     {
-      "rank": "20",
+      "rank": "19",
       "name": "新星足球世界",
       "name_en": "",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ec/6c/b2/ec6cb237-1a21-04db-aaa7-c96961249c5c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
@@ -6162,7 +6132,7 @@
       "Mainsite": "https://apps.apple.com/cn/developer/shenzhen-qianhai-hongcheng-games-co-ltd/id960620186?uo=4"
     },
     {
-      "rank": "21",
+      "rank": "20",
       "name": "望月-中国都市开放世界",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20251029/09400726763",
@@ -6190,7 +6160,7 @@
       "Mainsite": ""
     },
     {
-      "rank": "22",
+      "rank": "21",
       "name": "高能探宝团",
       "name_en": "",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8a/a6/05/8aa605e5-536d-57e7-401d-97c725374434/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/512x512bb.jpg",
@@ -6214,7 +6184,7 @@
       "Mainsite": "https://apps.apple.com/cn/developer/hainan-kakacattle-network-technology-co-ltd/id1549620212?uo=4"
     },
     {
-      "rank": "23",
+      "rank": "22",
       "name": "怪物猎人：旅人",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20250924/13351077299",
@@ -6238,6 +6208,33 @@
       "ios_url": "",
       "ios_rating": "",
       "store_taptap": "https://www.taptap.cn/search?q=%E6%80%AA%E7%89%A9%E7%8C%8E%E4%BA%BA%EF%BC%9A%E6%97%85%E4%BA%BA",
+      "taptap_id": "",
+      "Mainsite": ""
+    },
+    {
+      "rank": "23",
+      "name": "夜幕之下-全员恶人群像",
+      "name_en": "",
+      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20251113/15240854526",
+      "tags_cn": "多平台 / 女性向 / 角色扮演 / 二次元 / 剧情 / 策略 / 多端互通",
+      "tags_vn": [
+        "Otome / Nữ tính",
+        "RPG",
+        "ACG / Anime",
+        "Story-rich",
+        "Chiến thuật"
+      ],
+      "publisher": "不眠夜工作室",
+      "developer": "不眠夜工作室",
+      "testtype_cn": "上线",
+      "testtype_vn": "Onlive / Launch",
+      "score_16p": "",
+      "pub_time": "",
+      "date_sort": "",
+      "ios_id": "",
+      "ios_url": "",
+      "ios_rating": "",
+      "store_taptap": "https://www.taptap.cn/search?q=%E5%A4%9C%E5%B9%95%E4%B9%8B%E4%B8%8B-%E5%85%A8%E5%91%98%E6%81%B6%E4%BA%BA%E7%BE%A4%E5%83%8F",
       "taptap_id": "",
       "Mainsite": ""
     },
@@ -6271,33 +6268,6 @@
     },
     {
       "rank": "25",
-      "name": "夜幕之下-全员恶人群像",
-      "name_en": "",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20251113/15240854526",
-      "tags_cn": "多平台 / 女性向 / 角色扮演 / 二次元 / 剧情 / 策略 / 多端互通",
-      "tags_vn": [
-        "Otome / Nữ tính",
-        "RPG",
-        "ACG / Anime",
-        "Story-rich",
-        "Chiến thuật"
-      ],
-      "publisher": "不眠夜工作室",
-      "developer": "不眠夜工作室",
-      "testtype_cn": "上线",
-      "testtype_vn": "Onlive / Launch",
-      "score_16p": "",
-      "pub_time": "",
-      "date_sort": "",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E5%A4%9C%E5%B9%95%E4%B9%8B%E4%B8%8B-%E5%85%A8%E5%91%98%E6%81%B6%E4%BA%BA%E7%BE%A4%E5%83%8F",
-      "taptap_id": "",
-      "Mainsite": ""
-    },
-    {
-      "rank": "26",
       "name": "卡厄思梦境",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260414/12030497353",
@@ -6321,6 +6291,33 @@
       "ios_url": "",
       "ios_rating": "",
       "store_taptap": "https://www.taptap.cn/search?q=%E5%8D%A1%E5%8E%84%E6%80%9D%E6%A2%A6%E5%A2%83",
+      "taptap_id": "",
+      "Mainsite": ""
+    },
+    {
+      "rank": "26",
+      "name": "遗忘之海-7月上线",
+      "name_en": "",
+      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260429/09384062841",
+      "tags_cn": "编辑推荐 / 多平台 / 开放世界 / 航海 / 冒险 / 角色扮演 / 海战",
+      "tags_vn": [
+        "Open World",
+        "Hàng hải",
+        "Phiêu lưu",
+        "RPG",
+        "Hải chiến"
+      ],
+      "publisher": "网易游戏",
+      "developer": "网易游戏",
+      "testtype_cn": "上线",
+      "testtype_vn": "Onlive / Launch",
+      "score_16p": "",
+      "pub_time": "",
+      "date_sort": "",
+      "ios_id": "",
+      "ios_url": "",
+      "ios_rating": "",
+      "store_taptap": "https://www.taptap.cn/search?q=%E9%81%97%E5%BF%98%E4%B9%8B%E6%B5%B7-7%E6%9C%88%E4%B8%8A%E7%BA%BF",
       "taptap_id": "",
       "Mainsite": ""
     },
@@ -6354,33 +6351,6 @@
     },
     {
       "rank": "28",
-      "name": "遗忘之海-7月上线",
-      "name_en": "",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260429/09384062841",
-      "tags_cn": "多平台 / 开放世界 / 航海 / 冒险 / 角色扮演 / 海战",
-      "tags_vn": [
-        "Open World",
-        "Hàng hải",
-        "Phiêu lưu",
-        "RPG",
-        "Hải chiến"
-      ],
-      "publisher": "网易游戏",
-      "developer": "网易游戏",
-      "testtype_cn": "上线",
-      "testtype_vn": "Onlive / Launch",
-      "score_16p": "",
-      "pub_time": "",
-      "date_sort": "",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E9%81%97%E5%BF%98%E4%B9%8B%E6%B5%B7-7%E6%9C%88%E4%B8%8A%E7%BA%BF",
-      "taptap_id": "",
-      "Mainsite": ""
-    },
-    {
-      "rank": "29",
       "name": "小花仙：拉贝尔之约",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20251212/20451767870",
@@ -6406,7 +6376,7 @@
       "Mainsite": ""
     },
     {
-      "rank": "30",
+      "rank": "29",
       "name": "星布谷地-米哈游生活模拟新作",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20250923/16063182543",
@@ -6432,6 +6402,31 @@
       "store_taptap": "https://www.taptap.cn/search?q=%E6%98%9F%E5%B8%83%E8%B0%B7%E5%9C%B0-%E7%B1%B3%E5%93%88%E6%B8%B8%E7%94%9F%E6%B4%BB%E6%A8%A1%E6%8B%9F%E6%96%B0%E4%BD%9C",
       "taptap_id": "",
       "Mainsite": ""
+    },
+    {
+      "rank": "30",
+      "name": "生计与沉冤 - 打工模拟加悬疑探案",
+      "name_en": "",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f5/d2/1a/f5d21a05-8af0-fbc8-5422-0711beb7e324/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "tags_cn": "模拟 / 娱乐 / 角色扮演",
+      "tags_vn": [
+        "Mô phỏng",
+        "娱乐",
+        "RPG"
+      ],
+      "publisher": "敏 徐",
+      "developer": "敏 徐",
+      "testtype_cn": "上线",
+      "testtype_vn": "Onlive / Launch",
+      "score_16p": "",
+      "pub_time": "",
+      "date_sort": "",
+      "ios_id": "",
+      "ios_url": "",
+      "ios_rating": "",
+      "store_taptap": "https://www.taptap.cn/search?q=%E7%94%9F%E8%AE%A1%E4%B8%8E%E6%B2%89%E5%86%A4%20-%20%E6%89%93%E5%B7%A5%E6%A8%A1%E6%8B%9F%E5%8A%A0%E6%82%AC%E7%96%91%E6%8E%A2%E6%A1%88",
+      "taptap_id": "",
+      "Mainsite": "https://apps.apple.com/cn/developer/%E6%95%8F-%E5%BE%90/id1767289792?uo=4"
     }
   ],
   "rankyr": [
@@ -6869,7 +6864,7 @@
       "name": "失控进化-7月9日上线",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260527/20255390530",
-      "tags_cn": "多平台 / 搜打拆 / 射击 / 生存 / 沙盒 / 竞技 / 多人联机 / 开放世界 / 建造 / 第一人称 / 收集 / Steam移植 / 端游改编 / SOC / 多端互通",
+      "tags_cn": "编辑推荐 / 多平台 / 搜打拆 / 射击 / 生存 / 沙盒 / 竞技 / 多人联机 / 开放世界 / 建造 / 第一人称 / 收集 / Steam移植 / 端游改编 / SOC / 多端互通",
       "tags_vn": [
         "搜打拆",
         "Bắn súng",
@@ -7191,6 +7186,6 @@
       "Mainsite": ""
     }
   ],
-  "updated_at": "2026-06-22 06:57 UTC",
+  "updated_at": "2026-06-22 18:08 UTC",
   "source": "16p.com via Cloudflare Worker proxy"
 }
