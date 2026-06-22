@@ -3399,9 +3399,9 @@
     },
     {
       "stt": "140",
-      "name": "不休的勇士",
+      "name": "不休的勇士-预下载",
       "name_en": "",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260509/12075270074",
+      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260620/15333061621",
       "tags_cn": "",
       "tags_vn": [],
       "publisher": "广州穗游网络科技有限公司",
@@ -3414,7 +3414,7 @@
       "ios_id": "",
       "ios_url": "",
       "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E4%B8%8D%E4%BC%91%E7%9A%84%E5%8B%87%E5%A3%AB",
+      "store_taptap": "https://www.taptap.cn/search?q=%E4%B8%8D%E4%BC%91%E7%9A%84%E5%8B%87%E5%A3%AB-%E9%A2%84%E4%B8%8B%E8%BD%BD",
       "taptap_id": "",
       "Mainsite": ""
     },
@@ -7191,6 +7191,6 @@
       "Mainsite": ""
     }
   ],
-  "updated_at": "2026-06-22 04:48 UTC",
+  "updated_at": "2026-06-22 06:57 UTC",
   "source": "16p.com via Cloudflare Worker proxy"
 }
