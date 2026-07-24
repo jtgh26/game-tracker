@@ -177,6 +177,90 @@
     },
     {
       "stt": "9",
+      "name": "诡秘之主",
+      "name_en": "",
+      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20251126/11021210543",
+      "tags_cn": "编辑推荐 / 多平台 / 角色扮演 / 小说改编 / 开放世界 / 冒险 / 魔法 / MMO / 多端互通 / 克苏鲁 / UE5",
+      "tags_vn": [
+        "RPG",
+        "小说改编",
+        "Open World",
+        "Phiêu lưu",
+        "Magic",
+        "MMO"
+      ],
+      "publisher": "杭州弹指宇宙网络有限公司",
+      "developer": "杭州弹指宇宙网络有限公司",
+      "testtype_cn": "公测",
+      "testtype_vn": "Open Beta",
+      "score_16p": "4.5",
+      "pub_time": "2026-08-21",
+      "date_sort": "2026-08-21",
+      "ios_id": "",
+      "ios_url": "",
+      "ios_rating": "",
+      "store_taptap": "https://www.taptap.cn/search?q=%E8%AF%A1%E7%A7%98%E4%B9%8B%E4%B8%BB",
+      "taptap_id": "",
+      "Mainsite": ""
+    },
+    {
+      "stt": "10",
+      "name": "蓝色星原：旅谣",
+      "name_en": "",
+      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260224/1111372117",
+      "tags_cn": "编辑推荐 / 多平台 / 萌宠 / 多端互通 / 模拟经营 / 养成 / 角色扮演 / 美少女 / 3D / 探索 / 二次元 / 萌娘 / 抓宠 / 冒险 / 开放世界",
+      "tags_vn": [
+        "Cute Pet",
+        "Quản lý mô phỏng",
+        "Nuôi dưỡng",
+        "RPG",
+        "美少女",
+        "3D"
+      ],
+      "publisher": "上海积咪网络科技有限公司",
+      "developer": "上海积咪网络科技有限公司",
+      "testtype_cn": "限量不计费删档测试",
+      "testtype_vn": "限量不计费删档测试",
+      "score_16p": "4.6",
+      "pub_time": "2026-08-15",
+      "date_sort": "2026-08-15",
+      "ios_id": "",
+      "ios_url": "",
+      "ios_rating": "",
+      "store_taptap": "https://www.taptap.cn/search?q=%E8%93%9D%E8%89%B2%E6%98%9F%E5%8E%9F%EF%BC%9A%E6%97%85%E8%B0%A3",
+      "taptap_id": "",
+      "Mainsite": ""
+    },
+    {
+      "stt": "11",
+      "name": "奥星热浪-乐子人搜打撤",
+      "name_en": "",
+      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260611/16533354367",
+      "tags_cn": "开放世界 / 搜打撤 / 多人联机 / 派对游戏 / 模拟经营 / 社交 / 休闲 / 玩梗向 / 魔性 / 多平台",
+      "tags_vn": [
+        "Open World",
+        "Loot & Extract",
+        "Multiplayer",
+        "派对游戏",
+        "Quản lý mô phỏng",
+        "社交"
+      ],
+      "publisher": "奥星热浪工作室",
+      "developer": "奥星热浪工作室",
+      "testtype_cn": "限量删档测试",
+      "testtype_vn": "Clear data Test (giới hạn)",
+      "score_16p": "4.3",
+      "pub_time": "2026-08-14",
+      "date_sort": "2026-08-14",
+      "ios_id": "",
+      "ios_url": "",
+      "ios_rating": "",
+      "store_taptap": "https://www.taptap.cn/search?q=%E5%A5%A5%E6%98%9F%E7%83%AD%E6%B5%AA-%E4%B9%90%E5%AD%90%E4%BA%BA%E6%90%9C%E6%89%93%E6%92%A4",
+      "taptap_id": "",
+      "Mainsite": ""
+    },
+    {
+      "stt": "12",
       "name": "激战：大牌英雄",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260621/09320762034",
@@ -197,7 +281,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "10",
+      "stt": "13",
       "name": "赘婿",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20250916/14172133946",
@@ -218,7 +302,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "11",
+      "stt": "14",
       "name": "盗墓笔记：启程",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx~sykb/20250817/14460560959",
@@ -239,7 +323,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "12",
+      "stt": "15",
       "name": "小冰冰斗蛐蛐",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260714/09180574098",
@@ -260,7 +344,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "13",
+      "stt": "16",
       "name": "孤岛猎神",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20251003/09383912587",
@@ -281,7 +365,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "14",
+      "stt": "17",
       "name": "诡影藏锋",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260526/17575295751",
@@ -302,7 +386,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "15",
+      "stt": "18",
       "name": "小鸡与小马：超级派对-超级鸡马",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/gicon/134108/20240309-00.png",
@@ -323,7 +407,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "16",
+      "stt": "19",
       "name": "热血江湖：觉醒",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260706/21034886247",
@@ -344,7 +428,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "17",
+      "stt": "20",
       "name": "无畏舰队",
       "name_en": "",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6f/09/b6/6f09b645-0022-d656-aa37-20840787e3e9/AppIcon-1x_U007epad-0-1-0-0-85-220-0.jpeg/512x512bb.jpg",
@@ -365,7 +449,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "18",
+      "stt": "21",
       "name": "剑隐侠踪录",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260313/10313233635",
@@ -386,7 +470,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "19",
+      "stt": "22",
       "name": "你牛你来",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260525/13373380649",
@@ -407,7 +491,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "20",
+      "stt": "23",
       "name": "新三国：荣耀再起",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260402/16531184783",
@@ -428,7 +512,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "21",
+      "stt": "24",
       "name": "黄油猫",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260526/17534217513",
@@ -449,7 +533,35 @@
       "Mainsite": ""
     },
     {
-      "stt": "22",
+      "stt": "25",
+      "name": "龙之谷：启程",
+      "name_en": "",
+      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260601/12033741706",
+      "tags_cn": "角色扮演 / 多人联机 / 动作 / 冒险 / MMO / 3D",
+      "tags_vn": [
+        "RPG",
+        "Multiplayer",
+        "Hành động",
+        "Phiêu lưu",
+        "MMO",
+        "3D"
+      ],
+      "publisher": "",
+      "developer": "三九互娱",
+      "testtype_cn": "上线",
+      "testtype_vn": "Onlive / Launch",
+      "score_16p": "0",
+      "pub_time": "2026-07-29",
+      "date_sort": "2026-07-29",
+      "ios_id": "",
+      "ios_url": "",
+      "ios_rating": "",
+      "store_taptap": "https://www.taptap.cn/search?q=%E9%BE%99%E4%B9%8B%E8%B0%B7%EF%BC%9A%E5%90%AF%E7%A8%8B",
+      "taptap_id": "",
+      "Mainsite": ""
+    },
+    {
+      "stt": "26",
       "name": "魔神英雄传",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260624/15552564365",
@@ -470,7 +582,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "23",
+      "stt": "27",
       "name": "英雄防线",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20251222/12004437557",
@@ -491,7 +603,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "24",
+      "stt": "28",
       "name": "苍蓝避风港",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20250312/16385778979",
@@ -512,7 +624,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "25",
+      "stt": "29",
       "name": "命运代码：侵入",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260606/13503150900",
@@ -533,7 +645,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "26",
+      "stt": "30",
       "name": "星际开荒模拟器",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260715/16330842450",
@@ -554,7 +666,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "27",
+      "stt": "31",
       "name": "林姑村记事",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260708/17092993379",
@@ -575,17 +687,23 @@
       "Mainsite": ""
     },
     {
-      "stt": "28",
+      "stt": "32",
       "name": "拳皇全明星",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260715/1132274836",
-      "tags_cn": "",
-      "tags_vn": [],
+      "tags_cn": "动作 / 格斗 / 剧情 / 收集 / 竞技",
+      "tags_vn": [
+        "Hành động",
+        "Đối kháng",
+        "Story-rich",
+        "Thu thập",
+        "Cạnh tranh"
+      ],
       "publisher": "",
       "developer": "银河聚阵",
       "testtype_cn": "限量删档测试",
       "testtype_vn": "Clear data Test (giới hạn)",
-      "score_16p": "",
+      "score_16p": "0",
       "pub_time": "2026-07-24",
       "date_sort": "2026-07-24",
       "ios_id": "",
@@ -593,20 +711,27 @@
       "ios_rating": "",
       "store_taptap": "https://www.taptap.cn/search?q=%E6%8B%B3%E7%9A%87%E5%85%A8%E6%98%8E%E6%98%9F",
       "taptap_id": "",
-      "Mainsite": ""
+      "Mainsite": "https://www.3839.com/a/200603.htm"
     },
     {
-      "stt": "29",
+      "stt": "33",
       "name": "山海奇旅",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx~sykb/20240825/11100737118",
-      "tags_cn": "",
-      "tags_vn": [],
+      "tags_cn": "模拟经营 / 种田 / 多人联机 / 农场模拟 / 钓鱼 / 多平台 / 社交 / 建造 / 装饰&装修 / 温馨治愈 / 模拟",
+      "tags_vn": [
+        "Quản lý mô phỏng",
+        "Farming",
+        "Multiplayer",
+        "农场模拟",
+        "Câu cá",
+        "社交"
+      ],
       "publisher": "网易游戏",
       "developer": "网易游戏",
       "testtype_cn": "限量删档测试",
       "testtype_vn": "Clear data Test (giới hạn)",
-      "score_16p": "",
+      "score_16p": "4.5",
       "pub_time": "2026-07-24",
       "date_sort": "2026-07-24",
       "ios_id": "",
@@ -617,7 +742,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "30",
+      "stt": "34",
       "name": "白银之城",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260624/15171253154",
@@ -645,7 +770,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "31",
+      "stt": "35",
       "name": "魔刻猎手-代号moco",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260305/0921226957",
@@ -673,7 +798,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "32",
+      "stt": "36",
       "name": "巅峰激战",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260717/1342438893",
@@ -700,7 +825,7 @@
       "Mainsite": "https://www.3839.com/a/200802.htm"
     },
     {
-      "stt": "33",
+      "stt": "37",
       "name": "集合！浆果镇",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260421/1337022544",
@@ -728,7 +853,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "34",
+      "stt": "38",
       "name": "超级洞洞乐",
       "name_en": "",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/27/27/72/272772d2-2d41-070a-a6be-f675800e3902/AppIcon-1x_U007emarketing-0-8-0-0-85-220-0.png/512x512bb.jpg",
@@ -752,7 +877,7 @@
       "Mainsite": "https://apps.apple.com/cn/developer/idreamsky-technology-limited/id358371036?uo=4"
     },
     {
-      "stt": "35",
+      "stt": "39",
       "name": "不倒英雄",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260713/10441186443",
@@ -779,7 +904,7 @@
       "Mainsite": "https://www.3839.com/a/178084.htm"
     },
     {
-      "stt": "36",
+      "stt": "40",
       "name": "海上有座极极岛",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260712/11390658670",
@@ -805,7 +930,7 @@
       "Mainsite": "https://www.3839.com/a/200332.htm"
     },
     {
-      "stt": "37",
+      "stt": "41",
       "name": "斗阵骑士",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20251127/10470365772",
@@ -832,7 +957,7 @@
       "Mainsite": "https://www.3839.com/a/190860.htm"
     },
     {
-      "stt": "38",
+      "stt": "42",
       "name": "冒险之旅",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260718/14185895653",
@@ -858,7 +983,7 @@
       "Mainsite": "https://www.3839.com/a/200854.htm"
     },
     {
-      "stt": "39",
+      "stt": "43",
       "name": "防线守卫战",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260709/13354191771",
@@ -885,7 +1010,7 @@
       "Mainsite": "https://www.3839.com/a/200198.htm"
     },
     {
-      "stt": "40",
+      "stt": "44",
       "name": "钢琴小镇",
       "name_en": "",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/13/b1/ed/13b1ed0f-7560-03e3-f9f4-9b14ccb272e9/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/512x512bb.jpg",
@@ -909,7 +1034,7 @@
       "Mainsite": "https://apps.apple.com/cn/developer/%E6%98%93%E7%BE%8E-%E6%B7%B1%E5%9C%B3-%E7%BD%91%E7%BB%9C%E7%A7%91%E6%8A%80%E5%8F%91%E5%B1%95%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/id1615720634?uo=4"
     },
     {
-      "stt": "41",
+      "stt": "45",
       "name": "神明也没猜到结局",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx~sykb/20250217/11575877727",
@@ -936,7 +1061,7 @@
       "Mainsite": "https://www.3839.com/a/180050.htm"
     },
     {
-      "stt": "42",
+      "stt": "46",
       "name": "奥术扳机",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx~sykb/20250707/10110344578",
@@ -964,7 +1089,7 @@
       "Mainsite": "https://www.3839.com/a/184526.htm"
     },
     {
-      "stt": "43",
+      "stt": "47",
       "name": "菇菇种植日记",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260717/17271949700",
@@ -992,7 +1117,7 @@
       "Mainsite": "https://www.3839.com/a/183019.htm"
     },
     {
-      "stt": "44",
+      "stt": "48",
       "name": "你来嘛英雄",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260717/09163832866",
@@ -1019,61 +1144,35 @@
       "Mainsite": "https://www.3839.com/a/90404.htm"
     },
     {
-      "stt": "45",
-      "name": "城主别慌张",
+      "stt": "49",
+      "name": "战术小队：破晓攻势",
       "name_en": "",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260430/14185064188",
-      "tags_cn": "策略 / 建造 / 经营 / 休闲 / 三国",
+      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260525/10540025327",
+      "tags_cn": "多人联机 / 冒险 / 射击 / 策略 / PC游戏 / 动作",
       "tags_vn": [
+        "Multiplayer",
+        "Phiêu lưu",
+        "Bắn súng",
         "Chiến thuật",
-        "Xây dựng",
-        "Kinh doanh",
-        "Casual",
-        "Tam Quốc"
+        "PC游戏",
+        "Hành động"
       ],
       "publisher": "",
-      "developer": "星炫",
-      "testtype_cn": "上线",
-      "testtype_vn": "Onlive / Launch",
-      "score_16p": "0",
+      "developer": "腾讯",
+      "testtype_cn": "删档不计费测试",
+      "testtype_vn": "Test xóa data không nạp tiền",
+      "score_16p": "4.7",
       "pub_time": "2026-07-17",
       "date_sort": "2026-07-17",
       "ios_id": "",
       "ios_url": "",
       "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E5%9F%8E%E4%B8%BB%E5%88%AB%E6%85%8C%E5%BC%A0",
+      "store_taptap": "https://www.taptap.cn/search?q=%E6%88%98%E6%9C%AF%E5%B0%8F%E9%98%9F%EF%BC%9A%E7%A0%B4%E6%99%93%E6%94%BB%E5%8A%BF",
       "taptap_id": "",
-      "Mainsite": "https://www.3839.com/a/197375.htm"
+      "Mainsite": ""
     },
     {
-      "stt": "46",
-      "name": "放开那妖怪",
-      "name_en": "",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260508/17482854323",
-      "tags_cn": "修仙 / 卡牌 / 西游 / 即时策略 / 养成",
-      "tags_vn": [
-        "Tu Tiên",
-        "Thẻ bài",
-        "Tây Du Ký",
-        "RTS",
-        "Nuôi dưỡng"
-      ],
-      "publisher": "霍尔果斯指曜网络科技有限公司",
-      "developer": "霍尔果斯指曜网络科技有限公司",
-      "testtype_cn": "上线",
-      "testtype_vn": "Onlive / Launch",
-      "score_16p": "0",
-      "pub_time": "2026-07-17",
-      "date_sort": "2026-07-17",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E6%94%BE%E5%BC%80%E9%82%A3%E5%A6%96%E6%80%AA",
-      "taptap_id": "",
-      "Mainsite": "https://www.3839.com/a/197620.htm"
-    },
-    {
-      "stt": "47",
+      "stt": "50",
       "name": "塔塔冒险队",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260326/11200122442",
@@ -1101,7 +1200,7 @@
       "Mainsite": "https://www.3839.com/a/196013.htm"
     },
     {
-      "stt": "48",
+      "stt": "51",
       "name": "噗噗的冒险乐园",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260618/10520466745",
@@ -1128,7 +1227,7 @@
       "Mainsite": "https://www.3839.com/a/138484.htm"
     },
     {
-      "stt": "49",
+      "stt": "52",
       "name": "猫猫钓游记",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260114/1508286382",
@@ -1153,7 +1252,7 @@
       "Mainsite": "https://www.3839.com/a/193383.htm"
     },
     {
-      "stt": "50",
+      "stt": "53",
       "name": "追逐卡蕾多",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260710/14500979420",
@@ -1181,7 +1280,7 @@
       "Mainsite": "https://www.3839.com/a/179028.htm"
     },
     {
-      "stt": "51",
+      "stt": "54",
       "name": "纸嫁衣9罗浮梦",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260427/13550753198",
@@ -1209,7 +1308,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "52",
+      "stt": "55",
       "name": "拳皇·命运",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260612/1520515719",
@@ -1236,7 +1335,7 @@
       "Mainsite": "https://www.3839.com/a/199085.htm"
     },
     {
-      "stt": "53",
+      "stt": "56",
       "name": "圣垣",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260713/17131617769",
@@ -1264,7 +1363,7 @@
       "Mainsite": "https://www.3839.com/a/129095.htm"
     },
     {
-      "stt": "54",
+      "stt": "57",
       "name": "疯狂之旅",
       "name_en": "",
       "icon_url": "https://img.16p.com/wj/202607/b61c0ab7a3a0abc6b657d824faca0ce3",
@@ -1285,7 +1384,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "55",
+      "stt": "58",
       "name": "无畏骑士",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260707/14302764649",
@@ -1313,7 +1412,7 @@
       "Mainsite": "https://www.3839.com/a/200098.htm"
     },
     {
-      "stt": "56",
+      "stt": "59",
       "name": "三国：战策长河",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260624/15151981393",
@@ -1340,35 +1439,7 @@
       "Mainsite": "https://www.3839.com/a/199531.htm"
     },
     {
-      "stt": "57",
-      "name": "世界之光",
-      "name_en": "",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260623/1137051730",
-      "tags_cn": "建造 / 沙盒 / 抓宠 / 开放世界 / 多人联机 / 社交 / 角色扮演 / 模拟经营 / 收集 / 冒险 / 探索 / 模拟 / 生存 / 种田 / 小清新",
-      "tags_vn": [
-        "Xây dựng",
-        "Sandbox",
-        "Bắt pet",
-        "Open World",
-        "Multiplayer",
-        "社交"
-      ],
-      "publisher": "",
-      "developer": "世界之光工作室",
-      "testtype_cn": "上线",
-      "testtype_vn": "Onlive / Launch",
-      "score_16p": "3.8",
-      "pub_time": "2026-07-15",
-      "date_sort": "2026-07-15",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E4%B8%96%E7%95%8C%E4%B9%8B%E5%85%89",
-      "taptap_id": "",
-      "Mainsite": ""
-    },
-    {
-      "stt": "58",
+      "stt": "60",
       "name": "王座守护者",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260206/14504754660",
@@ -1395,7 +1466,7 @@
       "Mainsite": "https://www.3839.com/a/194641.htm"
     },
     {
-      "stt": "59",
+      "stt": "61",
       "name": "拉尼亚",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260630/1116438419",
@@ -1422,7 +1493,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "60",
+      "stt": "62",
       "name": "泞之翼3：玉碎篇",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260606/11471567531",
@@ -1450,34 +1521,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "61",
-      "name": "巨龙之戒",
-      "name_en": "",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260709/10002174978",
-      "tags_cn": "放置 / 文字 / 角色扮演 / 中国风 / 复古",
-      "tags_vn": [
-        "Idle / AFK",
-        "Text/Story",
-        "RPG",
-        "Phong cách TQ",
-        "复古"
-      ],
-      "publisher": "有元气",
-      "developer": "有元气",
-      "testtype_cn": "上线",
-      "testtype_vn": "Onlive / Launch",
-      "score_16p": "4",
-      "pub_time": "2026-07-11",
-      "date_sort": "2026-07-11",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E5%B7%A8%E9%BE%99%E4%B9%8B%E6%88%92",
-      "taptap_id": "",
-      "Mainsite": ""
-    },
-    {
-      "stt": "62",
+      "stt": "63",
       "name": "我在园区搜打撤",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260105/09141780184",
@@ -1504,7 +1548,7 @@
       "Mainsite": "https://www.3839.com/a/192871.htm"
     },
     {
-      "stt": "63",
+      "stt": "64",
       "name": "上古河图",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20240802/19450038464",
@@ -1532,7 +1576,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "64",
+      "stt": "65",
       "name": "二十四节气",
       "name_en": "",
       "icon_url": "https://img.gameres.com/fangu-resource/2026/07/05/0705071839546b.png",
@@ -1553,7 +1597,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "65",
+      "stt": "66",
       "name": "梦幻足球",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260703/17065154628",
@@ -1580,7 +1624,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "66",
+      "stt": "67",
       "name": "狩之纪元",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260622/16071622222",
@@ -1608,7 +1652,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "67",
+      "stt": "68",
       "name": "热力无限赛车",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260605/20364162280",
@@ -1635,7 +1679,35 @@
       "Mainsite": ""
     },
     {
-      "stt": "68",
+      "stt": "69",
+      "name": "盗梦英雄2：幻野",
+      "name_en": "",
+      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260105/1600014329",
+      "tags_cn": "卡牌 / 放置 / 冒险 / 收集 / 萌宠 / 休闲 / 角色扮演",
+      "tags_vn": [
+        "Thẻ bài",
+        "Idle / AFK",
+        "Phiêu lưu",
+        "Thu thập",
+        "Cute Pet",
+        "Casual"
+      ],
+      "publisher": "",
+      "developer": "海纳工作室",
+      "testtype_cn": "上线",
+      "testtype_vn": "Onlive / Launch",
+      "score_16p": "0",
+      "pub_time": "2026-07-10",
+      "date_sort": "2026-07-10",
+      "ios_id": "",
+      "ios_url": "",
+      "ios_rating": "",
+      "store_taptap": "https://www.taptap.cn/search?q=%E7%9B%97%E6%A2%A6%E8%8B%B1%E9%9B%842%EF%BC%9A%E5%B9%BB%E9%87%8E",
+      "taptap_id": "",
+      "Mainsite": ""
+    },
+    {
+      "stt": "70",
       "name": "拾光小院",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx~sykb/20250812/14284362447",
@@ -1662,7 +1734,7 @@
       "Mainsite": "https://www.3839.com/a/170291.htm"
     },
     {
-      "stt": "69",
+      "stt": "71",
       "name": "封神之弈",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260707/16041465413",
@@ -1690,7 +1762,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "70",
+      "stt": "72",
       "name": "恐龙快打·起源",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260607/1042271755",
@@ -1717,7 +1789,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "71",
+      "stt": "73",
       "name": "镇魂街王者归来",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260627/14422095917",
@@ -1743,7 +1815,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "72",
+      "stt": "74",
       "name": "三国策：万人策略对战",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx~sykb/20250702/09281029484",
@@ -1770,7 +1842,33 @@
       "Mainsite": ""
     },
     {
-      "stt": "73",
+      "stt": "75",
+      "name": "三国志：王道天下",
+      "name_en": "",
+      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260316/15305158215",
+      "tags_cn": "SLG / 三国 / 战争 / 策略",
+      "tags_vn": [
+        "SLG",
+        "Tam Quốc",
+        "Chiến tranh",
+        "Chiến thuật"
+      ],
+      "publisher": "bilibili游戏",
+      "developer": "bilibili游戏",
+      "testtype_cn": "付费删档限号测试",
+      "testtype_vn": "付费删档限号测试",
+      "score_16p": "3.7",
+      "pub_time": "2026-07-09",
+      "date_sort": "2026-07-09",
+      "ios_id": "",
+      "ios_url": "",
+      "ios_rating": "",
+      "store_taptap": "https://www.taptap.cn/search?q=%E4%B8%89%E5%9B%BD%E5%BF%97%EF%BC%9A%E7%8E%8B%E9%81%93%E5%A4%A9%E4%B8%8B",
+      "taptap_id": "",
+      "Mainsite": ""
+    },
+    {
+      "stt": "76",
       "name": "合金弹头：指挥官",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260706/16051949636",
@@ -1795,7 +1893,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "74",
+      "stt": "77",
       "name": "魔法森林大作战",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260704/1023204669",
@@ -1820,7 +1918,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "75",
+      "stt": "78",
       "name": "音舞光年",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20251205/11281911176",
@@ -1847,7 +1945,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "76",
+      "stt": "79",
       "name": "我不是胖虎：小岛大当家",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260508/12032224059",
@@ -1875,7 +1973,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "77",
+      "stt": "80",
       "name": "筑梦事务所 - 官方下载 - TapTap",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.tapimg.com/market/images/bdb5f75fa9a8f0fb3ef3cd0a2d16933a.jpg?imageView2/0/w/1080/h/608/q/80/format/jpg/interlace/1/ignore-error/1",
@@ -1896,7 +1994,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "78",
+      "stt": "81",
       "name": "秘境佣兵团",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260606/1538588128",
@@ -1923,7 +2021,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "79",
+      "stt": "82",
       "name": "决策三国",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260611/16343839262",
@@ -1951,7 +2049,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "80",
+      "stt": "83",
       "name": "造梦西游之黎尤浩劫篇",
       "name_en": "",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7d/52/e7/7d52e708-61be-7f4e-48d5-eaeb093f0fe8/AppIcon-1x_U007emarketing-0-11-0-85-220-0.png/512x512bb.jpg",
@@ -1976,7 +2074,7 @@
       "Mainsite": "https://apps.apple.com/cn/developer/%E5%8E%A6%E9%97%A8%E6%B8%B8%E4%B9%90%E4%BA%92%E5%8A%A8%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/id1298961541?uo=4"
     },
     {
-      "stt": "81",
+      "stt": "84",
       "name": "蟹蟹狂想曲",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260610/11002239979",
@@ -2003,7 +2101,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "82",
+      "stt": "85",
       "name": "追迹迷城",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260511/15081116733",
@@ -2030,7 +2128,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "83",
+      "stt": "86",
       "name": "爱与机器人维修技术",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20251223/16350888895",
@@ -2058,7 +2156,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "84",
+      "stt": "87",
       "name": "谁淹了我的世界",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260630/18031556089",
@@ -2085,7 +2183,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "85",
+      "stt": "88",
       "name": "家园：梦想派对",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260623/18021724582",
@@ -2113,7 +2211,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "86",
+      "stt": "89",
       "name": "阿比斯少年冒险团",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/gicon/155327/20240309-00.png",
@@ -2138,7 +2236,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "87",
+      "stt": "90",
       "name": "秩序：新曙光",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx~sykb/20240628/21224068249",
@@ -2164,228 +2262,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "88",
-      "name": "失落城堡2",
-      "name_en": "",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260114/16311567252",
-      "tags_cn": "多平台 / Roguelike / Steam移植 / 多人联机 / 冒险 / 闯关 / 动作 / 横版 / 卡通 / 独立游戏",
-      "tags_vn": [
-        "Roguelike",
-        "Multiplayer",
-        "Phiêu lưu",
-        "Platformer",
-        "Hành động",
-        "2D ngang"
-      ],
-      "publisher": "Hunter Studio",
-      "developer": "Hunter Studio",
-      "testtype_cn": "限量删档计费",
-      "testtype_vn": "限量删档计费",
-      "score_16p": "4.6",
-      "pub_time": "2026-07-02",
-      "date_sort": "2026-07-02",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E5%A4%B1%E8%90%BD%E5%9F%8E%E5%A0%A12",
-      "taptap_id": "",
-      "Mainsite": ""
-    },
-    {
-      "stt": "89",
-      "name": "彩墨飞溅",
-      "name_en": "",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260626/09044537981",
-      "tags_cn": "休闲 / 射击 / 竞技 / 美漫风 / 卡通",
-      "tags_vn": [
-        "Casual",
-        "Bắn súng",
-        "Cạnh tranh",
-        "美漫风",
-        "Cartoon"
-      ],
-      "publisher": "",
-      "developer": "嚎叫岛",
-      "testtype_cn": "删档测试",
-      "testtype_vn": "Clear data Test",
-      "score_16p": "0",
-      "pub_time": "2026-07-02",
-      "date_sort": "2026-07-02",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E5%BD%A9%E5%A2%A8%E9%A3%9E%E6%BA%85",
-      "taptap_id": "",
-      "Mainsite": ""
-    },
-    {
-      "stt": "90",
-      "name": "深空之劫",
-      "name_en": "",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20251210/19325936241",
-      "tags_cn": "策略 / 即时战斗 / 末日 / 卡牌 / SLG",
-      "tags_vn": [
-        "Chiến thuật",
-        "即时战斗",
-        "Tận thế",
-        "Thẻ bài",
-        "SLG"
-      ],
-      "publisher": "格零游戏",
-      "developer": "格零游戏",
-      "testtype_cn": "删档计费测试",
-      "testtype_vn": "Paid Test xóa data",
-      "score_16p": "4.3",
-      "pub_time": "2026-07-02",
-      "date_sort": "2026-07-02",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E6%B7%B1%E7%A9%BA%E4%B9%8B%E5%8A%AB",
-      "taptap_id": "",
-      "Mainsite": ""
-    },
-    {
       "stt": "91",
-      "name": "零启战纪",
-      "name_en": "",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260623/11515215037",
-      "tags_cn": "竞技 / MOBA / 多人联机 / 即时战斗 / 独立游戏",
-      "tags_vn": [
-        "Cạnh tranh",
-        "MOBA",
-        "Multiplayer",
-        "即时战斗",
-        "Indie"
-      ],
-      "publisher": "",
-      "developer": "沛骑游戏开发",
-      "testtype_cn": "上线",
-      "testtype_vn": "Onlive / Launch",
-      "score_16p": "5",
-      "pub_time": "2026-07-02",
-      "date_sort": "2026-07-02",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E9%9B%B6%E5%90%AF%E6%88%98%E7%BA%AA",
-      "taptap_id": "",
-      "Mainsite": ""
-    },
-    {
-      "stt": "92",
-      "name": "代号：新生-动物搜打撤新游",
-      "name_en": "",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260428/20260049618",
-      "tags_cn": "搜打撤 / 射击 / 多人联机 / 竞技 / 战术竞技 / 动物 / 枪战",
-      "tags_vn": [
-        "Loot & Extract",
-        "Bắn súng",
-        "Multiplayer",
-        "Cạnh tranh",
-        "Battle Royale",
-        "动物"
-      ],
-      "publisher": "末班车工作室",
-      "developer": "末班车工作室",
-      "testtype_cn": "限量删档测试",
-      "testtype_vn": "Clear data Test (giới hạn)",
-      "score_16p": "3.6",
-      "pub_time": "2026-07-02",
-      "date_sort": "2026-07-02",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E4%BB%A3%E5%8F%B7%EF%BC%9A%E6%96%B0%E7%94%9F-%E5%8A%A8%E7%89%A9%E6%90%9C%E6%89%93%E6%92%A4%E6%96%B0%E6%B8%B8",
-      "taptap_id": "",
-      "Mainsite": ""
-    },
-    {
-      "stt": "93",
-      "name": "龙之谷：启程",
-      "name_en": "",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260601/12033741706",
-      "tags_cn": "角色扮演 / 多人联机 / 动作 / 冒险 / MMO / 3D",
-      "tags_vn": [
-        "RPG",
-        "Multiplayer",
-        "Hành động",
-        "Phiêu lưu",
-        "MMO",
-        "3D"
-      ],
-      "publisher": "",
-      "developer": "三九互娱",
-      "testtype_cn": "限量删档计费",
-      "testtype_vn": "限量删档计费",
-      "score_16p": "0",
-      "pub_time": "2026-07-02",
-      "date_sort": "2026-07-02",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E9%BE%99%E4%B9%8B%E8%B0%B7%EF%BC%9A%E5%90%AF%E7%A8%8B",
-      "taptap_id": "",
-      "Mainsite": ""
-    },
-    {
-      "stt": "94",
-      "name": "伊莫-开放世界抓宠",
-      "name_en": "",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx~sykb/20250609/0926158108",
-      "tags_cn": "编辑推荐 / 开放世界 / 抓宠 / 冒险 / 即时战斗 / 探索 / 动作 / 收集 / 养成 / 角色扮演 / 多人联机 / 多平台 / 萌宠",
-      "tags_vn": [
-        "Open World",
-        "Bắt pet",
-        "Phiêu lưu",
-        "即时战斗",
-        "Khám phá",
-        "Hành động"
-      ],
-      "publisher": "",
-      "developer": "爪印工作室",
-      "testtype_cn": "限量删档计费",
-      "testtype_vn": "限量删档计费",
-      "score_16p": "4.3",
-      "pub_time": "2026-07-02",
-      "date_sort": "2026-07-02",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E4%BC%8A%E8%8E%AB-%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C%E6%8A%93%E5%AE%A0",
-      "taptap_id": "",
-      "Mainsite": ""
-    },
-    {
-      "stt": "95",
-      "name": "绿梦：时空之声",
-      "name_en": "",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260603/10552278288",
-      "tags_cn": "多平台 / 二次元 / 动作 / 横版 / 养成 / 3D / 解谜 / 科幻 / 冒险 / 末日",
-      "tags_vn": [
-        "ACG / Anime",
-        "Hành động",
-        "2D ngang",
-        "Nuôi dưỡng",
-        "3D",
-        "Giải đố"
-      ],
-      "publisher": "绿梦工作室",
-      "developer": "绿梦工作室",
-      "testtype_cn": "限量删档测试",
-      "testtype_vn": "Clear data Test (giới hạn)",
-      "score_16p": "4.3",
-      "pub_time": "2026-07-02",
-      "date_sort": "2026-07-02",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E7%BB%BF%E6%A2%A6%EF%BC%9A%E6%97%B6%E7%A9%BA%E4%B9%8B%E5%A3%B0",
-      "taptap_id": "",
-      "Mainsite": ""
-    },
-    {
-      "stt": "96",
       "name": "超维进化",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20251209/1032287319",
@@ -2413,7 +2290,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "97",
+      "stt": "92",
       "name": "23：61",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260130/09174466595",
@@ -2440,7 +2317,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "98",
+      "stt": "93",
       "name": "选技大乱斗",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260504/11355660266",
@@ -2468,7 +2345,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "99",
+      "stt": "94",
       "name": "人类纪元：崛起",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260609/10330189808",
@@ -2494,7 +2371,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "100",
+      "stt": "95",
       "name": "少女机甲舰",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260508/11360782757",
@@ -2519,7 +2396,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "101",
+      "stt": "96",
       "name": "破烂水手-正版移植手游",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260609/21285734295",
@@ -2547,7 +2424,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "102",
+      "stt": "97",
       "name": "神牌大乱斗",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260511/1152355966",
@@ -2574,7 +2451,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "103",
+      "stt": "98",
       "name": "从主神空间开始",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260629/1053115880",
@@ -2602,7 +2479,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "104",
+      "stt": "99",
       "name": "疯狂保卫战",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260626/14231179929",
@@ -2630,141 +2507,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "105",
-      "name": "以传说之名",
-      "name_en": "",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260616/16195211879",
-      "tags_cn": "美漫风 / 放置 / 冒险 / 魔幻",
-      "tags_vn": [
-        "美漫风",
-        "Idle / AFK",
-        "Phiêu lưu",
-        "魔幻"
-      ],
-      "publisher": "万匠游戏",
-      "developer": "万匠游戏",
-      "testtype_cn": "限量删档测试",
-      "testtype_vn": "Clear data Test (giới hạn)",
-      "score_16p": "0",
-      "pub_time": "2026-06-26",
-      "date_sort": "2026-06-26",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E4%BB%A5%E4%BC%A0%E8%AF%B4%E4%B9%8B%E5%90%8D",
-      "taptap_id": "",
-      "Mainsite": ""
-    },
-    {
-      "stt": "106",
-      "name": "战术小队：破晓攻势",
-      "name_en": "",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260525/10540025327",
-      "tags_cn": "多人联机 / 冒险 / 射击 / 策略 / PC游戏 / 动作",
-      "tags_vn": [
-        "Multiplayer",
-        "Phiêu lưu",
-        "Bắn súng",
-        "Chiến thuật",
-        "PC游戏",
-        "Hành động"
-      ],
-      "publisher": "",
-      "developer": "腾讯",
-      "testtype_cn": "限号删档不计费测试",
-      "testtype_vn": "限号删档不计费测试",
-      "score_16p": "4.7",
-      "pub_time": "2026-06-26",
-      "date_sort": "2026-06-26",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E6%88%98%E6%9C%AF%E5%B0%8F%E9%98%9F%EF%BC%9A%E7%A0%B4%E6%99%93%E6%94%BB%E5%8A%BF",
-      "taptap_id": "",
-      "Mainsite": ""
-    },
-    {
-      "stt": "107",
-      "name": "星梦养成记",
-      "name_en": "",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260626/0905448990",
-      "tags_cn": "经营 / 休闲 / 模拟 / 剧情",
-      "tags_vn": [
-        "Kinh doanh",
-        "Casual",
-        "Mô phỏng",
-        "Story-rich"
-      ],
-      "publisher": "",
-      "developer": "兔宝娱乐工作室",
-      "testtype_cn": "试玩",
-      "testtype_vn": "Demo",
-      "score_16p": "0",
-      "pub_time": "2026-06-26",
-      "date_sort": "2026-06-26",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E6%98%9F%E6%A2%A6%E5%85%BB%E6%88%90%E8%AE%B0",
-      "taptap_id": "",
-      "Mainsite": ""
-    },
-    {
-      "stt": "108",
-      "name": "幻灵召唤",
-      "name_en": "",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260617/09220459074",
-      "tags_cn": "回合 / 角色扮演 / 冒险 / 收集 / 抓宠",
-      "tags_vn": [
-        "Turn-based",
-        "RPG",
-        "Phiêu lưu",
-        "Thu thập",
-        "Bắt pet"
-      ],
-      "publisher": "成都合润轩网络科技有限公司",
-      "developer": "成都合润轩网络科技有限公司",
-      "testtype_cn": "删档计费测试",
-      "testtype_vn": "Paid Test xóa data",
-      "score_16p": "3.6",
-      "pub_time": "2026-06-26",
-      "date_sort": "2026-06-26",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E5%B9%BB%E7%81%B5%E5%8F%AC%E5%94%A4",
-      "taptap_id": "",
-      "Mainsite": ""
-    },
-    {
-      "stt": "109",
-      "name": "怨楼",
-      "name_en": "",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260428/10414378517",
-      "tags_cn": "解谜 / 单机 / 剧情 / 悬疑 / 灵异",
-      "tags_vn": [
-        "Giải đố",
-        "Offline / Chơi đơn",
-        "Story-rich",
-        "悬疑",
-        "灵异"
-      ],
-      "publisher": "勾陈一工作室",
-      "developer": "勾陈一工作室",
-      "testtype_cn": "上线",
-      "testtype_vn": "Onlive / Launch",
-      "score_16p": "3",
-      "pub_time": "2026-06-26",
-      "date_sort": "2026-06-26",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E6%80%A8%E6%A5%BC",
-      "taptap_id": "",
-      "Mainsite": ""
-    },
-    {
-      "stt": "110",
+      "stt": "100",
       "name": "幻化竞技场",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260112/14214121426",
@@ -2790,7 +2533,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "111",
+      "stt": "101",
       "name": "山海烬墟",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260616/16312039918",
@@ -2817,7 +2560,35 @@
       "Mainsite": ""
     },
     {
-      "stt": "112",
+      "stt": "102",
+      "name": "高能探宝团",
+      "name_en": "",
+      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260623/11592927901",
+      "tags_cn": "Roguelite / 策略 / 回合 / 卡牌 / 收集 / 三国",
+      "tags_vn": [
+        "Roguelite",
+        "Chiến thuật",
+        "Turn-based",
+        "Thẻ bài",
+        "Thu thập",
+        "Tam Quốc"
+      ],
+      "publisher": "",
+      "developer": "高能探宝团工作室",
+      "testtype_cn": "上线",
+      "testtype_vn": "Onlive / Launch",
+      "score_16p": "4.1",
+      "pub_time": "2026-06-25",
+      "date_sort": "2026-06-25",
+      "ios_id": "",
+      "ios_url": "",
+      "ios_rating": "",
+      "store_taptap": "https://www.taptap.cn/search?q=%E9%AB%98%E8%83%BD%E6%8E%A2%E5%AE%9D%E5%9B%A2",
+      "taptap_id": "",
+      "Mainsite": ""
+    },
+    {
+      "stt": "103",
       "name": "叠入深渊",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20240605/18103852285",
@@ -2845,7 +2616,34 @@
       "Mainsite": ""
     },
     {
-      "stt": "113",
+      "stt": "104",
+      "name": "闪之轨迹：北方战役",
+      "name_en": "",
+      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20251203/14394173155",
+      "tags_cn": "角色扮演 / 剧情 / 二次元 / 动漫改编 / 日系",
+      "tags_vn": [
+        "RPG",
+        "Story-rich",
+        "ACG / Anime",
+        "Chuyển thể anime",
+        "日系"
+      ],
+      "publisher": "杭州凤侠网络科技有限公司",
+      "developer": "杭州凤侠网络科技有限公司",
+      "testtype_cn": "上线",
+      "testtype_vn": "Onlive / Launch",
+      "score_16p": "3.6",
+      "pub_time": "2026-06-25",
+      "date_sort": "2026-06-25",
+      "ios_id": "",
+      "ios_url": "",
+      "ios_rating": "",
+      "store_taptap": "https://www.taptap.cn/search?q=%E9%97%AA%E4%B9%8B%E8%BD%A8%E8%BF%B9%EF%BC%9A%E5%8C%97%E6%96%B9%E6%88%98%E5%BD%B9",
+      "taptap_id": "",
+      "Mainsite": ""
+    },
+    {
+      "stt": "105",
       "name": "保卫加加村",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20251231/15171810334",
@@ -2872,7 +2670,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "114",
+      "stt": "106",
       "name": "海域重启",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260523/1542404539",
@@ -2899,7 +2697,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "115",
+      "stt": "107",
       "name": "Melocube",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260606/14201660466",
@@ -2925,7 +2723,7 @@
       "Mainsite": "https://www.3839.com/a/198788.htm"
     },
     {
-      "stt": "116",
+      "stt": "108",
       "name": "爪爪特攻",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260702/17003687775",
@@ -2953,7 +2751,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "117",
+      "stt": "109",
       "name": "沙盘战争：三国",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260605/16040730994",
@@ -2981,7 +2779,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "118",
+      "stt": "110",
       "name": "芙娅之魂",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx~sykb/20250318/15400575499",
@@ -3009,7 +2807,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "119",
+      "stt": "111",
       "name": "弧光猎人（ARC Raiders）",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260526/10293072692",
@@ -3037,7 +2835,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "120",
+      "stt": "112",
       "name": "三国大冒险",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260622/1353259067",
@@ -3064,7 +2862,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "121",
+      "stt": "113",
       "name": "力力普的工坊",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260616/14363265275",
@@ -3092,7 +2890,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "122",
+      "stt": "114",
       "name": "天堂2：盟约",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260701/10305330554",
@@ -3118,7 +2916,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "123",
+      "stt": "115",
       "name": "雪松",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx~sykb/20240907/13345177519",
@@ -3146,7 +2944,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "124",
+      "stt": "116",
       "name": "合合梦幻岛",
       "name_en": "",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3c/6a/0a/3c6a0a7c-52e8-a68a-479a-5d430d8672b3/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
@@ -3171,7 +2969,7 @@
       "Mainsite": "https://apps.apple.com/cn/developer/%E6%B7%B1%E5%9C%B3%E5%B8%82%E9%82%A6%E9%82%A6%E7%BD%91%E7%BB%9C%E4%BF%A1%E6%81%AF%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/id1570772065?uo=4"
     },
     {
-      "stt": "125",
+      "stt": "117",
       "name": "望月-中国都市开放世界",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20251029/09400726763",
@@ -3199,7 +2997,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "126",
+      "stt": "118",
       "name": "三国杀：天命棋局",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260601/11024723164",
@@ -3226,7 +3024,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "127",
+      "stt": "119",
       "name": "彩虹六号：攻势",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20250710/18003264151",
@@ -3254,7 +3052,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "128",
+      "stt": "120",
       "name": "火线战姬",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260327/10242191428",
@@ -3275,7 +3073,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "129",
+      "stt": "121",
       "name": "万界绮园：逐光筑梦手札",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260603/17054381880",
@@ -3296,28 +3094,34 @@
       "Mainsite": ""
     },
     {
-      "stt": "130",
-      "name": "九州幻姬",
+      "stt": "122",
+      "name": "飞飞：无限宇宙",
       "name_en": "",
-      "icon_url": "https://img.16p.com/auto/00/8a/008add616e091bd6978252db47bd2825.png",
-      "tags_cn": "",
-      "tags_vn": [],
-      "publisher": "石家庄龙游科技有限公司",
-      "developer": "石家庄龙游科技有限公司",
-      "testtype_cn": "上线",
-      "testtype_vn": "Onlive / Launch",
-      "score_16p": "",
+      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260612/13340316642",
+      "tags_cn": "角色扮演 / MMO / 冒险 / 探索 / 养成",
+      "tags_vn": [
+        "RPG",
+        "MMO",
+        "Phiêu lưu",
+        "Khám phá",
+        "Nuôi dưỡng"
+      ],
+      "publisher": "北京锐我科技有限公司",
+      "developer": "北京锐我科技有限公司",
+      "testtype_cn": "限量删档计费测试",
+      "testtype_vn": "Paid Test xóa data (giới hạn)",
+      "score_16p": "0",
       "pub_time": "2026-06-15",
       "date_sort": "2026-06-15",
       "ios_id": "",
       "ios_url": "",
       "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E4%B9%9D%E5%B7%9E%E5%B9%BB%E5%A7%AC",
+      "store_taptap": "https://www.taptap.cn/search?q=%E9%A3%9E%E9%A3%9E%EF%BC%9A%E6%97%A0%E9%99%90%E5%AE%87%E5%AE%99",
       "taptap_id": "",
       "Mainsite": ""
     },
     {
-      "stt": "131",
+      "stt": "123",
       "name": "雾影猎人",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260528/14540226204",
@@ -3345,7 +3149,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "132",
+      "stt": "124",
       "name": "鸡械绿洲",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20251121/09000566845",
@@ -3373,7 +3177,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "133",
+      "stt": "125",
       "name": "我在猫村搞事业",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img-tc.tapimg.com/market/images/19f6d8754e700a96acf2ff43202ab6b1.jpg/_tap_appicon_m.jpg",
@@ -3394,7 +3198,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "134",
+      "stt": "126",
       "name": "万华律",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20251116/15435379277",
@@ -3415,7 +3219,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "135",
+      "stt": "127",
       "name": "泉愈",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260312/16252732708",
@@ -3442,7 +3246,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "136",
+      "stt": "128",
       "name": "基地：银河纵横",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260515/09454415797",
@@ -3469,7 +3273,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "137",
+      "stt": "129",
       "name": "割据天下",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260518/15530216127",
@@ -3496,7 +3300,7 @@
       "Mainsite": "https://www.3839.com/a/197990.htm"
     },
     {
-      "stt": "138",
+      "stt": "130",
       "name": "代号：地心",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260529/19225573580",
@@ -3517,7 +3321,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "139",
+      "stt": "131",
       "name": "超阈限空间-中文正版手游",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260528/17183295408",
@@ -3545,7 +3349,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "140",
+      "stt": "132",
       "name": "萌友小镇",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260611/15351482760",
@@ -3566,7 +3370,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "141",
+      "stt": "133",
       "name": "盖娅大冒险",
       "name_en": "",
       "icon_url": "https://img.16p.com/auto/02/97/02970310e2e48c9b6f04110477c05106.png",
@@ -3587,7 +3391,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "142",
+      "stt": "134",
       "name": "仙界大掌门",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260228/17202697263",
@@ -3614,7 +3418,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "143",
+      "stt": "135",
       "name": "奥特曼英雄决战",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260113/18070925486",
@@ -3641,7 +3445,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "144",
+      "stt": "136",
       "name": "镇邪人",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260608/11422815511",
@@ -3668,7 +3472,7 @@
       "Mainsite": "https://www.3839.com/a/198856.htm"
     },
     {
-      "stt": "145",
+      "stt": "137",
       "name": "文字密室逃脱",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260414/09271683396",
@@ -3689,7 +3493,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "146",
+      "stt": "138",
       "name": "天元突破红莲螺岩",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20250523/18243677486",
@@ -3710,7 +3514,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "147",
+      "stt": "139",
       "name": "江山北望",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260302/09315831949",
@@ -3736,7 +3540,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "148",
+      "stt": "140",
       "name": "泰坦传说",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260404/13531176744",
@@ -3757,7 +3561,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "149",
+      "stt": "141",
       "name": "荒无之下",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260521/20295095927",
@@ -3778,10 +3582,10 @@
       "Mainsite": ""
     },
     {
-      "stt": "150",
-      "name": "神宠大作战3",
+      "stt": "142",
+      "name": "神宠大作战3 - 官方下载 - TapTap",
       "name_en": "",
-      "icon_url": "https://img.16p.com/auto/9b/37/9b3726e29842c2b2f3f763a686fbd606.png",
+      "icon_url": "",
       "tags_cn": "",
       "tags_vn": [],
       "publisher": "石家庄龙游科技有限公司",
@@ -3794,12 +3598,12 @@
       "ios_id": "",
       "ios_url": "",
       "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E7%A5%9E%E5%AE%A0%E5%A4%A7%E4%BD%9C%E6%88%983",
+      "store_taptap": "https://www.taptap.cn/search?q=%E7%A5%9E%E5%AE%A0%E5%A4%A7%E4%BD%9C%E6%88%983%20-%20%E5%AE%98%E6%96%B9%E4%B8%8B%E8%BD%BD%20-%20TapTap",
       "taptap_id": "",
       "Mainsite": ""
     },
     {
-      "stt": "151",
+      "stt": "143",
       "name": "盛世天下：女帝篇",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260414/09342820579",
@@ -3827,7 +3631,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "152",
+      "stt": "144",
       "name": "Thief Simulator: Sneak Robber",
       "name_en": "",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f8/4a/4b/f84a4b81-d870-f554-dbbf-f98a1f1fc5b1/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/512x512bb.jpg",
@@ -3848,7 +3652,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "153",
+      "stt": "145",
       "name": "守望联盟",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260605/18160478556",
@@ -3869,7 +3673,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "154",
+      "stt": "146",
       "name": "弓箭侠",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260605/17481910678",
@@ -3890,7 +3694,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "155",
+      "stt": "147",
       "name": "漫漫仙途",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260519/17264968181",
@@ -3911,7 +3715,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "156",
+      "stt": "148",
       "name": "召唤师纷争",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260509/11435392158",
@@ -3932,7 +3736,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "157",
+      "stt": "149",
       "name": "疯狂的法宝",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260501/10293794348",
@@ -3953,7 +3757,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "158",
+      "stt": "150",
       "name": "蛙蛙豹豹的树屋",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx~sykb/20241209/09523525552",
@@ -3981,7 +3785,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "159",
+      "stt": "151",
       "name": "轨道连结-先试玩后解锁",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260107/09274679310",
@@ -4009,7 +3813,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "160",
+      "stt": "152",
       "name": "奇遇西行",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260529/14453795889",
@@ -4030,7 +3834,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "161",
+      "stt": "153",
       "name": "僵尸防线",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260101/13450382529",
@@ -4058,7 +3862,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "162",
+      "stt": "154",
       "name": "龙渊王座",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260508/19285073801",
@@ -4083,7 +3887,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "163",
+      "stt": "155",
       "name": "燃烧纪元",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260706/17412177431",
@@ -4104,7 +3908,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "164",
+      "stt": "156",
       "name": "星辰变：归来",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260507/15102530615",
@@ -4131,7 +3935,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "165",
+      "stt": "157",
       "name": "飘流幻境新世界",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260430/10332686079",
@@ -4152,7 +3956,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "166",
+      "stt": "158",
       "name": "咪哇伊奇幻冒险",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260331/11064493381",
@@ -4179,34 +3983,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "167",
-      "name": "梦幻新诛仙：轻享",
-      "name_en": "",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260521/16463846932",
-      "tags_cn": "角色扮演 / MMO / 回合 / 经营 / 中国风 / 多平台",
-      "tags_vn": [
-        "RPG",
-        "MMO",
-        "Turn-based",
-        "Kinh doanh",
-        "Phong cách TQ"
-      ],
-      "publisher": "完美世界游戏",
-      "developer": "完美世界游戏",
-      "testtype_cn": "限量抢注删档计费测试",
-      "testtype_vn": "限量抢注删档计费测试",
-      "score_16p": "3.8",
-      "pub_time": "2026-06-03",
-      "date_sort": "2026-06-03",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E6%A2%A6%E5%B9%BB%E6%96%B0%E8%AF%9B%E4%BB%99%EF%BC%9A%E8%BD%BB%E4%BA%AB",
-      "taptap_id": "",
-      "Mainsite": ""
-    },
-    {
-      "stt": "168",
+      "stt": "159",
       "name": "小岛日记",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img-tc.tapimg.com/market/images/9d6b2a75df36c9f551b9eaec2ebe936f.png/_tap_appicon_m.jpg",
@@ -4227,7 +4004,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "169",
+      "stt": "160",
       "name": "全民游戏大亨2",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260425/1117012822",
@@ -4253,7 +4030,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "170",
+      "stt": "161",
       "name": "最终的梦幻岛",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260608/15064978917",
@@ -4280,7 +4057,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "171",
+      "stt": "162",
       "name": "肥鹅美食街",
       "name_en": "",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e1/c2/a5/e1c2a525-1446-2715-7c52-bf7675cb9e3e/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
@@ -4304,7 +4081,7 @@
       "Mainsite": "https://apps.apple.com/cn/developer/hk-hortor-technology-limited/id1873950719?uo=4"
     },
     {
-      "stt": "172",
+      "stt": "163",
       "name": "挂机打教主",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260509/11431175352",
@@ -4325,56 +4102,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "173",
-      "name": "盗梦英雄2：幻野",
-      "name_en": "",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260105/1600014329",
-      "tags_cn": "卡牌 / 放置 / 冒险 / 收集 / 萌宠 / 休闲 / 角色扮演",
-      "tags_vn": [
-        "Thẻ bài",
-        "Idle / AFK",
-        "Phiêu lưu",
-        "Thu thập",
-        "Cute Pet",
-        "Casual"
-      ],
-      "publisher": "",
-      "developer": "海纳工作室",
-      "testtype_cn": "计费删档内测",
-      "testtype_vn": "Paid Test nội bộ xóa data",
-      "score_16p": "0",
-      "pub_time": "2026-05-30",
-      "date_sort": "2026-05-30",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E7%9B%97%E6%A2%A6%E8%8B%B1%E9%9B%842%EF%BC%9A%E5%B9%BB%E9%87%8E",
-      "taptap_id": "",
-      "Mainsite": ""
-    },
-    {
-      "stt": "174",
-      "name": "孤城侠影",
-      "name_en": "",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260417/09343085086",
-      "tags_cn": "",
-      "tags_vn": [],
-      "publisher": "",
-      "developer": "熊瞎子吃饺子",
-      "testtype_cn": "试玩",
-      "testtype_vn": "Demo",
-      "score_16p": "",
-      "pub_time": "2026-05-30",
-      "date_sort": "2026-05-30",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E5%AD%A4%E5%9F%8E%E4%BE%A0%E5%BD%B1",
-      "taptap_id": "",
-      "Mainsite": ""
-    },
-    {
-      "stt": "175",
+      "stt": "164",
       "name": "卡牌木剑",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260527/14374540139",
@@ -4395,7 +4123,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "176",
+      "stt": "165",
       "name": "灵宝派对",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260423/13580915466",
@@ -4416,7 +4144,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "177",
+      "stt": "166",
       "name": "小怪兽别跑",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20250815/14300996584",
@@ -4437,7 +4165,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "178",
+      "stt": "167",
       "name": "BuuPo",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260430/10052385076",
@@ -4458,7 +4186,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "179",
+      "stt": "168",
       "name": "斗罗大陆：诛邪传说",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20250612/10370358039",
@@ -4486,7 +4214,138 @@
       "Mainsite": ""
     },
     {
-      "stt": "180",
+      "stt": "169",
+      "name": "这波看我细节",
+      "name_en": "",
+      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260521/10413081046",
+      "tags_cn": "",
+      "tags_vn": [],
+      "publisher": "",
+      "developer": "云镜互动",
+      "testtype_cn": "试玩",
+      "testtype_vn": "Demo",
+      "score_16p": "",
+      "pub_time": "2026-05-29",
+      "date_sort": "2026-05-29",
+      "ios_id": "",
+      "ios_url": "",
+      "ios_rating": "",
+      "store_taptap": "https://www.taptap.cn/search?q=%E8%BF%99%E6%B3%A2%E7%9C%8B%E6%88%91%E7%BB%86%E8%8A%82",
+      "taptap_id": "",
+      "Mainsite": ""
+    },
+    {
+      "stt": "170",
+      "name": "模拟电动火车",
+      "name_en": "",
+      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260519/18335590518",
+      "tags_cn": "",
+      "tags_vn": [],
+      "publisher": "海南志浩网络科技有限公司",
+      "developer": "海南志浩网络科技有限公司",
+      "testtype_cn": "试玩",
+      "testtype_vn": "Demo",
+      "score_16p": "",
+      "pub_time": "2026-05-29",
+      "date_sort": "2026-05-29",
+      "ios_id": "",
+      "ios_url": "",
+      "ios_rating": "",
+      "store_taptap": "https://www.taptap.cn/search?q=%E6%A8%A1%E6%8B%9F%E7%94%B5%E5%8A%A8%E7%81%AB%E8%BD%A6",
+      "taptap_id": "",
+      "Mainsite": ""
+    },
+    {
+      "stt": "171",
+      "name": "魅影都城：可哈尔传说",
+      "name_en": "",
+      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260519/14262113915",
+      "tags_cn": "",
+      "tags_vn": [],
+      "publisher": "海南志浩网络科技有限公司",
+      "developer": "海南志浩网络科技有限公司",
+      "testtype_cn": "试玩",
+      "testtype_vn": "Demo",
+      "score_16p": "",
+      "pub_time": "2026-05-29",
+      "date_sort": "2026-05-29",
+      "ios_id": "",
+      "ios_url": "",
+      "ios_rating": "",
+      "store_taptap": "https://www.taptap.cn/search?q=%E9%AD%85%E5%BD%B1%E9%83%BD%E5%9F%8E%EF%BC%9A%E5%8F%AF%E5%93%88%E5%B0%94%E4%BC%A0%E8%AF%B4",
+      "taptap_id": "",
+      "Mainsite": ""
+    },
+    {
+      "stt": "172",
+      "name": "七塔",
+      "name_en": "",
+      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260526/16232342312",
+      "tags_cn": "",
+      "tags_vn": [],
+      "publisher": "上海游碧曜网络科技有限公司",
+      "developer": "上海游碧曜网络科技有限公司",
+      "testtype_cn": "上线",
+      "testtype_vn": "Onlive / Launch",
+      "score_16p": "",
+      "pub_time": "2026-05-29",
+      "date_sort": "2026-05-29",
+      "ios_id": "",
+      "ios_url": "",
+      "ios_rating": "",
+      "store_taptap": "https://www.taptap.cn/search?q=%E4%B8%83%E5%A1%94",
+      "taptap_id": "",
+      "Mainsite": ""
+    },
+    {
+      "stt": "173",
+      "name": "八宝粥突围",
+      "name_en": "",
+      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260501/10574150460",
+      "tags_cn": "",
+      "tags_vn": [],
+      "publisher": "",
+      "developer": "云镜互动",
+      "testtype_cn": "上线",
+      "testtype_vn": "Onlive / Launch",
+      "score_16p": "",
+      "pub_time": "2026-05-29",
+      "date_sort": "2026-05-29",
+      "ios_id": "",
+      "ios_url": "",
+      "ios_rating": "",
+      "store_taptap": "https://www.taptap.cn/search?q=%E5%85%AB%E5%AE%9D%E7%B2%A5%E7%AA%81%E5%9B%B4",
+      "taptap_id": "",
+      "Mainsite": ""
+    },
+    {
+      "stt": "174",
+      "name": "英雄之时",
+      "name_en": "",
+      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260528/14050679532",
+      "tags_cn": "多平台 / 策略 / 回合 / Steam移植 / 像素 / 独立游戏 / 买断制",
+      "tags_vn": [
+        "Chiến thuật",
+        "Turn-based",
+        "Pixel",
+        "Indie"
+      ],
+      "publisher": "",
+      "developer": "厦门游乐互动科技有限公司",
+      "testtype_cn": "上线",
+      "testtype_vn": "Onlive / Launch",
+      "score_16p": "4",
+      "pub_time": "2026-05-29",
+      "date_sort": "2026-05-29",
+      "ios_id": "",
+      "ios_url": "",
+      "ios_rating": "",
+      "store_taptap": "https://www.taptap.cn/search?q=%E8%8B%B1%E9%9B%84%E4%B9%8B%E6%97%B6",
+      "taptap_id": "",
+      "Mainsite": ""
+    },
+    {
+      "stt": "175",
       "name": "航海奇兵",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260703/16260562060",
@@ -4513,7 +4372,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "181",
+      "stt": "176",
       "name": "永恒龙族",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260331/2121471416",
@@ -4538,7 +4397,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "182",
+      "stt": "177",
       "name": "无尽守护",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260130/17022136290",
@@ -4559,7 +4418,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "183",
+      "stt": "178",
       "name": "深海寿司-新版",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260509/1653162587",
@@ -4586,7 +4445,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "184",
+      "stt": "179",
       "name": "十万个冷笑话之异世界大冒险",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20251219/10122632040",
@@ -4607,7 +4466,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "185",
+      "stt": "180",
       "name": "灵魂潮汐2",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260430/13442350842",
@@ -4634,7 +4493,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "186",
+      "stt": "181",
       "name": "心跳陷落",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260508/11440164910",
@@ -4660,7 +4519,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "187",
+      "stt": "182",
       "name": "白日梦想屋",
       "name_en": "",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d0/be/d0/d0bed0b3-b64c-2515-a6a7-122e25593463/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
@@ -4681,7 +4540,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "188",
+      "stt": "183",
       "name": "糟糕！我被女忍包围了！2",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260430/13445315909",
@@ -4709,7 +4568,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "189",
+      "stt": "184",
       "name": "逃出金光洞",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260526/12040580009",
@@ -4737,7 +4596,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "190",
+      "stt": "185",
       "name": "远星",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260525/23232465445",
@@ -4758,7 +4617,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "191",
+      "stt": "186",
       "name": "新星足球世界",
       "name_en": "",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ec/6c/b2/ec6cb237-1a21-04db-aaa7-c96961249c5c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
@@ -4783,7 +4642,7 @@
       "Mainsite": "https://apps.apple.com/cn/developer/shenzhen-qianhai-hongcheng-games-co-ltd/id960620186?uo=4"
     },
     {
-      "stt": "192",
+      "stt": "187",
       "name": "曙光纪元",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260508/15321438292",
@@ -4809,7 +4668,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "193",
+      "stt": "188",
       "name": "王者之弈",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260526/11415085005",
@@ -4830,7 +4689,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "194",
+      "stt": "189",
       "name": "幻想九霄",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260523/14100046619",
@@ -4851,7 +4710,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "195",
+      "stt": "190",
       "name": "修仙宗门搜打撤",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img-tc.tapimg.com/market/images/6dfa9fffac83e2bb855573178354329c.png/_tap_appicon_m.jpg",
@@ -4872,7 +4731,31 @@
       "Mainsite": ""
     },
     {
-      "stt": "196",
+      "stt": "191",
+      "name": "三国群雄传-挂机轻松养成",
+      "name_en": "",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ad/e9/b9/ade9b996-6b10-af27-da90-c5fe56fb9b52/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "tags_cn": "策略 / 卡牌",
+      "tags_vn": [
+        "Chiến thuật",
+        "Thẻ bài"
+      ],
+      "publisher": "Shenzhen Yunhai Yuzhou Technology Co., Ltd.",
+      "developer": "Shenzhen Yunhai Yuzhou Technology Co., Ltd.",
+      "testtype_cn": "上线",
+      "testtype_vn": "Onlive / Launch",
+      "score_16p": "4.8",
+      "pub_time": "2026-05-23",
+      "date_sort": "2026-05-23",
+      "ios_id": "",
+      "ios_url": "",
+      "ios_rating": "",
+      "store_taptap": "https://www.taptap.cn/search?q=%E4%B8%89%E5%9B%BD%E7%BE%A4%E9%9B%84%E4%BC%A0-%E6%8C%82%E6%9C%BA%E8%BD%BB%E6%9D%BE%E5%85%BB%E6%88%90",
+      "taptap_id": "",
+      "Mainsite": "https://apps.apple.com/cn/developer/%E6%B7%B1%E5%9C%B3%E4%BA%91%E6%B5%B7%E5%AE%87%E5%AE%99%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/id1686856799?uo=4"
+    },
+    {
+      "stt": "192",
       "name": "欢乐斗萌将",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260112/20393349025",
@@ -4893,7 +4776,35 @@
       "Mainsite": ""
     },
     {
-      "stt": "197",
+      "stt": "193",
+      "name": "哀鸿：城破十日记",
+      "name_en": "",
+      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20250208/17345113062",
+      "tags_cn": "冒险 / 视觉小说 / galgame / 剧情 / 文字 / 角色扮演 / 多结局 / 中国风 / PC游戏 / 独立游戏 / 多平台",
+      "tags_vn": [
+        "Phiêu lưu",
+        "Visual Novel",
+        "galgame",
+        "Story-rich",
+        "Text/Story",
+        "RPG"
+      ],
+      "publisher": "零创游戏",
+      "developer": "零创游戏",
+      "testtype_cn": "上线",
+      "testtype_vn": "Onlive / Launch",
+      "score_16p": "3.9",
+      "pub_time": "2026-05-22",
+      "date_sort": "2026-05-22",
+      "ios_id": "",
+      "ios_url": "",
+      "ios_rating": "",
+      "store_taptap": "https://www.taptap.cn/search?q=%E5%93%80%E9%B8%BF%EF%BC%9A%E5%9F%8E%E7%A0%B4%E5%8D%81%E6%97%A5%E8%AE%B0",
+      "taptap_id": "",
+      "Mainsite": ""
+    },
+    {
+      "stt": "194",
       "name": "奇门",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260608/10151214371",
@@ -4914,7 +4825,7 @@
       "Mainsite": ""
     },
     {
-      "stt": "198",
+      "stt": "195",
       "name": "斗破苍穹：斗帝之路",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260715/12320885497",
@@ -4941,7 +4852,7 @@
       "Mainsite": "https://www.3839.com/a/193168.htm"
     },
     {
-      "stt": "199",
+      "stt": "196",
       "name": "永恒树之歌：创世-正版移植手游",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260522/10030681497",
@@ -4965,6 +4876,69 @@
       "ios_url": "",
       "ios_rating": "",
       "store_taptap": "https://www.taptap.cn/search?q=%E6%B0%B8%E6%81%92%E6%A0%91%E4%B9%8B%E6%AD%8C%EF%BC%9A%E5%88%9B%E4%B8%96-%E6%AD%A3%E7%89%88%E7%A7%BB%E6%A4%8D%E6%89%8B%E6%B8%B8",
+      "taptap_id": "",
+      "Mainsite": ""
+    },
+    {
+      "stt": "197",
+      "name": "谍：惊蛰",
+      "name_en": "",
+      "icon_url": "https://img.16p.com/auto/72/68/72687d008013f187eb511bbb810d163f.png",
+      "tags_cn": "",
+      "tags_vn": [],
+      "publisher": "天津好乐猫科技有限公司",
+      "developer": "天津好乐猫科技有限公司",
+      "testtype_cn": "上线",
+      "testtype_vn": "Onlive / Launch",
+      "score_16p": "",
+      "pub_time": "2026-05-22",
+      "date_sort": "2026-05-22",
+      "ios_id": "",
+      "ios_url": "",
+      "ios_rating": "",
+      "store_taptap": "https://www.taptap.cn/search?q=%E8%B0%8D%EF%BC%9A%E6%83%8A%E8%9B%B0",
+      "taptap_id": "",
+      "Mainsite": ""
+    },
+    {
+      "stt": "198",
+      "name": "拳皇：冠军之路",
+      "name_en": "",
+      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260521/11300183721",
+      "tags_cn": "",
+      "tags_vn": [],
+      "publisher": "",
+      "developer": "K.O.工作室",
+      "testtype_cn": "限量删档计费测试",
+      "testtype_vn": "Paid Test xóa data (giới hạn)",
+      "score_16p": "",
+      "pub_time": "2026-05-21",
+      "date_sort": "2026-05-21",
+      "ios_id": "",
+      "ios_url": "",
+      "ios_rating": "",
+      "store_taptap": "https://www.taptap.cn/search?q=%E6%8B%B3%E7%9A%87%EF%BC%9A%E5%86%A0%E5%86%9B%E4%B9%8B%E8%B7%AF",
+      "taptap_id": "",
+      "Mainsite": ""
+    },
+    {
+      "stt": "199",
+      "name": "繁盛时代",
+      "name_en": "",
+      "icon_url": "https://img.16p.com/img_proxy/?url=https://img-tc.tapimg.com/market/images/bbbc97569a44079fbc165b254312a317.png/_tap_appicon_m.jpg",
+      "tags_cn": "",
+      "tags_vn": [],
+      "publisher": "广州无奇网络科技有限公司",
+      "developer": "广州无奇网络科技有限公司",
+      "testtype_cn": "限量不删档计费",
+      "testtype_vn": "Paid Test không xóa data (giới hạn)",
+      "score_16p": "",
+      "pub_time": "2026-05-21",
+      "date_sort": "2026-05-21",
+      "ios_id": "",
+      "ios_url": "",
+      "ios_rating": "",
+      "store_taptap": "https://www.taptap.cn/search?q=%E7%B9%81%E7%9B%9B%E6%97%B6%E4%BB%A3",
       "taptap_id": "",
       "Mainsite": ""
     }
@@ -5278,6 +5252,34 @@
     },
     {
       "rank": "12",
+      "name": "山海奇旅",
+      "name_en": "",
+      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx~sykb/20240825/11100737118",
+      "tags_cn": "模拟经营 / 种田 / 多人联机 / 农场模拟 / 钓鱼 / 多平台 / 社交 / 建造 / 装饰&装修 / 温馨治愈 / 模拟",
+      "tags_vn": [
+        "Quản lý mô phỏng",
+        "Farming",
+        "Multiplayer",
+        "农场模拟",
+        "Câu cá",
+        "社交"
+      ],
+      "publisher": "网易游戏",
+      "developer": "网易游戏",
+      "testtype_cn": "上线",
+      "testtype_vn": "Onlive / Launch",
+      "score_16p": "",
+      "pub_time": "",
+      "date_sort": "",
+      "ios_id": "",
+      "ios_url": "",
+      "ios_rating": "",
+      "store_taptap": "https://www.taptap.cn/search?q=%E5%B1%B1%E6%B5%B7%E5%A5%87%E6%97%85",
+      "taptap_id": "",
+      "Mainsite": ""
+    },
+    {
+      "rank": "13",
       "name": "白银之城",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260624/15171253154",
@@ -5305,7 +5307,7 @@
       "Mainsite": ""
     },
     {
-      "rank": "13",
+      "rank": "14",
       "name": "镇魂街王者归来",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260627/14422095917",
@@ -5327,33 +5329,6 @@
       "ios_url": "",
       "ios_rating": "",
       "store_taptap": "https://www.taptap.cn/search?q=%E9%95%87%E9%AD%82%E8%A1%97%E7%8E%8B%E8%80%85%E5%BD%92%E6%9D%A5",
-      "taptap_id": "",
-      "Mainsite": ""
-    },
-    {
-      "rank": "14",
-      "name": "史莱姆城堡",
-      "name_en": "",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260417/19012371936",
-      "tags_cn": "Roguelite / 策略 / 养成 / 塔防 / 放置",
-      "tags_vn": [
-        "Roguelite",
-        "Chiến thuật",
-        "Nuôi dưỡng",
-        "Tower Defense",
-        "Idle / AFK"
-      ],
-      "publisher": "",
-      "developer": "玄鑫工作室",
-      "testtype_cn": "上线",
-      "testtype_vn": "Onlive / Launch",
-      "score_16p": "",
-      "pub_time": "",
-      "date_sort": "",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E5%8F%B2%E8%8E%B1%E5%A7%86%E5%9F%8E%E5%A0%A1",
       "taptap_id": "",
       "Mainsite": ""
     },
@@ -5384,6 +5359,33 @@
     },
     {
       "rank": "16",
+      "name": "史莱姆城堡",
+      "name_en": "",
+      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260417/19012371936",
+      "tags_cn": "Roguelite / 策略 / 养成 / 塔防 / 放置",
+      "tags_vn": [
+        "Roguelite",
+        "Chiến thuật",
+        "Nuôi dưỡng",
+        "Tower Defense",
+        "Idle / AFK"
+      ],
+      "publisher": "",
+      "developer": "玄鑫工作室",
+      "testtype_cn": "上线",
+      "testtype_vn": "Onlive / Launch",
+      "score_16p": "",
+      "pub_time": "",
+      "date_sort": "",
+      "ios_id": "",
+      "ios_url": "",
+      "ios_rating": "",
+      "store_taptap": "https://www.taptap.cn/search?q=%E5%8F%B2%E8%8E%B1%E5%A7%86%E5%9F%8E%E5%A0%A1",
+      "taptap_id": "",
+      "Mainsite": ""
+    },
+    {
+      "rank": "17",
       "name": "纸嫁衣9罗浮梦",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260427/13550753198",
@@ -5411,7 +5413,7 @@
       "Mainsite": ""
     },
     {
-      "rank": "17",
+      "rank": "18",
       "name": "世界之光",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260623/1137051730",
@@ -5439,7 +5441,7 @@
       "Mainsite": ""
     },
     {
-      "rank": "18",
+      "rank": "19",
       "name": "绿梦：时空之声",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260603/10552278288",
@@ -5467,7 +5469,7 @@
       "Mainsite": ""
     },
     {
-      "rank": "19",
+      "rank": "20",
       "name": "高能探宝团",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260623/11592927901",
@@ -5495,7 +5497,7 @@
       "Mainsite": ""
     },
     {
-      "rank": "20",
+      "rank": "21",
       "name": "代号：新生-动物搜打撤新游",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260428/20260049618",
@@ -5523,7 +5525,7 @@
       "Mainsite": ""
     },
     {
-      "rank": "21",
+      "rank": "22",
       "name": "拳皇·命运",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260612/1520515719",
@@ -5550,7 +5552,7 @@
       "Mainsite": "https://www.3839.com/a/199085.htm"
     },
     {
-      "rank": "22",
+      "rank": "23",
       "name": "火焰审判-正版移植手游",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260624/09403426979",
@@ -5578,7 +5580,7 @@
       "Mainsite": ""
     },
     {
-      "rank": "23",
+      "rank": "24",
       "name": "秩序：新曙光",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx~sykb/20240628/21224068249",
@@ -5604,7 +5606,7 @@
       "Mainsite": ""
     },
     {
-      "rank": "24",
+      "rank": "25",
       "name": "失落城堡2",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260114/16311567252",
@@ -5632,7 +5634,7 @@
       "Mainsite": ""
     },
     {
-      "rank": "25",
+      "rank": "26",
       "name": "真・三国无双 天下",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260116/14591191451",
@@ -5658,7 +5660,7 @@
       "Mainsite": ""
     },
     {
-      "rank": "26",
+      "rank": "27",
       "name": "舞力全开：派对",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260616/11514222877",
@@ -5686,7 +5688,7 @@
       "Mainsite": ""
     },
     {
-      "rank": "27",
+      "rank": "28",
       "name": "弧光猎人（ARC Raiders）",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260526/10293072692",
@@ -5714,7 +5716,7 @@
       "Mainsite": ""
     },
     {
-      "rank": "28",
+      "rank": "29",
       "name": "追逐卡蕾多",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260710/14500979420",
@@ -5742,7 +5744,7 @@
       "Mainsite": "https://www.3839.com/a/179028.htm"
     },
     {
-      "rank": "29",
+      "rank": "30",
       "name": "幻想之刃",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260618/17560183868",
@@ -5767,33 +5769,6 @@
       "store_taptap": "https://www.taptap.cn/search?q=%E5%B9%BB%E6%83%B3%E4%B9%8B%E5%88%83",
       "taptap_id": "",
       "Mainsite": ""
-    },
-    {
-      "rank": "30",
-      "name": "斗破苍穹：斗帝之路",
-      "name_en": "",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260715/12320885497",
-      "tags_cn": "角色扮演 / 放置 / MMO / 中国风 / 动漫改编",
-      "tags_vn": [
-        "RPG",
-        "Idle / AFK",
-        "MMO",
-        "Phong cách TQ",
-        "Chuyển thể anime"
-      ],
-      "publisher": "",
-      "developer": "37手游",
-      "testtype_cn": "上线",
-      "testtype_vn": "Onlive / Launch",
-      "score_16p": "",
-      "pub_time": "",
-      "date_sort": "",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E6%96%97%E7%A0%B4%E8%8B%8D%E7%A9%B9%EF%BC%9A%E6%96%97%E5%B8%9D%E4%B9%8B%E8%B7%AF",
-      "taptap_id": "",
-      "Mainsite": "https://www.3839.com/a/193168.htm"
     }
   ],
   "rank90": [
@@ -6453,6 +6428,34 @@
     },
     {
       "rank": "25",
+      "name": "山海奇旅",
+      "name_en": "",
+      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx~sykb/20240825/11100737118",
+      "tags_cn": "模拟经营 / 种田 / 多人联机 / 农场模拟 / 钓鱼 / 多平台 / 社交 / 建造 / 装饰&装修 / 温馨治愈 / 模拟",
+      "tags_vn": [
+        "Quản lý mô phỏng",
+        "Farming",
+        "Multiplayer",
+        "农场模拟",
+        "Câu cá",
+        "社交"
+      ],
+      "publisher": "网易游戏",
+      "developer": "网易游戏",
+      "testtype_cn": "上线",
+      "testtype_vn": "Onlive / Launch",
+      "score_16p": "",
+      "pub_time": "",
+      "date_sort": "",
+      "ios_id": "",
+      "ios_url": "",
+      "ios_rating": "",
+      "store_taptap": "https://www.taptap.cn/search?q=%E5%B1%B1%E6%B5%B7%E5%A5%87%E6%97%85",
+      "taptap_id": "",
+      "Mainsite": ""
+    },
+    {
+      "rank": "26",
       "name": "斗罗大陆：诛邪传说",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20250612/10370358039",
@@ -6480,7 +6483,7 @@
       "Mainsite": ""
     },
     {
-      "rank": "26",
+      "rank": "27",
       "name": "白银之城",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260624/15171253154",
@@ -6508,7 +6511,7 @@
       "Mainsite": ""
     },
     {
-      "rank": "27",
+      "rank": "28",
       "name": "舞力全开：派对 Just Dance Party",
       "name_en": "",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/83/65/89/83658965-f9f4-e7ab-2ab0-21f6312fd077/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
@@ -6533,7 +6536,7 @@
       "Mainsite": "https://apps.apple.com/cn/developer/shenzhen-tencent-tianyou-technology-ltd/id1586101358?uo=4"
     },
     {
-      "rank": "28",
+      "rank": "29",
       "name": "雪松",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx~sykb/20240907/13345177519",
@@ -6561,7 +6564,7 @@
       "Mainsite": ""
     },
     {
-      "rank": "29",
+      "rank": "30",
       "name": "三国：百将牌",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20251106/16123641956",
@@ -6585,34 +6588,6 @@
       "ios_url": "",
       "ios_rating": "",
       "store_taptap": "https://www.taptap.cn/search?q=%E4%B8%89%E5%9B%BD%EF%BC%9A%E7%99%BE%E5%B0%86%E7%89%8C",
-      "taptap_id": "",
-      "Mainsite": ""
-    },
-    {
-      "rank": "30",
-      "name": "归环-时间循环开放世界",
-      "name_en": "",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx~sykb/20250611/10305299891",
-      "tags_cn": "编辑推荐 / 多平台 / 剧情 / 开放世界 / 角色扮演 / 动作 / 二次元 / 多端互通 / 多结局",
-      "tags_vn": [
-        "Story-rich",
-        "Open World",
-        "RPG",
-        "Hành động",
-        "ACG / Anime",
-        "多结局"
-      ],
-      "publisher": "萨罗斯网络科技（深圳）有限公司",
-      "developer": "萨罗斯网络科技（深圳）有限公司",
-      "testtype_cn": "上线",
-      "testtype_vn": "Onlive / Launch",
-      "score_16p": "",
-      "pub_time": "",
-      "date_sort": "",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E5%BD%92%E7%8E%AF-%E6%97%B6%E9%97%B4%E5%BE%AA%E7%8E%AF%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C",
       "taptap_id": "",
       "Mainsite": ""
     }
@@ -6691,34 +6666,6 @@
     },
     {
       "rank": "4",
-      "name": "异环-1.2版本",
-      "name_en": "",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx~sykb/20240716/10233834389",
-      "tags_cn": "编辑推荐 / 多平台 / 多端互通 / 开放世界 / 都市 / 动作 / 竞速 / 二次元 / 怪谈 / 灵异 / 模拟经营 / 模拟驾驶 / 角色扮演 / 赛车 / UE5",
-      "tags_vn": [
-        "Open World",
-        "Đô thị",
-        "Hành động",
-        "竞速",
-        "ACG / Anime",
-        "怪谈"
-      ],
-      "publisher": "苏州幻塔网络科技有限公司",
-      "developer": "苏州幻塔",
-      "testtype_cn": "上线",
-      "testtype_vn": "Onlive / Launch",
-      "score_16p": "",
-      "pub_time": "",
-      "date_sort": "",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E5%BC%82%E7%8E%AF-1.2%E7%89%88%E6%9C%AC",
-      "taptap_id": "",
-      "Mainsite": ""
-    },
-    {
-      "rank": "5",
       "name": "远光84",
       "name_en": "",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cb/d3/14/cbd314ef-cd9e-86b6-d112-992cf8b9574a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
@@ -6741,7 +6688,7 @@
       "Mainsite": "https://apps.apple.com/cn/developer/%E4%B8%8A%E6%B5%B7%E8%8E%89%E8%8E%89%E4%B8%9D%E8%AE%A1%E7%AE%97%E6%9C%BA/id1696267009?uo=4"
     },
     {
-      "rank": "6",
+      "rank": "5",
       "name": "遗弃之地",
       "name_en": "",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/61/57/4f/61574fd7-2ac7-2b36-9049-3748bf25a4c7/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
@@ -6764,7 +6711,7 @@
       "Mainsite": "https://apps.apple.com/cn/developer/hk-hortor-technology-limited/id1873950719?uo=4"
     },
     {
-      "rank": "7",
+      "rank": "6",
       "name": "武林外传：十年之约",
       "name_en": "",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8b/26/f3/8b26f3f1-840b-fec6-ef67-dfb8a0df7fbb/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/512x512bb.jpg",
@@ -6788,7 +6735,7 @@
       "Mainsite": "https://apps.apple.com/cn/developer/zhejiang-umarknetwork-technology-co-ltd/id1454351420?uo=4"
     },
     {
-      "rank": "8",
+      "rank": "7",
       "name": "洛克王国：世界",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx~sykb/20240809/1826193408",
@@ -6816,7 +6763,7 @@
       "Mainsite": ""
     },
     {
-      "rank": "9",
+      "rank": "8",
       "name": "烹饪环游记",
       "name_en": "",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c8/bf/60/c8bf604d-3eb1-f502-47cf-7bf7119c90f0/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
@@ -6841,7 +6788,7 @@
       "Mainsite": "https://apps.apple.com/cn/developer/shenzhenshi-qixunxinyou-technology-co-ltd/id1480354404?uo=4"
     },
     {
-      "rank": "10",
+      "rank": "9",
       "name": "肥鹅美食街",
       "name_en": "",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e1/c2/a5/e1c2a525-1446-2715-7c52-bf7675cb9e3e/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
@@ -6865,7 +6812,7 @@
       "Mainsite": "https://apps.apple.com/cn/developer/hk-hortor-technology-limited/id1873950719?uo=4"
     },
     {
-      "rank": "11",
+      "rank": "10",
       "name": "幻想少女公会",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260318/15443056309",
@@ -6893,7 +6840,7 @@
       "Mainsite": ""
     },
     {
-      "rank": "12",
+      "rank": "11",
       "name": "三国：天下归心",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20251021/09335166067",
@@ -6921,7 +6868,7 @@
       "Mainsite": ""
     },
     {
-      "rank": "13",
+      "rank": "12",
       "name": "失控进化",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260527/20255390530",
@@ -6949,7 +6896,7 @@
       "Mainsite": ""
     },
     {
-      "rank": "14",
+      "rank": "13",
       "name": "遮天：凡尘一叶",
       "name_en": "",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/52/3f/25/523f256c-a590-1994-096a-657ed4733fb8/AppIcon-0-0-1x_U007emarketing-0-11-0-0-85-220.png/512x512bb.jpg",
@@ -6972,7 +6919,7 @@
       "Mainsite": "https://apps.apple.com/cn/developer/%E6%98%9F%E7%81%AB%E5%B7%A5%E4%BD%9C%E5%AE%A4/id1504639795?uo=4"
     },
     {
-      "rank": "15",
+      "rank": "14",
       "name": "无畏契约：源能行动",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx~sykb/20250808/19022110615",
@@ -7000,7 +6947,7 @@
       "Mainsite": ""
     },
     {
-      "rank": "16",
+      "rank": "15",
       "name": "逆战：未来-S3赛季",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260702/10075016674",
@@ -7028,7 +6975,7 @@
       "Mainsite": ""
     },
     {
-      "rank": "17",
+      "rank": "16",
       "name": "零启战纪",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260623/11515215037",
@@ -7055,7 +7002,7 @@
       "Mainsite": ""
     },
     {
-      "rank": "18",
+      "rank": "17",
       "name": "神泣：纷争",
       "name_en": "",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/34/25/0c/34250c4a-afe6-ae63-717a-b91f50ab5832/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/512x512bb.jpg",
@@ -7079,7 +7026,7 @@
       "Mainsite": "https://apps.apple.com/cn/developer/zhejiang-umarknetwork-technology-co-ltd/id1454351420?uo=4"
     },
     {
-      "rank": "19",
+      "rank": "18",
       "name": "现代战舰 - 送055大驱",
       "name_en": "",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f3/2a/5e/f32a5e83-94e5-e453-17a6-1c8b38278c1f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
@@ -7103,7 +7050,7 @@
       "Mainsite": "https://apps.apple.com/cn/developer/kongzhong/id1528151029?uo=4"
     },
     {
-      "rank": "20",
+      "rank": "19",
       "name": "桥梁大亨 - 模拟经营 搭桥造桥模拟器",
       "name_en": "",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f8/90/87/f8908745-26cf-328d-c69a-5d3a84bbefd1/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
@@ -7127,7 +7074,7 @@
       "Mainsite": "https://apps.apple.com/cn/developer/akersun-technology-co-ltd/id1510868842?uo=4"
     },
     {
-      "rank": "21",
+      "rank": "20",
       "name": "决斗学院",
       "name_en": "",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/81/80/78/8180786b-1de3-b5b4-8f71-da794c6f8c69/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
@@ -7151,34 +7098,7 @@
       "Mainsite": "https://apps.apple.com/cn/developer/shenzhen-fangyuan-interactive-entertainment-technology/id1670340677?uo=4"
     },
     {
-      "rank": "22",
-      "name": "现代战舰-国服",
-      "name_en": "",
-      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx~sykb/20250421/16164970977",
-      "tags_cn": "编辑推荐 / 多平台 / 多人联机 / 竞技 / 射击 / 海战 / 战争 / 多端互通",
-      "tags_vn": [
-        "Multiplayer",
-        "Cạnh tranh",
-        "Bắn súng",
-        "Hải chiến",
-        "Chiến tranh"
-      ],
-      "publisher": "Artstorm",
-      "developer": "战火互娱",
-      "testtype_cn": "上线",
-      "testtype_vn": "Onlive / Launch",
-      "score_16p": "",
-      "pub_time": "",
-      "date_sort": "",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E7%8E%B0%E4%BB%A3%E6%88%98%E8%88%B0-%E5%9B%BD%E6%9C%8D",
-      "taptap_id": "",
-      "Mainsite": ""
-    },
-    {
-      "rank": "23",
+      "rank": "21",
       "name": "饥困荒野-饥荒：新家园",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbdev/opensj/20260702/17405726047",
@@ -7206,7 +7126,7 @@
       "Mainsite": ""
     },
     {
-      "rank": "24",
+      "rank": "22",
       "name": "这个你会吗 - 纸牌分类接龙脑洞大闯关",
       "name_en": "",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/24/34/8e24345f-4ec3-ddcb-4326-cc6abc19b766/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
@@ -7230,7 +7150,7 @@
       "Mainsite": "https://apps.apple.com/cn/developer/picopoch-co-ltd/id1647525401?uo=4"
     },
     {
-      "rank": "25",
+      "rank": "23",
       "name": "源星战域",
       "name_en": "",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/47/27/4e/47274ea7-044b-f854-a4b0-5d0b6a5e3a89/AppIcon-0-0-1x_U007epad-0-11-0-0-85-220.png/512x512bb.jpg",
@@ -7253,7 +7173,35 @@
       "Mainsite": "https://apps.apple.com/cn/developer/shanghai-xiyuan-network-technology-co-ltd/id1670310078?uo=4"
     },
     {
-      "rank": "26",
+      "rank": "24",
+      "name": "异环-1.2版本",
+      "name_en": "",
+      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx~sykb/20240716/10233834389",
+      "tags_cn": "编辑推荐 / 多平台 / 多端互通 / 开放世界 / 都市 / 动作 / 竞速 / 二次元 / 怪谈 / 灵异 / 模拟经营 / 模拟驾驶 / 角色扮演 / 赛车 / UE5",
+      "tags_vn": [
+        "Open World",
+        "Đô thị",
+        "Hành động",
+        "竞速",
+        "ACG / Anime",
+        "怪谈"
+      ],
+      "publisher": "苏州幻塔网络科技有限公司",
+      "developer": "苏州幻塔",
+      "testtype_cn": "上线",
+      "testtype_vn": "Onlive / Launch",
+      "score_16p": "",
+      "pub_time": "",
+      "date_sort": "",
+      "ios_id": "",
+      "ios_url": "",
+      "ios_rating": "",
+      "store_taptap": "https://www.taptap.cn/search?q=%E5%BC%82%E7%8E%AF-1.2%E7%89%88%E6%9C%AC",
+      "taptap_id": "",
+      "Mainsite": ""
+    },
+    {
+      "rank": "25",
       "name": "乔乔的奇妙冒险：黄金赞歌",
       "name_en": "",
       "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20251226/17555535573",
@@ -7279,6 +7227,31 @@
       "store_taptap": "https://www.taptap.cn/search?q=%E4%B9%94%E4%B9%94%E7%9A%84%E5%A5%87%E5%A6%99%E5%86%92%E9%99%A9%EF%BC%9A%E9%BB%84%E9%87%91%E8%B5%9E%E6%AD%8C",
       "taptap_id": "",
       "Mainsite": ""
+    },
+    {
+      "rank": "26",
+      "name": "侏罗纪世界恐龙模拟器 - 方舟生存游戏",
+      "name_en": "",
+      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4f/a8/79/4fa879da-6752-d79a-7c4d-0473476ba5ca/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "tags_cn": "娱乐 / 角色扮演 / 冒险",
+      "tags_vn": [
+        "娱乐",
+        "RPG",
+        "Phiêu lưu"
+      ],
+      "publisher": "Usama Ahmad Qureshi",
+      "developer": "Usama Ahmad Qureshi",
+      "testtype_cn": "上线",
+      "testtype_vn": "Onlive / Launch",
+      "score_16p": "",
+      "pub_time": "",
+      "date_sort": "",
+      "ios_id": "",
+      "ios_url": "",
+      "ios_rating": "",
+      "store_taptap": "https://www.taptap.cn/search?q=%E4%BE%8F%E7%BD%97%E7%BA%AA%E4%B8%96%E7%95%8C%E6%81%90%E9%BE%99%E6%A8%A1%E6%8B%9F%E5%99%A8%20-%20%E6%96%B9%E8%88%9F%E7%94%9F%E5%AD%98%E6%B8%B8%E6%88%8F",
+      "taptap_id": "",
+      "Mainsite": "https://apps.apple.com/cn/developer/usama-ahmad-qureshi/id1150239015?uo=4"
     },
     {
       "rank": "27",
@@ -7310,31 +7283,6 @@
     },
     {
       "rank": "28",
-      "name": "侏罗纪世界恐龙模拟器 - 方舟生存游戏",
-      "name_en": "",
-      "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4f/a8/79/4fa879da-6752-d79a-7c4d-0473476ba5ca/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
-      "tags_cn": "娱乐 / 角色扮演 / 冒险",
-      "tags_vn": [
-        "娱乐",
-        "RPG",
-        "Phiêu lưu"
-      ],
-      "publisher": "Usama Ahmad Qureshi",
-      "developer": "Usama Ahmad Qureshi",
-      "testtype_cn": "上线",
-      "testtype_vn": "Onlive / Launch",
-      "score_16p": "",
-      "pub_time": "",
-      "date_sort": "",
-      "ios_id": "",
-      "ios_url": "",
-      "ios_rating": "",
-      "store_taptap": "https://www.taptap.cn/search?q=%E4%BE%8F%E7%BD%97%E7%BA%AA%E4%B8%96%E7%95%8C%E6%81%90%E9%BE%99%E6%A8%A1%E6%8B%9F%E5%99%A8%20-%20%E6%96%B9%E8%88%9F%E7%94%9F%E5%AD%98%E6%B8%B8%E6%88%8F",
-      "taptap_id": "",
-      "Mainsite": "https://apps.apple.com/cn/developer/usama-ahmad-qureshi/id1150239015?uo=4"
-    },
-    {
-      "rank": "29",
       "name": "潜水员戴夫",
       "name_en": "",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/14/d2/eb/14d2ebe2-4fd3-895a-c6da-6310baa74419/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
@@ -7359,7 +7307,7 @@
       "Mainsite": "https://apps.apple.com/cn/developer/x-d-network-inc/id929034871?uo=4"
     },
     {
-      "rank": "30",
+      "rank": "29",
       "name": "百战群英-经典三国怀旧版",
       "name_en": "",
       "icon_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ae/3f/58/ae3f581b-1ac5-bff3-44f6-30933753bf85/AppIcon_4-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
@@ -7381,8 +7329,36 @@
       "store_taptap": "https://www.taptap.cn/search?q=%E7%99%BE%E6%88%98%E7%BE%A4%E8%8B%B1-%E7%BB%8F%E5%85%B8%E4%B8%89%E5%9B%BD%E6%80%80%E6%97%A7%E7%89%88",
       "taptap_id": "",
       "Mainsite": "https://apps.apple.com/cn/developer/shenzhen-shangshang-fun-technology-co-ltd/id1754894296?uo=4"
+    },
+    {
+      "rank": "30",
+      "name": "王者荣耀世界",
+      "name_en": "",
+      "icon_url": "https://img.16p.com/img_proxy/?url=https://img.71acg.net/kbyx/sykb/20260415/07141076786",
+      "tags_cn": "多平台 / 开放世界 / 多人联机 / 动作 / 冒险 / 高画质 / 角色扮演 / 养成 / 3D / 多端互通",
+      "tags_vn": [
+        "Open World",
+        "Multiplayer",
+        "Hành động",
+        "Phiêu lưu",
+        "RPG",
+        "Nuôi dưỡng"
+      ],
+      "publisher": "腾讯天美工作室",
+      "developer": "腾讯天美工作室",
+      "testtype_cn": "上线",
+      "testtype_vn": "Onlive / Launch",
+      "score_16p": "",
+      "pub_time": "",
+      "date_sort": "",
+      "ios_id": "",
+      "ios_url": "",
+      "ios_rating": "",
+      "store_taptap": "https://www.taptap.cn/app/744415",
+      "taptap_id": "744415",
+      "Mainsite": ""
     }
   ],
-  "updated_at": "2026-07-23 04:17 UTC",
+  "updated_at": "2026-07-24 04:13 UTC",
   "source": "16p.com via Cloudflare Worker proxy"
 }
